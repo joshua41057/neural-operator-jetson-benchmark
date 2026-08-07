@@ -47,10 +47,10 @@ then `predictions/` (the four falsifiable axes), then `docs/TABLE_INDEX.md`.
 
 | Excluded | Where it lives |
 |---|---|
-| Trained checkpoints (`.pt`, `.pth`), TorchScript / ONNX artifacts | Zenodo — DOI: *TBD* |
-| Nsight Systems / Nsight Compute binary traces (`.ncu-rep`, `.nsys-rep`) | Zenodo — DOI: *TBD*. Exported per-kernel counters are committed under `results/profiles/*_exports/` so Appendix F can be verified without them. |
+| Trained checkpoints (`.pt`, `.pth`) | Attached to the [latest release](../../releases/latest) |
+| Nsight Systems / Nsight Compute binary traces (`.ncu-rep`, `.nsys-rep`) | Not distributed. The per-kernel counters they contain are exported to CSV under `families/*/results/profiles/*_exports/`, which is what Appendix F is built from. |
 | Burgers and Darcy datasets | Public release of Li et al., *Fourier Neural Operator for Parametric PDEs*, ICLR 2021 |
-| Heat exchanger data, graph-operator architecture and training | Companion study — https://github.com/joshua41057/virso-jetson-inference |
+| Heat exchanger data, checkpoints, architecture and training | Companion study — https://github.com/joshua41057/virso-jetson-inference |
 | Superseded measurement campaigns | Intentionally omitted; see `docs/PROVENANCE.md` |
 
 ## Measurement protocol
