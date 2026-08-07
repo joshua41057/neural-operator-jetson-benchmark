@@ -1,0 +1,29 @@
+{
+  "config_path": "configs/resolution/burgers_fno_base_r8192.yaml",
+  "experiment_name": "burgers_fno_base_r8192",
+  "seed": 1,
+  "deterministic": false,
+  "device": "cuda",
+  "dataset": "burgers",
+  "spatial_dim": 1,
+  "input_shape": [
+    8192,
+    2
+  ],
+  "output_shape": [
+    8192,
+    1
+  ],
+  "parameter_count": 235537,
+  "n_train": 1638,
+  "n_val": 205,
+  "n_test": 205,
+  "best_epoch": 280,
+  "best_val_rel_l2": 0.0006391662755049765,
+  "test_rel_l2_mean": 0.0006080612656660378,
+  "test_rel_l2_std": 0.00046161512727849185,
+  "test_rel_l2_median": 0.00047246902249753475,
+  "test_mse": 2.3074632338193624e-07,
+  "test_mae": 0.0002076656382996589,
+  "test_n": 205
+}

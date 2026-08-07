@@ -1,0 +1,2 @@
+tegrastats_samples,vdd_in_mean_w,vdd_in_min_w,vdd_in_max_w,vdd_in_last_avg_field_w,board_ram_mean_mb,board_ram_peak_mb,peak_temp_c,gr3d_mean_pct,gr3d_peak_pct
+1143,11.420632545931758,10.444,11.614,11.421,4475.337707786527,4483.0,62.5,46.58530183727034,49.0

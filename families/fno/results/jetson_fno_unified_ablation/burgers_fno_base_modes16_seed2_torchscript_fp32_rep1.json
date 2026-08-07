@@ -1,0 +1,31 @@
+{
+  "mean_ms": 3.175443634390831,
+  "median_ms": 3.168646711856127,
+  "p95_ms": 3.230494726449251,
+  "p99_ms": 3.250895976088944,
+  "min_ms": 3.0995882116258144,
+  "max_ms": 3.8153938949108124,
+  "num_warmup": 30,
+  "num_iters": 100,
+  "peak_cuda_allocated_mb": 11.21533203125,
+  "dataset": "burgers",
+  "resolution": [
+    2048
+  ],
+  "batch_size": 1,
+  "device": "cuda",
+  "mode": "torchscript",
+  "precision": "fp32",
+  "input_bank": "artifacts/benchmark_inputs/burgers_r2048_bank.pt",
+  "sample_index": 0,
+  "source": "artifacts/torchscript/burgers_fno_base_modes16_seed2.ts",
+  "bank_meta": {
+    "dataset": "burgers",
+    "resolution": [
+      2048
+    ],
+    "input_key": "a",
+    "source_path": "/home/jetson/data/burgers_data_R10.mat",
+    "num_samples": 8
+  }
+}

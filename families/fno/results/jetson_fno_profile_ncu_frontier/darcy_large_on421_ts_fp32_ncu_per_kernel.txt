@@ -1,0 +1,2131 @@
+[2266199] python3.10@127.0.0.1
+  ampere_sgemm_128x64_nn (1465, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 10
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Mhz       769.48       774.90       772.68
+    Elapsed Cycles                cycle 1,371,898.00 1,405,031.00 1,379,453.90
+    Memory Throughput                 %        63.77        64.21        63.97
+    Duration                         ms         1.78         1.82         1.79
+    L1/TEX Cache Throughput           %        63.07        64.41        64.13
+    L2 Cache Throughput               %        55.26        56.47        56.12
+    SM Active Cycles              cycle 1,353,902.62 1,382,427.88 1,359,754.55
+    Compute (SM) Throughput           %        74.93        75.43        75.15
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------- ---------- ----------
+    Metric Name                          Metric Unit    Minimum    Maximum    Average
+    -------------------------------- --------------- ---------- ---------- ----------
+    Block Size                                           128.00     128.00     128.00
+    Grid Size                                          1,465.00   1,465.00   1,465.00
+    Registers Per Thread             register/thread     122.00     122.00     122.00
+    Shared Memory Configuration Size           Kbyte     102.40     102.40     102.40
+    Driver Shared Memory Per Block       Kbyte/block       1.02       1.02       1.02
+    Dynamic Shared Memory Per Block       byte/block       0.00       0.00       0.00
+    Static Shared Memory Per Block       Kbyte/block      12.54      12.54      12.54
+    # SMs                                         SM       8.00       8.00       8.00
+    Threads                                   thread 187,520.00 187,520.00 187,520.00
+    Uses Green Context                                     0.00       0.00       0.00
+    Waves Per SM                                          45.78      45.78      45.78
+    -------------------------------- --------------- ---------- ---------- ----------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   63.77   64.21   63.97
+    Max Bandwidth                         %   55.26   56.47   56.12
+    L1/TEX Hit Rate                       %   32.87   32.98   32.92
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   62.20   62.54   62.36
+    Mem Pipes Busy                        %   34.88   35.11   34.98
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    4.00    4.00    4.00
+    Block Limit Shared Mem                block    7.00    7.00    7.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   16.00   16.00   16.00
+    Theoretical Occupancy                     %   33.33   33.33   33.33
+    Achieved Occupancy                        %   32.84   32.91   32.87
+    Achieved Active Warps Per SM           warp   15.76   15.80   15.78
+    ------------------------------- ----------- ------- ------- -------
+
+  ampere_sgemm_32x128_tn (2, 1385, 1)x(256, 1, 1), Device 0, CC 8.7, Invocations 2
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Ghz         1.00         1.01         1.01
+    Elapsed Cycles                cycle 1,225,366.00 1,227,115.00 1,226,240.50
+    Memory Throughput                 %        39.09        39.10        39.10
+    Duration                         ms         1.22         1.22         1.22
+    L1/TEX Cache Throughput           %        39.22        39.24        39.23
+    L2 Cache Throughput               %        35.04        35.05        35.05
+    SM Active Cycles              cycle 1,218,628.12 1,219,210.38 1,218,919.25
+    Compute (SM) Throughput           %        40.88        40.88        40.88
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------- ---------- ----------
+    Metric Name                          Metric Unit    Minimum    Maximum    Average
+    -------------------------------- --------------- ---------- ---------- ----------
+    Block Size                                           256.00     256.00     256.00
+    Grid Size                                          2,770.00   2,770.00   2,770.00
+    Registers Per Thread             register/thread      57.00      57.00      57.00
+    Shared Memory Configuration Size           Kbyte     102.40     102.40     102.40
+    Driver Shared Memory Per Block       Kbyte/block       1.02       1.02       1.02
+    Dynamic Shared Memory Per Block       byte/block       0.00       0.00       0.00
+    Static Shared Memory Per Block       Kbyte/block      16.38      16.38      16.38
+    # SMs                                         SM       8.00       8.00       8.00
+    Threads                                   thread 709,120.00 709,120.00 709,120.00
+    Uses Green Context                                     0.00       0.00       0.00
+    Waves Per SM                                          86.56      86.56      86.56
+    -------------------------------- --------------- ---------- ---------- ----------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   39.09   39.10   39.10
+    Max Bandwidth                         %   35.04   35.05   35.05
+    L1/TEX Hit Rate                       %    2.88    2.91    2.89
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   98.56   98.58   98.57
+    Mem Pipes Busy                        %   25.14   25.14   25.14
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    4.00    4.00    4.00
+    Block Limit Shared Mem                block    5.00    5.00    5.00
+    Block Limit Warps                     block    6.00    6.00    6.00
+    Theoretical Active Warps per SM        warp   32.00   32.00   32.00
+    Theoretical Occupancy                     %   66.67   66.67   66.67
+    Achieved Occupancy                        %   63.28   63.33   63.31
+    Achieved Active Warps Per SM           warp   30.38   30.40   30.39
+    ------------------------------- ----------- ------- ------- -------
+
+  fused_add_gelu (23437, 1, 1)x(512, 1, 1), Device 0, CC 8.7, Invocations 6
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Mhz       880.41     1,008.32       979.70
+    Elapsed Cycles                cycle 1,905,120.00 5,659,316.00 2,553,296.17
+    Memory Throughput                 %        64.95        91.32        70.48
+    Duration                         ms         1.92         6.43         2.68
+    L1/TEX Cache Throughput           %        15.02        29.71        18.10
+    L2 Cache Throughput               %        64.95        91.32        70.48
+    SM Active Cycles              cycle 1,516,437.12 5,652,292.62 2,278,434.65
+    Compute (SM) Throughput           %        13.43        39.38        34.84
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------- ------------- -------------
+    Metric Name                          Metric Unit       Minimum       Maximum       Average
+    -------------------------------- --------------- ------------- ------------- -------------
+    Block Size                                              512.00        512.00        512.00
+    Grid Size                                            23,437.00     23,437.00     23,437.00
+    Registers Per Thread             register/thread         16.00         16.00         16.00
+    Shared Memory Configuration Size           Kbyte          8.19          8.19          8.19
+    Driver Shared Memory Per Block       Kbyte/block          1.02          1.02          1.02
+    Dynamic Shared Memory Per Block       byte/block          0.00          0.00          0.00
+    Static Shared Memory Per Block        byte/block          0.00          0.00          0.00
+    # SMs                                         SM          8.00          8.00          8.00
+    Threads                                   thread 11,999,744.00 11,999,744.00 11,999,744.00
+    Uses Green Context                                        0.00          0.00          0.00
+    Waves Per SM                                            976.54        976.54        976.54
+    -------------------------------- --------------- ------------- ------------- -------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   28.28   65.60   34.99
+    Max Bandwidth                         %   64.95   91.32   70.48
+    L1/TEX Hit Rate                       %    0.00    0.00    0.00
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   10.00   33.33   29.45
+    Mem Pipes Busy                        %    3.58   11.25    9.91
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    8.00    8.00    8.00
+    Block Limit Shared Mem                block    8.00    8.00    8.00
+    Block Limit Warps                     block    3.00    3.00    3.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   75.17   81.29   80.11
+    Achieved Active Warps Per SM           warp   36.08   39.02   38.45
+    ------------------------------- ----------- ------- ------- -------
+
+  fused_add_mul_add (347, 1, 1)x(512, 1, 1), Device 0, CC 8.7, Invocations 1
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- --------- --------- ---------
+    Metric Name             Metric Unit   Minimum   Maximum   Average
+    ----------------------- ----------- --------- --------- ---------
+    SM Frequency                    Ghz      1.01      1.01      1.01
+    Elapsed Cycles                cycle 28,063.00 28,063.00 28,063.00
+    Memory Throughput                 %     43.85     43.85     43.85
+    Duration                         us     27.90     27.90     27.90
+    L1/TEX Cache Throughput           %     21.14     21.14     21.14
+    L2 Cache Throughput               %     43.85     43.85     43.85
+    SM Active Cycles              cycle 18,812.38 18,812.38 18,812.38
+    Compute (SM) Throughput           %     51.07     51.07     51.07
+    ----------------------- ----------- --------- --------- ---------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------- ---------- ----------
+    Metric Name                          Metric Unit    Minimum    Maximum    Average
+    -------------------------------- --------------- ---------- ---------- ----------
+    Block Size                                           512.00     512.00     512.00
+    Grid Size                                            347.00     347.00     347.00
+    Registers Per Thread             register/thread      16.00      16.00      16.00
+    Shared Memory Configuration Size           Kbyte       8.19       8.19       8.19
+    Driver Shared Memory Per Block       Kbyte/block       1.02       1.02       1.02
+    Dynamic Shared Memory Per Block       byte/block       0.00       0.00       0.00
+    Static Shared Memory Per Block        byte/block       0.00       0.00       0.00
+    # SMs                                         SM       8.00       8.00       8.00
+    Threads                                   thread 177,664.00 177,664.00 177,664.00
+    Uses Green Context                                     0.00       0.00       0.00
+    Waves Per SM                                          14.46      14.46      14.46
+    -------------------------------- --------------- ---------- ---------- ----------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   19.87   19.87   19.87
+    Max Bandwidth                         %   43.85   43.85   43.85
+    L1/TEX Hit Rate                       %   19.97   19.97   19.97
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   50.07   50.07   50.07
+    Mem Pipes Busy                        %   15.97   15.97   15.97
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    8.00    8.00    8.00
+    Block Limit Shared Mem                block    8.00    8.00    8.00
+    Block Limit Warps                     block    3.00    3.00    3.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   81.02   81.02   81.02
+    Achieved Active Warps Per SM           warp   38.89   38.89   38.89
+    ------------------------------- ----------- ------- ------- -------
+
+  fused_unsqueeze_sub_add_div (347, 1, 1)x(512, 1, 1), Device 0, CC 8.7, Invocations 1
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- --------- --------- ---------
+    Metric Name             Metric Unit   Minimum   Maximum   Average
+    ----------------------- ----------- --------- --------- ---------
+    SM Frequency                    Mhz    997.32    997.32    997.32
+    Elapsed Cycles                cycle 28,276.00 28,276.00 28,276.00
+    Memory Throughput                 %     43.69     43.69     43.69
+    Duration                         us     28.35     28.35     28.35
+    L1/TEX Cache Throughput           %     18.91     18.91     18.91
+    L2 Cache Throughput               %     43.69     43.69     43.69
+    SM Active Cycles              cycle 19,987.25 19,987.25 19,987.25
+    Compute (SM) Throughput           %     49.29     49.29     49.29
+    ----------------------- ----------- --------- --------- ---------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------- ---------- ----------
+    Metric Name                          Metric Unit    Minimum    Maximum    Average
+    -------------------------------- --------------- ---------- ---------- ----------
+    Block Size                                           512.00     512.00     512.00
+    Grid Size                                            347.00     347.00     347.00
+    Registers Per Thread             register/thread      16.00      16.00      16.00
+    Shared Memory Configuration Size           Kbyte       8.19       8.19       8.19
+    Driver Shared Memory Per Block       Kbyte/block       1.02       1.02       1.02
+    Dynamic Shared Memory Per Block       byte/block       0.00       0.00       0.00
+    Static Shared Memory Per Block        byte/block       0.00       0.00       0.00
+    # SMs                                         SM       8.00       8.00       8.00
+    Threads                                   thread 177,664.00 177,664.00 177,664.00
+    Uses Green Context                                     0.00       0.00       0.00
+    Waves Per SM                                          14.46      14.46      14.46
+    -------------------------------- --------------- ---------- ---------- ----------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   19.73   19.73   19.73
+    Max Bandwidth                         %   43.69   43.69   43.69
+    L1/TEX Hit Rate                       %   19.97   19.97   19.97
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   50.01   50.01   50.01
+    Mem Pipes Busy                        %   15.41   15.41   15.41
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    8.00    8.00    8.00
+    Block Limit Shared Mem                block    8.00    8.00    8.00
+    Block Limit Warps                     block    3.00    3.00    3.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   81.99   81.99   81.99
+    Achieved Active Warps Per SM           warp   39.36   39.36   39.36
+    ------------------------------- ----------- ------- ------- -------
+
+  std::enable_if<!T7, void>::type internal::kernel<int, int, float2, float2, float2, float2, 0, 1, 0, 0, 6, 0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float2>, cublasGemvTensorStridedBatched<const float2>, cublasGemvTensorStridedBatched<float2>, float2>>(T13) (2, 1, 576)x(32, 2, 1), Device 0, CC 8.7, Invocations 24
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ---------- ---------- ----------
+    Metric Name             Metric Unit    Minimum    Maximum    Average
+    ----------------------- ----------- ---------- ---------- ----------
+    SM Frequency                    Ghz       1.00       1.01       1.01
+    Elapsed Cycles                cycle 199,663.00 205,703.00 201,237.04
+    Memory Throughput                 %      84.88      87.53      86.83
+    Duration                         us     198.66     204.00     200.07
+    L1/TEX Cache Throughput           %      21.13      21.64      21.48
+    L2 Cache Throughput               %      84.88      87.53      86.83
+    SM Active Cycles              cycle 192,988.00 197,758.38 194,651.76
+    Compute (SM) Throughput           %      15.26      15.46      15.35
+    ----------------------- ----------- ---------- ---------- ----------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- --------- --------- ---------
+    Metric Name                          Metric Unit   Minimum   Maximum   Average
+    -------------------------------- --------------- --------- --------- ---------
+    Block Size                                           64.00     64.00     64.00
+    Grid Size                                         1,152.00  1,152.00  1,152.00
+    Registers Per Thread             register/thread    168.00    168.00    168.00
+    Shared Memory Configuration Size           Kbyte     32.77     32.77     32.77
+    Driver Shared Memory Per Block       Kbyte/block      1.02      1.02      1.02
+    Dynamic Shared Memory Per Block       byte/block    768.00    768.00    768.00
+    Static Shared Memory Per Block        byte/block      0.00      0.00      0.00
+    # SMs                                         SM      8.00      8.00      8.00
+    Threads                                   thread 73,728.00 73,728.00 73,728.00
+    Uses Green Context                                    0.00      0.00      0.00
+    Waves Per SM                                         24.00     24.00     24.00
+    -------------------------------- --------------- --------- --------- ---------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   53.99   55.94   55.21
+    Max Bandwidth                         %   84.88   87.53   86.83
+    L1/TEX Hit Rate                       %    8.46    8.73    8.58
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %    2.39    2.77    2.63
+    Mem Pipes Busy                        %   10.83   10.97   10.89
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    6.00    6.00    6.00
+    Block Limit Shared Mem                block   18.00   18.00   18.00
+    Block Limit Warps                     block   24.00   24.00   24.00
+    Theoretical Active Warps per SM        warp   12.00   12.00   12.00
+    Theoretical Occupancy                     %   25.00   25.00   25.00
+    Achieved Occupancy                        %   24.12   24.18   24.16
+    Achieved Active Warps Per SM           warp   11.58   11.61   11.59
+    ------------------------------- ----------- ------- ------- -------
+
+  void <unnamed>::elementwise_kernel_with_index<int, at::linspace_cuda_out(const c10::Scalar &, const c10::Scalar &, long, at::Tensor &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(long) (instance 1)]>(T1, T2, function_traits<T2>::result_type *) (7, 1, 1)x(64, 1, 1), Device 0, CC 8.7, Invocations 4
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- -------- -------- --------
+    Metric Name             Metric Unit  Minimum  Maximum  Average
+    ----------------------- ----------- -------- -------- --------
+    SM Frequency                    Mhz   993.01 1,002.06   996.91
+    Elapsed Cycles                cycle 5,317.00 5,906.00 5,615.25
+    Memory Throughput                 %     0.98     1.09     1.03
+    Duration                         us     5.34     5.92     5.63
+    L1/TEX Cache Throughput           %     0.65     0.65     0.65
+    L2 Cache Throughput               %     0.98     1.09     1.03
+    SM Active Cycles              cycle 1,378.12 1,394.75 1,388.81
+    Compute (SM) Throughput           %     0.88     0.89     0.89
+    ----------------------- ----------- -------- -------- --------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------- ------- -------
+    Metric Name                          Metric Unit Minimum Maximum Average
+    -------------------------------- --------------- ------- ------- -------
+    Block Size                                         64.00   64.00   64.00
+    Grid Size                                           7.00    7.00    7.00
+    Registers Per Thread             register/thread   16.00   16.00   16.00
+    Shared Memory Configuration Size           Kbyte   16.38   16.38   16.38
+    Driver Shared Memory Per Block       Kbyte/block    1.02    1.02    1.02
+    Dynamic Shared Memory Per Block       byte/block    0.00    0.00    0.00
+    Static Shared Memory Per Block        byte/block    0.00    0.00    0.00
+    # SMs                                         SM    8.00    8.00    8.00
+    Threads                                   thread  448.00  448.00  448.00
+    Uses Green Context                                  0.00    0.00    0.00
+    Waves Per SM                                        0.05    0.05    0.05
+    -------------------------------- --------------- ------- ------- -------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %    0.66    0.74    0.70
+    Max Bandwidth                         %    0.98    1.09    1.03
+    L1/TEX Hit Rate                       %    0.00    0.00    0.00
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   57.83   57.83   57.83
+    Mem Pipes Busy                        %    0.15    0.15    0.15
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   64.00   64.00   64.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   24.00   24.00   24.00
+    Theoretical Active Warps per SM        warp   32.00   32.00   32.00
+    Theoretical Occupancy                     %   66.67   66.67   66.67
+    Achieved Occupancy                        %    4.14    4.14    4.14
+    Achieved Active Warps Per SM           warp    1.99    1.99    1.99
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::<unnamed>::CatArrayBatchedCopy<at::<unnamed>::OpaqueType<4>, unsigned int, 4, 64, 64>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2) (16, 3, 1)x(512, 1, 1), Device 0, CC 8.7, Invocations 2
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ---------- ---------- ----------
+    Metric Name             Metric Unit    Minimum    Maximum    Average
+    ----------------------- ----------- ---------- ---------- ----------
+    SM Frequency                    Ghz       1.00       1.01       1.00
+    Elapsed Cycles                cycle 102,315.00 102,353.00 102,334.00
+    Memory Throughput                 %      78.90      79.20      79.05
+    Duration                         us     101.76     102.21     101.98
+    L1/TEX Cache Throughput           %      44.10      44.42      44.26
+    L2 Cache Throughput               %      78.90      79.20      79.05
+    SM Active Cycles              cycle  92,149.25  92,906.00  92,527.62
+    Compute (SM) Throughput           %      52.31      53.13      52.72
+    ----------------------- ----------- ---------- ---------- ----------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- --------- --------- ---------
+    Metric Name                          Metric Unit   Minimum   Maximum   Average
+    -------------------------------- --------------- --------- --------- ---------
+    Block Size                                          512.00    512.00    512.00
+    Grid Size                                            48.00     48.00     48.00
+    Registers Per Thread             register/thread     39.00     39.00     39.00
+    Shared Memory Configuration Size           Kbyte      8.19      8.19      8.19
+    Driver Shared Memory Per Block       Kbyte/block      1.02      1.02      1.02
+    Dynamic Shared Memory Per Block       byte/block      0.00      0.00      0.00
+    Static Shared Memory Per Block        byte/block      0.00      0.00      0.00
+    # SMs                                         SM      8.00      8.00      8.00
+    Threads                                   thread 24,576.00 24,576.00 24,576.00
+    Uses Green Context                                    0.00      0.00      0.00
+    Waves Per SM                                          2.00      2.00      2.00
+    -------------------------------- --------------- --------- --------- ---------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   35.90   36.89   36.39
+    Max Bandwidth                         %   78.90   79.20   79.05
+    L1/TEX Hit Rate                       %   31.25   31.64   31.45
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   92.14   92.15   92.15
+    Mem Pipes Busy                        %    4.32    4.39    4.36
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    3.00    3.00    3.00
+    Block Limit Shared Mem                block    8.00    8.00    8.00
+    Block Limit Warps                     block    3.00    3.00    3.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   92.94   94.16   93.55
+    Achieved Active Warps Per SM           warp   44.61   45.20   44.90
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::elementwise_kernel<128, 2, void at::gpu_kernel_impl_nocast<at::BinaryFunctor<float, float, float, binary_internal::DivFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (693, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 1
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- --------- --------- ---------
+    Metric Name             Metric Unit   Minimum   Maximum   Average
+    ----------------------- ----------- --------- --------- ---------
+    SM Frequency                    Mhz    998.96    998.96    998.96
+    Elapsed Cycles                cycle 25,925.00 25,925.00 25,925.00
+    Memory Throughput                 %     48.21     48.21     48.21
+    Duration                         us     25.95     25.95     25.95
+    L1/TEX Cache Throughput           %     17.72     17.72     17.72
+    L2 Cache Throughput               %     48.21     48.21     48.21
+    SM Active Cycles              cycle 18,666.38 18,666.38 18,666.38
+    Compute (SM) Throughput           %     36.55     36.55     36.55
+    ----------------------- ----------- --------- --------- ---------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- --------- --------- ---------
+    Metric Name                          Metric Unit   Minimum   Maximum   Average
+    -------------------------------- --------------- --------- --------- ---------
+    Block Size                                          128.00    128.00    128.00
+    Grid Size                                           693.00    693.00    693.00
+    Registers Per Thread             register/thread     19.00     19.00     19.00
+    Shared Memory Configuration Size           Kbyte     16.38     16.38     16.38
+    Driver Shared Memory Per Block       Kbyte/block      1.02      1.02      1.02
+    Dynamic Shared Memory Per Block       byte/block      0.00      0.00      0.00
+    Static Shared Memory Per Block        byte/block      0.00      0.00      0.00
+    # SMs                                         SM      8.00      8.00      8.00
+    Threads                                   thread 88,704.00 88,704.00 88,704.00
+    Uses Green Context                                    0.00      0.00      0.00
+    Waves Per SM                                          7.22      7.22      7.22
+    -------------------------------- --------------- --------- --------- ---------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   21.65   21.65   21.65
+    Max Bandwidth                         %   48.21   48.21   48.21
+    L1/TEX Hit Rate                       %   11.10   11.10   11.10
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   49.73   49.73   49.73
+    Mem Pipes Busy                        %   11.55   11.55   11.55
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   21.00   21.00   21.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   86.30   86.30   86.30
+    Achieved Active Warps Per SM           warp   41.43   41.43   41.43
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::elementwise_kernel<128, 2, void at::gpu_kernel_impl_nocast<at::BinaryFunctor<float, float, float, binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (693, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 1
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- --------- --------- ---------
+    Metric Name             Metric Unit   Minimum   Maximum   Average
+    ----------------------- ----------- --------- --------- ---------
+    SM Frequency                    Ghz      1.01      1.01      1.01
+    Elapsed Cycles                cycle 24,995.00 24,995.00 24,995.00
+    Memory Throughput                 %     49.87     49.87     49.87
+    Duration                         us     24.86     24.86     24.86
+    L1/TEX Cache Throughput           %     18.41     18.41     18.41
+    L2 Cache Throughput               %     49.87     49.87     49.87
+    SM Active Cycles              cycle 17,927.25 17,927.25 17,927.25
+    Compute (SM) Throughput           %     29.74     29.74     29.74
+    ----------------------- ----------- --------- --------- ---------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- --------- --------- ---------
+    Metric Name                          Metric Unit   Minimum   Maximum   Average
+    -------------------------------- --------------- --------- --------- ---------
+    Block Size                                          128.00    128.00    128.00
+    Grid Size                                           693.00    693.00    693.00
+    Registers Per Thread             register/thread     16.00     16.00     16.00
+    Shared Memory Configuration Size           Kbyte     16.38     16.38     16.38
+    Driver Shared Memory Per Block       Kbyte/block      1.02      1.02      1.02
+    Dynamic Shared Memory Per Block       byte/block      0.00      0.00      0.00
+    Static Shared Memory Per Block        byte/block      0.00      0.00      0.00
+    # SMs                                         SM      8.00      8.00      8.00
+    Threads                                   thread 88,704.00 88,704.00 88,704.00
+    Uses Green Context                                    0.00      0.00      0.00
+    Waves Per SM                                          7.22      7.22      7.22
+    -------------------------------- --------------- --------- --------- ---------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   22.42   22.42   22.42
+    Max Bandwidth                         %   49.87   49.87   49.87
+    L1/TEX Hit Rate                       %   11.10   11.10   11.10
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   49.80   49.80   49.80
+    Mem Pipes Busy                        %   11.94   11.94   11.94
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   32.00   32.00   32.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   85.22   85.22   85.22
+    Achieved Active Warps Per SM           warp   40.90   40.90   40.90
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::elementwise_kernel<128, 2, void at::gpu_kernel_impl_nocast<at::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (693, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 4
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- --------- --------- ---------
+    Metric Name             Metric Unit   Minimum   Maximum   Average
+    ----------------------- ----------- --------- --------- ---------
+    SM Frequency                    Ghz      1.00      1.01      1.00
+    Elapsed Cycles                cycle 24,282.00 26,452.00 25,324.75
+    Memory Throughput                 %     47.14     51.37     49.29
+    Duration                         us     24.19     26.30     25.27
+    L1/TEX Cache Throughput           %     18.56     18.74     18.65
+    L2 Cache Throughput               %     47.14     51.37     49.29
+    SM Active Cycles              cycle 17,632.12 17,794.50 17,710.28
+    Compute (SM) Throughput           %     29.29     30.05     29.76
+    ----------------------- ----------- --------- --------- ---------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- --------- --------- ---------
+    Metric Name                          Metric Unit   Minimum   Maximum   Average
+    -------------------------------- --------------- --------- --------- ---------
+    Block Size                                          128.00    128.00    128.00
+    Grid Size                                           693.00    693.00    693.00
+    Registers Per Thread             register/thread     16.00     16.00     16.00
+    Shared Memory Configuration Size           Kbyte     16.38     16.38     16.38
+    Driver Shared Memory Per Block       Kbyte/block      1.02      1.02      1.02
+    Dynamic Shared Memory Per Block       byte/block      0.00      0.00      0.00
+    Static Shared Memory Per Block        byte/block      0.00      0.00      0.00
+    # SMs                                         SM      8.00      8.00      8.00
+    Threads                                   thread 88,704.00 88,704.00 88,704.00
+    Uses Green Context                                    0.00      0.00      0.00
+    Waves Per SM                                          7.22      7.22      7.22
+    -------------------------------- --------------- --------- --------- ---------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   21.19   23.09   22.16
+    Max Bandwidth                         %   47.14   51.37   49.29
+    L1/TEX Hit Rate                       %   11.10   55.54   33.32
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   49.80   49.80   49.80
+    Mem Pipes Busy                        %   11.76   12.06   11.95
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   32.00   32.00   32.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   85.58   86.24   85.77
+    Achieved Active Warps Per SM           warp   41.08   41.40   41.17
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::elementwise_kernel<128, 2, void at::gpu_kernel_impl_nocast<at::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (46873, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 13
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Ghz         1.00         1.01         1.01
+    Elapsed Cycles                cycle 1,299,016.00 6,501,704.00 1,702,397.92
+    Memory Throughput                 %        64.02        93.12        66.47
+    Duration                         ms         1.29         6.46         1.69
+    L1/TEX Cache Throughput           %        18.91        26.38        19.61
+    L2 Cache Throughput               %        64.02        93.12        66.47
+    SM Active Cycles              cycle 1,156,391.88 6,204,812.38 1,567,983.56
+    Compute (SM) Throughput           %         8.48        43.57        40.78
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             128.00       128.00       128.00
+    Grid Size                                           46,873.00    46,873.00    46,873.00
+    Registers Per Thread             register/thread        16.00        16.00        16.00
+    Shared Memory Configuration Size           Kbyte        16.38        16.38        16.38
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 5,999,744.00 5,999,744.00 5,999,744.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                           488.26       488.26       488.26
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   28.69   66.89   31.73
+    Max Bandwidth                         %   64.02   93.12   66.47
+    L1/TEX Hit Rate                       %    0.00   66.67   52.99
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   10.00   50.00   46.92
+    Mem Pipes Busy                        %    2.70   13.86   12.97
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   32.00   32.00   32.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   91.46   93.35   91.64
+    Achieved Active Warps Per SM           warp   43.90   44.81   43.99
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::elementwise_kernel<128, 2, void at::gpu_kernel_impl_nocast<at::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (88621, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 2
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Ghz         1.01         1.01         1.01
+    Elapsed Cycles                cycle 2,460,740.00 2,462,711.00 2,461,725.50
+    Memory Throughput                 %        64.23        64.30        64.26
+    Duration                         ms         2.44         2.44         2.44
+    L1/TEX Cache Throughput           %        18.94        18.94        18.94
+    L2 Cache Throughput               %        64.23        64.30        64.26
+    SM Active Cycles              cycle 2,245,751.50 2,245,959.75 2,245,855.62
+    Compute (SM) Throughput           %        43.38        43.40        43.39
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------- ------------- -------------
+    Metric Name                          Metric Unit       Minimum       Maximum       Average
+    -------------------------------- --------------- ------------- ------------- -------------
+    Block Size                                              128.00        128.00        128.00
+    Grid Size                                            88,621.00     88,621.00     88,621.00
+    Registers Per Thread             register/thread         16.00         16.00         16.00
+    Shared Memory Configuration Size           Kbyte         16.38         16.38         16.38
+    Driver Shared Memory Per Block       Kbyte/block          1.02          1.02          1.02
+    Dynamic Shared Memory Per Block       byte/block          0.00          0.00          0.00
+    Static Shared Memory Per Block        byte/block          0.00          0.00          0.00
+    # SMs                                         SM          8.00          8.00          8.00
+    Threads                                   thread 11,343,488.00 11,343,488.00 11,343,488.00
+    Uses Green Context                                        0.00          0.00          0.00
+    Waves Per SM                                            923.14        923.14        923.14
+    -------------------------------- --------------- ------------- ------------- -------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   28.79   28.81   28.80
+    Max Bandwidth                         %   64.23   64.30   64.26
+    L1/TEX Hit Rate                       %   55.55   55.55   55.55
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   50.00   50.00   50.00
+    Mem Pipes Busy                        %   13.80   13.81   13.80
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   32.00   32.00   32.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   91.52   91.54   91.53
+    Achieved Active Warps Per SM           warp   43.93   43.94   43.94
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::elementwise_kernel<128, 2, void at::gpu_kernel_impl_nocast<at::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (44311, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 4
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Ghz         1.00         1.01         1.01
+    Elapsed Cycles                cycle 1,264,388.00 1,346,280.00 1,304,797.25
+    Memory Throughput                 %        61.74        62.52        62.15
+    Duration                         ms         1.26         1.33         1.29
+    L1/TEX Cache Throughput           %        18.59        18.90        18.74
+    L2 Cache Throughput               %        61.74        62.52        62.15
+    SM Active Cycles              cycle 1,123,146.25 1,187,298.38 1,155,289.16
+    Compute (SM) Throughput           %        36.84        43.37        40.11
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             128.00       128.00       128.00
+    Grid Size                                           44,311.00    44,311.00    44,311.00
+    Registers Per Thread             register/thread        16.00        16.00        16.00
+    Shared Memory Configuration Size           Kbyte        16.38        16.38        16.38
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 5,671,808.00 5,671,808.00 5,671,808.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                           461.57       461.57       461.57
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   26.73   28.04   27.39
+    Max Bandwidth                         %   61.74   62.52   62.15
+    L1/TEX Hit Rate                       %    0.00    5.16    2.58
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   49.94   50.00   49.97
+    Mem Pipes Busy                        %    9.31    9.85    9.57
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   32.00   32.00   32.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   90.61   91.51   91.06
+    Achieved Active Warps Per SM           warp   43.49   43.92   43.71
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::elementwise_kernel<128, 2, void at::gpu_kernel_impl_nocast<at::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 9)]::operator ()() const::[lambda(c10::complex<float>) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (144, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 48
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- --------- --------- ---------
+    Metric Name             Metric Unit   Minimum   Maximum   Average
+    ----------------------- ----------- --------- --------- ---------
+    SM Frequency                    Ghz      0.99      1.01      1.00
+    Elapsed Cycles                cycle 20,579.00 25,284.00 22,419.69
+    Memory Throughput                 %     32.38     51.99     42.42
+    Duration                         us     20.51     25.18     22.41
+    L1/TEX Cache Throughput           %     17.95     40.86     29.40
+    L2 Cache Throughput               %     32.38     51.99     42.42
+    SM Active Cycles              cycle 12,942.50 15,496.62 14,155.66
+    Compute (SM) Throughput           %      9.59     11.99     10.74
+    ----------------------- ----------- --------- --------- ---------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- --------- --------- ---------
+    Metric Name                          Metric Unit   Minimum   Maximum   Average
+    -------------------------------- --------------- --------- --------- ---------
+    Block Size                                          128.00    128.00    128.00
+    Grid Size                                           144.00    144.00    144.00
+    Registers Per Thread             register/thread     16.00     16.00     16.00
+    Shared Memory Configuration Size           Kbyte     16.38     16.38     16.38
+    Driver Shared Memory Per Block       Kbyte/block      1.02      1.02      1.02
+    Dynamic Shared Memory Per Block       byte/block      0.00      0.00      0.00
+    Static Shared Memory Per Block        byte/block      0.00      0.00      0.00
+    # SMs                                         SM      8.00      8.00      8.00
+    Threads                                   thread 18,432.00 18,432.00 18,432.00
+    Uses Green Context                                    0.00      0.00      0.00
+    Waves Per SM                                          1.50      1.50      1.50
+    -------------------------------- --------------- --------- --------- ---------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   15.46   48.73   32.09
+    Max Bandwidth                         %   32.38   51.99   42.42
+    L1/TEX Hit Rate                       %    4.65   50.77   28.05
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   53.06   81.78   67.19
+    Mem Pipes Busy                        %    1.89    2.35    2.11
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   32.00   32.00   32.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   82.10   85.12   83.06
+    Achieved Active Warps Per SM           warp   39.41   40.86   39.87
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::elementwise_kernel<128, 2, void at::gpu_kernel_impl_nocast<at::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 9)]::operator ()() const::[lambda(c10::complex<float>) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (9216, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 24
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ---------- ---------- ----------
+    Metric Name             Metric Unit    Minimum    Maximum    Average
+    ----------------------- ----------- ---------- ---------- ----------
+    SM Frequency                    Ghz       1.00       1.01       1.01
+    Elapsed Cycles                cycle 696,151.00 717,402.00 705,462.04
+    Memory Throughput                 %      89.35      90.75      90.13
+    Duration                         us     689.47     712.51     700.61
+    L1/TEX Cache Throughput           %      47.79      49.63      48.75
+    L2 Cache Throughput               %      89.35      90.75      90.13
+    SM Active Cycles              cycle 683,354.62 703,649.62 691,695.83
+    Compute (SM) Throughput           %      12.25      12.62      12.47
+    ----------------------- ----------- ---------- ---------- ----------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             128.00       128.00       128.00
+    Grid Size                                            9,216.00     9,216.00     9,216.00
+    Registers Per Thread             register/thread        16.00        16.00        16.00
+    Shared Memory Configuration Size           Kbyte        16.38        16.38        16.38
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 1,179,648.00 1,179,648.00 1,179,648.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                            96.00        96.00        96.00
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   81.98   85.91   84.28
+    Max Bandwidth                         %   89.35   90.75   90.13
+    L1/TEX Hit Rate                       %    8.04    9.01    8.54
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   77.21   78.64   78.06
+    Mem Pipes Busy                        %    3.26    3.36    3.32
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   32.00   32.00   32.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   91.50   91.73   91.65
+    Achieved Active Warps Per SM           warp   43.92   44.03   43.99
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::vectorized_elementwise_kernel<4, at::AUnaryFunctor<float, float, float, binary_internal::MulFunctor<float>>, detail::Array<char *, 2>>(int, T2, T3) (23437, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 12
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ---------- ------------ ------------
+    Metric Name             Metric Unit    Minimum      Maximum      Average
+    ----------------------- ----------- ---------- ------------ ------------
+    SM Frequency                    Ghz       1.00         1.01         1.01
+    Elapsed Cycles                cycle 994,982.00 1,022,291.00 1,000,465.00
+    Memory Throughput                 %      78.01        80.12        79.70
+    Duration                         us     986.94     1,011.46       992.32
+    L1/TEX Cache Throughput           %      21.20        21.42        21.30
+    L2 Cache Throughput               %      78.01        80.12        79.70
+    SM Active Cycles              cycle 985,377.50   995,339.12   990,977.32
+    Compute (SM) Throughput           %       7.03         7.16         7.09
+    ----------------------- ----------- ---------- ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             128.00       128.00       128.00
+    Grid Size                                           23,437.00    23,437.00    23,437.00
+    Registers Per Thread             register/thread        16.00        16.00        16.00
+    Shared Memory Configuration Size           Kbyte        16.38        16.38        16.38
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 2,999,936.00 2,999,936.00 2,999,936.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                           244.14       244.14       244.14
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   36.68   40.27   38.30
+    Max Bandwidth                         %   78.01   80.12   79.70
+    L1/TEX Hit Rate                       %   49.21   49.35   49.30
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   50.00   50.00   50.00
+    Mem Pipes Busy                        %    4.69    4.77    4.73
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   32.00   32.00   32.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   85.63   88.10   86.98
+    Achieved Active Warps Per SM           warp   41.10   42.29   41.75
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::vectorized_elementwise_kernel<4, at::CUDAFunctorOnSelf_add<float>, detail::Array<char *, 2>>(int, T2, T3) (1, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 2
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- -------- -------- --------
+    Metric Name             Metric Unit  Minimum  Maximum  Average
+    ----------------------- ----------- -------- -------- --------
+    SM Frequency                    Ghz     1.00     1.01     1.00
+    Elapsed Cycles                cycle 6,233.00 6,765.00 6,499.00
+    Memory Throughput                 %     0.74     0.80     0.77
+    Duration                         us     6.24     6.72     6.48
+    L1/TEX Cache Throughput           %     3.30     3.34     3.32
+    L2 Cache Throughput               %     0.74     0.80     0.77
+    SM Active Cycles              cycle   269.25   272.62   270.94
+    Compute (SM) Throughput           %     0.27     0.27     0.27
+    ----------------------- ----------- -------- -------- --------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------- ------- -------
+    Metric Name                          Metric Unit Minimum Maximum Average
+    -------------------------------- --------------- ------- ------- -------
+    Block Size                                        128.00  128.00  128.00
+    Grid Size                                           1.00    1.00    1.00
+    Registers Per Thread             register/thread   18.00   18.00   18.00
+    Shared Memory Configuration Size           Kbyte   16.38   16.38   16.38
+    Driver Shared Memory Per Block       Kbyte/block    1.02    1.02    1.02
+    Dynamic Shared Memory Per Block       byte/block    0.00    0.00    0.00
+    Static Shared Memory Per Block        byte/block    0.00    0.00    0.00
+    # SMs                                         SM    8.00    8.00    8.00
+    Threads                                   thread  128.00  128.00  128.00
+    Uses Green Context                                  0.00    0.00    0.00
+    Waves Per SM                                        0.01    0.01    0.01
+    -------------------------------- --------------- ------- ------- -------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %    0.52    0.56    0.54
+    Max Bandwidth                         %    0.74    0.80    0.77
+    L1/TEX Hit Rate                       %    0.00    0.00    0.00
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   32.74   32.74   32.74
+    Mem Pipes Busy                        %    0.03    0.03    0.03
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   21.00   21.00   21.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %    6.44    6.44    6.44
+    Achieved Active Warps Per SM           warp    3.09    3.09    3.09
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::vectorized_elementwise_kernel<4, at::CUDAFunctor_add<float>, detail::Array<char *, 3>>(int, T2, T3) (23437, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 5
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Ghz         1.00         1.01         1.01
+    Elapsed Cycles                cycle 1,496,596.00 1,502,662.00 1,500,211.80
+    Memory Throughput                 %        81.42        81.78        81.60
+    Duration                         ms         1.49         1.50         1.49
+    L1/TEX Cache Throughput           %        16.12        16.21        16.17
+    L2 Cache Throughput               %        81.42        81.78        81.60
+    SM Active Cycles              cycle 1,482,959.50 1,490,673.25 1,486,387.50
+    Compute (SM) Throughput           %         5.49         5.53         5.51
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             128.00       128.00       128.00
+    Grid Size                                           23,437.00    23,437.00    23,437.00
+    Registers Per Thread             register/thread        22.00        22.00        22.00
+    Shared Memory Configuration Size           Kbyte        16.38        16.38        16.38
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 2,999,936.00 2,999,936.00 2,999,936.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                           244.14       244.14       244.14
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   50.27   55.23   53.95
+    Max Bandwidth                         %   81.42   81.78   81.60
+    L1/TEX Hit Rate                       %    0.00    0.00    0.00
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   33.33   33.33   33.33
+    Mem Pipes Busy                        %    3.92    3.95    3.94
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   21.00   21.00   21.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   90.20   91.62   90.87
+    Achieved Active Warps Per SM           warp   43.30   43.98   43.62
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::vectorized_elementwise_kernel<4, at::FillFunctor<c10::complex<float>>, detail::Array<char *, 1>>(int, T2, T3) (11746, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 12
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Ghz         1.01         1.01         1.01
+    Elapsed Cycles                cycle 1,003,301.00 1,009,870.00 1,006,978.17
+    Memory Throughput                 %        93.04        93.64        93.30
+    Duration                         us       992.06     1,003.17       997.80
+    L1/TEX Cache Throughput           %        48.84        48.94        48.89
+    L2 Cache Throughput               %        93.04        93.64        93.30
+    SM Active Cycles              cycle   959,828.75   961,769.12   960,789.03
+    Compute (SM) Throughput           %         4.98         5.00         4.99
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             128.00       128.00       128.00
+    Grid Size                                           11,746.00    11,746.00    11,746.00
+    Registers Per Thread             register/thread        16.00        16.00        16.00
+    Shared Memory Configuration Size           Kbyte        16.38        16.38        16.38
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 1,503,488.00 1,503,488.00 1,503,488.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                           122.35       122.35       122.35
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   37.22   37.46   37.32
+    Max Bandwidth                         %   93.04   93.64   93.30
+    L1/TEX Hit Rate                       %   23.06   23.56   23.31
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   99.99  100.00  100.00
+    Mem Pipes Busy                        %    4.98    5.00    4.99
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   32.00   32.00   32.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   94.94   94.99   94.97
+    Achieved Active Warps Per SM           warp   45.57   45.60   45.59
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::vectorized_elementwise_kernel<4, at::FillFunctor<float>, detail::Array<char *, 1>>(int, T2, T3) (23437, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 2
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ---------- ---------- ----------
+    Metric Name             Metric Unit    Minimum    Maximum    Average
+    ----------------------- ----------- ---------- ---------- ----------
+    SM Frequency                    Ghz       1.01       1.01       1.01
+    Elapsed Cycles                cycle 650,390.00 657,109.00 653,749.50
+    Memory Throughput                 %      57.07      57.66      57.36
+    Duration                         us     645.95     650.34     648.14
+    L1/TEX Cache Throughput           %      37.80      37.83      37.82
+    L2 Cache Throughput               %      57.07      57.66      57.36
+    SM Active Cycles              cycle 495,616.00 495,946.50 495,781.25
+    Compute (SM) Throughput           %      11.17      11.17      11.17
+    ----------------------- ----------- ---------- ---------- ----------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             128.00       128.00       128.00
+    Grid Size                                           23,437.00    23,437.00    23,437.00
+    Registers Per Thread             register/thread        16.00        16.00        16.00
+    Shared Memory Configuration Size           Kbyte        16.38        16.38        16.38
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 2,999,936.00 2,999,936.00 2,999,936.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                           244.14       244.14       244.14
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   35.73   36.07   35.90
+    Max Bandwidth                         %   57.07   57.66   57.36
+    L1/TEX Hit Rate                       %    0.00    0.00    0.00
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   99.99   99.99   99.99
+    Mem Pipes Busy                        %    9.39    9.39    9.39
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   32.00   32.00   32.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   85.83   86.35   86.09
+    Achieved Active Warps Per SM           warp   41.20   41.45   41.32
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::vectorized_elementwise_kernel<4, at::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], detail::Array<char *, 2>>(int, T2, T3) (23437, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 6
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ---------- ------------ ----------
+    Metric Name             Metric Unit    Minimum      Maximum    Average
+    ----------------------- ----------- ---------- ------------ ----------
+    SM Frequency                    Mhz     903.95     1,007.77     980.16
+    Elapsed Cycles                cycle 931,088.00 1,025,246.00 991,291.67
+    Memory Throughput                 %      77.15        79.21      78.48
+    Duration                         ms       1.00         1.03       1.01
+    L1/TEX Cache Throughput           %      21.38        23.85      22.68
+    L2 Cache Throughput               %      77.15        79.21      78.48
+    SM Active Cycles              cycle 884,633.62   986,841.75 931,905.90
+    Compute (SM) Throughput           %      37.32        38.28      37.66
+    ----------------------- ----------- ---------- ------------ ----------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             128.00       128.00       128.00
+    Grid Size                                           23,437.00    23,437.00    23,437.00
+    Registers Per Thread             register/thread        30.00        30.00        30.00
+    Shared Memory Configuration Size           Kbyte        16.38        16.38        16.38
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 2,999,936.00 2,999,936.00 2,999,936.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                           244.14       244.14       244.14
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   36.31   37.27   36.93
+    Max Bandwidth                         %   77.15   79.21   78.48
+    L1/TEX Hit Rate                       %    0.00    0.00    0.00
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   50.00   50.00   50.00
+    Mem Pipes Busy                        %    4.70    4.82    4.74
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   16.00   16.00   16.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   86.25   87.86   87.25
+    Achieved Active Warps Per SM           warp   41.40   42.17   41.88
+    ------------------------------- ----------- ------- ------- -------
+
+  void at::vectorized_elementwise_kernel<4, at::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::GeluType)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], detail::Array<char *, 2>>(int, T2, T3) (44311, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 2
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Mhz       800.42       829.28       814.85
+    Elapsed Cycles                cycle 1,604,160.00 1,643,639.00 1,623,899.50
+    Memory Throughput                 %        74.50        75.34        74.92
+    Duration                         ms         1.98         2.00         1.99
+    L1/TEX Cache Throughput           %        24.29        24.79        24.54
+    L2 Cache Throughput               %        74.50        75.34        74.92
+    SM Active Cycles              cycle 1,608,808.75 1,642,548.62 1,625,678.69
+    Compute (SM) Throughput           %        43.27        45.31        44.29
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             128.00       128.00       128.00
+    Grid Size                                           44,311.00    44,311.00    44,311.00
+    Registers Per Thread             register/thread        30.00        30.00        30.00
+    Shared Memory Configuration Size           Kbyte        16.38        16.38        16.38
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 5,671,808.00 5,671,808.00 5,671,808.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                           461.57       461.57       461.57
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   35.05   35.46   35.25
+    Max Bandwidth                         %   74.50   75.34   74.92
+    L1/TEX Hit Rate                       %    0.00    0.00    0.00
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   50.00   50.00   50.00
+    Mem Pipes Busy                        %    5.45    5.71    5.58
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   16.00   16.00   16.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   87.36   88.05   87.71
+    Achieved Active Warps Per SM           warp   41.93   42.27   42.10
+    ------------------------------- ----------- ------- ------- -------
+
+  void convert<0, 16>(double2 *, void *, unsigned long) (1, 1, 1)x(64, 1, 1), Device 0, CC 8.7, Invocations 18
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- --------- --------- ---------
+    Metric Name             Metric Unit   Minimum   Maximum   Average
+    ----------------------- ----------- --------- --------- ---------
+    SM Frequency                    Ghz      1.00      1.01      1.00
+    Elapsed Cycles                cycle 17,170.00 19,131.00 18,054.61
+    Memory Throughput                 %      6.70      7.47      7.10
+    Duration                         us     17.09     19.04     17.98
+    L1/TEX Cache Throughput           %     31.08     33.32     32.60
+    L2 Cache Throughput               %      6.70      7.47      7.10
+    SM Active Cycles              cycle  1,638.62  1,756.50  1,675.27
+    Compute (SM) Throughput           %      0.81      0.87      0.85
+    ----------------------- ----------- --------- --------- ---------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------- ------- -------
+    Metric Name                          Metric Unit Minimum Maximum Average
+    -------------------------------- --------------- ------- ------- -------
+    Block Size                                         64.00   64.00   64.00
+    Grid Size                                           1.00    1.00    1.00
+    Registers Per Thread             register/thread   16.00   16.00   16.00
+    Shared Memory Configuration Size           Kbyte   16.38   16.38   16.38
+    Driver Shared Memory Per Block       Kbyte/block    1.02    1.02    1.02
+    Dynamic Shared Memory Per Block       byte/block    0.00    0.00    0.00
+    Static Shared Memory Per Block        byte/block    0.00    0.00    0.00
+    # SMs                                         SM    8.00    8.00    8.00
+    Threads                                   thread   64.00   64.00   64.00
+    Uses Green Context                                  0.00    0.00    0.00
+    Waves Per SM                                        0.01    0.01    0.01
+    -------------------------------- --------------- ------- ------- -------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %    3.45    3.85    3.66
+    Max Bandwidth                         %    6.70    7.47    7.10
+    L1/TEX Hit Rate                       %   85.94   85.94   85.94
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   74.90   74.90   74.90
+    Mem Pipes Busy                        %    0.15    0.23    0.20
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   64.00   64.00   64.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   24.00   24.00   24.00
+    Theoretical Active Warps per SM        warp   32.00   32.00   32.00
+    Theoretical Occupancy                     %   66.67   66.67   66.67
+    Achieved Occupancy                        %    4.05    4.15    4.12
+    Achieved Active Warps Per SM           warp    1.94    1.99    1.98
+    ------------------------------- ----------- ------- ------- -------
+
+  void cutlass::Kernel2<cutlass_80_tensorop_s1688gemm_256x128_16x3_nn_align1>(T1::Params) (8, 87, 1)x(256, 1, 1), Device 0, CC 8.7, Invocations 2
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Mhz       899.47       952.50       925.98
+    Elapsed Cycles                cycle 1,981,530.00 1,990,683.00 1,986,106.50
+    Memory Throughput                 %        62.32        65.70        64.01
+    Duration                         ms         2.09         2.20         2.15
+    L1/TEX Cache Throughput           %        46.69        47.13        46.91
+    L2 Cache Throughput               %        62.32        65.70        64.01
+    SM Active Cycles              cycle 2,010,915.75 2,029,983.00 2,020,449.38
+    Compute (SM) Throughput           %        23.36        24.25        23.81
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------- ---------- ----------
+    Metric Name                          Metric Unit    Minimum    Maximum    Average
+    -------------------------------- --------------- ---------- ---------- ----------
+    Block Size                                           256.00     256.00     256.00
+    Grid Size                                            696.00     696.00     696.00
+    Registers Per Thread             register/thread     216.00     216.00     216.00
+    Shared Memory Configuration Size           Kbyte     102.40     102.40     102.40
+    Driver Shared Memory Per Block       Kbyte/block       1.02       1.02       1.02
+    Dynamic Shared Memory Per Block      Kbyte/block      73.73      73.73      73.73
+    Static Shared Memory Per Block        byte/block       0.00       0.00       0.00
+    # SMs                                         SM       8.00       8.00       8.00
+    Threads                                   thread 178,176.00 178,176.00 178,176.00
+    Uses Green Context                                     0.00       0.00       0.00
+    Waves Per SM                                          87.00      87.00      87.00
+    -------------------------------- --------------- ---------- ---------- ----------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   46.21   47.98   47.10
+    Max Bandwidth                         %   62.32   65.70   64.01
+    L1/TEX Hit Rate                       %   66.76   66.76   66.76
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   84.01   84.07   84.04
+    Mem Pipes Busy                        %   22.20   23.05   22.62
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    1.00    1.00    1.00
+    Block Limit Shared Mem                block    1.00    1.00    1.00
+    Block Limit Warps                     block    6.00    6.00    6.00
+    Theoretical Active Warps per SM        warp    8.00    8.00    8.00
+    Theoretical Occupancy                     %   16.67   16.67   16.67
+    Achieved Occupancy                        %   16.61   16.61   16.61
+    Achieved Active Warps Per SM           warp    7.97    7.97    7.97
+    ------------------------------- ----------- ------- ------- -------
+
+  void cutlass::Kernel2<cutlass_80_tensorop_s1688gemm_64x64_16x6_tn_align4>(T1::Params) (2930, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 2
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Mhz       949.01     1,006.48       977.75
+    Elapsed Cycles                cycle 1,090,254.00 1,104,750.00 1,097,502.00
+    Memory Throughput                 %        83.77        86.65        85.21
+    Duration                         ms         1.10         1.15         1.12
+    L1/TEX Cache Throughput           %        45.27        48.08        46.68
+    L2 Cache Throughput               %        83.77        86.65        85.21
+    SM Active Cycles              cycle 1,001,841.75 1,056,112.00 1,028,976.88
+    Compute (SM) Throughput           %        39.85        43.94        41.90
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------- ---------- ----------
+    Metric Name                          Metric Unit    Minimum    Maximum    Average
+    -------------------------------- --------------- ---------- ---------- ----------
+    Block Size                                           128.00     128.00     128.00
+    Grid Size                                          2,930.00   2,930.00   2,930.00
+    Registers Per Thread             register/thread      88.00      88.00      88.00
+    Shared Memory Configuration Size           Kbyte     167.94     167.94     167.94
+    Driver Shared Memory Per Block       Kbyte/block       1.02       1.02       1.02
+    Dynamic Shared Memory Per Block      Kbyte/block      49.15      49.15      49.15
+    Static Shared Memory Per Block        byte/block       0.00       0.00       0.00
+    # SMs                                         SM       8.00       8.00       8.00
+    Threads                                   thread 375,040.00 375,040.00 375,040.00
+    Uses Green Context                                     0.00       0.00       0.00
+    Waves Per SM                                         122.08     122.08     122.08
+    -------------------------------- --------------- ---------- ---------- ----------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   51.06   54.95   53.01
+    Max Bandwidth                         %   83.77   86.65   85.21
+    L1/TEX Hit Rate                       %    0.00    0.00    0.00
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   83.32   83.32   83.32
+    Mem Pipes Busy                        %   16.35   18.03   17.19
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    5.00    5.00    5.00
+    Block Limit Shared Mem                block    3.00    3.00    3.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   12.00   12.00   12.00
+    Theoretical Occupancy                     %   25.00   25.00   25.00
+    Achieved Occupancy                        %   24.33   24.35   24.34
+    Achieved Active Warps Per SM           warp   11.68   11.69   11.68
+    ------------------------------- ----------- ------- ------- -------
+
+  void gemv2N_kernel<int, int, float, float, float, float, 128, 2, 4, 4, 1, 0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T13) (2770, 1, 1)x(128, 1, 1), Device 0, CC 8.7, Invocations 2
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ---------- ------------ ------------
+    Metric Name             Metric Unit    Minimum      Maximum      Average
+    ----------------------- ----------- ---------- ------------ ------------
+    SM Frequency                    Mhz     945.51     1,010.20       977.85
+    Elapsed Cycles                cycle 980,936.00 1,042,104.00 1,011,520.00
+    Memory Throughput                 %      93.14        93.60        93.37
+    Duration                         ms       1.03         1.04         1.03
+    L1/TEX Cache Throughput           %      21.04        23.63        22.34
+    L2 Cache Throughput               %      93.14        93.60        93.37
+    SM Active Cycles              cycle 914,166.62 1,026,685.38   970,426.00
+    Compute (SM) Throughput           %      22.36        22.39        22.37
+    ----------------------- ----------- ---------- ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------- ---------- ----------
+    Metric Name                          Metric Unit    Minimum    Maximum    Average
+    -------------------------------- --------------- ---------- ---------- ----------
+    Block Size                                           128.00     128.00     128.00
+    Grid Size                                          2,770.00   2,770.00   2,770.00
+    Registers Per Thread             register/thread      47.00      47.00      47.00
+    Shared Memory Configuration Size           Kbyte      65.54      65.54      65.54
+    Driver Shared Memory Per Block       Kbyte/block       1.02       1.02       1.02
+    Dynamic Shared Memory Per Block       byte/block       0.00       0.00       0.00
+    Static Shared Memory Per Block       Kbyte/block       2.56       2.56       2.56
+    # SMs                                         SM       8.00       8.00       8.00
+    Threads                                   thread 354,560.00 354,560.00 354,560.00
+    Uses Green Context                                     0.00       0.00       0.00
+    Waves Per SM                                          34.62      34.62      34.62
+    -------------------------------- --------------- ---------- ---------- ----------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   41.52   41.73   41.63
+    Max Bandwidth                         %   93.14   93.60   93.37
+    L1/TEX Hit Rate                       %    1.25    1.25    1.25
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   18.46   18.46   18.46
+    Mem Pipes Busy                        %   12.36   12.38   12.37
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   10.00   10.00   10.00
+    Block Limit Shared Mem                block   18.00   18.00   18.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   40.00   40.00   40.00
+    Theoretical Occupancy                     %   83.33   83.33   83.33
+    Achieved Occupancy                        %   82.34   82.50   82.42
+    Achieved Active Warps Per SM           warp   39.53   39.60   39.56
+    ------------------------------- ----------- ------- ------- -------
+
+  void generate_chirp_signal<16>(double2 *, unsigned long, unsigned long) (1, 1, 1)x(28, 1, 1), Device 0, CC 8.7, Invocations 9
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- --------- --------- ---------
+    Metric Name             Metric Unit   Minimum   Maximum   Average
+    ----------------------- ----------- --------- --------- ---------
+    SM Frequency                    Ghz      1.01      1.01      1.01
+    Elapsed Cycles                cycle 61,117.00 62,637.00 61,872.89
+    Memory Throughput                 %      0.87      0.89      0.88
+    Duration                         us     60.74     62.18     61.45
+    L1/TEX Cache Throughput           %      3.02      3.03      3.02
+    L2 Cache Throughput               %      0.87      0.89      0.88
+    SM Active Cycles              cycle  7,207.50  7,221.25  7,216.07
+    Compute (SM) Throughput           %      4.45      4.48      4.47
+    ----------------------- ----------- --------- --------- ---------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------- ------- -------
+    Metric Name                          Metric Unit Minimum Maximum Average
+    -------------------------------- --------------- ------- ------- -------
+    Block Size                                         28.00   28.00   28.00
+    Grid Size                                           1.00    1.00    1.00
+    Registers Per Thread             register/thread   40.00   40.00   40.00
+    Shared Memory Configuration Size           Kbyte   16.38   16.38   16.38
+    Driver Shared Memory Per Block       Kbyte/block    1.02    1.02    1.02
+    Dynamic Shared Memory Per Block       byte/block    0.00    0.00    0.00
+    Static Shared Memory Per Block        byte/block    0.00    0.00    0.00
+    # SMs                                         SM    8.00    8.00    8.00
+    Threads                                   thread   28.00   28.00   28.00
+    Uses Green Context                                  0.00    0.00    0.00
+    Waves Per SM                                        0.01    0.01    0.01
+    -------------------------------- --------------- ------- ------- -------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %    0.39    0.40    0.40
+    Max Bandwidth                         %    0.87    0.89    0.88
+    L1/TEX Hit Rate                       %   87.40   87.40   87.40
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   72.83   72.83   72.83
+    Mem Pipes Busy                        %    1.21    1.22    1.22
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   48.00   48.00   48.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   48.00   48.00   48.00
+    Theoretical Active Warps per SM        warp   16.00   16.00   16.00
+    Theoretical Occupancy                     %   33.33   33.33   33.33
+    Achieved Occupancy                        %    2.08    2.08    2.08
+    Achieved Active Warps Per SM           warp    1.00    1.00    1.00
+    ------------------------------- ----------- ------- ------- -------
+
+  void kernel_wrapper<unsigned int, &packR2C_kernel_Odd_impl<unsigned int, float>>(RealComplex_st<T1>) (23437, 1, 1)x(256, 1, 1), Device 0, CC 8.7, Invocations 12
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Mhz       799.27     1,009.50       976.97
+    Elapsed Cycles                cycle 1,108,781.00 2,642,539.00 1,354,316.50
+    Memory Throughput                 %        75.77        90.86        78.54
+    Duration                         ms         1.10         3.09         1.44
+    L1/TEX Cache Throughput           %        22.10        60.90        28.58
+    L2 Cache Throughput               %        75.77        90.86        78.54
+    SM Active Cycles              cycle 1,017,737.75 2,668,383.75 1,293,753.02
+    Compute (SM) Throughput           %        11.73        28.77        25.84
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             256.00       256.00       256.00
+    Grid Size                                           23,437.00    23,437.00    23,437.00
+    Registers Per Thread             register/thread        16.00        16.00        16.00
+    Shared Memory Configuration Size           Kbyte         8.19         8.19         8.19
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 5,999,872.00 5,999,872.00 5,999,872.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                           488.27       488.27       488.27
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   33.88   69.72   39.96
+    Max Bandwidth                         %   75.77   90.86   78.54
+    L1/TEX Hit Rate                       %    8.74   44.44   14.69
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   20.00   50.66   45.54
+    Mem Pipes Busy                        %    3.75    9.21    8.27
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   16.00   16.00   16.00
+    Block Limit Shared Mem                block    8.00    8.00    8.00
+    Block Limit Warps                     block    6.00    6.00    6.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   85.07   89.92   85.93
+    Achieved Active Warps Per SM           warp   40.83   43.16   41.25
+    ------------------------------- ----------- ------- ------- -------
+
+  void kernel_wrapper<unsigned int, &unpackC2R_kernel_Odd_impl<unsigned int, float>>(RealComplex_st<T1>) (23437, 1, 1)x(256, 1, 1), Device 0, CC 8.7, Invocations 12
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Ghz         1.00         1.01         1.01
+    Elapsed Cycles                cycle 1,118,687.00 1,125,665.00 1,122,345.75
+    Memory Throughput                 %        91.59        92.22        91.90
+    Duration                         ms         1.11         1.12         1.11
+    L1/TEX Cache Throughput           %        31.14        31.34        31.22
+    L2 Cache Throughput               %        91.59        92.22        91.90
+    SM Active Cycles              cycle 1,048,577.00 1,052,573.25 1,050,938.00
+    Compute (SM) Throughput           %        27.75        27.88        27.81
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             256.00       256.00       256.00
+    Grid Size                                           23,437.00    23,437.00    23,437.00
+    Registers Per Thread             register/thread        16.00        16.00        16.00
+    Shared Memory Configuration Size           Kbyte         8.19         8.19         8.19
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 5,999,872.00 5,999,872.00 5,999,872.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                           488.27       488.27       488.27
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   36.50   36.72   36.60
+    Max Bandwidth                         %   91.59   92.22   91.90
+    L1/TEX Hit Rate                       %   22.34   22.53   22.46
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   55.09   55.20   55.15
+    Mem Pipes Busy                        %    8.88    8.92    8.90
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   16.00   16.00   16.00
+    Block Limit Shared Mem                block    8.00    8.00    8.00
+    Block Limit Warps                     block    6.00    6.00    6.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   80.57   81.38   80.94
+    Achieved Active Warps Per SM           warp   38.68   39.06   38.85
+    ------------------------------- ----------- ------- ------- -------
+
+  void postprocess_kernel<float, unsigned int, 2>(real_complex_args_t<T2>) (11746, 1, 1)x(256, 1, 1), Device 0, CC 8.7, Invocations 12
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Ghz         1.00         1.01         1.01
+    Elapsed Cycles                cycle 1,003,436.00 1,022,575.00 1,010,008.17
+    Memory Throughput                 %        90.54        92.33        91.56
+    Duration                         ms         1.00         1.01         1.00
+    L1/TEX Cache Throughput           %        26.76        28.17        27.10
+    L2 Cache Throughput               %        90.54        92.33        91.56
+    SM Active Cycles              cycle   945,861.00   996,321.50   984,967.76
+    Compute (SM) Throughput           %        22.69        24.18        23.10
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             256.00       256.00       256.00
+    Grid Size                                           11,746.00    11,746.00    11,746.00
+    Registers Per Thread             register/thread        21.00        21.00        21.00
+    Shared Memory Configuration Size           Kbyte         8.19         8.19         8.19
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 3,006,976.00 3,006,976.00 3,006,976.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                           244.71       244.71       244.71
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   38.04   38.79   38.53
+    Max Bandwidth                         %   90.54   92.33   91.56
+    L1/TEX Hit Rate                       %   12.77   12.88   12.82
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   52.54   52.70   52.64
+    Mem Pipes Busy                        %    5.81    6.20    5.92
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   10.00   10.00   10.00
+    Block Limit Shared Mem                block    8.00    8.00    8.00
+    Block Limit Warps                     block    6.00    6.00    6.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   84.18   87.30   86.14
+    Achieved Active Warps Per SM           warp   40.41   41.90   41.35
+    ------------------------------- ----------- ------- ------- -------
+
+  void preprocess_kernel<float, unsigned int, 2>(real_complex_args_t<T2>) (23437, 1, 1)x(256, 1, 1), Device 0, CC 8.7, Invocations 12
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Ghz         1.00         1.01         1.01
+    Elapsed Cycles                cycle 1,155,128.00 1,165,921.00 1,159,460.33
+    Memory Throughput                 %        77.23        77.84        77.56
+    Duration                         ms         1.15         1.16         1.15
+    L1/TEX Cache Throughput           %        22.55        22.89        22.80
+    L2 Cache Throughput               %        77.23        77.84        77.56
+    SM Active Cycles              cycle 1,078,204.12 1,093,669.25 1,082,309.98
+    Compute (SM) Throughput           %        43.18        43.40        43.28
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------------ ------------ ------------
+    Metric Name                          Metric Unit      Minimum      Maximum      Average
+    -------------------------------- --------------- ------------ ------------ ------------
+    Block Size                                             256.00       256.00       256.00
+    Grid Size                                           23,437.00    23,437.00    23,437.00
+    Registers Per Thread             register/thread        28.00        28.00        28.00
+    Shared Memory Configuration Size           Kbyte         8.19         8.19         8.19
+    Driver Shared Memory Per Block       Kbyte/block         1.02         1.02         1.02
+    Dynamic Shared Memory Per Block       byte/block         0.00         0.00         0.00
+    Static Shared Memory Per Block        byte/block         0.00         0.00         0.00
+    # SMs                                         SM         8.00         8.00         8.00
+    Threads                                   thread 5,999,872.00 5,999,872.00 5,999,872.00
+    Uses Green Context                                       0.00         0.00         0.00
+    Waves Per SM                                           488.27       488.27       488.27
+    -------------------------------- --------------- ------------ ------------ ------------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   42.79   43.30   43.12
+    Max Bandwidth                         %   77.23   77.84   77.56
+    L1/TEX Hit Rate                       %   15.08   15.42   15.17
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   62.96   63.24   63.13
+    Mem Pipes Busy                        %    8.64    8.68    8.66
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    8.00    8.00    8.00
+    Block Limit Shared Mem                block    8.00    8.00    8.00
+    Block Limit Warps                     block    6.00    6.00    6.00
+    Theoretical Active Warps per SM        warp   48.00   48.00   48.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   84.95   85.19   85.12
+    Achieved Active Warps Per SM           warp   40.78   40.89   40.86
+    ------------------------------- ----------- ------- ------- -------
+
+  void regular_bluestein_fft<1024, EPT<16>, 2, 2, 6, 0, 2, 0, unsigned int, float>(kernel_arguments_blu_t<T9>) (6928, 1, 1)x(64, 2, 1), Device 0, CC 8.7, Invocations 24
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Ghz         1.00         1.01         1.01
+    Elapsed Cycles                cycle 2,898,131.00 2,906,987.00 2,902,643.00
+    Memory Throughput                 %        76.46        76.64        76.54
+    Duration                         ms         2.87         2.90         2.89
+    L1/TEX Cache Throughput           %        76.62        76.77        76.68
+    L2 Cache Throughput               %        32.07        32.17        32.11
+    SM Active Cycles              cycle 2,890,125.25 2,895,925.75 2,893,631.07
+    Compute (SM) Throughput           %        56.59        56.71        56.64
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------- ---------- ----------
+    Metric Name                          Metric Unit    Minimum    Maximum    Average
+    -------------------------------- --------------- ---------- ---------- ----------
+    Block Size                                           128.00     128.00     128.00
+    Grid Size                                          6,928.00   6,928.00   6,928.00
+    Registers Per Thread             register/thread     111.00     111.00     111.00
+    Shared Memory Configuration Size           Kbyte     102.40     102.40     102.40
+    Driver Shared Memory Per Block       Kbyte/block       1.02       1.02       1.02
+    Dynamic Shared Memory Per Block      Kbyte/block       8.19       8.19       8.19
+    Static Shared Memory Per Block        byte/block       0.00       0.00       0.00
+    # SMs                                         SM       8.00       8.00       8.00
+    Threads                                   thread 886,784.00 886,784.00 886,784.00
+    Uses Green Context                                     0.00       0.00       0.00
+    Waves Per SM                                         216.50     216.50     216.50
+    -------------------------------- --------------- ---------- ---------- ----------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   76.46   76.64   76.54
+    Max Bandwidth                         %   32.07   32.17   32.11
+    L1/TEX Hit Rate                       %   79.79   79.88   79.84
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   52.89   53.16   53.01
+    Mem Pipes Busy                        %   31.52   31.59   31.55
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    4.00    4.00    4.00
+    Block Limit Shared Mem                block   11.00   11.00   11.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   16.00   16.00   16.00
+    Theoretical Occupancy                     %   33.33   33.33   33.33
+    Achieved Occupancy                        %   32.66   32.67   32.66
+    Achieved Active Warps Per SM           warp   15.67   15.68   15.68
+    ------------------------------- ----------- ------- ------- -------
+
+  void regular_bluestein_fft<1024, EPT<16>, 2, 2, 6, 0, 2, 0, unsigned int, float>(kernel_arguments_blu_t<T9>) (6944, 1, 1)x(64, 2, 1), Device 0, CC 8.7, Invocations 24
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ------------ ------------ ------------
+    Metric Name             Metric Unit      Minimum      Maximum      Average
+    ----------------------- ----------- ------------ ------------ ------------
+    SM Frequency                    Ghz         1.00         1.01         1.01
+    Elapsed Cycles                cycle 4,749,942.00 4,784,404.00 4,767,409.92
+    Memory Throughput                 %        88.10        88.80        88.43
+    Duration                         ms         4.71         4.78         4.74
+    L1/TEX Cache Throughput           %        59.87        60.44        60.21
+    L2 Cache Throughput               %        88.10        88.80        88.43
+    SM Active Cycles              cycle 4,715,241.00 4,758,010.50 4,731,869.33
+    Compute (SM) Throughput           %        34.65        34.84        34.74
+    ----------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------- ---------- ----------
+    Metric Name                          Metric Unit    Minimum    Maximum    Average
+    -------------------------------- --------------- ---------- ---------- ----------
+    Block Size                                           128.00     128.00     128.00
+    Grid Size                                          6,944.00   6,944.00   6,944.00
+    Registers Per Thread             register/thread     111.00     111.00     111.00
+    Shared Memory Configuration Size           Kbyte     102.40     102.40     102.40
+    Driver Shared Memory Per Block       Kbyte/block       1.02       1.02       1.02
+    Dynamic Shared Memory Per Block      Kbyte/block       8.19       8.19       8.19
+    Static Shared Memory Per Block        byte/block       0.00       0.00       0.00
+    # SMs                                         SM       8.00       8.00       8.00
+    Threads                                   thread 888,832.00 888,832.00 888,832.00
+    Uses Green Context                                     0.00       0.00       0.00
+    Waves Per SM                                         217.00     217.00     217.00
+    -------------------------------- --------------- ---------- ---------- ----------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %   59.97   60.32   60.15
+    Max Bandwidth                         %   88.10   88.80   88.43
+    L1/TEX Hit Rate                       %   46.49   46.75   46.61
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   87.46   87.91   87.73
+    Mem Pipes Busy                        %   19.30   19.40   19.35
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    4.00    4.00    4.00
+    Block Limit Shared Mem                block   11.00   11.00   11.00
+    Block Limit Warps                     block   12.00   12.00   12.00
+    Theoretical Active Warps per SM        warp   16.00   16.00   16.00
+    Theoretical Occupancy                     %   33.33   33.33   33.33
+    Achieved Occupancy                        %   32.60   32.62   32.61
+    Achieved Active Warps Per SM           warp   15.65   15.66   15.65
+    ------------------------------- ----------- ------- ------- -------
+
+  void scale_conjugate<16>(double2 *, double2 *, unsigned long, double) (1, 1, 1)x(64, 1, 1), Device 0, CC 8.7, Invocations 9
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- --------- --------- ---------
+    Metric Name             Metric Unit   Minimum   Maximum   Average
+    ----------------------- ----------- --------- --------- ---------
+    SM Frequency                    Ghz      1.00      1.01      1.01
+    Elapsed Cycles                cycle 23,839.00 25,771.00 24,789.67
+    Memory Throughput                 %      5.72      6.19      5.95
+    Duration                         us     23.71     25.60     24.66
+    L1/TEX Cache Throughput           %     22.57     23.51     22.81
+    L2 Cache Throughput               %      5.72      6.19      5.95
+    SM Active Cycles              cycle  2,458.12  2,561.75  2,535.92
+    Compute (SM) Throughput           %      0.86      0.88      0.87
+    ----------------------- ----------- --------- --------- ---------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------- ------- -------
+    Metric Name                          Metric Unit Minimum Maximum Average
+    -------------------------------- --------------- ------- ------- -------
+    Block Size                                         64.00   64.00   64.00
+    Grid Size                                           1.00    1.00    1.00
+    Registers Per Thread             register/thread   22.00   22.00   22.00
+    Shared Memory Configuration Size           Kbyte   16.38   16.38   16.38
+    Driver Shared Memory Per Block       Kbyte/block    1.02    1.02    1.02
+    Dynamic Shared Memory Per Block       byte/block    0.00    0.00    0.00
+    Static Shared Memory Per Block        byte/block    0.00    0.00    0.00
+    # SMs                                         SM    8.00    8.00    8.00
+    Threads                                   thread   64.00   64.00   64.00
+    Uses Green Context                                  0.00    0.00    0.00
+    Waves Per SM                                        0.01    0.01    0.01
+    -------------------------------- --------------- ------- ------- -------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %    3.06    3.31    3.18
+    Max Bandwidth                         %    5.72    6.19    5.95
+    L1/TEX Hit Rate                       %   75.00   75.00   75.00
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   63.40   63.40   63.40
+    Mem Pipes Busy                        %    0.21    0.22    0.22
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block   42.00   42.00   42.00
+    Block Limit Shared Mem                block   16.00   16.00   16.00
+    Block Limit Warps                     block   24.00   24.00   24.00
+    Theoretical Active Warps per SM        warp   32.00   32.00   32.00
+    Theoretical Occupancy                     %   66.67   66.67   66.67
+    Achieved Occupancy                        %    4.10    4.16    4.11
+    Achieved Active Warps Per SM           warp    1.97    2.00    1.98
+    ------------------------------- ----------- ------- ------- -------
+
+  void vector_fft<1024, EPT<16>, 1, 7, 70, 0, 2, 0, unsigned int, double>(kernel_arguments_t<T9>) (1, 1, 1)x(64, 1, 1), Device 0, CC 8.7, Invocations 9
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- --------- --------- ---------
+    Metric Name             Metric Unit   Minimum   Maximum   Average
+    ----------------------- ----------- --------- --------- ---------
+    SM Frequency                    Ghz      1.00      1.01      1.01
+    Elapsed Cycles                cycle 31,725.00 33,334.00 32,371.33
+    Memory Throughput                 %      1.48      1.56      1.53
+    Duration                         us     31.55     33.12     32.19
+    L1/TEX Cache Throughput           %      3.62      3.67      3.64
+    L2 Cache Throughput               %      1.48      1.56      1.53
+    SM Active Cycles              cycle  3,342.12  3,388.12  3,374.92
+    Compute (SM) Throughput           %      8.53      8.68      8.58
+    ----------------------- ----------- --------- --------- ---------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ------- ------- -------
+    Metric Name                          Metric Unit Minimum Maximum Average
+    -------------------------------- --------------- ------- ------- -------
+    Block Size                                         64.00   64.00   64.00
+    Grid Size                                           1.00    1.00    1.00
+    Registers Per Thread             register/thread  124.00  124.00  124.00
+    Shared Memory Configuration Size           Kbyte  102.40  102.40  102.40
+    Driver Shared Memory Per Block       Kbyte/block    1.02    1.02    1.02
+    Dynamic Shared Memory Per Block      Kbyte/block    8.45    8.45    8.45
+    Static Shared Memory Per Block        byte/block    0.00    0.00    0.00
+    # SMs                                         SM    8.00    8.00    8.00
+    Threads                                   thread   64.00   64.00   64.00
+    Uses Green Context                                  0.00    0.00    0.00
+    Waves Per SM                                        0.02    0.02    0.02
+    -------------------------------- --------------- ------- ------- -------
+
+    Section: Memory Workload Analysis
+    --------------------------- ----------- ------- ------- -------
+    Metric Name                 Metric Unit Minimum Maximum Average
+    --------------------------- ----------- ------- ------- -------
+    Mem Busy                              %    0.69    0.72    0.71
+    Max Bandwidth                         %    1.48    1.56    1.53
+    L1/TEX Hit Rate                       %    0.27    0.27    0.27
+    L2 Compression Success Rate           %    0.00    0.00    0.00
+    L2 Compression Ratio                       0.00    0.00    0.00
+    L2 Hit Rate                           %   32.71   33.28   33.15
+    Mem Pipes Busy                        %    2.43    2.48    2.45
+    --------------------------- ----------- ------- ------- -------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Block Limit SM                        block   16.00   16.00   16.00
+    Block Limit Registers                 block    8.00    8.00    8.00
+    Block Limit Shared Mem                block   10.00   10.00   10.00
+    Block Limit Warps                     block   24.00   24.00   24.00
+    Theoretical Active Warps per SM        warp   16.00   16.00   16.00
+    Theoretical Occupancy                     %   33.33   33.33   33.33
+    Achieved Occupancy                        %    4.16    4.16    4.16
+    Achieved Active Warps Per SM           warp    2.00    2.00    2.00
+    ------------------------------- ----------- ------- ------- -------
+
+  Note: The shown averages are calculated as the arithmetic mean of the metric values after the evaluation of the    
+  metrics for each individual kernel launch.                                                                         
+  If aggregating across varying launch configurations (like shared memory, cache config settings), the arithmetic    
+  mean can be misleading and looking at the individual results is recommended instead.                               
+  This output mode is backwards compatible to the per-kernel summary output of nvprof                                
+

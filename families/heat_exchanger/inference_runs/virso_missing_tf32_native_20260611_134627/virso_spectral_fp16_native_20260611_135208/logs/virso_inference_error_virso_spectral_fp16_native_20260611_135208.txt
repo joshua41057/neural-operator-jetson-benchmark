@@ -1,0 +1,27 @@
+Fatal error during VirSO inference run
+Exception: RuntimeError('mat1 and mat2 must have the same dtype, but got Float and Half')
+
+Traceback (most recent call last):
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/run_virso_inference_jetson_tf32_native_only.py", line 874, in <module>
+    main()
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/run_virso_inference_jetson_tf32_native_only.py", line 686, in main
+    out = model(x, U, edge_index, edge_weight, grid, lip, 1)
+  File "/home/jetson/miniforge3/envs/wave_gpu_310_test/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1714, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jetson/miniforge3/envs/wave_gpu_310_test/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1725, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_model.py", line 300, in forward
+    x = self.input_embedding(x.to(torch.float32))
+  File "/home/jetson/miniforge3/envs/wave_gpu_310_test/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1714, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jetson/miniforge3/envs/wave_gpu_310_test/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1725, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_model.py", line 39, in forward
+    x = self.mlp1(x)
+  File "/home/jetson/miniforge3/envs/wave_gpu_310_test/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1714, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jetson/miniforge3/envs/wave_gpu_310_test/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1725, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jetson/miniforge3/envs/wave_gpu_310_test/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 must have the same dtype, but got Float and Half

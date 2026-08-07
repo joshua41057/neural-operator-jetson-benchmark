@@ -1,0 +1,94 @@
+{
+  "family": "FNO",
+  "case": "darcy_base_r141",
+  "checkpoint": "artifacts/checkpoints/darcy_fno_base_r141_seed0_best.pt",
+  "input_shape": [
+    1,
+    141,
+    141
+  ],
+  "warmup": 5,
+  "reps": 20,
+  "backends": {
+    "eager": {
+      "median_ms": 10.223549092188478,
+      "p95_ms": 11.008183937519789,
+      "mean_ms": 10.071032214909792,
+      "min_ms": 9.372480912134051,
+      "max_ms": 11.020153062418103,
+      "n": 20,
+      "warmup": 5,
+      "all_ms": [
+        10.391684016212821,
+        10.306656127795577,
+        10.271454928442836,
+        10.223549092188478,
+        9.704811032861471,
+        9.58762294612825,
+        9.495525155216455,
+        9.518566075712442,
+        9.558821795508265,
+        9.403841104358435,
+        9.469283977523446,
+        9.372480912134051,
+        9.47110797278583,
+        9.43033816292882,
+        10.330336866900325,
+        10.956182144582272,
+        10.967382928356528,
+        10.932662058621645,
+        11.020153062418103,
+        11.008183937519789
+      ],
+      "backend": "eager",
+      "status": "success"
+    },
+    "torchscript": {
+      "median_ms": 8.81057302467525,
+      "p95_ms": 9.852753020823002,
+      "mean_ms": 9.069369058124721,
+      "min_ms": 8.674184093251824,
+      "max_ms": 9.855120908468962,
+      "n": 20,
+      "warmup": 5,
+      "all_ms": [
+        9.855120908468962,
+        9.648554027080536,
+        9.852753020823002,
+        9.637064998969436,
+        9.819791885092854,
+        9.79268690571189,
+        8.978291181847453,
+        8.709417190402746,
+        8.674184093251824,
+        8.81057302467525,
+        8.878126973286271,
+        8.78589996136725,
+        8.684263797476888,
+        8.803916163742542,
+        8.86727892793715,
+        8.747690822929144,
+        8.74423491768539,
+        8.696298114955425,
+        8.680008118972182,
+        8.721226127818227
+      ],
+      "backend": "torchscript",
+      "status": "success"
+    },
+    "torch.compile": {
+      "backend": "torch.compile",
+      "status": "fail",
+      "error_type": "BackendCompilerFailed",
+      "error": "backend='inductor' raised:\nImportError: cannot import name 'triton_key' from 'triton.compiler.compiler' (/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/triton/compiler/compiler.py)\n\nSet TORCH_LOGS=\"+dynamo\" and TORCHDYNAMO_VERBOSE=1 for more information\n\n\nYou can suppress this exception and fall back to eager by setting:\n    import torch._dynamo\n    torch._dynamo.config.suppress_errors = True\n",
+      "traceback_tail": "Set TORCH_LOGS=\"+dynamo\" and TORCHDYNAMO_VERBOSE=1 for more informationYou can suppress this exception and fall back to eager by setting:    import torch._dynamo    torch._dynamo.config.suppress_errors = True"
+    },
+    "tensorrt": {
+      "backend": "tensorrt",
+      "status": "fail",
+      "error_type": "UnsupportedOperatorError",
+      "error": "Exporting the operator 'aten::fft_rfft2' to ONNX opset version 17 is not supported. Please feel free to request support or submit a pull request on PyTorch GitHub: https://github.com/pytorch/pytorch/issues.",
+      "traceback_tail": "    graph, params_dict, torch_out = _model_to_graph(  File \"/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/torch/onnx/utils.py\", line 1188, in _model_to_graph    graph = _optimize_graph(  File \"/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/torch/onnx/utils.py\", line 689, in _optimize_graph    graph = _C._jit_pass_onnx(graph, operator_export_type)  File \"/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/torch/onnx/utils.py\", line 1984, in _run_symbolic_function    raise errors.UnsupportedOperatorError(torch.onnx.errors.UnsupportedOperatorError: Exporting the operator 'aten::fft_rfft2' to ONNX opset version 17 is not supported. Please feel free to request support or submit a pull request on PyTorch GitHub: https://github.com/pytorch/pytorch/issues."
+    }
+  }
+}

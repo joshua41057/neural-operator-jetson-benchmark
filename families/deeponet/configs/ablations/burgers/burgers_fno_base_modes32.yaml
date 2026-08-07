@@ -1,0 +1,40 @@
+experiment:
+  name: burgers_fno_base_modes32
+  seed: 0
+  deterministic: false
+  output_dir: checkpoints
+
+data:
+  dataset: burgers
+  path: data/raw/burgers_data_R10.mat
+  split_path: splits/burgers_split.json
+  input_key: a
+  output_key: u
+  resolution: [2048]
+  add_coords: true
+  batch_size: 6
+  eval_batch_size: 6
+  num_workers: 4
+  pin_memory: true
+
+model:
+  family: fno
+  spatial_dim: 1
+  hidden_channels: 48
+  projection_channels: 96
+  n_layers: 4
+  modes: [32]
+  padding: [24]
+
+train:
+  optimizer: adamw
+  lr: 0.0008
+  weight_decay: 0.0001
+  scheduler: cosine
+  min_lr: 1.0e-5
+  epochs: 240
+  early_stopping_patience: 40
+  amp: false
+  grad_clip: 1.0
+  step_size: 50
+  gamma: 0.5

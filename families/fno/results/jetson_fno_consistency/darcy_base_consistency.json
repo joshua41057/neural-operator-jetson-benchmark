@@ -1,0 +1,10 @@
+{
+  "name": "darcy_base_consistency",
+  "checkpoint": "artifacts/checkpoints/darcy_fno_base_seed0_best.pt",
+  "torchscript": "artifacts/torchscript/darcy_fno_base_seed0.ts",
+  "input_bank": "artifacts/benchmark_inputs/darcy_r141_bank.pt",
+  "num_samples": 8,
+  "mean_abs_diff": 0.0,
+  "max_abs_diff": 0.0,
+  "relative_l2_diff": 0.0
+}

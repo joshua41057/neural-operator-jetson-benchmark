@@ -1,0 +1,24 @@
+{
+  "label": "burgers",
+  "final_test_rel_l2": 0.004323715344071388,
+  "best_val_rel_l2": 0.004301457665860653,
+  "epochs": 1000,
+  "s": 1024,
+  "N": 1024,
+  "args": {
+    "data_dir": "Jetson_data",
+    "split": "Jetson_data/burgers_split.json",
+    "sub": 8,
+    "epochs": 1000,
+    "batch_size": 20,
+    "width": 48,
+    "n_layers": 6,
+    "num_freq": 64,
+    "k": 8,
+    "lr": 0.001,
+    "seed": 0,
+    "resume": false,
+    "out_dir": "runs/burgers",
+    "device": "cuda"
+  }
+}

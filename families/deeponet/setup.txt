@@ -1,0 +1,7 @@
+conda activate vs_wno
+
+export PYTHONNOUSERSITE=1
+unset PYTHONPATH
+
+cd /home/jetson/jjyoo3/EDCNO_DeepONet
+PYTHONPATH=$PWD

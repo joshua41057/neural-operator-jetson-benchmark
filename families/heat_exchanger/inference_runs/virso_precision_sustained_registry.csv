@@ -1,0 +1,8 @@
+run_ts,case,model_path,amp_mode,num_layers,width,max_mode,spectral,spatial,exit_status
+bench2_full_fp32_r6,full_fp32,/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth,off,10,48,64,1,1,0
+bench2_spectral_ampfp16_r1,spectral_ampfp16,/home/jetson/VirSO/best_model_spectral.pth,fp16,10,48,64,1,0,0
+bench2_spectral_ampfp16_r2,spectral_ampfp16,/home/jetson/VirSO/best_model_spectral.pth,fp16,10,48,64,1,0,0
+bench2_spectral_ampfp16_r3,spectral_ampfp16,/home/jetson/VirSO/best_model_spectral.pth,fp16,10,48,64,1,0,0
+bench2_layer2_ampfp16_r1,layer2_ampfp16,/home/jetson/VirSO/best_model_2_layer.pth,fp16,2,48,40,1,1,0
+bench2_layer2_ampfp16_r2,layer2_ampfp16,/home/jetson/VirSO/best_model_2_layer.pth,fp16,2,48,40,1,1,0
+bench2_layer2_ampfp16_r3,layer2_ampfp16,/home/jetson/VirSO/best_model_2_layer.pth,fp16,2,48,40,1,1,0

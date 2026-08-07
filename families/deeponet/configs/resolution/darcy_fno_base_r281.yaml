@@ -1,0 +1,41 @@
+experiment:
+  name: darcy_fno_base_r281
+  seed: 0
+  deterministic: false
+  output_dir: checkpoints
+
+data:
+  dataset: darcy
+  train_path: data/raw/piececonst_r421_N1024_smooth1.mat
+  test_path: data/raw/piececonst_r421_N1024_smooth2.mat
+  split_path: splits/darcy_smooth1_split.json
+  input_key: Kcoeff
+  output_key: sol
+  resolution: [281, 281]
+  add_coords: true
+  batch_size: 1
+  eval_batch_size: 1
+  num_workers: 4
+  pin_memory: true
+
+model:
+  family: fno
+  spatial_dim: 2
+  hidden_channels: 40
+  projection_channels: 96
+  n_layers: 4
+  modes: [16, 16]
+  padding: [9, 9]
+
+train:
+  optimizer: adamw
+  lr: 0.0008
+  weight_decay: 0.0001
+  scheduler: cosine
+  min_lr: 1.0e-5
+  epochs: 340
+  early_stopping_patience: 60
+  amp: false
+  grad_clip: 1.0
+  step_size: 50
+  gamma: 0.5

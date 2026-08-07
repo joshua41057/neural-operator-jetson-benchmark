@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "mode": "eager",
+  "checkpoint": "artifacts/checkpoints/darcy_fno_base_modes12_seed1_best.pt",
+  "torchscript": null,
+  "input_bank": "artifacts/benchmark_inputs/darcy_r141_bank.pt",
+  "sample_index": 0,
+  "batch_size": 1,
+  "precision_mode": "bf16_autocast",
+  "device": "cuda",
+  "error_type": "RuntimeError",
+  "error_message": "Unsupported dtype BFloat16",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/jetson/jjyoo3/EDCNO/src/eval/benchmark_precision_inference.py\", line 321, in main\n    timed = run_timed_repeats(\n  File \"/home/jetson/jjyoo3/EDCNO/src/eval/benchmark_precision_inference.py\", line 192, in run_timed_repeats\n    _ = model(x)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1714, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1725, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/jetson/jjyoo3/EDCNO/src/eval/common.py\", line 60, in forward\n    y = self.model(x)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1714, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1725, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/jetson/jjyoo3/EDCNO/src/models/fno.py\", line 113, in forward\n    x = block(x)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1714, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1725, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/jetson/jjyoo3/EDCNO/src/models/fno.py\", line 29, in forward\n    return self.spectral(x) + self.pointwise(x)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1714, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1725, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/jetson/jjyoo3/EDCNO/src/models/layers.py\", line 59, in forward\n    x_ft = torch.fft.rfft2(x, dim=(-2, -1))\nRuntimeError: Unsupported dtype BFloat16\n"
+}

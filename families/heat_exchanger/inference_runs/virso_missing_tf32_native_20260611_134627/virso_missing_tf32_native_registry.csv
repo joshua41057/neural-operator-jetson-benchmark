@@ -1,0 +1,7 @@
+run_ts,path,precision_mode,model_path,num_layers,width,max_mode,spectral,spatial,exit_status
+virso_full_tf32_20260611_134627,full,tf32,/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth,10,48,64,1,1,0
+virso_spectral_tf32_20260611_134949,spectral,tf32,/home/jetson/VirSO/best_model_spectral.pth,10,48,64,1,0,0
+virso_layer2_tf32_20260611_135035,layer2,tf32,/home/jetson/VirSO/best_model_2_layer.pth,2,48,40,1,1,0
+virso_full_fp16_native_20260611_135142,full,fp16_native,/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth,10,48,64,1,1,1
+virso_spectral_fp16_native_20260611_135208,spectral,fp16_native,/home/jetson/VirSO/best_model_spectral.pth,10,48,64,1,0,1
+virso_layer2_fp16_native_20260611_135233,layer2,fp16_native,/home/jetson/VirSO/best_model_2_layer.pth,2,48,40,1,1,1

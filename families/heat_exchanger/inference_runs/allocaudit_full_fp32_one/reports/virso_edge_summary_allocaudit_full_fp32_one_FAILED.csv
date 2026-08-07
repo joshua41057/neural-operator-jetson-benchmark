@@ -1,0 +1,6 @@
+field,value
+run_ts,allocaudit_full_fp32_one
+run_dir,/home/jetson/VirSO/For_Jetson/For_Jetson/inference_runs/allocaudit_full_fp32_one
+failed,1
+exception,"TypeError('can only concatenate str (not ""int"") to str')"
+cuda_mem_snapshots_json,"[{""tag"": ""program_start"", ""alloc_mb"": 0.0, ""reserved_mb"": 0.0, ""max_alloc_mb"": 0.0, ""max_reserved_mb"": 0.0, ""mem_get_info_free_mb"": 3841.24609375, ""mem_get_info_total_mb"": 7619.8828125, ""mem_get_info_used_mb"": 3778.63671875}, {""tag"": ""after_normalizers"", ""alloc_mb"": 0.0009765625, ""reserved_mb"": 2.0, ""max_alloc_mb"": 0.0009765625, ""max_reserved_mb"": 2.0, ""mem_get_info_free_mb"": 3591.45703125, ""mem_get_info_total_mb"": 7619.8828125, ""mem_get_info_used_mb"": 4028.42578125}, {""tag"": ""after_audit_tensor_cleanup"", ""alloc_mb"": 0.0009765625, ""reserved_mb"": 2.0, ""max_alloc_mb"": 0.0009765625, ""max_reserved_mb"": 2.0, ""mem_get_info_free_mb"": 3799.59375, ""mem_get_info_total_mb"": 7619.8828125, ""mem_get_info_used_mb"": 3820.2890625}]"

@@ -1,0 +1,94 @@
+DATE=2026-06-12T22:36:11+08:00
+PWD=/home/jetson/VirSO/For_Jetson/For_Jetson
+HOST=yahboom
+USER=jetson
+
+=== git status ===
+?? audit_virso_tf32_bf16_sustained/
+?? profile_virso_single_sample.BROKEN.do_not_use.py
+?? run_virso_benchmark_direct.sh
+?? run_virso_full_extra_for_paper.sh
+?? run_virso_full_fp32_extra.sh
+?? run_virso_inference_jetson_tf32_native_only.py
+?? run_virso_missing_tf32_native_only.sh
+?? run_virso_precision_smoke_missing.sh
+?? run_virso_precision_sustained_for_paper.sh
+?? run_virso_profiles_existing_path.sh
+?? run_virso_profiles_for_paper.BROKEN.do_not_use.sh
+?? run_virso_profiles_nsys_clean.sh
+?? run_virso_tf32_bf16_sustained_completion.sh
+?? summarize_virso_bench2_for_paper.py
+?? summarize_virso_bench2_robust.py
+?? summarize_virso_precision_sustained_for_paper.py
+?? summarize_virso_tf32_bf16_completion_fixed.py
+
+=== git rev ===
+41d0b285846a15b1f5c2c466d7335df21a491140
+
+=== python ===
+/home/jetson/miniforge3/envs/vs_wno/bin/python
+Python 3.10.20
+
+=== torch ===
+torch 2.5.0a0+872d972e41.nv24.08
+cuda 12.6
+cuda_available True
+device Orin
+platform Linux-5.15.148-tegra-aarch64-with-glibc2.35
+
+=== key script hashes ===
+1414a72578eabdde5ef6700d41a5989b6c14d1a7e2d87d1e9f6136de08ac3565  run_virso_inference_jetson.py
+54d6f8470962fd62e979508782c10d74cfc6650755e05a8d0bd3f5ee9c9b65ff  run_virso_inference_jetson_tf32_native_only.py
+7aea5a2cccee9b8684367a626677a6f78824381499f25e569eb72e7fe621c024  run_virso_tf32_bf16_sustained_completion.sh
+f14f6610c47e618feb446cfb1163a48378f9b9fd32e295b3d49218dc2bc43905  summarize_virso_tf32_bf16_completion_fixed.py
+
+=== model hashes ===
+ffd6a2899aeba84c0c523d9e9b5bc9314192f3ce5b34b6dc53bb91f66df02aee  sp2gno_final.pth
+9a009c46b99dd705480f3d175c1376cfee03a987631adc8cd8af7b6059d47a17  /home/jetson/VirSO/best_model_spectral.pth
+9b7d462b39b97a688ad658a700ac58339bdca6770ad4fc103513cbbc7b4726a3  /home/jetson/VirSO/best_model_2_layer.pth
+
+=== precision implementation grep ===
+run_virso_inference_jetson.py:158:AMP_MODE = os.environ.get("AMP_MODE", "off").strip().lower()   # off | fp16 | bf16
+run_virso_inference_jetson.py:339:    if AMP_MODE == "off":
+run_virso_inference_jetson.py:340:        log("AMP disabled: AMP_MODE=off")
+run_virso_inference_jetson.py:343:    if AMP_MODE == "fp16":
+run_virso_inference_jetson.py:347:    if AMP_MODE == "bf16":
+run_virso_inference_jetson.py:353:            with torch.autocast(device_type="cuda", dtype=torch.bfloat16):
+run_virso_inference_jetson.py:363:                log("Falling back to float16 autocast")
+run_virso_inference_jetson.py:368:    log(f"Unknown AMP_MODE={AMP_MODE}; running in FP32")
+run_virso_inference_jetson.py:382:        with torch.autocast(device_type="cuda", dtype=amp_dtype):
+run_virso_inference_jetson.py:475:    log(f"AMP_MODE: {AMP_MODE}")
+run_virso_inference_jetson.py:663:                    with torch.autocast(device_type="cuda", dtype=amp_dtype):
+run_virso_inference_jetson.py:836:        ("amp_mode", AMP_MODE),
+run_virso_inference_jetson_tf32_native_only.py:158:AMP_MODE = os.environ.get("AMP_MODE", "off").strip().lower()   # off | fp16 | bf16 | native_fp16
+run_virso_inference_jetson_tf32_native_only.py:161:PRECISION_MODE = os.environ.get("PRECISION_MODE", "").strip().lower()
+run_virso_inference_jetson_tf32_native_only.py:163:if PRECISION_MODE:
+run_virso_inference_jetson_tf32_native_only.py:164:    if PRECISION_MODE == "tf32":
+run_virso_inference_jetson_tf32_native_only.py:165:        AMP_MODE = "off"
+run_virso_inference_jetson_tf32_native_only.py:166:        torch.backends.cuda.matmul.allow_tf32 = True
+run_virso_inference_jetson_tf32_native_only.py:167:        torch.backends.cudnn.allow_tf32 = True
+run_virso_inference_jetson_tf32_native_only.py:168:    elif PRECISION_MODE == "fp16_native":
+run_virso_inference_jetson_tf32_native_only.py:169:        AMP_MODE = "native_fp16"
+run_virso_inference_jetson_tf32_native_only.py:170:        torch.backends.cuda.matmul.allow_tf32 = False
+run_virso_inference_jetson_tf32_native_only.py:171:        torch.backends.cudnn.allow_tf32 = False
+run_virso_inference_jetson_tf32_native_only.py:173:        raise RuntimeError(f"Only missing VIRSO modes are supported here: tf32 or fp16_native, got {PRECISION_MODE}")
+run_virso_inference_jetson_tf32_native_only.py:353:    if AMP_MODE == "off":
+run_virso_inference_jetson_tf32_native_only.py:354:        log("AMP disabled: AMP_MODE=off")
+run_virso_inference_jetson_tf32_native_only.py:357:    if AMP_MODE == "native_fp16":
+run_virso_inference_jetson_tf32_native_only.py:358:        log("Native FP16 requested: model converted to half precision without autocast")
+run_virso_inference_jetson_tf32_native_only.py:361:    if AMP_MODE == "fp16":
+run_virso_inference_jetson_tf32_native_only.py:365:    if AMP_MODE == "bf16":
+run_virso_inference_jetson_tf32_native_only.py:371:            with torch.autocast(device_type="cuda", dtype=torch.bfloat16):
+run_virso_inference_jetson_tf32_native_only.py:381:                log("Falling back to float16 autocast")
+run_virso_inference_jetson_tf32_native_only.py:386:    log(f"Unknown AMP_MODE={AMP_MODE}; running in FP32")
+run_virso_inference_jetson_tf32_native_only.py:400:        with torch.autocast(device_type="cuda", dtype=amp_dtype):
+run_virso_inference_jetson_tf32_native_only.py:493:    log(f"AMP_MODE: {AMP_MODE}")
+run_virso_inference_jetson_tf32_native_only.py:582:    if AMP_MODE == "native_fp16":
+run_virso_inference_jetson_tf32_native_only.py:588:    log(f"PRECISION_MODE: {PRECISION_MODE}")
+run_virso_inference_jetson_tf32_native_only.py:589:    log(f"TF32 matmul allowed: {torch.backends.cuda.matmul.allow_tf32}")
+run_virso_inference_jetson_tf32_native_only.py:590:    log(f"TF32 cuDNN allowed : {torch.backends.cudnn.allow_tf32}")
+run_virso_inference_jetson_tf32_native_only.py:688:                    with torch.autocast(device_type="cuda", dtype=amp_dtype):
+run_virso_inference_jetson_tf32_native_only.py:861:        ("precision_mode", PRECISION_MODE),
+run_virso_inference_jetson_tf32_native_only.py:862:        ("tf32_matmul_allowed", int(torch.backends.cuda.matmul.allow_tf32)),
+run_virso_inference_jetson_tf32_native_only.py:863:        ("tf32_cudnn_allowed", int(torch.backends.cudnn.allow_tf32)),
+run_virso_inference_jetson_tf32_native_only.py:864:        ("amp_mode", AMP_MODE),

@@ -1,0 +1,3 @@
+experiment_name,backend,precision,result_tag,exit_code
+burgers_deeponet_base_r8192,torchscript,fp32,burgers_deeponet_base_r8192_torchscript_fp32,1
+darcy_deeponet_base_r421,torchscript,fp32,darcy_deeponet_base_r421_torchscript_fp32,1

@@ -1,0 +1,24 @@
+{
+  "mode": "torchscript",
+  "checkpoint": "artifacts/checkpoints/burgers_deeponet_base_r2048_seed2_best.pt",
+  "torchscript": "artifacts/torchscript/burgers_deeponet_base_r2048_seed2.ts",
+  "input_bank": "artifacts/benchmark_inputs/burgers_r2048_bank.pt",
+  "input_bank_shape": [
+    8,
+    2048
+  ],
+  "precision": "fp32_strict",
+  "device": "cuda",
+  "batch_size": 1,
+  "warmup": 10,
+  "profile_iters": 1,
+  "output_shape": [
+    1,
+    2048
+  ],
+  "mean_ms_under_profiler": 23020.35684278235,
+  "min_ms_under_profiler": 23020.35684278235,
+  "max_ms_under_profiler": 23020.35684278235,
+  "peak_cuda_allocated_mb": 14.9189453125,
+  "note": "Latency under NCU is profiler-perturbed; use only as profiling sanity, not primary latency."
+}

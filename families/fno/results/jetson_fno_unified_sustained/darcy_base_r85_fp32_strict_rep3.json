@@ -1,0 +1,57 @@
+{
+  "status": "success",
+  "mode": "torchscript",
+  "checkpoint": "artifacts/checkpoints/darcy_fno_base_r85_seed2_best.pt",
+  "torchscript": "artifacts/torchscript/darcy_fno_base_r85_seed2.ts",
+  "input_bank": "artifacts/benchmark_inputs/darcy_r85_bank.pt",
+  "sample_index": 0,
+  "batch_size": 1,
+  "precision_mode": "fp32_strict",
+  "device": "cuda",
+  "warmup_seconds": 20.0,
+  "measure_seconds_requested": 120.0,
+  "measure_seconds_actual": 120.00504057016224,
+  "warmup_iters": 4071,
+  "measure_iters": 23515,
+  "throughput_inf_s": 195.95010249800052,
+  "mean_ms": 5.098556654772149,
+  "median_ms": 5.067040678113699,
+  "p95_ms": 5.165333952754736,
+  "p99_ms": 6.234207544475796,
+  "min_ms": 5.022048018872738,
+  "max_ms": 7.074619177728891,
+  "dataset": "darcy",
+  "resolution": [
+    85,
+    85
+  ],
+  "parameter_count": 3287553,
+  "bank_meta": {
+    "dataset": "darcy",
+    "resolution": [
+      85,
+      85
+    ],
+    "input_key": "Kcoeff",
+    "source_path": "/home/jetson/data/piececonst_r421_N1024_smooth2.mat",
+    "num_samples": 8
+  },
+  "precision_info": {
+    "precision_mode": "fp32_strict",
+    "model_cast": "fp32",
+    "input_cast": "fp32",
+    "autocast_enabled": false,
+    "autocast_dtype": null,
+    "allow_tf32_matmul": false,
+    "allow_tf32_cudnn": false,
+    "float32_matmul_precision": "highest"
+  },
+  "input_shape": [
+    1,
+    85,
+    85
+  ],
+  "input_dtype": "torch.float32",
+  "peak_cuda_alloc_mb": 40.7568359375,
+  "peak_cuda_reserved_mb": 62.0
+}

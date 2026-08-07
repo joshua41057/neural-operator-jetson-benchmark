@@ -1,0 +1,6 @@
+field,value
+run_ts,allocaudit_full_fp32_one_v2
+run_dir,/home/jetson/VirSO/For_Jetson/For_Jetson/inference_runs/allocaudit_full_fp32_one_v2
+failed,1
+exception,"ValueError(""invalid literal for int() with base 10: 'val_target'"")"
+cuda_mem_snapshots_json,"[{""tag"": ""program_start"", ""alloc_mb"": 0.0, ""reserved_mb"": 0.0, ""max_alloc_mb"": 0.0, ""max_reserved_mb"": 0.0, ""mem_get_info_free_mb"": 3837.09765625, ""mem_get_info_total_mb"": 7619.8828125, ""mem_get_info_used_mb"": 3782.78515625}, {""tag"": ""after_normalizers"", ""alloc_mb"": 0.0009765625, ""reserved_mb"": 2.0, ""max_alloc_mb"": 0.0009765625, ""max_reserved_mb"": 2.0, ""mem_get_info_free_mb"": 3602.37890625, ""mem_get_info_total_mb"": 7619.8828125, ""mem_get_info_used_mb"": 4017.50390625}, {""tag"": ""after_audit_tensor_cleanup"", ""alloc_mb"": 0.0009765625, ""reserved_mb"": 2.0, ""max_alloc_mb"": 0.0009765625, ""max_reserved_mb"": 2.0, ""mem_get_info_free_mb"": 3797.65234375, ""mem_get_info_total_mb"": 7619.8828125, ""mem_get_info_used_mb"": 3822.23046875}]"

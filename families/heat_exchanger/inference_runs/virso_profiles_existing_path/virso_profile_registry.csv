@@ -1,0 +1,5 @@
+run_ts,case,model_path,amp_mode,num_layers,width,max_mode,spectral,spatial,exit_status,profile_mode
+profile_full_fp32_existing_path,full_fp32,/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth,off,10,48,64,1,1,0,nsys+script_profile
+profile_spectral_fp32_existing_path,spectral_fp32,/home/jetson/VirSO/best_model_spectral.pth,off,10,48,64,1,0,0,nsys+script_profile
+profile_layer2_fp32_existing_path,layer2_fp32,/home/jetson/VirSO/best_model_2_layer.pth,off,2,48,40,1,1,0,nsys+script_profile
+profile_full_ampfp16_existing_path_optional,full_ampfp16,/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth,fp16,10,48,64,1,1,0,nsys+script_profile

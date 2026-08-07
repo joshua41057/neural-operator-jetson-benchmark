@@ -1,0 +1,17 @@
+Fatal error during VirSO inference run
+Exception: TypeError('can only concatenate str (not "int") to str')
+
+Traceback (most recent call last):
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/run_virso_inference_jetson.py", line 988, in <module>
+    main()
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/run_virso_inference_jetson.py", line 611, in main
+    test_dataset = GraphDataset(
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/data.py", line 79, in __init__
+    edge_index, dist, edge_weight, lip_embeds, lambdas, U = self.generate_graph(grid_pos, self.k, self.r, self.distance_weighted_laplacian, self.graph_type, k_lower=self.k_lower, start_radius=self.start_radius, given_edge_index=self.given_edge_index, factor_of_lower = self.factor_of_lower)
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/data.py", line 237, in generate_graph
+    edge_index = knn_graph(grid_pos, k, loop=loop)
+  File "/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch_geometric/nn/pool/__init__.py", line 169, in knn_graph
+    return torch_cluster.knn_graph(x, k, batch, loop, flow, cosine,
+  File "/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch_cluster/knn.py", line 132, in knn_graph
+    edge_index = knn(x, x, k if loop else k + 1, batch, batch, cosine,
+TypeError: can only concatenate str (not "int") to str

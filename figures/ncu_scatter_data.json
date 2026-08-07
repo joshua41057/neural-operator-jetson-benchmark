@@ -1,0 +1,1333 @@
+{
+  "FNO": [
+    {
+      "case": "burgers_r2048_ts_fp32",
+      "name": "void prime_fft_factor",
+      "class": "FFT/Spectral",
+      "ms": 0.0716,
+      "sm": 55.0,
+      "mem": 74.3,
+      "occ": 91.1
+    },
+    {
+      "case": "burgers_r2048_ts_fp32",
+      "name": "void at::elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 0.0681,
+      "sm": 48.6,
+      "mem": 33.4,
+      "occ": 101.6
+    },
+    {
+      "case": "burgers_r2048_ts_fp32",
+      "name": "void cutlass::Kernel2",
+      "class": "Dense/GEMM",
+      "ms": 0.056,
+      "sm": 26.0,
+      "mem": 34.8,
+      "occ": 19.1
+    },
+    {
+      "case": "burgers_r2048_ts_fp32",
+      "name": "void at::elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 0.0529,
+      "sm": 28.7,
+      "mem": 41.5,
+      "occ": 103.8
+    },
+    {
+      "case": "burgers_r2048_ts_fp32",
+      "name": "void cutlass::Kernel2",
+      "class": "Dense/GEMM",
+      "ms": 0.052,
+      "sm": 22.6,
+      "mem": 29.8,
+      "occ": 18.4
+    },
+    {
+      "case": "burgers_r8192_ts_fp32",
+      "name": "void prime_fft_factor",
+      "class": "FFT/Spectral",
+      "ms": 0.3495,
+      "sm": 67.3,
+      "mem": 94.9,
+      "occ": 79.4
+    },
+    {
+      "case": "burgers_r8192_ts_fp32",
+      "name": "void prime_fft_factor",
+      "class": "FFT/Spectral",
+      "ms": 0.2231,
+      "sm": 74.8,
+      "mem": 37.0,
+      "occ": 84.2
+    },
+    {
+      "case": "burgers_r8192_ts_fp32",
+      "name": "void at::elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 0.2173,
+      "sm": 57.7,
+      "mem": 41.4,
+      "occ": 101.2
+    },
+    {
+      "case": "burgers_r8192_ts_fp32",
+      "name": "void cutlass::Kernel2",
+      "class": "Dense/GEMM",
+      "ms": 0.17,
+      "sm": 31.4,
+      "mem": 41.4,
+      "occ": 17.8
+    },
+    {
+      "case": "burgers_r8192_ts_fp32",
+      "name": "void at::elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 0.1678,
+      "sm": 35.7,
+      "mem": 55.0,
+      "occ": 101.0
+    },
+    {
+      "case": "darcy_r141_ts_fp32",
+      "name": "void regular_fft_r2c",
+      "class": "FFT/Spectral",
+      "ms": 0.7218,
+      "sm": 33.2,
+      "mem": 72.4,
+      "occ": 96.2
+    },
+    {
+      "case": "darcy_r141_ts_fp32",
+      "name": "ampere_sgemm_128x32_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.6366,
+      "sm": 77.1,
+      "mem": 78.9,
+      "occ": 64.4
+    },
+    {
+      "case": "darcy_r141_ts_fp32",
+      "name": "void at::elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 0.5003,
+      "sm": 53.7,
+      "mem": 43.5,
+      "occ": 89.6
+    },
+    {
+      "case": "darcy_r141_ts_fp32",
+      "name": "void regular_fft_c2r",
+      "class": "FFT/Spectral",
+      "ms": 0.457,
+      "sm": 49.7,
+      "mem": 86.3,
+      "occ": 95.5
+    },
+    {
+      "case": "darcy_r141_ts_fp32",
+      "name": "void regular_fft_r2c",
+      "class": "FFT/Spectral",
+      "ms": 0.4253,
+      "sm": 55.1,
+      "mem": 87.0,
+      "occ": 96.0
+    },
+    {
+      "case": "darcy_r211_ts_fp32",
+      "name": "void regular_fft_r2c",
+      "class": "FFT/Spectral",
+      "ms": 1.7098,
+      "sm": 33.5,
+      "mem": 94.6,
+      "occ": 84.3
+    },
+    {
+      "case": "darcy_r211_ts_fp32",
+      "name": "ampere_sgemm_128x32_nn",
+      "class": "Dense/GEMM",
+      "ms": 1.3843,
+      "sm": 79.0,
+      "mem": 81.0,
+      "occ": 65.0
+    },
+    {
+      "case": "darcy_r211_ts_fp32",
+      "name": "void at::elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 1.0979,
+      "sm": 54.8,
+      "mem": 44.3,
+      "occ": 90.0
+    },
+    {
+      "case": "darcy_r211_ts_fp32",
+      "name": "void regular_fft_c2r",
+      "class": "FFT/Spectral",
+      "ms": 1.0658,
+      "sm": 76.2,
+      "mem": 82.1,
+      "occ": 96.3
+    },
+    {
+      "case": "darcy_r211_ts_fp32",
+      "name": "void regular_fft_r2c",
+      "class": "FFT/Spectral",
+      "ms": 1.007,
+      "sm": 79.1,
+      "mem": 78.6,
+      "occ": 96.1
+    },
+    {
+      "case": "darcy_r421_base_ts_fp32",
+      "name": "void kernel_wrapper",
+      "class": "Other",
+      "ms": 6.0859,
+      "sm": 9.7,
+      "mem": 94.2,
+      "occ": 89.7
+    },
+    {
+      "case": "darcy_r421_base_ts_fp32",
+      "name": "fused_add_gelu",
+      "class": "Activation/Elementwise",
+      "ms": 3.4005,
+      "sm": 48.8,
+      "mem": 59.6,
+      "occ": 94.0
+    },
+    {
+      "case": "darcy_r421_base_ts_fp32",
+      "name": "void at::elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 3.3801,
+      "sm": 57.1,
+      "mem": 40.1,
+      "occ": 106.4
+    },
+    {
+      "case": "darcy_r421_base_ts_fp32",
+      "name": "void at::vectorized_elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 2.62,
+      "sm": 64.7,
+      "mem": 65.9,
+      "occ": 92.8
+    },
+    {
+      "case": "darcy_r421_base_ts_fp32",
+      "name": "void cutlass::Kernel2",
+      "class": "Dense/GEMM",
+      "ms": 2.2117,
+      "sm": 33.6,
+      "mem": 59.4,
+      "occ": 17.9
+    }
+  ],
+  "WNO": [
+    {
+      "case": "wno_burgers_base_r2048",
+      "name": "void cudnn::dgrad2d_grouped_direct_kernel",
+      "class": "Conv/Wavelet",
+      "ms": 0.197,
+      "sm": 61.4,
+      "mem": 14.1,
+      "occ": 65.6
+    },
+    {
+      "case": "wno_burgers_base_r2048",
+      "name": "void at::",
+      "class": "Conv/Wavelet",
+      "ms": 0.175,
+      "sm": 51.7,
+      "mem": 25.8,
+      "occ": 63.4
+    },
+    {
+      "case": "wno_burgers_base_r2048",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.0486,
+      "sm": 42.1,
+      "mem": 40.2,
+      "occ": 67.0
+    },
+    {
+      "case": "wno_burgers_base_r2048",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.0228,
+      "sm": 14.0,
+      "mem": 1.7,
+      "occ": 66.9
+    },
+    {
+      "case": "wno_burgers_base_r2048",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.0202,
+      "sm": 3.6,
+      "mem": 6.5,
+      "occ": 10.8
+    },
+    {
+      "case": "wno_burgers_base_r8192",
+      "name": "void cudnn::dgrad2d_grouped_direct_kernel",
+      "class": "Conv/Wavelet",
+      "ms": 0.7366,
+      "sm": 64.8,
+      "mem": 14.8,
+      "occ": 65.0
+    },
+    {
+      "case": "wno_burgers_base_r8192",
+      "name": "void at::",
+      "class": "Conv/Wavelet",
+      "ms": 0.6224,
+      "sm": 56.4,
+      "mem": 28.0,
+      "occ": 62.5
+    },
+    {
+      "case": "wno_burgers_base_r8192",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1294,
+      "sm": 59.3,
+      "mem": 57.0,
+      "occ": 62.2
+    },
+    {
+      "case": "wno_burgers_base_r8192",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.0256,
+      "sm": 11.9,
+      "mem": 23.4,
+      "occ": 34.2
+    },
+    {
+      "case": "wno_burgers_base_r8192",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.0227,
+      "sm": 13.8,
+      "mem": 1.7,
+      "occ": 65.5
+    },
+    {
+      "case": "wno_darcy_base_r141",
+      "name": "void at::",
+      "class": "Conv/Wavelet",
+      "ms": 0.6209,
+      "sm": 56.8,
+      "mem": 12.4,
+      "occ": 56.7
+    },
+    {
+      "case": "wno_darcy_base_r141",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.15,
+      "sm": 63.0,
+      "mem": 59.1,
+      "occ": 63.4
+    },
+    {
+      "case": "wno_darcy_base_r141",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.0615,
+      "sm": 38.0,
+      "mem": 21.7,
+      "occ": 89.1
+    },
+    {
+      "case": "wno_darcy_base_r141",
+      "name": "void detail::dgrad_engine",
+      "class": "Conv/Wavelet",
+      "ms": 0.0328,
+      "sm": 6.8,
+      "mem": 6.8,
+      "occ": 6.7
+    },
+    {
+      "case": "wno_darcy_base_r141",
+      "name": "void cnn::dgrad2d_grouped_direct_kernel",
+      "class": "Conv/Wavelet",
+      "ms": 0.0309,
+      "sm": 16.4,
+      "mem": 3.7,
+      "occ": 61.0
+    },
+    {
+      "case": "wno_darcy_base_r141",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.0219,
+      "sm": 6.2,
+      "mem": 1.2,
+      "occ": 31.7
+    },
+    {
+      "case": "wno_darcy_base_r141",
+      "name": "void engines_precompiled::scalePackedTensor_kernel",
+      "class": "Conv/Wavelet",
+      "ms": 0.0139,
+      "sm": 1.9,
+      "mem": 1.2,
+      "occ": 17.9
+    },
+    {
+      "case": "wno_darcy_base_r421",
+      "name": "void at::",
+      "class": "Conv/Wavelet",
+      "ms": 3.5423,
+      "sm": 59.7,
+      "mem": 11.9,
+      "occ": 59.0
+    },
+    {
+      "case": "wno_darcy_base_r421",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.8769,
+      "sm": 70.7,
+      "mem": 66.4,
+      "occ": 65.0
+    },
+    {
+      "case": "wno_darcy_base_r421",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.3264,
+      "sm": 51.3,
+      "mem": 39.8,
+      "occ": 78.4
+    },
+    {
+      "case": "wno_darcy_base_r421",
+      "name": "void cnn::dgrad2d_grouped_direct_kernel",
+      "class": "Conv/Wavelet",
+      "ms": 0.0328,
+      "sm": 13.1,
+      "mem": 3.0,
+      "occ": 65.6
+    },
+    {
+      "case": "wno_darcy_base_r421",
+      "name": "void detail::dgrad_engine",
+      "class": "Conv/Wavelet",
+      "ms": 0.0327,
+      "sm": 5.5,
+      "mem": 5.8,
+      "occ": 5.4
+    },
+    {
+      "case": "wno_darcy_base_r421",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.0229,
+      "sm": 6.0,
+      "mem": 1.2,
+      "occ": 33.1
+    },
+    {
+      "case": "wno_darcy_base_r421",
+      "name": "void engines_precompiled::scalePackedTensor_kernel",
+      "class": "Conv/Wavelet",
+      "ms": 0.0161,
+      "sm": 1.3,
+      "mem": 1.0,
+      "occ": 22.6
+    },
+    {
+      "case": "wno_darcy_large_r141",
+      "name": "void at::",
+      "class": "Conv/Wavelet",
+      "ms": 1.1415,
+      "sm": 57.7,
+      "mem": 12.6,
+      "occ": 56.7
+    },
+    {
+      "case": "wno_darcy_large_r141",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.154,
+      "sm": 63.1,
+      "mem": 60.8,
+      "occ": 64.5
+    },
+    {
+      "case": "wno_darcy_large_r141",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.0639,
+      "sm": 38.6,
+      "mem": 20.9,
+      "occ": 89.2
+    },
+    {
+      "case": "wno_darcy_large_r141",
+      "name": "void cnn::dgrad2d_grouped_direct_kernel",
+      "class": "Conv/Wavelet",
+      "ms": 0.0338,
+      "sm": 30.9,
+      "mem": 7.0,
+      "occ": 76.3
+    },
+    {
+      "case": "wno_darcy_large_r141",
+      "name": "void detail::dgrad_engine",
+      "class": "Conv/Wavelet",
+      "ms": 0.0326,
+      "sm": 4.4,
+      "mem": 5.0,
+      "occ": 4.4
+    },
+    {
+      "case": "wno_darcy_large_r141",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.0234,
+      "sm": 10.8,
+      "mem": 1.5,
+      "occ": 56.5
+    },
+    {
+      "case": "wno_darcy_large_r141",
+      "name": "void engines_precompiled::scalePackedTensor_kernel",
+      "class": "Conv/Wavelet",
+      "ms": 0.0163,
+      "sm": 1.2,
+      "mem": 1.0,
+      "occ": 21.9
+    }
+  ],
+  "sp2gno": [
+    {
+      "case": "sp2gno_burgers_base_s2048",
+      "name": "void at::",
+      "class": "Reduction/Norm",
+      "ms": 0.3598,
+      "sm": 55.1,
+      "mem": 29.9,
+      "occ": 73.3
+    },
+    {
+      "case": "sp2gno_burgers_base_s2048",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.26,
+      "sm": 51.9,
+      "mem": 10.9,
+      "occ": 68.2
+    },
+    {
+      "case": "sp2gno_burgers_base_s2048",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2434,
+      "sm": 68.7,
+      "mem": 74.8,
+      "occ": 63.2
+    },
+    {
+      "case": "sp2gno_burgers_base_s2048",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.2425,
+      "sm": 27.3,
+      "mem": 80.8,
+      "occ": 87.1
+    },
+    {
+      "case": "sp2gno_burgers_base_s2048",
+      "name": "void at::_scatter_gather_elementwise_kernel",
+      "class": "Movement/Materialization",
+      "ms": 0.1532,
+      "sm": 49.8,
+      "mem": 40.0,
+      "occ": 98.8
+    },
+    {
+      "case": "sp2gno_burgers_base_s2048",
+      "name": "ampere_sgemm_32x128_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1309,
+      "sm": 60.4,
+      "mem": 57.2,
+      "occ": 63.7
+    },
+    {
+      "case": "sp2gno_burgers_base_s2048",
+      "name": "ampere_sgemm_32x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.0636,
+      "sm": 46.5,
+      "mem": 47.3,
+      "occ": 32.8
+    },
+    {
+      "case": "sp2gno_burgers_base_s4096",
+      "name": "void at::",
+      "class": "Reduction/Norm",
+      "ms": 0.6833,
+      "sm": 56.3,
+      "mem": 30.6,
+      "occ": 73.3
+    },
+    {
+      "case": "sp2gno_burgers_base_s4096",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.5494,
+      "sm": 22.2,
+      "mem": 86.2,
+      "occ": 89.6
+    },
+    {
+      "case": "sp2gno_burgers_base_s4096",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 0.4904,
+      "sm": 53.7,
+      "mem": 11.6,
+      "occ": 67.2
+    },
+    {
+      "case": "sp2gno_burgers_base_s4096",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.4337,
+      "sm": 73.1,
+      "mem": 79.7,
+      "occ": 64.5
+    },
+    {
+      "case": "sp2gno_burgers_base_s4096",
+      "name": "void at::_scatter_gather_elementwise_kernel",
+      "class": "Movement/Materialization",
+      "ms": 0.2772,
+      "sm": 53.1,
+      "mem": 44.1,
+      "occ": 97.8
+    },
+    {
+      "case": "sp2gno_burgers_base_s4096",
+      "name": "ampere_sgemm_32x128_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.2335,
+      "sm": 65.8,
+      "mem": 62.3,
+      "occ": 64.1
+    },
+    {
+      "case": "sp2gno_burgers_base_s4096",
+      "name": "ampere_sgemm_32x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1031,
+      "sm": 46.1,
+      "mem": 46.0,
+      "occ": 27.5
+    },
+    {
+      "case": "sp2gno_darcy_base_r141",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 7.1227,
+      "sm": 19.2,
+      "mem": 89.3,
+      "occ": 96.4
+    },
+    {
+      "case": "sp2gno_darcy_base_r141",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 3.48,
+      "sm": 46.9,
+      "mem": 9.1,
+      "occ": 69.0
+    },
+    {
+      "case": "sp2gno_darcy_base_r141",
+      "name": "void at::_scatter_gather_elementwise_kernel",
+      "class": "Movement/Materialization",
+      "ms": 2.1714,
+      "sm": 52.2,
+      "mem": 41.2,
+      "occ": 102.9
+    },
+    {
+      "case": "sp2gno_darcy_base_r141",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 2.0468,
+      "sm": 76.3,
+      "mem": 83.3,
+      "occ": 67.6
+    },
+    {
+      "case": "sp2gno_darcy_base_r141",
+      "name": "void at::",
+      "class": "Reduction/Norm",
+      "ms": 2.0177,
+      "sm": 56.5,
+      "mem": 30.6,
+      "occ": 73.9
+    },
+    {
+      "case": "sp2gno_darcy_base_r141",
+      "name": "ampere_sgemm_32x128_nn",
+      "class": "Dense/GEMM",
+      "ms": 1.5799,
+      "sm": 70.2,
+      "mem": 66.6,
+      "occ": 65.0
+    },
+    {
+      "case": "sp2gno_darcy_base_r141",
+      "name": "ampere_sgemm_32x128_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.4993,
+      "sm": 76.9,
+      "mem": 77.1,
+      "occ": 62.8
+    },
+    {
+      "case": "sp2gno_darcy_base_r211",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 9.8983,
+      "sm": 19.0,
+      "mem": 88.7,
+      "occ": 97.8
+    },
+    {
+      "case": "sp2gno_darcy_base_r211",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 6.3106,
+      "sm": 37.9,
+      "mem": 7.6,
+      "occ": 67.4
+    },
+    {
+      "case": "sp2gno_darcy_base_r211",
+      "name": "void at::_scatter_gather_elementwise_kernel",
+      "class": "Movement/Materialization",
+      "ms": 3.8255,
+      "sm": 44.9,
+      "mem": 35.7,
+      "occ": 102.3
+    },
+    {
+      "case": "sp2gno_darcy_base_r211",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 3.7529,
+      "sm": 74.7,
+      "mem": 81.7,
+      "occ": 68.3
+    },
+    {
+      "case": "sp2gno_darcy_base_r211",
+      "name": "void at::",
+      "class": "Reduction/Norm",
+      "ms": 2.9055,
+      "sm": 54.8,
+      "mem": 29.7,
+      "occ": 74.3
+    },
+    {
+      "case": "sp2gno_darcy_base_r211",
+      "name": "ampere_sgemm_32x128_nn",
+      "class": "Dense/GEMM",
+      "ms": 2.356,
+      "sm": 67.5,
+      "mem": 64.1,
+      "occ": 66.4
+    },
+    {
+      "case": "sp2gno_darcy_base_r211",
+      "name": "ampere_sgemm_32x128_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.7949,
+      "sm": 77.3,
+      "mem": 77.6,
+      "occ": 62.6
+    },
+    {
+      "case": "sp2gno_darcy_large_r141",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 6.8449,
+      "sm": 19.2,
+      "mem": 89.4,
+      "occ": 96.3
+    },
+    {
+      "case": "sp2gno_darcy_large_r141",
+      "name": "void at::",
+      "class": "Movement/Materialization",
+      "ms": 5.5569,
+      "sm": 40.5,
+      "mem": 7.7,
+      "occ": 69.7
+    },
+    {
+      "case": "sp2gno_darcy_large_r141",
+      "name": "void at::_scatter_gather_elementwise_kernel",
+      "class": "Movement/Materialization",
+      "ms": 3.2589,
+      "sm": 49.5,
+      "mem": 41.8,
+      "occ": 103.2
+    },
+    {
+      "case": "sp2gno_darcy_large_r141",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 2.0285,
+      "sm": 76.3,
+      "mem": 83.3,
+      "occ": 67.6
+    },
+    {
+      "case": "sp2gno_darcy_large_r141",
+      "name": "ampere_sgemm_32x128_nn",
+      "class": "Dense/GEMM",
+      "ms": 1.5611,
+      "sm": 70.2,
+      "mem": 66.6,
+      "occ": 65.0
+    },
+    {
+      "case": "sp2gno_darcy_large_r141",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.4966,
+      "sm": 70.8,
+      "mem": 65.7,
+      "occ": 31.9
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "indexSelectLargeIndex",
+      "class": "Movement/Materialization",
+      "ms": 3.7369,
+      "sm": 56.3,
+      "mem": 10.7,
+      "occ": 66.6
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "_scatter_gather_elementwise_kernel",
+      "class": "Movement/Materialization",
+      "ms": 1.9883,
+      "sm": 57.0,
+      "mem": 46.0,
+      "occ": 92.8
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.4456,
+      "sm": 74.0,
+      "mem": 82.4,
+      "occ": 63.4
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "CatArrayBatchedCopy_aligned16_cont",
+      "class": "Movement/Materialization",
+      "ms": 1.1511,
+      "sm": 25.0,
+      "mem": 73.6,
+      "occ": 91.4
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "vectorized_layer_norm_kernel",
+      "class": "Reduction/Norm",
+      "ms": 0.6798,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1744,
+      "sm": 59.8,
+      "mem": 55.7,
+      "occ": 31.9
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1639,
+      "sm": 54.0,
+      "mem": 53.3,
+      "occ": 28.8
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1368,
+      "sm": 54.7,
+      "mem": 49.2,
+      "occ": 28.1
+    },
+    {
+      "case": "heat_spectral_fp32",
+      "name": "vectorized_layer_norm_kernel",
+      "class": "Reduction/Norm",
+      "ms": 0.6793,
+      "sm": 55.6,
+      "mem": 32.8,
+      "occ": 72.2
+    },
+    {
+      "case": "heat_spectral_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.204,
+      "sm": 63.3,
+      "mem": 76.8,
+      "occ": 58.3
+    },
+    {
+      "case": "heat_spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1666,
+      "sm": 59.9,
+      "mem": 55.9,
+      "occ": 32.6
+    },
+    {
+      "case": "heat_spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1618,
+      "sm": 53.1,
+      "mem": 52.4,
+      "occ": 29.2
+    },
+    {
+      "case": "heat_spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.136,
+      "sm": 55.0,
+      "mem": 49.4,
+      "occ": 28.1
+    },
+    {
+      "case": "heat_spectral_fp32",
+      "name": "CatArrayBatchedCopy_aligned16_cont",
+      "class": "Movement/Materialization",
+      "ms": 0.0371,
+      "sm": 15.2,
+      "mem": 34.4,
+      "occ": 69.8
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "indexSelectLargeIndex",
+      "class": "Movement/Materialization",
+      "ms": 3.7383,
+      "sm": 56.2,
+      "mem": 10.7,
+      "occ": 66.6
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "_scatter_gather_elementwise_kernel",
+      "class": "Movement/Materialization",
+      "ms": 1.9833,
+      "sm": 57.2,
+      "mem": 46.1,
+      "occ": 93.0
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "CatArrayBatchedCopy_aligned16_cont",
+      "class": "Movement/Materialization",
+      "ms": 1.0007,
+      "sm": 24.0,
+      "mem": 67.8,
+      "occ": 90.8
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.9828,
+      "sm": 69.8,
+      "mem": 80.0,
+      "occ": 60.8
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "vectorized_layer_norm_kernel",
+      "class": "Reduction/Norm",
+      "ms": 0.6805,
+      "sm": 55.6,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1946,
+      "sm": 54.8,
+      "mem": 54.6,
+      "occ": 29.1
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "ampere_sgemm_32x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1812,
+      "sm": 62.2,
+      "mem": 62.4,
+      "occ": 37.9
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1033,
+      "sm": 49.4,
+      "mem": 47.4,
+      "occ": 28.7
+    }
+  ],
+  "DeepONet": [
+    {
+      "case": "burgers_base_r2048_ts_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2551,
+      "sm": 69.4,
+      "mem": 70.8,
+      "occ": 31.4
+    },
+    {
+      "case": "burgers_base_r2048_ts_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.161,
+      "sm": 66.8,
+      "mem": 84.7,
+      "occ": 62.9
+    },
+    {
+      "case": "burgers_base_r2048_ts_fp32",
+      "name": "void at::vectorized_elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 0.0494,
+      "sm": 36.5,
+      "mem": 70.3,
+      "occ": 95.7
+    },
+    {
+      "case": "burgers_base_r2048_ts_fp32",
+      "name": "ampere_sgemm_128x32_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.0446,
+      "sm": 57.2,
+      "mem": 57.2,
+      "occ": 67.6
+    },
+    {
+      "case": "burgers_base_r2048_ts_fp32",
+      "name": "void gemv2T_kernel_val",
+      "class": "Dense/GEMM",
+      "ms": 0.0207,
+      "sm": 39.9,
+      "mem": 47.5,
+      "occ": 91.7
+    },
+    {
+      "case": "darcy_base_r141_ts_fp32",
+      "name": "ampere_sgemm_128x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 2.0469,
+      "sm": 75.3,
+      "mem": 67.0,
+      "occ": 33.0
+    },
+    {
+      "case": "darcy_base_r141_ts_fp32",
+      "name": "void at::vectorized_elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 0.4319,
+      "sm": 36.3,
+      "mem": 77.5,
+      "occ": 90.5
+    },
+    {
+      "case": "darcy_base_r141_ts_fp32",
+      "name": "ampere_sgemm_128x32_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.3786,
+      "sm": 59.0,
+      "mem": 58.0,
+      "occ": 64.0
+    },
+    {
+      "case": "darcy_base_r141_ts_fp32",
+      "name": "void gemv2T_kernel_val",
+      "class": "Dense/GEMM",
+      "ms": 0.1165,
+      "sm": 56.9,
+      "mem": 81.0,
+      "occ": 83.1
+    },
+    {
+      "case": "darcy_base_r141_ts_fp32",
+      "name": "std::enable_if",
+      "class": "Dense/GEMM",
+      "ms": 0.105,
+      "sm": 15.2,
+      "mem": 72.1,
+      "occ": 23.8
+    },
+    {
+      "case": "darcy_base_r281_ts_fp32",
+      "name": "ampere_sgemm_128x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 4.5307,
+      "sm": 75.8,
+      "mem": 66.2,
+      "occ": 33.1
+    },
+    {
+      "case": "darcy_base_r281_ts_fp32",
+      "name": "void at::vectorized_elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 0.7109,
+      "sm": 36.8,
+      "mem": 77.6,
+      "occ": 90.0
+    },
+    {
+      "case": "darcy_base_r281_ts_fp32",
+      "name": "ampere_sgemm_128x32_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.5648,
+      "sm": 67.3,
+      "mem": 68.6,
+      "occ": 67.4
+    },
+    {
+      "case": "darcy_base_r281_ts_fp32",
+      "name": "std::enable_if",
+      "class": "Dense/GEMM",
+      "ms": 0.3548,
+      "sm": 17.4,
+      "mem": 80.7,
+      "occ": 24.9
+    },
+    {
+      "case": "darcy_base_r281_ts_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2385,
+      "sm": 66.1,
+      "mem": 66.5,
+      "occ": 66.9
+    },
+    {
+      "case": "darcy_base_r281_ts_fp16_native",
+      "name": "ampere_fp16_s16816gemm_fp16_128x128_ldg8_relu_f2f_stages_32x5_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.5554,
+      "sm": 51.9,
+      "mem": 77.5,
+      "occ": 17.5
+    },
+    {
+      "case": "darcy_base_r281_ts_fp16_native",
+      "name": "void at::vectorized_elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 0.4563,
+      "sm": 63.1,
+      "mem": 60.5,
+      "occ": 94.0
+    },
+    {
+      "case": "darcy_base_r281_ts_fp16_native",
+      "name": "ampere_fp16_sgemm_fp16_128x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.411,
+      "sm": 59.3,
+      "mem": 67.3,
+      "occ": 32.9
+    },
+    {
+      "case": "darcy_base_r281_ts_fp16_native",
+      "name": "std::enable_if",
+      "class": "Dense/GEMM",
+      "ms": 0.2228,
+      "sm": 41.0,
+      "mem": 79.8,
+      "occ": 23.7
+    },
+    {
+      "case": "darcy_base_r281_ts_fp16_native",
+      "name": "fused_mul_mul_sin_cos_mul_sin_cos_cat",
+      "class": "Other",
+      "ms": 0.1106,
+      "sm": 77.1,
+      "mem": 21.5,
+      "occ": 92.7
+    },
+    {
+      "case": "darcy_large_r141_ts_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 6.6086,
+      "sm": 72.4,
+      "mem": 70.1,
+      "occ": 33.0
+    },
+    {
+      "case": "darcy_large_r141_ts_fp32",
+      "name": "ampere_sgemm_128x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 3.9115,
+      "sm": 75.4,
+      "mem": 64.7,
+      "occ": 32.9
+    },
+    {
+      "case": "darcy_large_r141_ts_fp32",
+      "name": "void at::vectorized_elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 0.6552,
+      "sm": 36.5,
+      "mem": 76.7,
+      "occ": 88.7
+    },
+    {
+      "case": "darcy_large_r141_ts_fp32",
+      "name": "ampere_sgemm_128x32_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.5085,
+      "sm": 66.9,
+      "mem": 67.4,
+      "occ": 66.2
+    },
+    {
+      "case": "darcy_large_r141_ts_fp32",
+      "name": "std::enable_if",
+      "class": "Dense/GEMM",
+      "ms": 0.2642,
+      "sm": 17.4,
+      "mem": 73.8,
+      "occ": 25.0
+    },
+    {
+      "case": "burgers_base_r8192_ts_fp32",
+      "name": "ampere_sgemm_128x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.3765,
+      "sm": 74.7,
+      "mem": 66.3,
+      "occ": 32.4
+    },
+    {
+      "case": "burgers_base_r8192_ts_fp32",
+      "name": "ampere_sgemm_128x32_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.446,
+      "sm": 68.1,
+      "mem": 69.3,
+      "occ": 64.3
+    },
+    {
+      "case": "burgers_base_r8192_ts_fp32",
+      "name": "void at::vectorized_elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 0.3938,
+      "sm": 62.6,
+      "mem": 58.0,
+      "occ": 102.3
+    },
+    {
+      "case": "burgers_base_r8192_ts_fp32",
+      "name": "void gemv2T_kernel_val",
+      "class": "Dense/GEMM",
+      "ms": 0.1269,
+      "sm": 76.0,
+      "mem": 66.3,
+      "occ": 85.5
+    },
+    {
+      "case": "burgers_base_r8192_ts_fp32",
+      "name": "void gemv2T_kernel_val",
+      "class": "Dense/GEMM",
+      "ms": 0.0658,
+      "sm": 29.4,
+      "mem": 54.1,
+      "occ": 35.6
+    },
+    {
+      "case": "darcy_base_r421_ts_fp32",
+      "name": "ampere_sgemm_128x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 3.4658,
+      "sm": 75.5,
+      "mem": 66.0,
+      "occ": 33.2
+    },
+    {
+      "case": "darcy_base_r421_ts_fp32",
+      "name": "std::enable_if",
+      "class": "Dense/GEMM",
+      "ms": 1.3698,
+      "sm": 33.0,
+      "mem": 85.8,
+      "occ": 24.6
+    },
+    {
+      "case": "darcy_base_r421_ts_fp32",
+      "name": "void at::vectorized_elementwise_kernel",
+      "class": "Activation/Elementwise",
+      "ms": 1.2803,
+      "sm": 64.0,
+      "mem": 64.9,
+      "occ": 92.7
+    },
+    {
+      "case": "darcy_base_r421_ts_fp32",
+      "name": "ampere_sgemm_128x32_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.2067,
+      "sm": 69.8,
+      "mem": 71.4,
+      "occ": 65.5
+    },
+    {
+      "case": "darcy_base_r421_ts_fp32",
+      "name": "fused_mul_mul_sin_cos_mul_sin_cos_cat",
+      "class": "Other",
+      "ms": 0.7906,
+      "sm": 80.4,
+      "mem": 21.5,
+      "occ": 89.1
+    }
+  ]
+}

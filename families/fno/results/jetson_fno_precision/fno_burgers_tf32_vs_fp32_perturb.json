@@ -1,0 +1,15 @@
+{
+  "summary_json": "results/jetson_fno_precision/burgers_fno_base_r2048_seed2_torchscript_fp32_strict.json",
+  "torchscript": "/home/jetson/jjyoo3/EDCNO/artifacts/torchscript/burgers_fno_base_r2048_seed2.ts",
+  "input_bank": "/home/jetson/jjyoo3/EDCNO/artifacts/benchmark_inputs/burgers_r2048_bank.pt",
+  "input_shape": [
+    8,
+    2048
+  ],
+  "output_shape": [
+    8,
+    2048
+  ],
+  "tf32_vs_fp32_relative_l2": 8.95043513791889e-05,
+  "tf32_vs_fp32_max_abs": 0.0002492666244506836
+}

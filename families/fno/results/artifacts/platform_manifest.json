@@ -1,0 +1,13 @@
+{
+  "device": "Jetson Orin Nano SUPER 8GB",
+  "gpu_arch": "Ampere",
+  "compute_capability": "8.7",
+  "sm_count": 8,
+  "gpu_l2_cache_mb": 2,
+  "memory": "8GB LPDDR5 unified",
+  "memory_peak_bandwidth_gbps": 102,
+  "jetpack": "6.2.1",
+  "cuda": "12.6",
+  "power_mode": "MAXN_SUPER",
+  "clocks": "jetson_clocks"
+}

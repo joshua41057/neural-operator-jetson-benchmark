@@ -1,0 +1,206 @@
+{
+  "full_fp32": [
+    {
+      "case": "heat_full_fp32",
+      "name": "indexSelectLargeIndex",
+      "class": "Movement/Materialization",
+      "ms": 3.7369,
+      "sm": 56.3,
+      "mem": 10.7,
+      "occ": 66.6
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "_scatter_gather_elementwise_kernel",
+      "class": "Movement/Materialization",
+      "ms": 1.9883,
+      "sm": 57.0,
+      "mem": 46.0,
+      "occ": 92.8
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.4456,
+      "sm": 74.0,
+      "mem": 82.4,
+      "occ": 63.4
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "CatArrayBatchedCopy_aligned16_cont",
+      "class": "Movement/Materialization",
+      "ms": 1.1511,
+      "sm": 25.0,
+      "mem": 73.6,
+      "occ": 91.4
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "vectorized_layer_norm_kernel",
+      "class": "Reduction/Norm",
+      "ms": 0.6798,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1744,
+      "sm": 59.8,
+      "mem": 55.7,
+      "occ": 31.9
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1639,
+      "sm": 54.0,
+      "mem": 53.3,
+      "occ": 28.8
+    },
+    {
+      "case": "heat_full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1368,
+      "sm": 54.7,
+      "mem": 49.2,
+      "occ": 28.1
+    }
+  ],
+  "spectral_fp32": [
+    {
+      "case": "heat_spectral_fp32",
+      "name": "vectorized_layer_norm_kernel",
+      "class": "Reduction/Norm",
+      "ms": 0.6793,
+      "sm": 55.6,
+      "mem": 32.8,
+      "occ": 72.2
+    },
+    {
+      "case": "heat_spectral_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.204,
+      "sm": 63.3,
+      "mem": 76.8,
+      "occ": 58.3
+    },
+    {
+      "case": "heat_spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1666,
+      "sm": 59.9,
+      "mem": 55.9,
+      "occ": 32.6
+    },
+    {
+      "case": "heat_spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1618,
+      "sm": 53.1,
+      "mem": 52.4,
+      "occ": 29.2
+    },
+    {
+      "case": "heat_spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.136,
+      "sm": 55.0,
+      "mem": 49.4,
+      "occ": 28.1
+    },
+    {
+      "case": "heat_spectral_fp32",
+      "name": "CatArrayBatchedCopy_aligned16_cont",
+      "class": "Movement/Materialization",
+      "ms": 0.0371,
+      "sm": 15.2,
+      "mem": 34.4,
+      "occ": 69.8
+    }
+  ],
+  "layer2_fp32": [
+    {
+      "case": "heat_layer2_fp32",
+      "name": "indexSelectLargeIndex",
+      "class": "Movement/Materialization",
+      "ms": 3.7383,
+      "sm": 56.2,
+      "mem": 10.7,
+      "occ": 66.6
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "_scatter_gather_elementwise_kernel",
+      "class": "Movement/Materialization",
+      "ms": 1.9833,
+      "sm": 57.2,
+      "mem": 46.1,
+      "occ": 93.0
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "CatArrayBatchedCopy_aligned16_cont",
+      "class": "Movement/Materialization",
+      "ms": 1.0007,
+      "sm": 24.0,
+      "mem": 67.8,
+      "occ": 90.8
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.9828,
+      "sm": 69.8,
+      "mem": 80.0,
+      "occ": 60.8
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "vectorized_layer_norm_kernel",
+      "class": "Reduction/Norm",
+      "ms": 0.6805,
+      "sm": 55.6,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1946,
+      "sm": 54.8,
+      "mem": 54.6,
+      "occ": 29.1
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "ampere_sgemm_32x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1812,
+      "sm": 62.2,
+      "mem": 62.4,
+      "occ": 37.9
+    },
+    {
+      "case": "heat_layer2_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1033,
+      "sm": 49.4,
+      "mem": 47.4,
+      "occ": 28.7
+    }
+  ]
+}

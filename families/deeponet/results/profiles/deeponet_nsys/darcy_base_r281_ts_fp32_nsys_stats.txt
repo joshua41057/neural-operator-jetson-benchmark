@@ -1,0 +1,123 @@
+Generating SQLite file darcy_base_r281_ts_fp32.sqlite from darcy_base_r281_ts_fp32.nsys-rep
+Processing [darcy_base_r281_ts_fp32.sqlite] with [/opt/nvidia/nsight-systems/2024.5.4/host-linux-armv8/reports/nvtx_sum.py]... 
+
+ ** NVTX Range Summary (nvtx_sum):
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)   Style             Range          
+ --------  ---------------  ---------  ------------  ------------  ----------  ----------  -----------  -------  -------------------------
+     99.4       2728166912          1  2728166912.0  2728166912.0  2728166912  2728166912          0.0  PushPop  :deeponet_profile_forward
+      0.6         15258816          1    15258816.0    15258816.0    15258816    15258816          0.0  PushPop  cuBLAS:cublasCreate_v2   
+
+Processing [darcy_base_r281_ts_fp32.sqlite] with [/opt/nvidia/nsight-systems/2024.5.4/host-linux-armv8/reports/osrt_sum.py]... 
+
+ ** OS Runtime Summary (osrt_sum):
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)   Med (ns)   Min (ns)  Max (ns)   StdDev (ns)          Name         
+ --------  ---------------  ---------  ----------  ---------  --------  ---------  -----------  ---------------------
+     87.9       2831351808       1659   1706661.7     2848.0       992  107957344    8129818.4  ioctl                
+     10.2        328804832         10  32880483.2  3658064.0     20416  278978016   86868120.0  poll                 
+      0.7         23464000         23   1020173.9     7488.0      1408   20277664    4210058.6  fread                
+      0.5         15975008       1932      8268.6     4064.0       992    2031520      48148.6  read                 
+      0.4         11794304        993     11877.4    11264.0      6816      99360       3682.0  open64               
+      0.2          5060608          1   5060608.0  5060608.0   5060608    5060608          0.0  nanosleep            
+      0.1          1803072         75     24041.0     7904.0      2816     398944      55611.8  mmap                 
+      0.0          1328320         56     23720.0     8672.0      4736     207872      48656.9  open                 
+      0.0           843520         10     84352.0    41232.0     13152     507968     150054.6  sem_wait             
+      0.0           515552         41     12574.4    12768.0      5056      20608       4112.4  mmap64               
+      0.0           481280         34     14155.3    10304.0      2016      67968      12441.5  fopen                
+      0.0           145824         16      9114.0     4416.0      2656      49728      12131.9  write                
+      0.0           104000          1    104000.0   104000.0    104000     104000          0.0  pthread_create       
+      0.0            94208          7     13458.3     3456.0      1312      38752      15445.7  fgets                
+      0.0            88320         16      5520.0     4480.0      2656      13152       3001.4  fclose               
+      0.0            82016         48      1708.7     1360.0       992       3136        737.0  fcntl                
+      0.0            51744          5     10348.8     7616.0      5888      20864       6118.8  fopen64              
+      0.0            31040          5      6208.0     1024.0       992      26880      11556.2  pthread_cond_signal  
+      0.0            24896          1     24896.0    24896.0     24896      24896          0.0  socket               
+      0.0            19488          1     19488.0    19488.0     19488      19488          0.0  connect              
+      0.0            17792          3      5930.7     5792.0      3360       8640       2642.7  signal               
+      0.0            15776          2      7888.0     7888.0      7072       8704       1154.0  munmap               
+      0.0            14144          1     14144.0    14144.0     14144      14144          0.0  pipe2                
+      0.0             7872          1      7872.0     7872.0      7872       7872          0.0  fwrite               
+      0.0             6656          3      2218.7     2048.0      1120       3488       1193.2  sigaction            
+      0.0             4192          3      1397.3     1120.0      1088       1984        508.3  fflush               
+      0.0             2752          2      1376.0     1376.0      1152       1600        316.8  dup                  
+      0.0             1024          1      1024.0     1024.0      1024       1024          0.0  pthread_mutex_trylock
+
+Processing [darcy_base_r281_ts_fp32.sqlite] with [/opt/nvidia/nsight-systems/2024.5.4/host-linux-armv8/reports/cuda_api_sum.py]... 
+
+ ** CUDA API Summary (cuda_api_sum):
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)    Med (ns)   Min (ns)  Max (ns)   StdDev (ns)               Name             
+ --------  ---------------  ---------  ----------  ----------  --------  ---------  -----------  ------------------------------
+     89.3       2782608928         81  34353196.6  28054752.0  26578624  441213600   45897288.9  cudaDeviceSynchronize         
+      8.9        277580960       4514     61493.3     21952.0      8672   14977376     456368.9  cudaLaunchKernel              
+      0.5         17118944          4   4279736.0   5317696.0    992000    5491552    2193743.7  cuLibraryLoadData             
+      0.3          9312064        297     31353.8     21920.0     18336     159712      19458.1  cuLaunchKernel                
+      0.3          9038144         11    821649.5    415776.0     10752    1976160     729686.9  cudaMalloc                    
+      0.3          7978496        100     79785.0     30432.0     14752    1896960     280962.4  cudaMemsetAsync               
+      0.2          4768640         22    216756.4     32464.0     14944    3857056     813838.9  cudaMemcpyAsync               
+      0.1          3684096         22    167458.9     60240.0      3648     420608     163398.1  cudaStreamSynchronize         
+      0.1          3179968          1   3179968.0   3179968.0   3179968    3179968          0.0  cudaFree                      
+      0.0          1433088          3    477696.0    501664.0    361920     569504     105847.2  cuModuleLoadData              
+      0.0           242176        826       293.2       224.0       128       6752        292.0  cuGetProcAddress_v2           
+      0.0            63712         18      3539.6       768.0       704      31808       7421.8  cudaEventCreateWithFlags      
+      0.0            54816          8      6852.0      6592.0      4864      10080       1778.9  cudaStreamIsCapturing_v10000  
+      0.0            13152          3      4384.0      4320.0      3776       5056        642.4  cuInit                        
+      0.0             7008          4      1752.0      1760.0      1632       1856        120.8  cuLibraryGetKernel            
+      0.0             2912          3       970.7       480.0       288       2144       1020.7  cuModuleGetLoadingMode        
+      0.0             2592          2      1296.0      1296.0       960       1632        475.2  cudaGetDriverEntryPoint_v11030
+
+Processing [darcy_base_r281_ts_fp32.sqlite] with [/opt/nvidia/nsight-systems/2024.5.4/host-linux-armv8/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)   Med (ns)   Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                
+ --------  ---------------  ---------  ---------  ---------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------
+     74.9       2438479840        900  2709422.0  2340368.0    758784   9538304    1264375.1  ampere_sgemm_128x64_tn                                                                              
+     16.3        529918144       1200   441598.5   695024.0      2144   3016160     320810.1  void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIte…
+      3.8        124278592        200   621393.0   546896.0    542432   2962528     226305.4  ampere_sgemm_128x32_tn                                                                              
+      1.6         51252384        200   256261.9   263344.0    180512   1738368     143917.7  void gemv2T_kernel_val<long, long, float, float, float, float, (int)128, (int)16, (int)2, (int)2, (…
+      1.1         35132864        100   351328.6   349456.0    345248    385568       7729.2  std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool…
+      1.0         32340192        100   323401.9   283312.0    228384   1703872     170007.1  ampere_sgemm_32x128_tn                                                                              
+      0.3         11333120        100   113331.2    87120.0     84416   1748480     165695.8  void gemv2T_kernel_val<int, int, float, float, float, float, (int)128, (int)16, (int)2, (int)2, (bo…
+      0.3         11292416         99   114064.8   112288.0    109280    172576       7683.8  fused_mul_mul_sin_cos_mul_sin_cos_cat                                                               
+      0.1          4323072        100    43230.7    38640.0     37632     69536      10568.5  void at::native::<unnamed>::CatArrayBatchedCopy<at::native::<unnamed>::OpaqueType<(unsigned int)4>,…
+      0.1          3851968        200    19259.8    19008.0     17984     25248       1326.5  std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool…
+      0.1          3271392        100    32713.9    31584.0     29920     66944       5720.5  void at::native::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::native::<unnamed>::OpaqueType<…
+      0.0          1563136        200     7815.7     7616.0      6784     13856       1231.7  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…
+      0.0          1523104        100    15231.0    13072.0     12576     19136       2799.3  void at::native::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::native::<unnamed>::OpaqueType<…
+      0.0          1503200         99    15183.8    13408.0     12544     20352       2662.5  fused_unsqueeze_sub_add_div                                                                         
+      0.0          1371616        100    13716.2    13696.0     10944     16736       1455.3  void at::native::<unnamed>::upsample_bilinear2d_out_frame<float, float>(int, T2, T2, bool, at::Gene…
+      0.0          1192768        102    11693.8     9664.0      8992     16288       2618.1  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…
+      0.0          1179488         99    11914.0     9632.0      8896     15936       3054.8  fused_add_mul_add                                                                                   
+      0.0          1127008        100    11270.1    10752.0     10528     20512       2118.0  std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool…
+      0.0           990272        400     2475.7     2208.0      2112      4256        506.9  void <unnamed>::elementwise_kernel_with_index<int, at::native::linspace_cuda_out(const c10::Scalar …
+      0.0           349152        100     3491.5     3328.0      3264      5568        494.0  void cublasLt::epilogue::impl::globalKernel<(int)8, (int)32, float, float, float, (bool)1, (bool)1,…
+      0.0           331424        100     3314.2     3104.0      3040      5856        579.6  void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, float, float, (bool)0, float, floa…
+      0.0           229664          1   229664.0   229664.0    229664    229664          0.0  void at::native::<unnamed>::CatArrayBatchedCopy<at::native::<unnamed>::OpaqueType<(unsigned int)4>,…
+      0.0           194752        100     1947.5     1888.0      1856      3328        234.2  void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<float>, at::detail::…
+      0.0            43776          3    14592.0    14336.0     13376     16064       1362.2  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…
+      0.0            18208          2     9104.0     9104.0      7360     10848       2466.4  void at::native::vectorized_elementwise_kernel<(int)4, at::native::sin_kernel_cuda(at::TensorIterat…
+      0.0            17056          2     8528.0     8528.0      6688     10368       2602.2  void at::native::vectorized_elementwise_kernel<(int)4, at::native::cos_kernel_cuda(at::TensorIterat…
+      0.0            12896          1    12896.0    12896.0     12896     12896          0.0  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…
+      0.0             7520          2     3760.0     3760.0      3616      3904        203.6  void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctorOnSelf_add<float>, at…
+      0.0             3904          1     3904.0     3904.0      3904      3904          0.0  void at::native::vectorized_elementwise_kernel<(int)4, at::native::AUnaryFunctor<float, float, floa…
+
+Processing [darcy_base_r281_ts_fp32.sqlite] with [/opt/nvidia/nsight-systems/2024.5.4/host-linux-armv8/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)           Operation          
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ----------------------------
+     98.6          3871136     22  175960.7     720.0       416   3685984     784111.8  [CUDA memcpy Host-to-Device]
+      1.4            55648    100     556.5     544.0       480      1088         80.7  [CUDA memset]               
+
+Processing [darcy_base_r281_ts_fp32.sqlite] with [/opt/nvidia/nsight-systems/2024.5.4/host-linux-armv8/reports/cuda_gpu_mem_size_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Size) (cuda_gpu_mem_size_sum):
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)           Operation          
+ ----------  -----  --------  --------  --------  --------  -----------  ----------------------------
+     33.453     22     1.521     0.002     0.000    30.106        6.392  [CUDA memcpy Host-to-Device]
+      0.084    100     0.001     0.001     0.001     0.001        0.000  [CUDA memset]               
+

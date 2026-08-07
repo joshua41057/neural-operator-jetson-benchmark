@@ -1,0 +1,19 @@
+RUN_TS=completion_full_bf16_r2
+CASE=full
+PRECISION=bf16
+ROOT=/home/jetson/VirSO/For_Jetson/For_Jetson
+MODEL_PATH=/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth
+NUM_LAYERS=10
+WIDTH=48
+MAX_MODE=64
+K_NEIGHBORS=30
+EMBED=1
+SPECTRAL=1
+SPATIAL=1
+COLLAB_SKIP=1
+SPECTRAL_SKIP=1
+MONITOR_CMD=tegrastats
+MONITOR_INTERVAL_MS=200
+PROFILE_FLOPS=0
+Thu Jun 11 03:03:34 PM CST 2026
+Linux yahboom 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux

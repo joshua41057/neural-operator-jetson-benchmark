@@ -1,0 +1,38 @@
+{
+  "config_path": "configs/deeponet/resolution/burgers_deeponet_base_r1024.yaml",
+  "experiment_name": "burgers_deeponet_base_r1024",
+  "family": "DeepONet",
+  "seed": 1,
+  "deterministic": true,
+  "device": "cuda",
+  "dataset": "burgers",
+  "spatial_dim": 1,
+  "input_shape": [
+    1024,
+    2
+  ],
+  "output_shape": [
+    1024,
+    1
+  ],
+  "parameter_count": 395777,
+  "n_train": 1638,
+  "n_val": 205,
+  "n_test": 205,
+  "sensor_resolution": 128,
+  "basis_dim": 128,
+  "branch_hidden_dim": 256,
+  "branch_layers": 4,
+  "trunk_hidden_dim": 256,
+  "trunk_layers": 4,
+  "use_coord_features": true,
+  "chunk_size": 0,
+  "best_epoch": 499,
+  "best_val_rel_l2": 0.015019365586340427,
+  "test_rel_l2_mean": 0.015312207862734795,
+  "test_rel_l2_std": 0.015610240399837494,
+  "test_rel_l2_median": 0.010429800488054752,
+  "test_mse": 0.00021100051526445895,
+  "test_mae": 0.005324165802448988,
+  "test_n": 205
+}

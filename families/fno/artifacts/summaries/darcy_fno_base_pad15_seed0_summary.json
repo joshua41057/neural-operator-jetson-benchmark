@@ -1,0 +1,31 @@
+{
+  "config_path": "configs/ablations/darcy/darcy_fno_base_pad15.yaml",
+  "experiment_name": "darcy_fno_base_pad15",
+  "seed": 0,
+  "deterministic": false,
+  "device": "cuda",
+  "dataset": "darcy",
+  "spatial_dim": 2,
+  "input_shape": [
+    141,
+    141,
+    3
+  ],
+  "output_shape": [
+    141,
+    141,
+    1
+  ],
+  "parameter_count": 3287553,
+  "n_train": 922,
+  "n_val": 102,
+  "n_test": 1024,
+  "best_epoch": 293,
+  "best_val_rel_l2": 0.014417307451367378,
+  "test_rel_l2_mean": 0.014260202646255493,
+  "test_rel_l2_std": 0.00679803779348731,
+  "test_rel_l2_median": 0.012610794976353645,
+  "test_mse": 1.2076760924628616e-08,
+  "test_mae": 7.33212727936916e-05,
+  "test_n": 1024
+}

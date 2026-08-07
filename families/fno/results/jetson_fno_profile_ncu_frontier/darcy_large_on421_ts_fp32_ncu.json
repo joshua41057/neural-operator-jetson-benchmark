@@ -1,0 +1,35 @@
+{
+  "mean_ms": 112062.90941918269,
+  "median_ms": 112062.90941918269,
+  "p95_ms": 112062.90941918269,
+  "p99_ms": 112062.90941918269,
+  "min_ms": 112062.90941918269,
+  "max_ms": 112062.90941918269,
+  "cuda_peak_allocated_mb": 500.93408203125,
+  "num_warmup": 1,
+  "num_iters": 1,
+  "dataset": "darcy",
+  "resolution": [
+    141,
+    141
+  ],
+  "batch_size": 1,
+  "device": "cuda",
+  "mode": "torchscript",
+  "precision": "fp32",
+  "input_bank": "artifacts/benchmark_inputs/darcy_r421_bank.pt",
+  "sample_index": 0,
+  "source": "artifacts/torchscript/darcy_fno_large_seed0.ts",
+  "bank_meta": {
+    "dataset": "darcy",
+    "resolution": [
+      421,
+      421
+    ],
+    "input_key": "Kcoeff",
+    "source_path": "/home/jetson/data/piececonst_r421_N1024_smooth2.mat",
+    "num_samples": 8
+  },
+  "notes": "frontier ncu same method as prior successful runs",
+  "extra_metadata": {}
+}

@@ -1,0 +1,77 @@
+dataset,mode,precision_mode,failure_class,num_failures
+,,,other_runtime_failure,2
+,eager,bf16_autocast,fft_bf16_unsupported,27
+,eager,fp16_autocast,dtype_mismatch,1
+,eager,fp16_autocast,fft_fp16_non_power_of_two_size_1048,1
+,eager,fp16_autocast,"fft_fp16_non_power_of_two_size_141, 141",1
+,eager,fp16_autocast,"fft_fp16_non_power_of_two_size_149, 149",1
+,eager,fp16_autocast,"fft_fp16_non_power_of_two_size_150, 150",5
+,eager,fp16_autocast,"fft_fp16_non_power_of_two_size_153, 153",1
+,eager,fp16_autocast,"fft_fp16_non_power_of_two_size_156, 156",1
+,eager,fp16_autocast,fft_fp16_non_power_of_two_size_2064,1
+,eager,fp16_autocast,fft_fp16_non_power_of_two_size_2072,6
+,eager,fp16_autocast,fft_fp16_non_power_of_two_size_2080,1
+,eager,fp16_autocast,fft_fp16_non_power_of_two_size_2088,1
+,eager,fp16_autocast,"fft_fp16_non_power_of_two_size_220, 220",1
+,eager,fp16_autocast,"fft_fp16_non_power_of_two_size_290, 290",1
+,eager,fp16_autocast,fft_fp16_non_power_of_two_size_4120,1
+,eager,fp16_autocast,"fft_fp16_non_power_of_two_size_430, 430",1
+,eager,fp16_autocast,fft_fp16_non_power_of_two_size_536,1
+,eager,fp16_autocast,fft_fp16_non_power_of_two_size_8216,1
+,eager,fp16_autocast,"fft_fp16_non_power_of_two_size_94, 94",1
+,eager,fp16_native,dtype_mismatch,1
+,eager,fp16_native,fft_fp16_non_power_of_two_size_1048,1
+,eager,fp16_native,"fft_fp16_non_power_of_two_size_141, 141",1
+,eager,fp16_native,"fft_fp16_non_power_of_two_size_149, 149",1
+,eager,fp16_native,"fft_fp16_non_power_of_two_size_150, 150",5
+,eager,fp16_native,"fft_fp16_non_power_of_two_size_153, 153",1
+,eager,fp16_native,"fft_fp16_non_power_of_two_size_156, 156",1
+,eager,fp16_native,fft_fp16_non_power_of_two_size_2064,1
+,eager,fp16_native,fft_fp16_non_power_of_two_size_2072,6
+,eager,fp16_native,fft_fp16_non_power_of_two_size_2080,1
+,eager,fp16_native,fft_fp16_non_power_of_two_size_2088,1
+,eager,fp16_native,"fft_fp16_non_power_of_two_size_220, 220",1
+,eager,fp16_native,"fft_fp16_non_power_of_two_size_290, 290",1
+,eager,fp16_native,fft_fp16_non_power_of_two_size_4120,1
+,eager,fp16_native,"fft_fp16_non_power_of_two_size_430, 430",1
+,eager,fp16_native,fft_fp16_non_power_of_two_size_536,1
+,eager,fp16_native,fft_fp16_non_power_of_two_size_8216,1
+,eager,fp16_native,"fft_fp16_non_power_of_two_size_94, 94",1
+,eager,fp32_strict,other_runtime_failure,1
+,torchscript,bf16_autocast,fft_bf16_unsupported,27
+,torchscript,fp16_autocast,dtype_mismatch,1
+,torchscript,fp16_autocast,fft_fp16_non_power_of_two_size_1048,1
+,torchscript,fp16_autocast,"fft_fp16_non_power_of_two_size_141, 141",1
+,torchscript,fp16_autocast,"fft_fp16_non_power_of_two_size_149, 149",1
+,torchscript,fp16_autocast,"fft_fp16_non_power_of_two_size_150, 150",5
+,torchscript,fp16_autocast,"fft_fp16_non_power_of_two_size_153, 153",1
+,torchscript,fp16_autocast,"fft_fp16_non_power_of_two_size_156, 156",1
+,torchscript,fp16_autocast,fft_fp16_non_power_of_two_size_2064,1
+,torchscript,fp16_autocast,fft_fp16_non_power_of_two_size_2072,6
+,torchscript,fp16_autocast,fft_fp16_non_power_of_two_size_2080,1
+,torchscript,fp16_autocast,fft_fp16_non_power_of_two_size_2088,1
+,torchscript,fp16_autocast,"fft_fp16_non_power_of_two_size_220, 220",1
+,torchscript,fp16_autocast,"fft_fp16_non_power_of_two_size_290, 290",1
+,torchscript,fp16_autocast,fft_fp16_non_power_of_two_size_4120,1
+,torchscript,fp16_autocast,"fft_fp16_non_power_of_two_size_430, 430",1
+,torchscript,fp16_autocast,fft_fp16_non_power_of_two_size_536,1
+,torchscript,fp16_autocast,fft_fp16_non_power_of_two_size_8216,1
+,torchscript,fp16_autocast,"fft_fp16_non_power_of_two_size_94, 94",1
+,torchscript,fp16_native,dtype_mismatch,1
+,torchscript,fp16_native,fft_fp16_non_power_of_two_size_1048,1
+,torchscript,fp16_native,"fft_fp16_non_power_of_two_size_141, 141",1
+,torchscript,fp16_native,"fft_fp16_non_power_of_two_size_149, 149",1
+,torchscript,fp16_native,"fft_fp16_non_power_of_two_size_150, 150",5
+,torchscript,fp16_native,"fft_fp16_non_power_of_two_size_153, 153",1
+,torchscript,fp16_native,"fft_fp16_non_power_of_two_size_156, 156",1
+,torchscript,fp16_native,fft_fp16_non_power_of_two_size_2064,1
+,torchscript,fp16_native,fft_fp16_non_power_of_two_size_2072,6
+,torchscript,fp16_native,fft_fp16_non_power_of_two_size_2080,1
+,torchscript,fp16_native,fft_fp16_non_power_of_two_size_2088,1
+,torchscript,fp16_native,"fft_fp16_non_power_of_two_size_220, 220",1
+,torchscript,fp16_native,"fft_fp16_non_power_of_two_size_290, 290",1
+,torchscript,fp16_native,fft_fp16_non_power_of_two_size_4120,1
+,torchscript,fp16_native,"fft_fp16_non_power_of_two_size_430, 430",1
+,torchscript,fp16_native,fft_fp16_non_power_of_two_size_536,1
+,torchscript,fp16_native,fft_fp16_non_power_of_two_size_8216,1
+,torchscript,fp16_native,"fft_fp16_non_power_of_two_size_94, 94",1

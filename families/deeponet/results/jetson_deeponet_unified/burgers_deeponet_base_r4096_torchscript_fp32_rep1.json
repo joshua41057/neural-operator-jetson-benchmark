@@ -1,0 +1,24 @@
+{
+  "batch_size": 1,
+  "checkpoint": "artifacts/checkpoints/burgers_deeponet_base_r4096_seed2_best.pt",
+  "device": "cuda",
+  "input_bank": "artifacts/benchmark_inputs/burgers_r4096_bank.pt",
+  "input_bank_shape": [
+    8,
+    4096
+  ],
+  "max_ms": 2.863377332687378,
+  "mean_ms": 2.507222811691463,
+  "median_ms": 2.4995708372443914,
+  "min_ms": 2.460512798279524,
+  "mode": "torchscript",
+  "num_iters": 100,
+  "num_warmup": 30,
+  "p95_ms": 2.5379928527399898,
+  "p99_ms": 2.691474682651461,
+  "peak_cuda_allocated_mb": 19.4658203125,
+  "precision": "fp32",
+  "result_tag": "burgers_deeponet_base_r4096_torchscript_fp32_rep1",
+  "std_ms": 0.04454149945908388,
+  "torchscript": "artifacts/torchscript/burgers_deeponet_base_r4096_seed2.ts"
+}

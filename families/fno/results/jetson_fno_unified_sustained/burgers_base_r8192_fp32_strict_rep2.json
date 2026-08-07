@@ -1,0 +1,54 @@
+{
+  "status": "success",
+  "mode": "torchscript",
+  "checkpoint": "artifacts/checkpoints/burgers_fno_base_r8192_seed1_best.pt",
+  "torchscript": "artifacts/torchscript/burgers_fno_base_r8192_seed1.ts",
+  "input_bank": "artifacts/benchmark_inputs/burgers_r8192_bank.pt",
+  "sample_index": 0,
+  "batch_size": 1,
+  "precision_mode": "fp32_strict",
+  "device": "cuda",
+  "warmup_seconds": 20.0,
+  "measure_seconds_requested": 120.0,
+  "measure_seconds_actual": 120.00039627915248,
+  "warmup_iters": 4374,
+  "measure_iters": 25871,
+  "throughput_inf_s": 215.5909547149932,
+  "mean_ms": 4.633885399667717,
+  "median_ms": 4.606652073562145,
+  "p95_ms": 4.70910407602787,
+  "p99_ms": 5.5979562457650855,
+  "min_ms": 4.531001206487417,
+  "max_ms": 8.91837989911437,
+  "dataset": "burgers",
+  "resolution": [
+    8192
+  ],
+  "parameter_count": 235537,
+  "bank_meta": {
+    "dataset": "burgers",
+    "resolution": [
+      8192
+    ],
+    "input_key": "a",
+    "source_path": "/home/jetson/data/burgers_data_R10.mat",
+    "num_samples": 8
+  },
+  "precision_info": {
+    "precision_mode": "fp32_strict",
+    "model_cast": "fp32",
+    "input_cast": "fp32",
+    "autocast_enabled": false,
+    "autocast_dtype": null,
+    "allow_tf32_matmul": false,
+    "allow_tf32_cudnn": false,
+    "float32_matmul_precision": "highest"
+  },
+  "input_shape": [
+    1,
+    8192
+  ],
+  "input_dtype": "torch.float32",
+  "peak_cuda_alloc_mb": 17.4580078125,
+  "peak_cuda_reserved_mb": 24.0
+}

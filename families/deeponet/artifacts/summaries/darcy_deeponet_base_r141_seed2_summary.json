@@ -1,0 +1,40 @@
+{
+  "config_path": "configs/deeponet/resolution/darcy_deeponet_base_r141.yaml",
+  "experiment_name": "darcy_deeponet_base_r141",
+  "family": "DeepONet",
+  "seed": 2,
+  "deterministic": true,
+  "device": "cuda",
+  "dataset": "darcy",
+  "spatial_dim": 2,
+  "input_shape": [
+    141,
+    141,
+    3
+  ],
+  "output_shape": [
+    141,
+    141,
+    1
+  ],
+  "parameter_count": 2639361,
+  "n_train": 922,
+  "n_val": 102,
+  "n_test": 1024,
+  "sensor_resolution": 35,
+  "basis_dim": 128,
+  "branch_hidden_dim": 512,
+  "branch_layers": 4,
+  "trunk_hidden_dim": 256,
+  "trunk_layers": 4,
+  "use_coord_features": true,
+  "chunk_size": 32768,
+  "best_epoch": 154,
+  "best_val_rel_l2": 0.07221954315900803,
+  "test_rel_l2_mean": 0.07332683354616165,
+  "test_rel_l2_std": 0.021475525572896004,
+  "test_rel_l2_median": 0.07051428407430649,
+  "test_mse": 2.6505213668315264e-07,
+  "test_mae": 0.0003682668902911246,
+  "test_n": 1024
+}

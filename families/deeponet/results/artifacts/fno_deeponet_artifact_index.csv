@@ -1,0 +1,523 @@
+family,category,path,bytes,meaning
+FNO,validity,/home/jetson/jjyoo3/EDCNO/results/artifacts/fno_quality_validity_table.csv,9974,predictive validity / held-out relative L2
+FNO,validity,/home/jetson/jjyoo3/EDCNO/results/artifacts/paper_fno_ablation_validity_table.csv,1872,predictive validity / held-out relative L2
+FNO,validity,/home/jetson/jjyoo3/EDCNO/results/artifacts/paper_fno_quality_validity_table.csv,9974,predictive validity / held-out relative L2
+FNO,validity,/home/jetson/jjyoo3/EDCNO/results/artifacts/paper_fno_quality_validity_table_rebuilt.csv,3594,predictive validity / held-out relative L2
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes12_seed1_eager_fp32.json,725,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes12_seed1_torchscript_fp32.json,724,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes16_seed2_eager_fp32.json,724,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes16_seed2_torchscript_fp32.json,728,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes32_seed1_eager_fp32.json,725,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes32_seed1_torchscript_fp32.json,726,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_nocoords_seed0_eager_fp32.json,725,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_nocoords_seed0_torchscript_fp32.json,729,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_pad0_seed1_eager_fp32.json,721,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_pad0_seed1_torchscript_fp32.json,725,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_pad40_seed1_eager_fp32.json,722,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_pad40_seed1_torchscript_fp32.json,726,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r1024_seed0_eager_fp32.json,722,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r1024_seed0_torchscript_fp32.json,726,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r2048_seed2_eager_fp32.json,722,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r2048_seed2_torchscript_fp32.json,726,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r4096_seed0_eager_fp32.json,721,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r4096_seed0_torchscript_fp32.json,726,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r512_seed2_eager_fp32.json,718,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r512_seed2_torchscript_fp32.json,720,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_seed3_eager_fp32.json,716,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_seed3_torchscript_fp32.json,720,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_large_seed0_eager_fp32.json,717,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_large_seed0_torchscript_fp32.json,718,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_small_seed2_eager_fp32.json,715,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_small_seed2_torchscript_fp32.json,721,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_modes12_seed1_eager_fp32.json,754,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_modes12_seed1_torchscript_fp32.json,753,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_modes24_seed1_eager_fp32.json,754,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_modes24_seed1_torchscript_fp32.json,754,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_nocoords_seed2_eager_fp32.json,754,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_nocoords_seed2_torchscript_fp32.json,755,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_pad0_seed1_eager_fp32.json,754,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_pad0_seed1_torchscript_fp32.json,752,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_pad15_seed0_eager_fp32.json,751,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_pad15_seed0_torchscript_fp32.json,750,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r141_seed0_eager_fp32.json,747,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r141_seed0_torchscript_fp32.json,752,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r211_seed1_eager_fp32.json,752,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r211_seed1_torchscript_fp32.json,752,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r281_seed1_eager_fp32.json,750,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r281_seed1_torchscript_fp32.json,750,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r85_seed2_eager_fp32.json,744,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r85_seed2_torchscript_fp32.json,745,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_seed0_eager_fp32.json,742,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_seed0_torchscript_fp32.json,746,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_large_seed0_eager_fp32.json,746,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_large_seed0_torchscript_fp32.json,748,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_small_seed4_eager_fp32.json,745,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_small_seed4_torchscript_fp32.json,748,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/smoke_burgers_base_eager_fp32.json,715,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/smoke_burgers_base_ts_fp32.json,721,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/burgers_base_r2048_ts_fp32_strict_energy.json,1450,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r141_ts_fp32_strict_energy.json,1483,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r211_ts_fp32_strict_energy.json,1496,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r281_on421_ts_fp32_strict_energy.json,1493,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r281_ts_fp32_strict_energy.json,1487,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r85_ts_fp32_strict_energy.json,1482,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_large_r141_on421_ts_fp32_strict_energy.json,1485,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_large_r141_ts_fp32_strict_energy.json,1485,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_small_r141_ts_fp32_strict_energy.json,1483,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_frontier/burgers_base_r4096_on_8192_eager_fp32.json,722,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_frontier/burgers_base_r4096_on_8192_torchscript_fp32.json,722,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_frontier/darcy_base_r281_on_421_eager_fp32.json,747,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_frontier/darcy_base_r281_on_421_torchscript_fp32.json,750,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_frontier/darcy_large_r141_on_421_eager_fp32.json,748,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_frontier/darcy_large_r141_on_421_torchscript_fp32.json,749,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_base_r281_on_561_ts_fp32.json,865,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_base_r281_on_701_ts_fp32.json,869,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_base_r281_on_841_ts_fp32.json,871,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_base_r281_on_981_ts_fp32.json,866,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_large_r141_on_561_ts_fp32.json,862,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_large_r141_on_701_ts_fp32.json,862,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_large_r141_on_841_ts_fp32.json,861,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_large_r141_on_981_ts_fp32.json,867,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_modes12_seed1_eager_fp32_strict.json,2172,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_modes12_seed1_torchscript_fp32_strict.json,2239,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_modes16_seed2_eager_fp32_strict.json,2165,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_modes16_seed2_torchscript_fp32_strict.json,2238,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_modes32_seed1_eager_fp32_strict.json,2172,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_modes32_seed1_torchscript_fp32_strict.json,2236,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_nocoords_seed0_eager_fp32_strict.json,2172,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_nocoords_seed0_torchscript_fp32_strict.json,2239,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_pad0_seed1_eager_fp32_strict.json,2159,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_pad0_seed1_torchscript_fp32_strict.json,2235,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_pad40_seed1_eager_fp32_strict.json,2164,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_pad40_seed1_torchscript_fp32_strict.json,2242,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_r1024_seed0_eager_fp32_strict.json,2169,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_r1024_seed0_torchscript_fp32_strict.json,2236,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_r2048_seed2_eager_fp32_strict.json,2167,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_r2048_seed2_torchscript_fp32_strict.json,2231,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_r4096_seed0_eager_fp32_strict.json,2165,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_r4096_seed0_torchscript_fp32_strict.json,2244,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_r512_seed2_eager_fp32_strict.json,2162,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_r512_seed2_torchscript_fp32_strict.json,2235,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_seed3_eager_fp32_strict.json,2279,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_base_seed3_torchscript_fp32_strict.json,2223,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_large_seed0_eager_fp32_strict.json,2162,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_large_seed0_torchscript_fp32_strict.json,2214,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_small_seed2_eager_fp32_strict.json,2159,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/burgers_fno_small_seed2_torchscript_fp32_strict.json,2228,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_modes12_seed1_eager_fp32_strict.json,2210,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_modes12_seed1_torchscript_fp32_strict.json,2260,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_modes24_seed1_eager_fp32_strict.json,2225,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_modes24_seed1_torchscript_fp32_strict.json,2282,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_nocoords_seed2_eager_fp32_strict.json,2217,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_nocoords_seed2_torchscript_fp32_strict.json,2274,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_pad0_seed1_eager_fp32_strict.json,2225,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_pad0_seed1_torchscript_fp32_strict.json,2269,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_pad15_seed0_eager_fp32_strict.json,2208,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_pad15_seed0_torchscript_fp32_strict.json,2257,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_r141_seed0_eager_fp32_strict.json,2210,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_r141_seed0_torchscript_fp32_strict.json,2259,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_r211_seed1_eager_fp32_strict.json,2215,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_r211_seed1_torchscript_fp32_strict.json,2265,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_r281_seed1_eager_fp32_strict.json,2209,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_r281_seed1_torchscript_fp32_strict.json,2261,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_r85_seed2_eager_fp32_strict.json,2202,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_r85_seed2_torchscript_fp32_strict.json,2251,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_seed0_eager_fp32_strict.json,2205,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_base_seed0_torchscript_fp32_strict.json,2252,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_large_seed0_eager_fp32_strict.json,2214,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_large_seed0_torchscript_fp32_strict.json,2261,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_small_seed4_eager_fp32_strict.json,2201,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision/darcy_fno_small_seed4_torchscript_fp32_strict.json,2250,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_fft_safe/burgers_base_r2048_eager_fp32_strict.json,2282,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_fft_safe/burgers_base_r4096_eager_fp32_strict.json,2280,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_fft_safe/darcy_base_r141_eager_fp32_strict.json,2318,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_fft_safe/darcy_base_r281_eager_fp32_strict.json,2324,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_fft_safe/darcy_base_r281_on421_eager_fp32_strict.json,2331,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_fft_safe/darcy_large_r141_eager_fp32_strict.json,2333,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_fft_safe/darcy_large_r141_on421_eager_fp32_strict.json,2335,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_frontier/burgers_base_r4096_on_8192_eager_fp32_strict.json,2171,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_frontier/burgers_base_r4096_on_8192_torchscript_fp32_strict.json,2225,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_frontier/darcy_base_r281_on_421_eager_fp32_strict.json,2214,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_frontier/darcy_base_r281_on_421_torchscript_fp32_strict.json,2261,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_frontier/darcy_large_r141_on_421_eager_fp32_strict.json,2213,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_precision_frontier/darcy_large_r141_on_421_torchscript_fp32_strict.json,2265,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu/darcy_r281_ts_fp32_ncu.json,834,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu/darcy_r85_ts_fp32_ncu.json,831,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu_frontier/darcy_large_on421_ts_fp32_ncu.json,881,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu_sched/darcy_large_on421_ts_fp32_ncu_sched.json,870,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu_sched/darcy_r281_ts_fp32_ncu_sched.json,858,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/burgers_base_ts_fp32.json,825,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/darcy_base_r281_ts_fp32.json,874,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/darcy_base_r85_ts_fp32.json,849,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/darcy_large_on421_ts_fp32.json,869,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s0.json,719,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s1.json,720,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s2.json,721,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s3.json,721,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s4.json,720,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s5.json,719,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s6.json,719,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s7.json,715,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s0.json,745,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s1.json,745,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s2.json,746,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s3.json,744,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s4.json,744,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s5.json,742,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s6.json,744,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s7.json,743,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_sustained/burgers_base_ts_fp32_sustained.json,721,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_sustained/darcy_base_ts_fp32_sustained.json,746,short-run FP32 latency / memory harness output
+FNO,fp32_latency,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_sustained/darcy_large_ts_fp32_sustained.json,752,short-run FP32 latency / memory harness output
+FNO,precision_summary,/home/jetson/jjyoo3/EDCNO/results/artifacts/paper_fno_precision_failure_examples_table.csv,27118,precision feasibility or numerical perturbation summary
+FNO,precision_summary,/home/jetson/jjyoo3/EDCNO/results/artifacts/paper_fno_precision_failure_summary_table.csv,4262,precision feasibility or numerical perturbation summary
+FNO,precision_summary,/home/jetson/jjyoo3/EDCNO/results/artifacts/paper_fno_precision_fft_safe_workaround_table.csv,8858,precision feasibility or numerical perturbation summary
+FNO,precision_summary,/home/jetson/jjyoo3/EDCNO/results/artifacts/paper_fno_precision_tf32_table.csv,8997,precision feasibility or numerical perturbation summary
+FNO,precision_summary,/home/jetson/jjyoo3/EDCNO/results/artifacts/precision_failure_examples.csv,27118,precision feasibility or numerical perturbation summary
+FNO,precision_summary,/home/jetson/jjyoo3/EDCNO/results/artifacts/precision_failure_summary.csv,4262,precision feasibility or numerical perturbation summary
+FNO,precision_summary,/home/jetson/jjyoo3/EDCNO/results/artifacts/precision_runs_raw.csv,115874,precision feasibility or numerical perturbation summary
+FNO,precision_summary,/home/jetson/jjyoo3/EDCNO/results/artifacts/precision_tf32_vs_fp32.csv,8997,precision feasibility or numerical perturbation summary
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/burgers_base_r2048_ts_fp32_strict_energy.json,1450,long-run energy harness output
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/burgers_base_r2048_ts_tf32_energy.json,1432,long-run energy harness output
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r141_ts_fp32_strict_energy.json,1483,long-run energy harness output
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r141_ts_tf32_energy.json,1466,long-run energy harness output
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r211_ts_fp32_strict_energy.json,1496,long-run energy harness output
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r281_on421_ts_fp32_strict_energy.json,1493,long-run energy harness output
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r281_on421_ts_tf32_energy.json,1477,long-run energy harness output
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r281_ts_fp32_strict_energy.json,1487,long-run energy harness output
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r85_ts_fp32_strict_energy.json,1482,long-run energy harness output
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_large_r141_on421_ts_fp32_strict_energy.json,1485,long-run energy harness output
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_large_r141_on421_ts_tf32_energy.json,1466,long-run energy harness output
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_large_r141_ts_fp32_strict_energy.json,1485,long-run energy harness output
+FNO,energy_json,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_small_r141_ts_fp32_strict_energy.json,1483,long-run energy harness output
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes12_seed1_eager_fp16_tegrastats.log,9269,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes12_seed1_eager_fp32_tegrastats.log,11348,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes12_seed1_torchscript_fp16_tegrastats.log,9591,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes12_seed1_torchscript_fp32_tegrastats.log,12292,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes16_seed2_eager_fp16_tegrastats.log,9263,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes16_seed2_eager_fp32_tegrastats.log,11665,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes16_seed2_torchscript_fp16_tegrastats.log,9555,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes16_seed2_torchscript_fp32_tegrastats.log,12572,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes32_seed1_eager_fp16_tegrastats.log,9272,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes32_seed1_eager_fp32_tegrastats.log,11383,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes32_seed1_torchscript_fp16_tegrastats.log,9570,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_modes32_seed1_torchscript_fp32_tegrastats.log,12237,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_nocoords_seed0_eager_fp16_tegrastats.log,9270,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_nocoords_seed0_eager_fp32_tegrastats.log,11077,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_nocoords_seed0_torchscript_fp16_tegrastats.log,9529,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_nocoords_seed0_torchscript_fp32_tegrastats.log,12278,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_pad0_seed1_eager_fp16_tegrastats.log,9523,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_pad0_seed1_eager_fp32_tegrastats.log,11921,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_pad0_seed1_torchscript_fp16_tegrastats.log,9561,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_pad0_seed1_torchscript_fp32_tegrastats.log,12242,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_pad40_seed1_eager_fp16_tegrastats.log,9271,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_pad40_seed1_eager_fp32_tegrastats.log,11975,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_pad40_seed1_torchscript_fp16_tegrastats.log,9560,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_pad40_seed1_torchscript_fp32_tegrastats.log,12585,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r1024_seed0_eager_fp16_tegrastats.log,9265,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r1024_seed0_eager_fp32_tegrastats.log,11970,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r1024_seed0_torchscript_fp16_tegrastats.log,9566,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r1024_seed0_torchscript_fp32_tegrastats.log,12583,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r2048_seed2_eager_fp16_tegrastats.log,9270,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r2048_seed2_eager_fp32_tegrastats.log,11387,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r2048_seed2_torchscript_fp16_tegrastats.log,9581,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r2048_seed2_torchscript_fp32_tegrastats.log,12558,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r4096_seed0_eager_fp16_tegrastats.log,9277,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r4096_seed0_eager_fp32_tegrastats.log,11689,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r4096_seed0_torchscript_fp16_tegrastats.log,9571,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r4096_seed0_torchscript_fp32_tegrastats.log,12551,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r512_seed2_eager_fp16_tegrastats.log,9272,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r512_seed2_eager_fp32_tegrastats.log,11388,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r512_seed2_torchscript_fp16_tegrastats.log,9574,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_r512_seed2_torchscript_fp32_tegrastats.log,12553,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_seed3_eager_fp16_tegrastats.log,9580,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_seed3_eager_fp32_tegrastats.log,11391,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_seed3_torchscript_fp16_tegrastats.log,9551,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_base_seed3_torchscript_fp32_tegrastats.log,12556,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_large_seed0_eager_fp16_tegrastats.log,9270,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_large_seed0_eager_fp32_tegrastats.log,12573,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_large_seed0_torchscript_fp16_tegrastats.log,9562,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_large_seed0_torchscript_fp32_tegrastats.log,13161,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_small_seed2_eager_fp16_tegrastats.log,9221,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_small_seed2_eager_fp32_tegrastats.log,11376,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_small_seed2_torchscript_fp16_tegrastats.log,9561,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/burgers_fno_small_seed2_torchscript_fp32_tegrastats.log,12531,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_modes12_seed1_eager_fp16_tegrastats.log,9909,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_modes12_seed1_eager_fp32_tegrastats.log,12913,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_modes12_seed1_torchscript_fp16_tegrastats.log,9894,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_modes12_seed1_torchscript_fp32_tegrastats.log,14388,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_modes24_seed1_eager_fp16_tegrastats.log,10491,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_modes24_seed1_eager_fp32_tegrastats.log,14994,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_modes24_seed1_torchscript_fp16_tegrastats.log,10201,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_modes24_seed1_torchscript_fp32_tegrastats.log,15294,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_nocoords_seed2_eager_fp16_tegrastats.log,9867,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_nocoords_seed2_eager_fp32_tegrastats.log,13194,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_nocoords_seed2_torchscript_fp16_tegrastats.log,9881,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_nocoords_seed2_torchscript_fp32_tegrastats.log,14407,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_pad0_seed1_eager_fp16_tegrastats.log,9883,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_pad0_seed1_eager_fp32_tegrastats.log,14386,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_pad0_seed1_torchscript_fp16_tegrastats.log,9903,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_pad0_seed1_torchscript_fp32_tegrastats.log,15619,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_pad15_seed0_eager_fp16_tegrastats.log,9866,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_pad15_seed0_eager_fp32_tegrastats.log,14405,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_pad15_seed0_torchscript_fp16_tegrastats.log,9881,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_pad15_seed0_torchscript_fp32_tegrastats.log,14404,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r141_seed0_eager_fp16_tegrastats.log,9905,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r141_seed0_eager_fp32_tegrastats.log,13521,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r141_seed0_torchscript_fp16_tegrastats.log,9873,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r141_seed0_torchscript_fp32_tegrastats.log,14402,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r211_seed1_eager_fp16_tegrastats.log,9830,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r211_seed1_eager_fp32_tegrastats.log,17143,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r211_seed1_torchscript_fp16_tegrastats.log,9875,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r211_seed1_torchscript_fp32_tegrastats.log,17406,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r281_seed1_eager_fp16_tegrastats.log,9871,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r281_seed1_eager_fp32_tegrastats.log,24065,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r281_seed1_torchscript_fp16_tegrastats.log,9870,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r281_seed1_torchscript_fp32_tegrastats.log,24055,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r85_seed2_eager_fp16_tegrastats.log,9900,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r85_seed2_eager_fp32_tegrastats.log,12896,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r85_seed2_torchscript_fp16_tegrastats.log,10179,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_r85_seed2_torchscript_fp32_tegrastats.log,13524,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_seed0_eager_fp16_tegrastats.log,9900,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_seed0_eager_fp32_tegrastats.log,13797,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_seed0_torchscript_fp16_tegrastats.log,9855,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_base_seed0_torchscript_fp32_tegrastats.log,15050,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_large_seed0_eager_fp16_tegrastats.log,14410,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_large_seed0_eager_fp32_tegrastats.log,26662,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_large_seed0_torchscript_fp16_tegrastats.log,11058,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_large_seed0_torchscript_fp32_tegrastats.log,23722,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_small_seed4_eager_fp16_tegrastats.log,9570,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_small_seed4_eager_fp32_tegrastats.log,13159,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_small_seed4_torchscript_fp16_tegrastats.log,9886,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno/darcy_fno_small_seed4_torchscript_fp32_tegrastats.log,14406,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/burgers_base_r2048_ts_fp32_strict_energy_tegrastats.log,410743,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/burgers_base_r2048_ts_tf32_energy_tegrastats.log,409387,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r141_ts_fp32_strict_energy_tegrastats.log,414535,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r141_ts_tf32_energy_tegrastats.log,409264,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r211_ts_fp32_strict_energy_tegrastats.log,412818,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r281_on421_ts_fp32_strict_energy_tegrastats.log,409924,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r281_on421_ts_tf32_energy_tegrastats.log,409714,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r281_ts_fp32_strict_energy_tegrastats.log,476654,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_base_r85_ts_fp32_strict_energy_tegrastats.log,414239,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_large_r141_on421_ts_fp32_strict_energy_tegrastats.log,414623,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_large_r141_on421_ts_tf32_energy_tegrastats.log,414754,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_large_r141_ts_fp32_strict_energy_tegrastats.log,415316,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_energy_long/darcy_small_r141_ts_fp32_strict_energy_tegrastats.log,408752,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_frontier/burgers_base_r4096_on_8192_eager_fp32_tegrastats.log,13791,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_frontier/burgers_base_r4096_on_8192_torchscript_fp32_tegrastats.log,13160,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_frontier/darcy_base_r281_on_421_eager_fp32_tegrastats.log,40054,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_frontier/darcy_base_r281_on_421_torchscript_fp32_tegrastats.log,40929,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_frontier/darcy_large_r141_on_421_eager_fp32_tegrastats.log,85768,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_frontier/darcy_large_r141_on_421_torchscript_fp32_tegrastats.log,80933,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_base_r281_on_561_ts_fp32_tegrastats.log,19171,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_base_r281_on_701_ts_fp32_tegrastats.log,28474,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_base_r281_on_841_ts_fp32_tegrastats.log,27845,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_base_r281_on_981_ts_fp32_tegrastats.log,32035,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_large_r141_on_561_ts_fp32_tegrastats.log,58591,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_large_r141_on_701_ts_fp32_tegrastats.log,42311,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_large_r141_on_841_ts_fp32_tegrastats.log,66247,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_oom_frontier/darcy_large_r141_on_981_ts_fp32_tegrastats.log,89987,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/burgers_base_ts_fp32_tegrastats.log,71390,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/darcy_base_r281_ts_fp32_tegrastats.log,93302,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/darcy_base_r85_ts_fp32_tegrastats.log,70004,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/darcy_large_on421_ts_fp32_tegrastats.log,154495,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s0_tegrastats.log,12907,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s1_tegrastats.log,12583,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s2_tegrastats.log,12613,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s3_tegrastats.log,12601,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s4_tegrastats.log,12585,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s5_tegrastats.log,12607,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s6_tegrastats.log,12590,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/burgers_base_ts_fp32_s7_tegrastats.log,12281,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s0_tegrastats.log,14428,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s1_tegrastats.log,14160,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s2_tegrastats.log,14160,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s3_tegrastats.log,14436,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s4_tegrastats.log,14163,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s5_tegrastats.log,14144,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s6_tegrastats.log,14455,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_samples/darcy_base_ts_fp32_s7_tegrastats.log,14134,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_sustained/burgers_base_ts_fp32_sustained_tegrastats.log,30515,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_sustained/darcy_base_ts_fp32_sustained_tegrastats.log,63601,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_sustained/darcy_large_ts_fp32_sustained_tegrastats.log,221099,raw board-level telemetry
+FNO,tegrastats,/home/jetson/jjyoo3/EDCNO/results/smoke_burgers_base_ts_fp32_tegrastats.log,11636,raw board-level telemetry
+FNO,nsys_report,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/burgers_base_ts_fp32.nsys-rep,415507,Nsight Systems report
+FNO,nsys_report,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/darcy_base_r281_ts_fp32.nsys-rep,315476,Nsight Systems report
+FNO,nsys_report,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/darcy_base_r85_ts_fp32.nsys-rep,454178,Nsight Systems report
+FNO,nsys_report,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/darcy_large_on421_ts_fp32.nsys-rep,325757,Nsight Systems report
+FNO,nsys_sqlite,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/burgers_base_ts_fp32.sqlite,1376256,Nsight Systems SQLite export
+FNO,nsys_sqlite,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/darcy_base_r281_ts_fp32.sqlite,1114112,Nsight Systems SQLite export
+FNO,nsys_sqlite,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/darcy_base_r85_ts_fp32.sqlite,1474560,Nsight Systems SQLite export
+FNO,nsys_sqlite,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/darcy_large_on421_ts_fp32.sqlite,1146880,Nsight Systems SQLite export
+FNO,nsys_stats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/nsys_profile_summary.csv,1217,Nsight Systems extracted stats
+FNO,nsys_stats,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_nsys/nsys_top_kernels.csv,4649,Nsight Systems extracted stats
+FNO,ncu_report,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu/darcy_r281_ts_fp32_ncu.ncu-rep,44597266,Nsight Compute report
+FNO,ncu_report,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu/darcy_r85_ts_fp32_ncu.ncu-rep,47272825,Nsight Compute report
+FNO,ncu_report,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu_frontier/darcy_large_on421_fft_frontier.ncu-rep,106088,Nsight Compute report
+FNO,ncu_report,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu_frontier/darcy_large_on421_ts_fp32_ncu.ncu-rep,48954183,Nsight Compute report
+FNO,ncu_report,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu_sched/darcy_large_on421_ts_fp32_ncu_sched.ncu-rep,51543169,Nsight Compute report
+FNO,ncu_report,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu_sched/darcy_r281_ts_fp32_ncu_sched.ncu-rep,46296975,Nsight Compute report
+FNO,ncu_raw,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu/darcy_r281_ts_fp32_ncu_raw.csv,956285,Nsight Compute raw metric export
+FNO,ncu_raw,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu/darcy_r85_ts_fp32_ncu_raw.csv,1303023,Nsight Compute raw metric export
+FNO,ncu_raw,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu_frontier/darcy_large_on421_ts_fp32_ncu_raw.csv,1426011,Nsight Compute raw metric export
+FNO,ncu_raw,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu_sched/darcy_large_on421_ts_fp32_ncu_sched_raw.csv,1575474,Nsight Compute raw metric export
+FNO,ncu_raw,/home/jetson/jjyoo3/EDCNO/results/jetson_fno_profile_ncu_sched/darcy_r281_ts_fp32_ncu_sched_raw.csv,1056696,Nsight Compute raw metric export
+FNO,ncu_summary,/home/jetson/jjyoo3/EDCNO/results/artifacts/ncu_kernel_metrics_long.csv,1908460,Nsight Compute summary or inventory
+FNO,ncu_summary,/home/jetson/jjyoo3/EDCNO/results/artifacts/ncu_kernel_summary.csv,55298,Nsight Compute summary or inventory
+FNO,ncu_summary,/home/jetson/jjyoo3/EDCNO/results/artifacts/paper_fno_ncu_kernel_metrics_long_table.csv,1914412,Nsight Compute summary or inventory
+FNO,ncu_summary,/home/jetson/jjyoo3/EDCNO/results/artifacts/paper_fno_ncu_kernel_summary_table.csv,55469,Nsight Compute summary or inventory
+DeepONet,validity,/home/jetson/jjyoo3/EDCNO_DeepONet/results/artifacts/deeponet_validity_table.csv,4399,predictive validity / held-out relative L2
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_base_eager_fp32.json,658,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_base_r1024_eager_fp32.json,670,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_base_r1024_torchscript_fp32.json,739,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_base_r2048_eager_fp32.json,668,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_base_r2048_torchscript_fp32.json,738,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_base_r4096_eager_fp32.json,668,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_base_r4096_torchscript_fp32.json,738,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_base_r512_eager_fp32.json,664,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_base_r512_torchscript_fp32.json,734,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_base_torchscript_fp32.json,720,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_large_eager_fp32.json,657,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_large_torchscript_fp32.json,718,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_small_eager_fp32.json,657,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/burgers_deeponet_small_torchscript_fp32.json,725,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_base_eager_fp32.json,650,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_base_r141_eager_fp32.json,662,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_base_r141_torchscript_fp32.json,732,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_base_r211_eager_fp32.json,667,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_base_r211_torchscript_fp32.json,733,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_base_r281_eager_fp32.json,668,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_base_r281_torchscript_fp32.json,732,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_base_r85_eager_fp32.json,663,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_base_r85_torchscript_fp32.json,727,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_base_torchscript_fp32.json,717,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_large_eager_fp32.json,657,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_large_torchscript_fp32.json,721,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_small_eager_fp32.json,657,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_fp32/darcy_deeponet_small_torchscript_fp32.json,722,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/burgers_deeponet_base_torchscript_fp32_strict_120s.json,1453,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_base_r281_torchscript_fp32_strict_120s.json,1470,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_base_torchscript_fp32_strict_120s.json,1444,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_large_torchscript_fp32_strict_120s.json,1455,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_base_eager_fp32_strict.json,669,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_base_r1024_eager_fp32_strict.json,681,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_base_r1024_torchscript_fp32_strict.json,747,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_base_r2048_eager_fp32_strict.json,684,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_base_r2048_torchscript_fp32_strict.json,751,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_base_r4096_eager_fp32_strict.json,679,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_base_r4096_torchscript_fp32_strict.json,749,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_base_r512_eager_fp32_strict.json,677,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_base_r512_torchscript_fp32_strict.json,745,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_base_torchscript_fp32_strict.json,733,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_large_eager_fp32_strict.json,668,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_large_torchscript_fp32_strict.json,731,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_small_eager_fp32_strict.json,671,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/burgers_deeponet_small_torchscript_fp32_strict.json,738,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_base_eager_fp32_strict.json,664,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_base_r141_eager_fp32_strict.json,675,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_base_r141_torchscript_fp32_strict.json,740,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_base_r211_eager_fp32_strict.json,681,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_base_r211_torchscript_fp32_strict.json,745,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_base_r281_eager_fp32_strict.json,682,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_base_r281_torchscript_fp32_strict.json,746,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_base_r85_eager_fp32_strict.json,672,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_base_r85_torchscript_fp32_strict.json,742,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_base_torchscript_fp32_strict.json,729,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_large_eager_fp32_strict.json,673,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_large_torchscript_fp32_strict.json,735,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_small_eager_fp32_strict.json,668,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_precision/darcy_deeponet_small_torchscript_fp32_strict.json,734,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/burgers_base_r2048_ts_fp32_forward.json,727,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/darcy_base_r141_ts_fp32_forward.json,736,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/darcy_base_r281_ts_fp32_forward.json,745,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/darcy_large_r141_ts_fp32_forward.json,736,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/burgers_base_r2048_ts_fp32_forward.json,2488,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r141_ts_fp32_forward.json,2457,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r281_ts_fp32_forward.json,2486,short-run FP32 latency / memory harness output
+DeepONet,fp32_latency,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_large_r141_ts_fp32_forward.json,2500,short-run FP32 latency / memory harness output
+DeepONet,precision_summary,/home/jetson/jjyoo3/EDCNO_DeepONet/results/artifacts/deeponet_precision_numerics.csv,13703,precision feasibility or numerical perturbation summary
+DeepONet,precision_summary,/home/jetson/jjyoo3/EDCNO_DeepONet/results/artifacts/deeponet_precision_summary.csv,54817,precision feasibility or numerical perturbation summary
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/burgers_deeponet_base_torchscript_bf16_autocast_120s_tegrastats_raw.log,35834,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/burgers_deeponet_base_torchscript_fp16_autocast_120s_tegrastats_raw.log,35850,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/burgers_deeponet_base_torchscript_fp16_native_120s_tegrastats_raw.log,35863,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/burgers_deeponet_base_torchscript_fp32_strict_120s_tegrastats_raw.log,35791,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/burgers_deeponet_base_torchscript_tf32_120s_tegrastats_raw.log,35733,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_base_r281_torchscript_bf16_autocast_120s_tegrastats_raw.log,35858,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_base_r281_torchscript_fp16_autocast_120s_tegrastats_raw.log,35967,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_base_r281_torchscript_fp16_native_120s_tegrastats_raw.log,36293,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_base_r281_torchscript_fp32_strict_120s_tegrastats_raw.log,36046,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_base_r281_torchscript_tf32_120s_tegrastats_raw.log,36146,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_base_torchscript_bf16_autocast_120s_tegrastats_raw.log,36134,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_base_torchscript_fp16_autocast_120s_tegrastats_raw.log,36019,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_base_torchscript_fp16_native_120s_tegrastats_raw.log,36050,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_base_torchscript_fp32_strict_120s_tegrastats_raw.log,36182,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_base_torchscript_tf32_120s_tegrastats_raw.log,36024,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_large_torchscript_bf16_autocast_120s_tegrastats_raw.log,36099,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_large_torchscript_fp16_autocast_120s_tegrastats_raw.log,36099,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_large_torchscript_fp16_native_120s_tegrastats_raw.log,36363,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_large_torchscript_fp32_strict_120s_tegrastats_raw.log,36045,raw board-level telemetry
+DeepONet,tegrastats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/jetson_deeponet_long_energy/darcy_deeponet_large_torchscript_tf32_120s_tegrastats_raw.log,36304,raw board-level telemetry
+DeepONet,nsys_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/burgers_base_r2048_ts_fp32.nsys-rep,383677,Nsight Systems report
+DeepONet,nsys_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r141_ts_fp32.nsys-rep,384158,Nsight Systems report
+DeepONet,nsys_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r281_ts_bf16_autocast.nsys-rep,750920,Nsight Systems report
+DeepONet,nsys_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r281_ts_fp16_autocast.nsys-rep,738730,Nsight Systems report
+DeepONet,nsys_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r281_ts_fp16_native.nsys-rep,475007,Nsight Systems report
+DeepONet,nsys_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r281_ts_fp32.nsys-rep,467278,Nsight Systems report
+DeepONet,nsys_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r281_ts_tf32.nsys-rep,497893,Nsight Systems report
+DeepONet,nsys_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_large_r141_ts_fp32.nsys-rep,401264,Nsight Systems report
+DeepONet,nsys_sqlite,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/burgers_base_r2048_ts_fp32.sqlite,1314816,Nsight Systems SQLite export
+DeepONet,nsys_sqlite,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r141_ts_fp32.sqlite,1323008,Nsight Systems SQLite export
+DeepONet,nsys_sqlite,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r281_ts_bf16_autocast.sqlite,2191360,Nsight Systems SQLite export
+DeepONet,nsys_sqlite,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r281_ts_fp16_autocast.sqlite,2179072,Nsight Systems SQLite export
+DeepONet,nsys_sqlite,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r281_ts_fp16_native.sqlite,1544192,Nsight Systems SQLite export
+DeepONet,nsys_sqlite,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r281_ts_fp32.sqlite,1544192,Nsight Systems SQLite export
+DeepONet,nsys_sqlite,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_base_r281_ts_tf32.sqlite,1597440,Nsight Systems SQLite export
+DeepONet,nsys_sqlite,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys/darcy_large_r141_ts_fp32.sqlite,1368064,Nsight Systems SQLite export
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/burgers_base_r2048_ts_fp32_cuda_api_sum_cuda_api_sum.csv,1239,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/burgers_base_r2048_ts_fp32_cuda_gpu_kern_sum_cuda_gpu_kern_sum.csv,6474,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/burgers_base_r2048_ts_fp32_forward_cuda_gpu_kern_sum_cuda_gpu_kern_sum_nvtx=deeponet_profile_forward.csv,4182,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/burgers_base_r2048_ts_fp32_nvtx_sum_nvtx_sum.csv,284,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r141_ts_fp32_cuda_api_sum_cuda_api_sum.csv,1259,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r141_ts_fp32_cuda_gpu_kern_sum_cuda_gpu_kern_sum.csv,6790,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r141_ts_fp32_forward_cuda_gpu_kern_sum_cuda_gpu_kern_sum_nvtx=deeponet_profile_forward.csv,4752,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r141_ts_fp32_nvtx_sum_nvtx_sum.csv,284,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_bf16_autocast_cuda_api_sum_cuda_api_sum.csv,1339,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_bf16_autocast_cuda_gpu_kern_sum_cuda_gpu_kern_sum.csv,7945,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_bf16_autocast_forward_cuda_gpu_kern_sum_cuda_gpu_kern_sum_nvtx=deeponet_profile_forward.csv,5648,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_bf16_autocast_nvtx_sum_nvtx_sum.csv,289,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_fp16_autocast_cuda_api_sum_cuda_api_sum.csv,1345,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_fp16_autocast_cuda_gpu_kern_sum_cuda_gpu_kern_sum.csv,7788,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_fp16_autocast_forward_cuda_gpu_kern_sum_cuda_gpu_kern_sum_nvtx=deeponet_profile_forward.csv,5491,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_fp16_autocast_nvtx_sum_nvtx_sum.csv,289,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_fp16_native_cuda_api_sum_cuda_api_sum.csv,1334,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_fp16_native_cuda_gpu_kern_sum_cuda_gpu_kern_sum.csv,7110,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_fp16_native_forward_cuda_gpu_kern_sum_cuda_gpu_kern_sum_nvtx=deeponet_profile_forward.csv,4473,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_fp16_native_nvtx_sum_nvtx_sum.csv,284,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_fp32_cuda_api_sum_cuda_api_sum.csv,1266,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_fp32_cuda_gpu_kern_sum_cuda_gpu_kern_sum.csv,7995,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_fp32_forward_cuda_gpu_kern_sum_cuda_gpu_kern_sum_nvtx=deeponet_profile_forward.csv,5926,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_fp32_nvtx_sum_nvtx_sum.csv,289,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_tf32_cuda_api_sum_cuda_api_sum.csv,1331,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_tf32_cuda_gpu_kern_sum_cuda_gpu_kern_sum.csv,8196,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_tf32_forward_cuda_gpu_kern_sum_cuda_gpu_kern_sum_nvtx=deeponet_profile_forward.csv,6130,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_base_r281_ts_tf32_nvtx_sum_nvtx_sum.csv,289,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_large_r141_ts_fp32_cuda_api_sum_cuda_api_sum.csv,1263,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_large_r141_ts_fp32_cuda_gpu_kern_sum_cuda_gpu_kern_sum.csv,6314,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_large_r141_ts_fp32_forward_cuda_gpu_kern_sum_cuda_gpu_kern_sum_nvtx=deeponet_profile_forward.csv,4271,Nsight Systems extracted stats
+DeepONet,nsys_stats,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_nsys_stats/darcy_large_r141_ts_fp32_nvtx_sum_nvtx_sum.csv,289,Nsight Systems extracted stats
+DeepONet,ncu_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/burgers_base_r2048_ts_fp32.ncu-rep,21660265,Nsight Compute report
+DeepONet,ncu_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/darcy_base_r141_ts_fp32.ncu-rep,27135380,Nsight Compute report
+DeepONet,ncu_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/darcy_base_r281_ts_fp16_native.ncu-rep,37141005,Nsight Compute report
+DeepONet,ncu_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/darcy_base_r281_ts_fp32.ncu-rep,27735408,Nsight Compute report
+DeepONet,ncu_report,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/darcy_large_r141_ts_fp32.ncu-rep,22450304,Nsight Compute report
+DeepONet,ncu_raw,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/burgers_base_r2048_ts_fp32_raw.csv,143404,Nsight Compute raw metric export
+DeepONet,ncu_raw,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/darcy_base_r141_ts_fp32_raw.csv,162606,Nsight Compute raw metric export
+DeepONet,ncu_raw,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/darcy_base_r281_ts_fp16_native_raw.csv,230235,Nsight Compute raw metric export
+DeepONet,ncu_raw,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/darcy_base_r281_ts_fp32_raw.csv,239396,Nsight Compute raw metric export
+DeepONet,ncu_raw,/home/jetson/jjyoo3/EDCNO_DeepONet/results/profiles/deeponet_ncu_basic/darcy_large_r141_ts_fp32_raw.csv,171252,Nsight Compute raw metric export
+DeepONet,ncu_summary,/home/jetson/jjyoo3/EDCNO_DeepONet/results/artifacts/deeponet_ncu_artifact_summary.csv,5828,Nsight Compute summary or inventory
+DeepONet,ncu_summary,/home/jetson/jjyoo3/EDCNO_DeepONet/results/artifacts/deeponet_ncu_basic_artifact_summary.csv,1461,Nsight Compute summary or inventory
+DeepONet,ncu_summary,/home/jetson/jjyoo3/EDCNO_DeepONet/results/artifacts/deeponet_ncu_basic_kernel_inventory.csv,5526,Nsight Compute summary or inventory
+DeepONet,ncu_summary,/home/jetson/jjyoo3/EDCNO_DeepONet/results/artifacts/deeponet_ncu_kernel_detail.csv,5744,Nsight Compute summary or inventory
+DeepONet,ncu_summary,/home/jetson/jjyoo3/EDCNO_DeepONet/results/artifacts/deeponet_ncu_kernel_names.csv,41954,Nsight Compute summary or inventory
+DeepONet,ncu_summary,/home/jetson/jjyoo3/EDCNO_DeepONet/results/artifacts/deeponet_ncu_raw_summary.csv,3815,Nsight Compute summary or inventory

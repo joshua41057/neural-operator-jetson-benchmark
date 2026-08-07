@@ -1,0 +1,69 @@
+{
+  "family": "WNO",
+  "case": "wno_darcy_r141",
+  "input_shape": [
+    1,
+    141,
+    141,
+    1
+  ],
+  "warmup": 5,
+  "reps": 20,
+  "note": "Paper (Appendix D/E) states TorchScript is not defined for this runtime path. torch.jit.script does fail for both families, but torch.jit.trace was verified here for real (see 'torchscript_trace') rather than assumed to fail.",
+  "backends": {
+    "eager": {
+      "median_ms": 77.87765213288367,
+      "p95_ms": 80.36649995483458,
+      "mean_ms": 78.26343359192833,
+      "min_ms": 77.11010589264333,
+      "max_ms": 82.28819607757032,
+      "n": 20,
+      "warmup": 5,
+      "all_ms": [
+        82.28819607757032,
+        79.3005779851228,
+        78.63527606241405,
+        78.78372888080776,
+        80.36649995483458,
+        77.54810387268662,
+        77.11010589264333,
+        77.87765213288367,
+        78.00674391910434,
+        78.22627085261047,
+        77.47328607365489,
+        78.25680007226765,
+        79.56116204150021,
+        77.35936203971505,
+        77.51011895015836,
+        77.23923004232347,
+        77.34317006543279,
+        77.7639839798212,
+        77.47219898737967,
+        77.14620395563543
+      ],
+      "backend": "eager",
+      "status": "success"
+    },
+    "torchscript_trace": {
+      "backend": "torchscript_trace",
+      "status": "fail",
+      "error_type": "TypeError",
+      "error": "'>=' not supported between instances of 'numpy.ndarray' and 'Tensor'",
+      "traceback_tail": "    lohi = afb1d(x, h0_row, h1_row, mode=mode, dim=3)  File \"/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/pytorch_wavelets/dwt/lowlevel.py\", line 167, in afb1d    x = mypad(x, pad=pad, mode=mode)  File \"/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/pytorch_wavelets/dwt/lowlevel.py\", line 49, in mypad    xe = reflect(np.arange(-m1, l+m2, dtype='int32'), -0.5, l-0.5)  File \"/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/pytorch_wavelets/utils.py\", line 162, in reflect    out = np.where(normed_mod >= rng, rng_by_2 - normed_mod, normed_mod) + minxTypeError: '>=' not supported between instances of 'numpy.ndarray' and 'Tensor'"
+    },
+    "torch.compile": {
+      "backend": "torch.compile",
+      "status": "fail",
+      "error_type": "BackendCompilerFailed",
+      "error": "backend='inductor' raised:\nImportError: cannot import name 'triton_key' from 'triton.compiler.compiler' (/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/triton/compiler/compiler.py)\n\nSet TORCH_LOGS=\"+dynamo\" and TORCHDYNAMO_VERBOSE=1 for more information\n\n\nYou can suppress this exception and fall back to eager by setting:\n    import torch._dynamo\n    torch._dynamo.config.suppress_errors = True\n",
+      "traceback_tail": "Set TORCH_LOGS=\"+dynamo\" and TORCHDYNAMO_VERBOSE=1 for more informationYou can suppress this exception and fall back to eager by setting:    import torch._dynamo    torch._dynamo.config.suppress_errors = True"
+    },
+    "tensorrt": {
+      "backend": "tensorrt",
+      "status": "fail",
+      "error_type": "TypeError",
+      "error": "'>=' not supported between instances of 'numpy.ndarray' and 'Tensor'",
+      "traceback_tail": "    lohi = afb1d(x, h0_row, h1_row, mode=mode, dim=3)  File \"/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/pytorch_wavelets/dwt/lowlevel.py\", line 167, in afb1d    x = mypad(x, pad=pad, mode=mode)  File \"/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/pytorch_wavelets/dwt/lowlevel.py\", line 49, in mypad    xe = reflect(np.arange(-m1, l+m2, dtype='int32'), -0.5, l-0.5)  File \"/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/pytorch_wavelets/utils.py\", line 162, in reflect    out = np.where(normed_mod >= rng, rng_by_2 - normed_mod, normed_mod) + minxTypeError: '>=' not supported between instances of 'numpy.ndarray' and 'Tensor'"
+    }
+  }
+}

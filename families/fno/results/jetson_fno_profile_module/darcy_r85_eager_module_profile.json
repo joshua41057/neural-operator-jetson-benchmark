@@ -1,0 +1,338 @@
+{
+  "checkpoint": "artifacts/checkpoints/darcy_fno_base_r85_seed2_best.pt",
+  "input_bank": "artifacts/benchmark_inputs/darcy_r85_bank.pt",
+  "precision": "fp32",
+  "device": "cuda",
+  "batch_size": 1,
+  "sample_index": 0,
+  "num_warmup": 5,
+  "num_iters": 20,
+  "forward_mean_ms": 9.880119562149048,
+  "module_summary": [
+    {
+      "module_name": "model.blocks.0",
+      "module_class": "FNOBlock2d",
+      "mean_ms": 6.99275918006897,
+      "max_ms": 129.68141174316406,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          94,
+          94
+        ]
+      ],
+      "output_shape": [
+        1,
+        40,
+        94,
+        94
+      ]
+    },
+    {
+      "module_name": "model.blocks.0.pointwise",
+      "module_class": "Conv2d",
+      "mean_ms": 3.9985023373365403,
+      "max_ms": 94.63705444335938,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          94,
+          94
+        ]
+      ],
+      "output_shape": [
+        1,
+        40,
+        94,
+        94
+      ]
+    },
+    {
+      "module_name": "model.lift",
+      "module_class": "Linear",
+      "mean_ms": 2.6451251065731047,
+      "max_ms": 61.97727966308594,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          85,
+          85,
+          3
+        ]
+      ],
+      "output_shape": [
+        1,
+        85,
+        85,
+        40
+      ]
+    },
+    {
+      "module_name": "model.blocks.0.spectral",
+      "module_class": "SpectralConv2d",
+      "mean_ms": 2.6099289941787718,
+      "max_ms": 34.45568084716797,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          94,
+          94
+        ]
+      ],
+      "output_shape": [
+        1,
+        40,
+        94,
+        94
+      ]
+    },
+    {
+      "module_name": "model.blocks.1",
+      "module_class": "FNOBlock2d",
+      "mean_ms": 2.1188543796539308,
+      "max_ms": 9.316831588745117,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          94,
+          94
+        ]
+      ],
+      "output_shape": [
+        1,
+        40,
+        94,
+        94
+      ]
+    },
+    {
+      "module_name": "model.blocks.2",
+      "module_class": "FNOBlock2d",
+      "mean_ms": 1.8300633668899535,
+      "max_ms": 2.1493120193481445,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          94,
+          94
+        ]
+      ],
+      "output_shape": [
+        1,
+        40,
+        94,
+        94
+      ]
+    },
+    {
+      "module_name": "model.blocks.3",
+      "module_class": "FNOBlock2d",
+      "mean_ms": 1.8202470350265503,
+      "max_ms": 2.0915520191192627,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          94,
+          94
+        ]
+      ],
+      "output_shape": [
+        1,
+        40,
+        94,
+        94
+      ]
+    },
+    {
+      "module_name": "model.blocks.1.spectral",
+      "module_class": "SpectralConv2d",
+      "mean_ms": 1.3763558530807496,
+      "max_ms": 4.151936054229736,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          94,
+          94
+        ]
+      ],
+      "output_shape": [
+        1,
+        40,
+        94,
+        94
+      ]
+    },
+    {
+      "module_name": "model.blocks.2.spectral",
+      "module_class": "SpectralConv2d",
+      "mean_ms": 1.2659942245483398,
+      "max_ms": 1.5102720260620117,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          94,
+          94
+        ]
+      ],
+      "output_shape": [
+        1,
+        40,
+        94,
+        94
+      ]
+    },
+    {
+      "module_name": "model.blocks.3.spectral",
+      "module_class": "SpectralConv2d",
+      "mean_ms": 1.247357439994812,
+      "max_ms": 1.410207986831665,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          94,
+          94
+        ]
+      ],
+      "output_shape": [
+        1,
+        40,
+        94,
+        94
+      ]
+    },
+    {
+      "module_name": "model.proj2",
+      "module_class": "Conv2d",
+      "mean_ms": 0.6655603152513504,
+      "max_ms": 11.923359870910645,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          96,
+          85,
+          85
+        ]
+      ],
+      "output_shape": [
+        1,
+        1,
+        85,
+        85
+      ]
+    },
+    {
+      "module_name": "model.proj1",
+      "module_class": "Conv2d",
+      "mean_ms": 0.42064127922058103,
+      "max_ms": 3.5827839374542236,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          85,
+          85
+        ]
+      ],
+      "output_shape": [
+        1,
+        96,
+        85,
+        85
+      ]
+    },
+    {
+      "module_name": "model.blocks.1.pointwise",
+      "module_class": "Conv2d",
+      "mean_ms": 0.3950592029094696,
+      "max_ms": 4.780672073364258,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          94,
+          94
+        ]
+      ],
+      "output_shape": [
+        1,
+        40,
+        94,
+        94
+      ]
+    },
+    {
+      "module_name": "model.blocks.2.pointwise",
+      "module_class": "Conv2d",
+      "mean_ms": 0.2179404789209366,
+      "max_ms": 0.27673599123954773,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          94,
+          94
+        ]
+      ],
+      "output_shape": [
+        1,
+        40,
+        94,
+        94
+      ]
+    },
+    {
+      "module_name": "model.blocks.3.pointwise",
+      "module_class": "Conv2d",
+      "mean_ms": 0.2086579206585884,
+      "max_ms": 0.24188800156116486,
+      "calls": 25,
+      "input_shape": [
+        [
+          1,
+          40,
+          94,
+          94
+        ]
+      ],
+      "output_shape": [
+        1,
+        40,
+        94,
+        94
+      ]
+    }
+  ],
+  "bank_meta": {
+    "dataset": "darcy",
+    "resolution": [
+      85,
+      85
+    ],
+    "input_key": "Kcoeff",
+    "source_path": "/home/jetson/data/piececonst_r421_N1024_smooth2.mat",
+    "num_samples": 8
+  }
+}

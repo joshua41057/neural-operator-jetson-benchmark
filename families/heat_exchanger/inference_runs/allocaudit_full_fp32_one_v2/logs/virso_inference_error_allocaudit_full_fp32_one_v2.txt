@@ -1,0 +1,9 @@
+Fatal error during VirSO inference run
+Exception: ValueError("invalid literal for int() with base 10: 'val_target'")
+
+Traceback (most recent call last):
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/run_virso_inference_jetson.py", line 1005, in <module>
+    main()
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/run_virso_inference_jetson.py", line 611, in main
+    k_graph = int(k)
+ValueError: invalid literal for int() with base 10: 'val_target'

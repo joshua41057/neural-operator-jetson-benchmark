@@ -1,0 +1,47 @@
+experiment:
+  name: burgers_deeponet_base_r2048
+  seed: 0
+  deterministic: true
+  output_dir: checkpoints
+
+data:
+  dataset: burgers
+  path: data/raw/burgers_data_R10.mat
+  split_path: splits/burgers_split.json
+  input_key: a
+  output_key: u
+  resolution: [2048]
+  add_coords: true
+  batch_size: 16
+  eval_batch_size: 16
+  num_workers: 4
+  pin_memory: true
+
+model:
+  family: deeponet
+  spatial_dim: 1
+  sensor_resolution: 256
+  basis_dim: 128
+  branch_hidden_dim: 256
+  branch_layers: 4
+  trunk_hidden_dim: 256
+  trunk_layers: 4
+  activation: gelu
+  dropout: 0.0
+  use_coord_features: true
+  chunk_size: 0
+
+train:
+  batch_size: 16
+  epochs: 500
+  optimizer: adamw
+  lr: 1.0e-3
+  min_lr: 1.0e-6
+  weight_decay: 1.0e-5
+  scheduler: cosine
+  step_size: 100
+  gamma: 0.5
+  amp: false
+  grad_clip: 1.0
+  early_stopping_patience: 80
+

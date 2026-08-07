@@ -1,0 +1,31 @@
+case_id,case_label,class,kernel_count,total_ms,share_of_profiled_kernel_ms_pct,mean_sm_pct_weighted_by_ms,mean_mem_pct_weighted_by_ms,mean_l2_hit_pct_weighted_by_ms,max_kernel_ms,representative_kernel
+burgers_base_r2048_ts_fp32,Burgers base @2048 FP32,Activation/elementwise,5,0.076608,12.1267,2.01858,1.85081,37.9118,0.04944,"void at::vectorized_elementwise_kernel<4, at::GeluCUDAKernelImpl(at::TensorIteratorBase..."
+burgers_base_r2048_ts_fp32,Burgers base @2048 FP32,Dense/GEMM,8,0.52616,83.289,57.6704,65.2981,76.7853,0.255088,ampere_sgemm_64x64_tn
+burgers_base_r2048_ts_fp32,Burgers base @2048 FP32,Move/materialization,1,0.00816,1.2917,3.2,7.78,63.09,0.00816,"void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, ..."
+burgers_base_r2048_ts_fp32,Burgers base @2048 FP32,Other,2,0.012992,2.05658,3.45143,3.04433,50.9653,0.006656,fused_add_add_mul_add
+burgers_base_r2048_ts_fp32,Burgers base @2048 FP32,Resampling/interpolation,1,0.007808,1.23597,0.87,3.57,16.05,0.007808,"void at::<unnamed>::upsample_linear1d_out_frame<float, float>(int, T2, bool, at::Generi..."
+burgers_base_r2048_ts_fp32,Burgers base @2048 FP32,TOTAL,17,0.631728,100,48.401,54.8178,70.6126,0.255088,
+darcy_base_r141_ts_fp32,Darcy base @141x141 FP32,Activation/elementwise,6,0.495765,15.2342,5.58172,3.30607,35.9462,0.431861,"void at::vectorized_elementwise_kernel<4, at::GeluCUDAKernelImpl(at::TensorIteratorBase..."
+darcy_base_r141_ts_fp32,Darcy base @141x141 FP32,Dense/GEMM,7,2.68749,82.5829,68.6619,65.2564,84.8054,2.04693,ampere_sgemm_128x64_tn
+darcy_base_r141_ts_fp32,Darcy base @141x141 FP32,Move/materialization,2,0.040064,1.23111,27.2619,30.9799,63.2464,0.020864,"void at::<unnamed>::CatArrayBatchedCopy<at::<unnamed>::OpaqueType<4>, unsigned int, 4, ..."
+darcy_base_r141_ts_fp32,Darcy base @141x141 FP32,Other,2,0.018496,0.568356,20.3598,15.4986,50.0198,0.009824,fused_unsqueeze_sub_add_div
+darcy_base_r141_ts_fp32,Darcy base @141x141 FP32,Resampling/interpolation,1,0.01248,0.383493,4.09,14.47,33.96,0.01248,"void at::<unnamed>::upsample_bilinear2d_out_frame<float, float>(int, T2, T2, bool, at::..."
+darcy_base_r141_ts_fp32,Darcy base @141x141 FP32,TOTAL,18,3.2543,100,58.0203,54.9193,76.704,2.04693,
+darcy_base_r281_ts_fp32,Darcy base @281x281 FP32,Activation/elementwise,6,0.871432,12.3066,11.5516,5.15876,38.8228,0.710864,"void at::vectorized_elementwise_kernel<4, at::GeluCUDAKernelImpl(at::TensorIteratorBase..."
+darcy_base_r281_ts_fp32,Darcy base @281x281 FP32,Dense/GEMM,10,6.05562,85.5192,68.8992,67.1566,82.7602,4.53068,ampere_sgemm_128x64_tn
+darcy_base_r281_ts_fp32,Darcy base @281x281 FP32,Move/materialization,3,0.10256,1.44838,36.9647,52.597,64.7365,0.045472,"void at::<unnamed>::CatArrayBatchedCopy<at::<unnamed>::OpaqueType<4>, unsigned int, 4, ..."
+darcy_base_r281_ts_fp32,Darcy base @281x281 FP32,Other,2,0.034688,0.489874,37.625,31.665,50.0899,0.017376,fused_unsqueeze_sub_add_div
+darcy_base_r281_ts_fp32,Darcy base @281x281 FP32,Resampling/interpolation,1,0.016704,0.235899,9.54,39.14,27.79,0.016704,"void at::<unnamed>::upsample_bilinear2d_out_frame<float, float>(int, T2, T2, bool, at::..."
+darcy_base_r281_ts_fp32,Darcy base @281x281 FP32,TOTAL,22,7.08101,100,61.0859,59.076,76.8023,4.53068,
+darcy_base_r281_ts_fp16_native,Darcy base @281x281 FP16 native,Activation/elementwise,6,0.604461,28.4848,15.6138,5.90605,38.5194,0.456277,"void at::vectorized_elementwise_kernel<4, at::GeluCUDAKernelImpl(at::TensorIteratorBase..."
+darcy_base_r281_ts_fp16_native,Darcy base @281x281 FP16 native,Cast/precision,1,0.012,0.565492,15.86,27.01,27.54,0.012,"void at::<unnamed>::upsample_bilinear2d_out_frame<c10::Half, float>(int, T2, T2, bool, ..."
+darcy_base_r281_ts_fp16_native,Darcy base @281x281 FP16 native,Dense/GEMM,6,1.39467,65.723,40.0463,64.8733,63.2124,0.555408,ampere_fp16_s16816gemm_fp16_128x128_ldg8_relu_f2f_stages_32x5_tn
+darcy_base_r281_ts_fp16_native,Darcy base @281x281 FP16 native,Move/materialization,3,0.080192,3.779,46.3187,36.2399,74.7128,0.03968,"void at::<unnamed>::CatArrayBatchedCopy<at::<unnamed>::OpaqueType<2>, unsigned int, 4, ..."
+darcy_base_r281_ts_fp16_native,Darcy base @281x281 FP16 native,Other,2,0.03072,1.44766,40.8506,19.3061,50.182,0.015584,fused_add_mul_add
+darcy_base_r281_ts_fp16_native,Darcy base @281x281 FP16 native,TOTAL,18,2.12205,100,33.1987,46.1207,56.2229,0.555408,
+darcy_large_r141_ts_fp32,Darcy large @141x141 FP32,Activation/elementwise,6,0.720016,5.81179,4.24063,3.05169,42.0859,0.655168,"void at::vectorized_elementwise_kernel<4, at::GeluCUDAKernelImpl(at::TensorIteratorBase..."
+darcy_large_r141_ts_fp32,Darcy large @141x141 FP32,Dense/GEMM,7,11.5993,93.6267,70.9647,68.6017,93.5274,6.60855,ampere_sgemm_64x64_tn
+darcy_large_r141_ts_fp32,Darcy large @141x141 FP32,Move/materialization,2,0.040128,0.323903,26.8031,31.6859,62.8202,0.020192,"void at::<unnamed>::CatArrayBatchedCopy<at::<unnamed>::OpaqueType<4>, unsigned int, 4, ..."
+darcy_large_r141_ts_fp32,Darcy large @141x141 FP32,Other,2,0.01824,0.147229,20.3766,15.7476,50.1794,0.009568,fused_unsqueeze_sub_add_div
+darcy_large_r141_ts_fp32,Darcy large @141x141 FP32,Resampling/interpolation,1,0.0112,0.0904036,7.47,22.21,33.51,0.0112,"void at::<unnamed>::upsample_bilinear2d_out_frame<float, float>(int, T2, T2, bool, at::..."
+darcy_large_r141_ts_fp32,Darcy large @141x141 FP32,TOTAL,18,12.3889,100,66.8119,64.5528,90.3202,6.60855,

@@ -1,0 +1,139 @@
+{
+  "family": "DeepONet",
+  "case": "burgers_base_r2048",
+  "checkpoint": "artifacts/checkpoints/burgers_deeponet_base_seed2_best.pt",
+  "input_shape": [
+    1,
+    2048
+  ],
+  "warmup": 5,
+  "reps": 20,
+  "backends": {
+    "eager": {
+      "median_ms": 4.371051909402013,
+      "p95_ms": 4.596594953909516,
+      "mean_ms": 4.388610599562526,
+      "min_ms": 4.2927449103444815,
+      "max_ms": 4.603506997227669,
+      "n": 20,
+      "warmup": 5,
+      "all_ms": [
+        4.442254081368446,
+        4.398539895191789,
+        4.371051909402013,
+        4.373323870822787,
+        4.358443198725581,
+        4.355274839326739,
+        4.343785811215639,
+        4.2927449103444815,
+        4.3149220291525126,
+        4.401515936478972,
+        4.3061538599431515,
+        4.47607901878655,
+        4.369099857285619,
+        4.342539003118873,
+        4.37831599265337,
+        4.29498590528965,
+        4.4070209842175245,
+        4.346058936789632,
+        4.596594953909516,
+        4.603506997227669
+      ],
+      "backend": "eager",
+      "status": "success"
+    },
+    "torchscript": {
+      "median_ms": 3.5981310065835714,
+      "p95_ms": 3.7818169221282005,
+      "mean_ms": 3.6256359075196087,
+      "min_ms": 3.5005281679332256,
+      "max_ms": 3.7869689986109734,
+      "n": 20,
+      "warmup": 5,
+      "all_ms": [
+        3.544592997059226,
+        3.5171040799468756,
+        3.512111958116293,
+        3.5269279032945633,
+        3.515504067763686,
+        3.5981310065835714,
+        3.5707380156964064,
+        3.5005281679332256,
+        3.578322008252144,
+        3.674454055726528,
+        3.580467076972127,
+        3.541200887411833,
+        3.708470845595002,
+        3.6647890228778124,
+        3.7344559095799923,
+        3.755448153242469,
+        3.6912860814481974,
+        3.7818169221282005,
+        3.7293999921530485,
+        3.7869689986109734
+      ],
+      "backend": "torchscript",
+      "status": "success"
+    },
+    "torch.compile": {
+      "backend": "torch.compile",
+      "status": "fail",
+      "error_type": "BackendCompilerFailed",
+      "error": "backend='inductor' raised:\nImportError: cannot import name 'triton_key' from 'triton.compiler.compiler' (/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/triton/compiler/compiler.py)\n\nSet TORCH_LOGS=\"+dynamo\" and TORCHDYNAMO_VERBOSE=1 for more information\n\n\nYou can suppress this exception and fall back to eager by setting:\n    import torch._dynamo\n    torch._dynamo.config.suppress_errors = True\n",
+      "traceback_tail": "Set TORCH_LOGS=\"+dynamo\" and TORCHDYNAMO_VERBOSE=1 for more informationYou can suppress this exception and fall back to eager by setting:    import torch._dynamo    torch._dynamo.config.suppress_errors = True"
+    },
+    "tensorrt": {
+      "status": "success",
+      "median_ms": 1.149861142039299,
+      "p95_ms": 1.170244999229908,
+      "mean_ms": 1.1452798615209758,
+      "min_ms": 1.120707020163536,
+      "max_ms": 1.1707260273396969,
+      "n": 20,
+      "warmup": 5,
+      "all_ms": [
+        1.170244999229908,
+        1.120707020163536,
+        1.1268840171396732,
+        1.1270439717918634,
+        1.132675912231207,
+        1.1207719799131155,
+        1.1432368773967028,
+        1.1267559602856636,
+        1.1379881761968136,
+        1.149861142039299,
+        1.1391399893909693,
+        1.1342121288180351,
+        1.1604221072047949,
+        1.1512050405144691,
+        1.1500848922878504,
+        1.166309928521514,
+        1.1629490181803703,
+        1.155077014118433,
+        1.1707260273396969,
+        1.1593010276556015
+      ],
+      "io_tensors": {
+        "x": {
+          "shape": [
+            1,
+            2048
+          ],
+          "dtype": "DataType.FLOAT"
+        },
+        "y": {
+          "shape": [
+            1,
+            2048
+          ],
+          "dtype": "DataType.FLOAT"
+        }
+      },
+      "engine_precision": "FP32 (default trtexec build, no --fp16/--int8/--best)",
+      "a_pred_finite": true,
+      "rel_l2_vs_fp32_eager": 0.00025262931012548506,
+      "admitted": true,
+      "backend": "tensorrt"
+    }
+  }
+}

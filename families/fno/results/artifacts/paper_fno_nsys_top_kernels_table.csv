@@ -1,0 +1,33 @@
+tag,rank,time_pct,total_ns,instances,avg_ns,kernel_name
+burgers_base_ts_fp32,1,18.5,6103424.0,320,19073.2,"void prime_fft_factor<(unsigned int)37, EPT<(unsigned int)2>, (unsigned int)8, (unsigned int)0, (un…"
+burgers_base_ts_fp32,2,13.3,4405312.0,480,9177.7,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…"
+burgers_base_ts_fp32,3,8.9,2957888.0,320,9243.4,"void regular_fft_factor<(unsigned int)7, EPT<(unsigned int)7>, (unsigned int)64, (unsigned int)0, (…"
+burgers_base_ts_fp32,4,8.6,2847648.0,320,8898.9,"void regular_fft_factor<(unsigned int)4, EPT<(unsigned int)4>, (unsigned int)128, (unsigned int)0, …"
+burgers_base_ts_fp32,5,7.7,2541088.0,242,10500.4,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…"
+burgers_base_ts_fp32,6,7.1,2356864.0,160,14730.4,void cutlass::Kernel2<cutlass_80_tensorop_s1688gemm_128x64_16x6_nn_align4>(T1::Params)
+burgers_base_ts_fp32,7,5.5,1821152.0,156,11674.1,fused_add_gelu
+burgers_base_ts_fp32,8,4.9,1604480.0,160,10028.0,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<c10::complex<float>>…"
+darcy_base_r281_ts_fp32,1,15.9,54921120.0,88,624103.6,"void prime_fft_factor<(unsigned int)29, EPT<(unsigned int)2>, (unsigned int)8, (unsigned int)0, (un…"
+darcy_base_r281_ts_fp32,2,10.5,36166368.0,88,410981.5,"void vector_fft<(unsigned int)145, EPT<(unsigned int)29>, (unsigned int)4, (unsigned int)0, (paddin…"
+darcy_base_r281_ts_fp32,3,9.7,33559744.0,40,838993.6,fused_add_gelu
+darcy_base_r281_ts_fp32,4,9.6,33213824.0,88,377429.8,"void regular_fft_factor<(unsigned int)2, EPT<(unsigned int)2>, (unsigned int)256, (unsigned int)0, …"
+darcy_base_r281_ts_fp32,5,7.6,26228416.0,69,380122.0,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…"
+darcy_base_r281_ts_fp32,6,7.4,25772832.0,88,292873.1,"void regular_fft_factor<(unsigned int)5, EPT<(unsigned int)5>, (unsigned int)256, (unsigned int)0, …"
+darcy_base_r281_ts_fp32,7,5.3,18486560.0,11,1680596.4,"void kernel_wrapper<unsigned int, &packR2C_kernel_impl<unsigned int, float>>(RealComplex_st<T1>)"
+darcy_base_r281_ts_fp32,8,4.3,15041056.0,44,341842.2,"void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<c10::complex<float>>…"
+darcy_base_r85_ts_fp32,1,22.8,43261952.0,960,45064.5,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…"
+darcy_base_r85_ts_fp32,2,15.1,28650560.0,320,89533.0,"void prime_fft<(unsigned int)47, EPT<(unsigned int)2>, (unsigned int)4, (unsigned int)21, (unsigned…"
+darcy_base_r85_ts_fp32,3,12.6,23938944.0,320,74809.2,"void prime_fft_factor<(unsigned int)47, EPT<(unsigned int)2>, (unsigned int)8, (unsigned int)0, (un…"
+darcy_base_r85_ts_fp32,4,8.5,16147456.0,320,50460.8,"std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float2, float2, float2, float2, (…"
+darcy_base_r85_ts_fp32,5,7.7,14606912.0,320,45646.6,"void regular_fft_factor<(unsigned int)2, EPT<(unsigned int)2>, (unsigned int)256, (unsigned int)0, …"
+darcy_base_r85_ts_fp32,6,5.5,10406912.0,156,66711.0,fused_add_gelu
+darcy_base_r85_ts_fp32,7,4.5,8556096.0,243,35210.3,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…"
+darcy_base_r85_ts_fp32,8,3.1,5871392.0,160,36696.2,"void preprocess_kernel<float, unsigned int, (loadstore_modifier_t)2>(real_complex_args_t<T2>)"
+darcy_large_on421_ts_fp32,1,48.6,645116032.0,168,3839976.4,"void regular_bluestein_fft<(unsigned int)1024, EPT<(unsigned int)16>, (unsigned int)2, (unsigned in…"
+darcy_large_on421_ts_fp32,2,7.1,94168192.0,36,2615783.1,fused_add_gelu
+darcy_large_on421_ts_fp32,3,5.8,77414944.0,59,1312117.7,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…"
+darcy_large_on421_ts_fp32,4,4.7,62415232.0,35,1783292.3,ampere_sgemm_128x64_nn
+darcy_large_on421_ts_fp32,5,4.6,60964800.0,252,241923.8,"void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…"
+darcy_large_on421_ts_fp32,6,4.4,58748032.0,42,1398762.7,"void kernel_wrapper<unsigned int, &packR2C_kernel_Odd_impl<unsigned int, float>>(RealComplex_st<T1>)"
+darcy_large_on421_ts_fp32,7,3.7,48949440.0,42,1165462.9,"void preprocess_kernel<float, unsigned int, (loadstore_modifier_t)2>(real_complex_args_t<T2>)"
+darcy_large_on421_ts_fp32,8,3.4,44872288.0,42,1068387.8,"void kernel_wrapper<unsigned int, &unpackC2R_kernel_Odd_impl<unsigned int, float>>(RealComplex_st<T…"

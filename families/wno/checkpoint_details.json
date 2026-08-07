@@ -1,0 +1,2130 @@
+{
+  "sp2gno_burgers_base_s2048": {
+    "checkpoint": "checkpoints/sp2gno_burgers_base_s2048.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "sp2gno_burgers_base_s2048",
+      "family": "sp2gno",
+      "problem": "burgers",
+      "model_scale": "base",
+      "resolution_tag": "s",
+      "resolution_n": 2048,
+      "requested_resolution": "2048"
+    },
+    "summary": {
+      "num_state_tensors": 86,
+      "total_tensor_numel": 234347,
+      "total_tensor_MB": 0.8939628601074219,
+      "param_count_est": 234347,
+      "param_MB_est": 0.8939628601074219,
+      "dtype_summary": "float32:86",
+      "largest_tensors": [
+        [
+          "graph_fourier_layers.0.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.1.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.2.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.3.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.4.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.5.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "q.mlp1.weight",
+          [
+            128,
+            24
+          ],
+          3072,
+          "float32"
+        ],
+        [
+          "projection.weight",
+          [
+            24,
+            48
+          ],
+          1152,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 994,
+      "val_rel_l2": 0.005204250570386648,
+      "test_rel_l2": 0.005267384462058544
+    },
+    "result_fields": {
+      "params": 234347,
+      "final_test_rel_l2": 0.005267383996397257,
+      "best_val_rel_l2": 0.005204250570386648
+    }
+  },
+  "sp2gno_burgers_base_s4096": {
+    "checkpoint": "checkpoints/sp2gno_burgers_base_s4096.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "sp2gno_burgers_base_s4096",
+      "family": "sp2gno",
+      "problem": "burgers",
+      "model_scale": "base",
+      "resolution_tag": "s",
+      "resolution_n": 4096,
+      "requested_resolution": "4096"
+    },
+    "summary": {
+      "num_state_tensors": 86,
+      "total_tensor_numel": 234347,
+      "total_tensor_MB": 0.8939628601074219,
+      "param_count_est": 234347,
+      "param_MB_est": 0.8939628601074219,
+      "dtype_summary": "float32:86",
+      "largest_tensors": [
+        [
+          "graph_fourier_layers.0.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.1.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.2.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.3.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.4.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.5.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "q.mlp1.weight",
+          [
+            128,
+            24
+          ],
+          3072,
+          "float32"
+        ],
+        [
+          "projection.weight",
+          [
+            24,
+            48
+          ],
+          1152,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 959,
+      "val_rel_l2": 0.005210513714700937,
+      "test_rel_l2": 0.0053839609026908875
+    },
+    "result_fields": {
+      "params": 234347,
+      "final_test_rel_l2": 0.005383959040045738,
+      "best_val_rel_l2": 0.005210513714700937
+    }
+  },
+  "sp2gno_burgers_large_s2048": {
+    "checkpoint": "checkpoints/sp2gno_burgers_large_s2048.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "sp2gno_burgers_large_s2048",
+      "family": "sp2gno",
+      "problem": "burgers",
+      "model_scale": "large",
+      "resolution_tag": "s",
+      "resolution_n": 2048,
+      "requested_resolution": "2048"
+    },
+    "summary": {
+      "num_state_tensors": 86,
+      "total_tensor_numel": 814325,
+      "total_tensor_MB": 3.106403350830078,
+      "param_count_est": 814325,
+      "param_MB_est": 3.106403350830078,
+      "dtype_summary": "float32:86",
+      "largest_tensors": [
+        [
+          "graph_fourier_layers.0.weights",
+          [
+            45,
+            45,
+            64
+          ],
+          129600,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.1.weights",
+          [
+            45,
+            45,
+            64
+          ],
+          129600,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.2.weights",
+          [
+            45,
+            45,
+            64
+          ],
+          129600,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.3.weights",
+          [
+            45,
+            45,
+            64
+          ],
+          129600,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.4.weights",
+          [
+            45,
+            45,
+            64
+          ],
+          129600,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.5.weights",
+          [
+            45,
+            45,
+            64
+          ],
+          129600,
+          "float32"
+        ],
+        [
+          "q.mlp1.weight",
+          [
+            128,
+            45
+          ],
+          5760,
+          "float32"
+        ],
+        [
+          "projection.weight",
+          [
+            45,
+            90
+          ],
+          4050,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 964,
+      "val_rel_l2": 0.003997642081230879,
+      "test_rel_l2": 0.003904337529093027
+    },
+    "result_fields": {
+      "params": 814325,
+      "final_test_rel_l2": 0.003904335666447878,
+      "best_val_rel_l2": 0.003997642081230879
+    }
+  },
+  "sp2gno_burgers_small_s2048": {
+    "checkpoint": "checkpoints/sp2gno_burgers_small_s2048.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "sp2gno_burgers_small_s2048",
+      "family": "sp2gno",
+      "problem": "burgers",
+      "model_scale": "small",
+      "resolution_tag": "s",
+      "resolution_n": 2048,
+      "requested_resolution": "2048"
+    },
+    "summary": {
+      "num_state_tensors": 86,
+      "total_tensor_numel": 70645,
+      "total_tensor_MB": 0.2694892883300781,
+      "param_count_est": 70645,
+      "param_MB_est": 0.2694892883300781,
+      "dtype_summary": "float32:86",
+      "largest_tensors": [
+        [
+          "graph_fourier_layers.0.weights",
+          [
+            13,
+            13,
+            64
+          ],
+          10816,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.1.weights",
+          [
+            13,
+            13,
+            64
+          ],
+          10816,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.2.weights",
+          [
+            13,
+            13,
+            64
+          ],
+          10816,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.3.weights",
+          [
+            13,
+            13,
+            64
+          ],
+          10816,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.4.weights",
+          [
+            13,
+            13,
+            64
+          ],
+          10816,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.5.weights",
+          [
+            13,
+            13,
+            64
+          ],
+          10816,
+          "float32"
+        ],
+        [
+          "q.mlp1.weight",
+          [
+            128,
+            13
+          ],
+          1664,
+          "float32"
+        ],
+        [
+          "projection.weight",
+          [
+            13,
+            26
+          ],
+          338,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 999,
+      "val_rel_l2": 0.006028502713888884,
+      "test_rel_l2": 0.00592859648168087
+    },
+    "result_fields": {
+      "params": 70645,
+      "final_test_rel_l2": 0.005928598344326019,
+      "best_val_rel_l2": 0.006028502713888884
+    }
+  },
+  "sp2gno_darcy_base_r141": {
+    "checkpoint": "checkpoints/sp2gno_darcy_base_r141.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "sp2gno_darcy_base_r141",
+      "family": "sp2gno",
+      "problem": "darcy",
+      "model_scale": "base",
+      "resolution_tag": "r",
+      "resolution_n": 141,
+      "requested_resolution": "141x141"
+    },
+    "summary": {
+      "num_state_tensors": 86,
+      "total_tensor_numel": 234371,
+      "total_tensor_MB": 0.8940544128417969,
+      "param_count_est": 234371,
+      "param_MB_est": 0.8940544128417969,
+      "dtype_summary": "float32:86",
+      "largest_tensors": [
+        [
+          "graph_fourier_layers.0.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.1.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.2.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.3.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.4.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.5.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "q.mlp1.weight",
+          [
+            128,
+            24
+          ],
+          3072,
+          "float32"
+        ],
+        [
+          "projection.weight",
+          [
+            24,
+            48
+          ],
+          1152,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 989,
+      "val_rel_l2": 0.009545781649649143,
+      "test_rel_l2": 0.009803521446883678
+    },
+    "result_fields": {
+      "params": 234371,
+      "final_test_rel_l2": 0.009803521446883678,
+      "best_val_rel_l2": 0.009545781649649143
+    }
+  },
+  "sp2gno_darcy_base_r211": {
+    "checkpoint": "checkpoints/sp2gno_darcy_base_r211.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "sp2gno_darcy_base_r211",
+      "family": "sp2gno",
+      "problem": "darcy",
+      "model_scale": "base",
+      "resolution_tag": "r",
+      "resolution_n": 211,
+      "requested_resolution": "211x211"
+    },
+    "summary": {
+      "num_state_tensors": 86,
+      "total_tensor_numel": 234371,
+      "total_tensor_MB": 0.8940544128417969,
+      "param_count_est": 234371,
+      "param_MB_est": 0.8940544128417969,
+      "dtype_summary": "float32:86",
+      "largest_tensors": [
+        [
+          "graph_fourier_layers.0.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.1.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.2.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.3.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.4.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.5.weights",
+          [
+            24,
+            24,
+            64
+          ],
+          36864,
+          "float32"
+        ],
+        [
+          "q.mlp1.weight",
+          [
+            128,
+            24
+          ],
+          3072,
+          "float32"
+        ],
+        [
+          "projection.weight",
+          [
+            24,
+            48
+          ],
+          1152,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 974,
+      "val_rel_l2": 0.12573446333408356,
+      "test_rel_l2": 0.128018319606781
+    },
+    "result_fields": {
+      "params": 234371,
+      "final_test_rel_l2": 0.128018319606781,
+      "best_val_rel_l2": 0.12573446333408356
+    }
+  },
+  "sp2gno_darcy_large_r141": {
+    "checkpoint": "checkpoints/sp2gno_darcy_large_r141.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "sp2gno_darcy_large_r141",
+      "family": "sp2gno",
+      "problem": "darcy",
+      "model_scale": "large",
+      "resolution_tag": "r",
+      "resolution_n": 141,
+      "requested_resolution": "141x141"
+    },
+    "summary": {
+      "num_state_tensors": 86,
+      "total_tensor_numel": 814370,
+      "total_tensor_MB": 3.1065750122070312,
+      "param_count_est": 814370,
+      "param_MB_est": 3.1065750122070312,
+      "dtype_summary": "float32:86",
+      "largest_tensors": [
+        [
+          "graph_fourier_layers.0.weights",
+          [
+            45,
+            45,
+            64
+          ],
+          129600,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.1.weights",
+          [
+            45,
+            45,
+            64
+          ],
+          129600,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.2.weights",
+          [
+            45,
+            45,
+            64
+          ],
+          129600,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.3.weights",
+          [
+            45,
+            45,
+            64
+          ],
+          129600,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.4.weights",
+          [
+            45,
+            45,
+            64
+          ],
+          129600,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.5.weights",
+          [
+            45,
+            45,
+            64
+          ],
+          129600,
+          "float32"
+        ],
+        [
+          "q.mlp1.weight",
+          [
+            128,
+            45
+          ],
+          5760,
+          "float32"
+        ],
+        [
+          "projection.weight",
+          [
+            45,
+            90
+          ],
+          4050,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 954,
+      "val_rel_l2": 0.007156847510486841,
+      "test_rel_l2": 0.00764694157987833
+    },
+    "result_fields": {
+      "params": 814370,
+      "final_test_rel_l2": 0.007646941114217043,
+      "best_val_rel_l2": 0.007156847510486841
+    }
+  },
+  "sp2gno_darcy_small_r141": {
+    "checkpoint": "checkpoints/sp2gno_darcy_small_r141.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "sp2gno_darcy_small_r141",
+      "family": "sp2gno",
+      "problem": "darcy",
+      "model_scale": "small",
+      "resolution_tag": "r",
+      "resolution_n": 141,
+      "requested_resolution": "141x141"
+    },
+    "summary": {
+      "num_state_tensors": 86,
+      "total_tensor_numel": 70658,
+      "total_tensor_MB": 0.26953887939453125,
+      "param_count_est": 70658,
+      "param_MB_est": 0.26953887939453125,
+      "dtype_summary": "float32:86",
+      "largest_tensors": [
+        [
+          "graph_fourier_layers.0.weights",
+          [
+            13,
+            13,
+            64
+          ],
+          10816,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.1.weights",
+          [
+            13,
+            13,
+            64
+          ],
+          10816,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.2.weights",
+          [
+            13,
+            13,
+            64
+          ],
+          10816,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.3.weights",
+          [
+            13,
+            13,
+            64
+          ],
+          10816,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.4.weights",
+          [
+            13,
+            13,
+            64
+          ],
+          10816,
+          "float32"
+        ],
+        [
+          "graph_fourier_layers.5.weights",
+          [
+            13,
+            13,
+            64
+          ],
+          10816,
+          "float32"
+        ],
+        [
+          "q.mlp1.weight",
+          [
+            128,
+            13
+          ],
+          1664,
+          "float32"
+        ],
+        [
+          "projection.weight",
+          [
+            13,
+            26
+          ],
+          338,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 994,
+      "val_rel_l2": 0.012768512591719627,
+      "test_rel_l2": 0.012990129180252552
+    },
+    "result_fields": {
+      "params": 70658,
+      "final_test_rel_l2": 0.012990130111575127,
+      "best_val_rel_l2": 0.012768512591719627
+    }
+  },
+  "wno_burgers_base_r2048": {
+    "checkpoint": "checkpoints/wno_burgers_base_r2048.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "wno_burgers_base_r2048",
+      "family": "wno",
+      "problem": "burgers",
+      "model_scale": "base",
+      "resolution_tag": "r",
+      "resolution_n": 2048,
+      "requested_resolution": "2048"
+    },
+    "summary": {
+      "num_state_tensors": 30,
+      "total_tensor_numel": 242553,
+      "total_tensor_MB": 0.9252662658691406,
+      "param_count_est": 242553,
+      "param_MB_est": 0.9252662658691406,
+      "dtype_summary": "float32:30",
+      "largest_tensors": [
+        [
+          "conv.0.weights1",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.0.weights2",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.1.weights1",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.1.weights2",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.2.weights1",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.2.weights2",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.3.weights1",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.3.weights2",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 989,
+      "val_rel_l2": 0.021949882623625964,
+      "test_rel_l2": 0.022045689239734555,
+      "config": {
+        "variant": "base",
+        "res": 2048,
+        "width": 40,
+        "layers": 4,
+        "level": 8
+      }
+    },
+    "result_fields": {
+      "params": 242457,
+      "final_test_rel_l2": 0.022045689239734555,
+      "best_val_rel_l2": 0.021949882623625964
+    }
+  },
+  "wno_burgers_base_r4096": {
+    "checkpoint": "checkpoints/wno_burgers_base_r4096.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "wno_burgers_base_r4096",
+      "family": "wno",
+      "problem": "burgers",
+      "model_scale": "base",
+      "resolution_tag": "r",
+      "resolution_n": 4096,
+      "requested_resolution": "4096"
+    },
+    "summary": {
+      "num_state_tensors": 30,
+      "total_tensor_numel": 242553,
+      "total_tensor_MB": 0.9252662658691406,
+      "param_count_est": 242553,
+      "param_MB_est": 0.9252662658691406,
+      "dtype_summary": "float32:30",
+      "largest_tensors": [
+        [
+          "conv.0.weights1",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.0.weights2",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.1.weights1",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.1.weights2",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.2.weights1",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.2.weights2",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.3.weights1",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.3.weights2",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 999,
+      "val_rel_l2": 0.02375214092615174,
+      "test_rel_l2": 0.023877583080675543,
+      "config": {
+        "variant": "base",
+        "res": 4096,
+        "width": 40,
+        "layers": 4,
+        "level": 9
+      }
+    },
+    "result_fields": {
+      "params": 242457,
+      "final_test_rel_l2": 0.023877583080675543,
+      "best_val_rel_l2": 0.02375214092615174
+    }
+  },
+  "wno_burgers_base_r8192": {
+    "checkpoint": "checkpoints/wno_burgers_base_r8192.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "wno_burgers_base_r8192",
+      "family": "wno",
+      "problem": "burgers",
+      "model_scale": "base",
+      "resolution_tag": "r",
+      "resolution_n": 8192,
+      "requested_resolution": "8192"
+    },
+    "summary": {
+      "num_state_tensors": 30,
+      "total_tensor_numel": 242553,
+      "total_tensor_MB": 0.9252662658691406,
+      "param_count_est": 242553,
+      "param_MB_est": 0.9252662658691406,
+      "dtype_summary": "float32:30",
+      "largest_tensors": [
+        [
+          "conv.0.weights1",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.0.weights2",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.1.weights1",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.1.weights2",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.2.weights1",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.2.weights2",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.3.weights1",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ],
+        [
+          "conv.3.weights2",
+          [
+            40,
+            40,
+            18
+          ],
+          28800,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 939,
+      "val_rel_l2": 0.02329378564183305,
+      "test_rel_l2": 0.0237618839595376,
+      "config": {
+        "variant": "base",
+        "res": 8192,
+        "width": 40,
+        "layers": 4,
+        "level": 10
+      }
+    },
+    "result_fields": {
+      "params": 242457,
+      "final_test_rel_l2": 0.0237618839595376,
+      "best_val_rel_l2": 0.02329378564183305
+    }
+  },
+  "wno_burgers_large_r2048": {
+    "checkpoint": "checkpoints/wno_burgers_large_r2048.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "wno_burgers_large_r2048",
+      "family": "wno",
+      "problem": "burgers",
+      "model_scale": "large",
+      "resolution_tag": "r",
+      "resolution_n": 2048,
+      "requested_resolution": "2048"
+    },
+    "summary": {
+      "num_state_tensors": 30,
+      "total_tensor_numel": 820791,
+      "total_tensor_MB": 3.1310691833496094,
+      "param_count_est": 820791,
+      "param_MB_est": 3.1310691833496094,
+      "dtype_summary": "float32:30",
+      "largest_tensors": [
+        [
+          "conv.0.weights1",
+          [
+            74,
+            74,
+            18
+          ],
+          98568,
+          "float32"
+        ],
+        [
+          "conv.0.weights2",
+          [
+            74,
+            74,
+            18
+          ],
+          98568,
+          "float32"
+        ],
+        [
+          "conv.1.weights1",
+          [
+            74,
+            74,
+            18
+          ],
+          98568,
+          "float32"
+        ],
+        [
+          "conv.1.weights2",
+          [
+            74,
+            74,
+            18
+          ],
+          98568,
+          "float32"
+        ],
+        [
+          "conv.2.weights1",
+          [
+            74,
+            74,
+            18
+          ],
+          98568,
+          "float32"
+        ],
+        [
+          "conv.2.weights2",
+          [
+            74,
+            74,
+            18
+          ],
+          98568,
+          "float32"
+        ],
+        [
+          "conv.3.weights1",
+          [
+            74,
+            74,
+            18
+          ],
+          98568,
+          "float32"
+        ],
+        [
+          "conv.3.weights2",
+          [
+            74,
+            74,
+            18
+          ],
+          98568,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 994,
+      "val_rel_l2": 0.022484468178051276,
+      "test_rel_l2": 0.02370111389857967,
+      "config": {
+        "variant": "large",
+        "res": 2048,
+        "width": 74,
+        "layers": 4,
+        "level": 8
+      }
+    },
+    "result_fields": {
+      "params": 820695,
+      "final_test_rel_l2": 0.02370111389857967,
+      "best_val_rel_l2": 0.022484468178051276
+    }
+  },
+  "wno_burgers_small_r2048": {
+    "checkpoint": "checkpoints/wno_burgers_small_r2048.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "wno_burgers_small_r2048",
+      "family": "wno",
+      "problem": "burgers",
+      "model_scale": "small",
+      "resolution_tag": "r",
+      "resolution_n": 2048,
+      "requested_resolution": "2048"
+    },
+    "summary": {
+      "num_state_tensors": 30,
+      "total_tensor_numel": 74955,
+      "total_tensor_MB": 0.2859306335449219,
+      "param_count_est": 74955,
+      "param_MB_est": 0.2859306335449219,
+      "dtype_summary": "float32:30",
+      "largest_tensors": [
+        [
+          "conv.0.weights1",
+          [
+            22,
+            22,
+            18
+          ],
+          8712,
+          "float32"
+        ],
+        [
+          "conv.0.weights2",
+          [
+            22,
+            22,
+            18
+          ],
+          8712,
+          "float32"
+        ],
+        [
+          "conv.1.weights1",
+          [
+            22,
+            22,
+            18
+          ],
+          8712,
+          "float32"
+        ],
+        [
+          "conv.1.weights2",
+          [
+            22,
+            22,
+            18
+          ],
+          8712,
+          "float32"
+        ],
+        [
+          "conv.2.weights1",
+          [
+            22,
+            22,
+            18
+          ],
+          8712,
+          "float32"
+        ],
+        [
+          "conv.2.weights2",
+          [
+            22,
+            22,
+            18
+          ],
+          8712,
+          "float32"
+        ],
+        [
+          "conv.3.weights1",
+          [
+            22,
+            22,
+            18
+          ],
+          8712,
+          "float32"
+        ],
+        [
+          "conv.3.weights2",
+          [
+            22,
+            22,
+            18
+          ],
+          8712,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 934,
+      "val_rel_l2": 0.03112632181586289,
+      "test_rel_l2": 0.0317295648702761,
+      "config": {
+        "variant": "small",
+        "res": 2048,
+        "width": 22,
+        "layers": 4,
+        "level": 8
+      }
+    },
+    "result_fields": {
+      "params": 74859,
+      "final_test_rel_l2": 0.0317295648702761,
+      "best_val_rel_l2": 0.03112632181586289
+    }
+  },
+  "wno_darcy_base_r141": {
+    "checkpoint": "checkpoints/wno_darcy_base_r141.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "wno_darcy_base_r141",
+      "family": "wno",
+      "problem": "darcy",
+      "model_scale": "base",
+      "resolution_tag": "r",
+      "resolution_n": 141,
+      "requested_resolution": "141x141"
+    },
+    "summary": {
+      "num_state_tensors": 30,
+      "total_tensor_numel": 232001,
+      "total_tensor_MB": 0.8850135803222656,
+      "param_count_est": 232001,
+      "param_MB_est": 0.8850135803222656,
+      "dtype_summary": "float32:30",
+      "largest_tensors": [
+        [
+          "conv.0.weights1",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.0.weights2",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.0.weights3",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.0.weights4",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.1.weights1",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.1.weights2",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.1.weights3",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.1.weights4",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 69,
+      "val_rel_l2": 0.04886935412883758,
+      "test_rel_l2": 0.05220620810985565,
+      "config": {
+        "variant": "base",
+        "res": 141,
+        "width": 8,
+        "layers": 4,
+        "level": 5
+      }
+    },
+    "result_fields": {
+      "params": 232001,
+      "final_test_rel_l2": 0.05220620810985565,
+      "best_val_rel_l2": 0.04886935412883758
+    }
+  },
+  "wno_darcy_base_r281": {
+    "checkpoint": "checkpoints/wno_darcy_base_r281.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "wno_darcy_base_r281",
+      "family": "wno",
+      "problem": "darcy",
+      "model_scale": "base",
+      "resolution_tag": "r",
+      "resolution_n": 281,
+      "requested_resolution": "281x281"
+    },
+    "summary": {
+      "num_state_tensors": 30,
+      "total_tensor_numel": 232001,
+      "total_tensor_MB": 0.8850135803222656,
+      "param_count_est": 232001,
+      "param_MB_est": 0.8850135803222656,
+      "dtype_summary": "float32:30",
+      "largest_tensors": [
+        [
+          "conv.0.weights1",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.0.weights2",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.0.weights3",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.0.weights4",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.1.weights1",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.1.weights2",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.1.weights3",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ],
+        [
+          "conv.1.weights4",
+          [
+            8,
+            8,
+            15,
+            15
+          ],
+          14400,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 434,
+      "val_rel_l2": 0.02832233265042305,
+      "test_rel_l2": 0.029506827294826506,
+      "config": {
+        "variant": "base",
+        "res": 281,
+        "width": 8,
+        "layers": 4,
+        "level": 6
+      }
+    },
+    "result_fields": {
+      "params": 232001,
+      "final_test_rel_l2": 0.029506827294826506,
+      "best_val_rel_l2": 0.02832233265042305
+    }
+  },
+  "wno_darcy_base_r421": {
+    "checkpoint": "checkpoints/wno_darcy_base_r421.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "wno_darcy_base_r421",
+      "family": "wno",
+      "problem": "darcy",
+      "model_scale": "base",
+      "resolution_tag": "r",
+      "resolution_n": 421,
+      "requested_resolution": "421x421"
+    },
+    "summary": {
+      "num_state_tensors": 30,
+      "total_tensor_numel": 202305,
+      "total_tensor_MB": 0.7717323303222656,
+      "param_count_est": 202305,
+      "param_MB_est": 0.7717323303222656,
+      "dtype_summary": "float32:30",
+      "largest_tensors": [
+        [
+          "conv.0.weights1",
+          [
+            8,
+            8,
+            14,
+            14
+          ],
+          12544,
+          "float32"
+        ],
+        [
+          "conv.0.weights2",
+          [
+            8,
+            8,
+            14,
+            14
+          ],
+          12544,
+          "float32"
+        ],
+        [
+          "conv.0.weights3",
+          [
+            8,
+            8,
+            14,
+            14
+          ],
+          12544,
+          "float32"
+        ],
+        [
+          "conv.0.weights4",
+          [
+            8,
+            8,
+            14,
+            14
+          ],
+          12544,
+          "float32"
+        ],
+        [
+          "conv.1.weights1",
+          [
+            8,
+            8,
+            14,
+            14
+          ],
+          12544,
+          "float32"
+        ],
+        [
+          "conv.1.weights2",
+          [
+            8,
+            8,
+            14,
+            14
+          ],
+          12544,
+          "float32"
+        ],
+        [
+          "conv.1.weights3",
+          [
+            8,
+            8,
+            14,
+            14
+          ],
+          12544,
+          "float32"
+        ],
+        [
+          "conv.1.weights4",
+          [
+            8,
+            8,
+            14,
+            14
+          ],
+          12544,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 474,
+      "val_rel_l2": 0.03538155972957611,
+      "test_rel_l2": 0.035029906183481216,
+      "config": {
+        "variant": "base",
+        "res": 421,
+        "width": 8,
+        "layers": 4,
+        "level": 7
+      }
+    },
+    "result_fields": {
+      "params": 202305,
+      "final_test_rel_l2": 0.035029906183481216,
+      "best_val_rel_l2": 0.03538155972957611
+    }
+  },
+  "wno_darcy_large_r141": {
+    "checkpoint": "checkpoints/wno_darcy_large_r141.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "wno_darcy_large_r141",
+      "family": "wno",
+      "problem": "darcy",
+      "model_scale": "large",
+      "resolution_tag": "r",
+      "resolution_n": 141,
+      "requested_resolution": "141x141"
+    },
+    "summary": {
+      "num_state_tensors": 30,
+      "total_tensor_numel": 813197,
+      "total_tensor_MB": 3.102100372314453,
+      "param_count_est": 813197,
+      "param_MB_est": 3.102100372314453,
+      "dtype_summary": "float32:30",
+      "largest_tensors": [
+        [
+          "conv.0.weights1",
+          [
+            15,
+            15,
+            15,
+            15
+          ],
+          50625,
+          "float32"
+        ],
+        [
+          "conv.0.weights2",
+          [
+            15,
+            15,
+            15,
+            15
+          ],
+          50625,
+          "float32"
+        ],
+        [
+          "conv.0.weights3",
+          [
+            15,
+            15,
+            15,
+            15
+          ],
+          50625,
+          "float32"
+        ],
+        [
+          "conv.0.weights4",
+          [
+            15,
+            15,
+            15,
+            15
+          ],
+          50625,
+          "float32"
+        ],
+        [
+          "conv.1.weights1",
+          [
+            15,
+            15,
+            15,
+            15
+          ],
+          50625,
+          "float32"
+        ],
+        [
+          "conv.1.weights2",
+          [
+            15,
+            15,
+            15,
+            15
+          ],
+          50625,
+          "float32"
+        ],
+        [
+          "conv.1.weights3",
+          [
+            15,
+            15,
+            15,
+            15
+          ],
+          50625,
+          "float32"
+        ],
+        [
+          "conv.1.weights4",
+          [
+            15,
+            15,
+            15,
+            15
+          ],
+          50625,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 59,
+      "val_rel_l2": 0.043010005056858064,
+      "test_rel_l2": 0.044901976585388186,
+      "config": {
+        "variant": "large",
+        "res": 141,
+        "width": 15,
+        "layers": 4,
+        "level": 5
+      }
+    },
+    "result_fields": {
+      "params": 813197,
+      "final_test_rel_l2": 0.044901976585388186,
+      "best_val_rel_l2": 0.043010005056858064
+    }
+  },
+  "wno_darcy_small_r141": {
+    "checkpoint": "checkpoints/wno_darcy_small_r141.pth",
+    "state_dict_source": "model_state_dict",
+    "filename_info": {
+      "case": "wno_darcy_small_r141",
+      "family": "wno",
+      "problem": "darcy",
+      "model_scale": "small",
+      "resolution_tag": "r",
+      "resolution_n": 141,
+      "requested_resolution": "141x141"
+    },
+    "summary": {
+      "num_state_tensors": 30,
+      "total_tensor_numel": 91037,
+      "total_tensor_MB": 0.3472785949707031,
+      "param_count_est": 91037,
+      "param_MB_est": 0.3472785949707031,
+      "dtype_summary": "float32:30",
+      "largest_tensors": [
+        [
+          "conv.0.weights1",
+          [
+            5,
+            5,
+            15,
+            15
+          ],
+          5625,
+          "float32"
+        ],
+        [
+          "conv.0.weights2",
+          [
+            5,
+            5,
+            15,
+            15
+          ],
+          5625,
+          "float32"
+        ],
+        [
+          "conv.0.weights3",
+          [
+            5,
+            5,
+            15,
+            15
+          ],
+          5625,
+          "float32"
+        ],
+        [
+          "conv.0.weights4",
+          [
+            5,
+            5,
+            15,
+            15
+          ],
+          5625,
+          "float32"
+        ],
+        [
+          "conv.1.weights1",
+          [
+            5,
+            5,
+            15,
+            15
+          ],
+          5625,
+          "float32"
+        ],
+        [
+          "conv.1.weights2",
+          [
+            5,
+            5,
+            15,
+            15
+          ],
+          5625,
+          "float32"
+        ],
+        [
+          "conv.1.weights3",
+          [
+            5,
+            5,
+            15,
+            15
+          ],
+          5625,
+          "float32"
+        ],
+        [
+          "conv.1.weights4",
+          [
+            5,
+            5,
+            15,
+            15
+          ],
+          5625,
+          "float32"
+        ]
+      ]
+    },
+    "embedded_metadata": {
+      "epoch": 104,
+      "val_rel_l2": 0.050816902816295625,
+      "test_rel_l2": 0.05370116278529167,
+      "config": {
+        "variant": "small",
+        "res": 141,
+        "width": 5,
+        "layers": 4,
+        "level": 5
+      }
+    },
+    "result_fields": {
+      "params": 91037,
+      "final_test_rel_l2": 0.05370116278529167,
+      "best_val_rel_l2": 0.050816902816295625
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "config_path": "configs/darcy_fno_large.yaml",
+  "experiment_name": "darcy_fno_large",
+  "seed": 0,
+  "deterministic": false,
+  "device": "cuda",
+  "dataset": "darcy",
+  "spatial_dim": 2,
+  "input_shape": [
+    141,
+    141,
+    3
+  ],
+  "output_shape": [
+    141,
+    141,
+    1
+  ],
+  "parameter_count": 28345217,
+  "n_train": 922,
+  "n_val": 102,
+  "n_test": 1024,
+  "best_epoch": 228,
+  "best_val_rel_l2": 0.012276209890842438,
+  "test_rel_l2_mean": 0.012372275814414024,
+  "test_rel_l2_std": 0.006077059078961611,
+  "test_rel_l2_median": 0.011208351701498032,
+  "test_mse": 9.060194372523256e-09,
+  "test_mae": 6.294017657637596e-05,
+  "test_n": 1024
+}

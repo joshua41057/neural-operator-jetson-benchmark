@@ -1,0 +1,3 @@
+Generating Test Dataset
+Graph Creation Time: 5.962449550628662 s
+Total Processing Time: 6.289852142333984 s

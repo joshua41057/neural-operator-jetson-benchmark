@@ -1,0 +1,50 @@
+{
+  "experiment": {
+    "name": "burgers_fno_base_r4096",
+    "seed": 0,
+    "deterministic": false,
+    "output_dir": "checkpoints"
+  },
+  "data": {
+    "dataset": "burgers",
+    "path": "data/raw/burgers_data_R10.mat",
+    "split_path": "splits/burgers_split.json",
+    "input_key": "a",
+    "output_key": "u",
+    "resolution": [
+      4096
+    ],
+    "add_coords": true,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "num_workers": 4,
+    "pin_memory": true
+  },
+  "model": {
+    "family": "fno",
+    "spatial_dim": 1,
+    "hidden_channels": 48,
+    "projection_channels": 96,
+    "n_layers": 4,
+    "modes": [
+      24
+    ],
+    "padding": [
+      24
+    ]
+  },
+  "train": {
+    "optimizer": "adamw",
+    "lr": 0.0008,
+    "weight_decay": 0.0001,
+    "scheduler": "cosine",
+    "min_lr": 1e-05,
+    "epochs": 260,
+    "early_stopping_patience": 45,
+    "amp": false,
+    "grad_clip": 1.0,
+    "step_size": 50,
+    "gamma": 0.5
+  },
+  "_config_path": "configs/resolution/burgers_fno_base_r4096.yaml"
+}

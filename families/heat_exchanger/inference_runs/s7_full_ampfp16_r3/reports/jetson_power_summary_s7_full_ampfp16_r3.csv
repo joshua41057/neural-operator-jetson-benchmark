@@ -1,0 +1,17 @@
+field,value
+Tegrastats_time_stamps_count,131
+elapsed_s,26.70300006866455
+mean_dt_s,0.20540769283588117
+power_source,VDD_IN/POM_5V_IN preferred; fallback sum/common rails
+avg_power_w,15.685259541984733
+median_power_w,15.971
+peak_power_w,16.717
+energy_j_total,418.7907145822046
+avg_gpu_util_pct,89.4885496183206
+peak_gpu_util_pct,99.0
+avg_gpu_freq_mhz,
+avg_cpu_util_pct,33.732824427480914
+avg_ram_used_mb,4650.099236641221
+peak_ram_used_mb,4690.0
+ram_total_mb,7620.0
+max_temp_c,65.0

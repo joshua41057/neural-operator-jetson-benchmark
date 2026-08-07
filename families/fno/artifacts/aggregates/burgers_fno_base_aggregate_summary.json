@@ -1,0 +1,190 @@
+{
+  "experiment_name": "burgers_fno_base",
+  "num_seeds": 5,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "per_seed": [
+    {
+      "config_path": "configs/burgers_fno_base.yaml",
+      "experiment_name": "burgers_fno_base",
+      "seed": 0,
+      "deterministic": false,
+      "device": "cuda",
+      "dataset": "burgers",
+      "spatial_dim": 1,
+      "input_shape": [
+        2048,
+        2
+      ],
+      "output_shape": [
+        2048,
+        1
+      ],
+      "parameter_count": 235537,
+      "n_train": 1638,
+      "n_val": 205,
+      "n_test": 205,
+      "best_epoch": 238,
+      "best_val_rel_l2": 0.00098182272631675,
+      "test_rel_l2_mean": 0.00090030423598364,
+      "test_rel_l2_std": 0.0005889727617613971,
+      "test_rel_l2_median": 0.0007171436445787549,
+      "test_mse": 4.163089499797934e-07,
+      "test_mae": 0.00030662905192002654,
+      "test_n": 205
+    },
+    {
+      "config_path": "configs/burgers_fno_base.yaml",
+      "experiment_name": "burgers_fno_base",
+      "seed": 1,
+      "deterministic": false,
+      "device": "cuda",
+      "dataset": "burgers",
+      "spatial_dim": 1,
+      "input_shape": [
+        2048,
+        2
+      ],
+      "output_shape": [
+        2048,
+        1
+      ],
+      "parameter_count": 235537,
+      "n_train": 1638,
+      "n_val": 205,
+      "n_test": 205,
+      "best_epoch": 235,
+      "best_val_rel_l2": 0.0009169572149403393,
+      "test_rel_l2_mean": 0.0008360053761862218,
+      "test_rel_l2_std": 0.0005718695465475321,
+      "test_rel_l2_median": 0.0006684424006380141,
+      "test_mse": 3.9311368027483695e-07,
+      "test_mae": 0.00027650041738525033,
+      "test_n": 205
+    },
+    {
+      "config_path": "configs/burgers_fno_base.yaml",
+      "experiment_name": "burgers_fno_base",
+      "seed": 2,
+      "deterministic": false,
+      "device": "cuda",
+      "dataset": "burgers",
+      "spatial_dim": 1,
+      "input_shape": [
+        2048,
+        2
+      ],
+      "output_shape": [
+        2048,
+        1
+      ],
+      "parameter_count": 235537,
+      "n_train": 1638,
+      "n_val": 205,
+      "n_test": 205,
+      "best_epoch": 237,
+      "best_val_rel_l2": 0.0009073582477867603,
+      "test_rel_l2_mean": 0.0008428115397691727,
+      "test_rel_l2_std": 0.0005131122306920588,
+      "test_rel_l2_median": 0.000673344184178859,
+      "test_mse": 3.455412240782607e-07,
+      "test_mae": 0.00028542609652504325,
+      "test_n": 205
+    },
+    {
+      "config_path": "configs/burgers_fno_base.yaml",
+      "experiment_name": "burgers_fno_base",
+      "seed": 3,
+      "deterministic": false,
+      "device": "cuda",
+      "dataset": "burgers",
+      "spatial_dim": 1,
+      "input_shape": [
+        2048,
+        2
+      ],
+      "output_shape": [
+        2048,
+        1
+      ],
+      "parameter_count": 235537,
+      "n_train": 1638,
+      "n_val": 205,
+      "n_test": 205,
+      "best_epoch": 238,
+      "best_val_rel_l2": 0.0009461311274208128,
+      "test_rel_l2_mean": 0.0008945716544985771,
+      "test_rel_l2_std": 0.0005295333103276789,
+      "test_rel_l2_median": 0.0007138082874007523,
+      "test_mse": 3.893058249104797e-07,
+      "test_mae": 0.000294903467874974,
+      "test_n": 205
+    },
+    {
+      "config_path": "configs/burgers_fno_base.yaml",
+      "experiment_name": "burgers_fno_base",
+      "seed": 4,
+      "deterministic": false,
+      "device": "cuda",
+      "dataset": "burgers",
+      "spatial_dim": 1,
+      "input_shape": [
+        2048,
+        2
+      ],
+      "output_shape": [
+        2048,
+        1
+      ],
+      "parameter_count": 235537,
+      "n_train": 1638,
+      "n_val": 205,
+      "n_test": 205,
+      "best_epoch": 237,
+      "best_val_rel_l2": 0.0009586744126863778,
+      "test_rel_l2_mean": 0.0009124460048042238,
+      "test_rel_l2_std": 0.000573086435906589,
+      "test_rel_l2_median": 0.0007539389771409333,
+      "test_mse": 3.9436801557712897e-07,
+      "test_mae": 0.0003014436806552112,
+      "test_n": 205
+    }
+  ],
+  "best_val_rel_l2_mean": 0.0009421887458302081,
+  "best_val_rel_l2_std": 2.723220791088067e-05,
+  "best_val_rel_l2_min": 0.0009073582477867603,
+  "best_val_rel_l2_max": 0.00098182272631675,
+  "test_rel_l2_mean_mean": 0.000877227762248367,
+  "test_rel_l2_mean_std": 3.148783996897451e-05,
+  "test_rel_l2_mean_min": 0.0008360053761862218,
+  "test_rel_l2_mean_max": 0.0009124460048042238,
+  "test_rel_l2_std_mean": 0.0005553148570470512,
+  "test_rel_l2_std_std": 2.887383290067451e-05,
+  "test_rel_l2_std_min": 0.0005131122306920588,
+  "test_rel_l2_std_max": 0.0005889727617613971,
+  "test_rel_l2_median_mean": 0.0007053354987874627,
+  "test_rel_l2_median_std": 3.148988238600358e-05,
+  "test_rel_l2_median_min": 0.0006684424006380141,
+  "test_rel_l2_median_max": 0.0007539389771409333,
+  "test_mse_mean": 3.8772753896409995e-07,
+  "test_mse_std": 2.3117870376360956e-08,
+  "test_mse_min": 3.455412240782607e-07,
+  "test_mse_max": 4.163089499797934e-07,
+  "test_mae_mean": 0.0002929805428721011,
+  "test_mae_std": 1.0865250449085897e-05,
+  "test_mae_min": 0.00027650041738525033,
+  "test_mae_max": 0.00030662905192002654,
+  "parameter_count_mean": 235537.0,
+  "parameter_count_std": 0.0,
+  "parameter_count_min": 235537.0,
+  "parameter_count_max": 235537.0,
+  "best_epoch_mean": 237.0,
+  "best_epoch_std": 1.0954451150103321,
+  "best_epoch_min": 235.0,
+  "best_epoch_max": 238.0
+}

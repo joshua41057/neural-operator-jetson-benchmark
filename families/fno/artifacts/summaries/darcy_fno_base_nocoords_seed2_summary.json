@@ -1,0 +1,31 @@
+{
+  "config_path": "configs/ablations/darcy/darcy_fno_base_nocoords.yaml",
+  "experiment_name": "darcy_fno_base_nocoords",
+  "seed": 2,
+  "deterministic": false,
+  "device": "cuda",
+  "dataset": "darcy",
+  "spatial_dim": 2,
+  "input_shape": [
+    141,
+    141,
+    1
+  ],
+  "output_shape": [
+    141,
+    141,
+    1
+  ],
+  "parameter_count": 3287473,
+  "n_train": 922,
+  "n_val": 102,
+  "n_test": 1024,
+  "best_epoch": 214,
+  "best_val_rel_l2": 0.016517499461770058,
+  "test_rel_l2_mean": 0.016575705260038376,
+  "test_rel_l2_std": 0.008285460062325,
+  "test_rel_l2_median": 0.014651610516011715,
+  "test_mse": 1.6857788054380762e-08,
+  "test_mae": 8.525961311534047e-05,
+  "test_n": 1024
+}

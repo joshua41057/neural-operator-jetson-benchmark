@@ -1,0 +1,250 @@
+[
+ {
+  "family": "FNO",
+  "workload": "Burgers 2048",
+  "cells": {
+   "FP32": [
+    3.399,
+    0.0369,
+    null
+   ],
+   "TF32": [
+    3.214,
+    0.0336,
+    null
+   ],
+   "BF16 auto": [
+    null,
+    null,
+    "cuFFT unsupported"
+   ],
+   "FP16 auto": [
+    null,
+    null,
+    "cuFFT unsupported"
+   ],
+   "FP16 native": [
+    null,
+    null,
+    "cuFFT unsupported"
+   ]
+  }
+ },
+ {
+  "family": "FNO",
+  "workload": "Darcy 141\u00b2",
+  "cells": {
+   "FP32": [
+    7.599,
+    0.1646,
+    null
+   ],
+   "TF32": [
+    6.654,
+    0.1419,
+    null
+   ],
+   "BF16 auto": [
+    null,
+    null,
+    "cuFFT unsupported"
+   ],
+   "FP16 auto": [
+    null,
+    null,
+    "cuFFT unsupported"
+   ],
+   "FP16 native": [
+    null,
+    null,
+    "cuFFT unsupported"
+   ]
+  }
+ },
+ {
+  "family": "DeepONet",
+  "workload": "Burgers 2048",
+  "cells": {
+   "FP32": [
+    1.674,
+    0.0298,
+    null
+   ],
+   "TF32": [
+    1.251,
+    0.0181,
+    null
+   ],
+   "BF16 auto": [
+    1.769,
+    0.0205,
+    null
+   ],
+   "FP16 auto": [
+    1.847,
+    0.021,
+    null
+   ],
+   "FP16 native": [
+    1.234,
+    0.0152,
+    null
+   ]
+  }
+ },
+ {
+  "family": "DeepONet",
+  "workload": "Darcy 141\u00b2",
+  "cells": {
+   "FP32": [
+    8.45,
+    0.1896,
+    null
+   ],
+   "TF32": [
+    4.641,
+    0.1009,
+    null
+   ],
+   "BF16 auto": [
+    4.464,
+    0.082,
+    null
+   ],
+   "FP16 auto": [
+    4.356,
+    0.0818,
+    null
+   ],
+   "FP16 native": [
+    3.342,
+    0.0672,
+    null
+   ]
+  }
+ },
+ {
+  "family": "WNO",
+  "workload": "Burgers 2048",
+  "cells": {
+   "FP32": [
+    48.654,
+    0.4306,
+    null
+   ],
+   "TF32": [
+    49.202,
+    0.4342,
+    null
+   ],
+   "BF16 auto": [
+    54.002,
+    0.4743,
+    null
+   ],
+   "FP16 auto": [
+    53.809,
+    0.4728,
+    null
+   ],
+   "FP16 native": [
+    null,
+    null,
+    "dtype mismatch"
+   ]
+  }
+ },
+ {
+  "family": "WNO",
+  "workload": "Darcy 141\u00b2",
+  "cells": {
+   "FP32": [
+    70.199,
+    0.6675,
+    null
+   ],
+   "TF32": [
+    70.214,
+    0.6664,
+    null
+   ],
+   "BF16 auto": [
+    64.488,
+    0.5945,
+    null
+   ],
+   "FP16 auto": [
+    null,
+    null,
+    "NaN (unstable)"
+   ],
+   "FP16 native": [
+    null,
+    null,
+    "dtype mismatch"
+   ]
+  }
+ },
+ {
+  "family": "Sp2GNO",
+  "workload": "Burgers 2048",
+  "cells": {
+   "FP32": [
+    11.895,
+    0.1409,
+    null
+   ],
+   "TF32": [
+    12.082,
+    0.1411,
+    null
+   ],
+   "BF16 auto": [
+    15.952,
+    0.1812,
+    null
+   ],
+   "FP16 auto": [
+    15.753,
+    0.1724,
+    null
+   ],
+   "FP16 native": [
+    12.367,
+    0.1319,
+    null
+   ]
+  }
+ },
+ {
+  "family": "Sp2GNO",
+  "workload": "Darcy 141\u00b2",
+  "cells": {
+   "FP32": [
+    82.346,
+    1.6244,
+    null
+   ],
+   "TF32": [
+    90.391,
+    1.7401,
+    null
+   ],
+   "BF16 auto": [
+    109.403,
+    1.9436,
+    null
+   ],
+   "FP16 auto": [
+    91.974,
+    1.6519,
+    null
+   ],
+   "FP16 native": [
+    72.557,
+    1.2579,
+    null
+   ]
+  }
+ }
+]

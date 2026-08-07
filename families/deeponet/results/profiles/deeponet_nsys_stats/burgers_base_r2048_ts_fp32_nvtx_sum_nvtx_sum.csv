@@ -1,0 +1,3 @@
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Style,Range
+92.6,190306240,1,190306240.0,190306240.0,190306240,190306240,0.0,PushPop,:deeponet_profile_forward
+7.4,15134784,1,15134784.0,15134784.0,15134784,15134784,0.0,PushPop,cuBLAS:cublasCreate_v2

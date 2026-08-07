@@ -1,0 +1,23 @@
+Generating SQLite file inference_runs/virso_profiles_nsys_clean/profile_full_fp32_existing_path/nsys_profile_full_fp32_existing_path.sqlite from inference_runs/virso_profiles_nsys_clean/profile_full_fp32_existing_path/nsys_profile_full_fp32_existing_path.nsys-rep
+Processing [inference_runs/virso_profiles_nsys_clean/profile_full_fp32_existing_path/nsys_profile_full_fp32_existing_path.sqlite] with [/opt/nvidia/nsight-systems/2024.5.4/host-linux-armv8/reports/cuda_api_sum.py]... 
+
+ ** CUDA API Summary (cuda_api_sum):
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)                Name             
+ --------  ---------------  ---------  -----------  -----------  --------  ----------  ------------  ------------------------------
+     66.4      339,061,472         60  5,651,024.5     39,216.0    19,712  93,809,120  14,668,974.6  cudaLaunchKernel              
+     15.3       78,007,680        312    250,024.6     12,144.0     1,504  20,749,888   1,560,968.4  cudaMalloc                    
+     12.0       61,299,488        306    200,325.1      7,872.0     4,160   5,458,496     658,510.8  cudaFree                      
+      3.0       15,138,144          4  3,784,536.0  4,625,360.0   368,736   5,518,688   2,361,897.7  cuLibraryLoadData             
+      1.8        9,211,392        233     39,533.9     18,304.0    16,736   1,427,520     114,352.1  cudaStreamSynchronize         
+      1.4        6,974,976        237     29,430.3     16,384.0    14,784     409,376      43,061.2  cudaMemcpyAsync               
+      0.1          341,408         18     18,967.1      1,376.0       640     317,888      74,604.8  cudaEventCreateWithFlags      
+      0.1          317,152          1    317,152.0    317,152.0   317,152     317,152           0.0  cudaMemsetAsync               
+      0.1          301,632        826        365.2        224.0       128      11,168         453.5  cuGetProcAddress_v2           
+      0.0           50,880          4     12,720.0      2,512.0     1,504      44,352      21,094.5  cuLibraryGetKernel            
+      0.0           37,248          3     12,416.0      8,736.0     8,320      20,192       6,737.4  cudaDeviceSynchronize         
+      0.0           19,200          3      6,400.0      6,368.0     5,472       7,360         944.4  cuInit                        
+      0.0           15,296          1     15,296.0     15,296.0    15,296      15,296           0.0  cudaStreamIsCapturing_v10000  
+      0.0            4,064          2      2,032.0      2,032.0     1,184       2,880       1,199.3  cudaGetDriverEntryPoint_v11030
+      0.0            4,032          3      1,344.0        480.0       480       3,072       1,496.5  cuModuleGetLoadingMode        
+

@@ -1,0 +1,6 @@
+run_ts,case,model_path,amp_mode,amp_fallback,num_layers,width,max_mode,spectral,spatial,exit_status
+precision_full_bf16_20260611_074628,full,/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth,bf16,off,10,48,64,1,1,0
+precision_spectral_fp16_20260611_074909,spectral,/home/jetson/VirSO/best_model_spectral.pth,fp16,fp16,10,48,64,1,0,0
+precision_spectral_bf16_20260611_074958,spectral,/home/jetson/VirSO/best_model_spectral.pth,bf16,off,10,48,64,1,0,0
+precision_layer2_fp16_20260611_075039,layer2,/home/jetson/VirSO/best_model_2_layer.pth,fp16,fp16,2,48,40,1,1,0
+precision_layer2_bf16_20260611_075134,layer2,/home/jetson/VirSO/best_model_2_layer.pth,bf16,off,2,48,40,1,1,0

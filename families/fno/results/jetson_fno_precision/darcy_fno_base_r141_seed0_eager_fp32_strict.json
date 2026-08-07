@@ -1,0 +1,86 @@
+{
+  "status": "success",
+  "mode": "eager",
+  "checkpoint": "artifacts/checkpoints/darcy_fno_base_r141_seed0_best.pt",
+  "torchscript": null,
+  "input_bank": "artifacts/benchmark_inputs/darcy_r141_bank.pt",
+  "sample_index": 0,
+  "batch_size": 1,
+  "precision_mode": "fp32_strict",
+  "device": "cuda",
+  "mean_ms": 9.642542448515693,
+  "median_ms": 9.371872060000896,
+  "p95_ms": 10.849358048290014,
+  "p99_ms": 14.165938831865788,
+  "min_ms": 9.316286072134972,
+  "max_ms": 19.33342684060335,
+  "repeat_mean_ms_median": 9.648865475319326,
+  "repeat_median_ms_median": 9.371327934786677,
+  "repeat_median_ms_std": 0.008300978377052185,
+  "num_warmup": 30,
+  "num_iters": 100,
+  "repeats": 3,
+  "repeat_summaries": [
+    {
+      "repeat": 0.0,
+      "mean_ms": 9.679035563021898,
+      "median_ms": 9.383599972352386,
+      "p95_ms": 11.042740195989609,
+      "p99_ms": 13.981454074382782,
+      "min_ms": 9.324414189904928,
+      "max_ms": 17.337174154818058
+    },
+    {
+      "repeat": 1.0,
+      "mean_ms": 9.648865475319326,
+      "median_ms": 9.371327934786677,
+      "p95_ms": 10.703145060688257,
+      "p99_ms": 13.90420412644744,
+      "min_ms": 9.316286072134972,
+      "max_ms": 19.049994181841612
+    },
+    {
+      "repeat": 2.0,
+      "mean_ms": 9.599726307205856,
+      "median_ms": 9.363423800095916,
+      "p95_ms": 10.31350065022707,
+      "p99_ms": 14.165938831865788,
+      "min_ms": 9.324638172984123,
+      "max_ms": 19.33342684060335
+    }
+  ],
+  "dataset": "darcy",
+  "resolution": [
+    141,
+    141
+  ],
+  "parameter_count": 3287553,
+  "bank_meta": {
+    "dataset": "darcy",
+    "resolution": [
+      141,
+      141
+    ],
+    "input_key": "Kcoeff",
+    "source_path": "/home/jetson/data/piececonst_r421_N1024_smooth2.mat",
+    "num_samples": 8
+  },
+  "precision_info": {
+    "precision_mode": "fp32_strict",
+    "model_cast": "fp32",
+    "input_cast": "fp32",
+    "autocast_enabled": false,
+    "autocast_dtype": null,
+    "allow_tf32_matmul": false,
+    "allow_tf32_cudnn": false,
+    "float32_matmul_precision": "highest"
+  },
+  "input_shape": [
+    1,
+    141,
+    141
+  ],
+  "input_dtype": "torch.float32",
+  "peak_cuda_alloc_mb": 54.25830078125,
+  "peak_cuda_reserved_mb": 82.0
+}

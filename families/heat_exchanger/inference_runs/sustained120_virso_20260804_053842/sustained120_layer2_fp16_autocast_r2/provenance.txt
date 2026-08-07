@@ -1,0 +1,15 @@
+RUN_TS=sustained120_layer2_fp16_autocast_r2
+CASE=layer2_fp16_autocast
+MODEL_PATH=/home/jetson/VirSO/best_model_2_layer.pth
+AMP_MODE=fp16
+TF32_MODE=strict
+NUM_LAYERS=2
+WIDTH=48
+MAX_MODE=40
+SPECTRAL=1
+SPATIAL=1
+SUSTAIN_MIN_DURATION_S=120
+SUSTAIN_MIN_CYCLES=1
+VIRSO_ALLOCATOR_AUDIT=1
+Tue Aug  4 07:17:41 CST 2026
+Linux yahboom 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux

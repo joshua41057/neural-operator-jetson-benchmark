@@ -1,0 +1,32 @@
+{
+  "mode": "torchscript",
+  "checkpoint": "artifacts/checkpoints/darcy_deeponet_base_seed2_best.pt",
+  "torchscript": "artifacts/torchscript/darcy_deeponet_base_seed2.ts",
+  "input_bank": "artifacts/benchmark_inputs/darcy_r141_bank.pt",
+  "input_bank_shape": [
+    8,
+    141,
+    141
+  ],
+  "precision": "fp32_strict",
+  "device": "cuda",
+  "batch_size": 1,
+  "warmup": 5,
+  "profile_iters": 5,
+  "output_shape": [
+    1,
+    141,
+    141
+  ],
+  "mean_ms": 11.453278176486492,
+  "min_ms": 10.793325956910849,
+  "max_ms": 12.217310722917318,
+  "latencies_ms": [
+    10.793325956910849,
+    12.044729199260473,
+    12.217310722917318,
+    11.3484812900424,
+    10.86254371330142
+  ],
+  "peak_cuda_allocated_mb": 59.8037109375
+}

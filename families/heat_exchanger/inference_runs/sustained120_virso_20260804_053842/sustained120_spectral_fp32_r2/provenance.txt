@@ -1,0 +1,15 @@
+RUN_TS=sustained120_spectral_fp32_r2
+CASE=spectral_fp32
+MODEL_PATH=/home/jetson/VirSO/best_model_spectral.pth
+AMP_MODE=off
+TF32_MODE=strict
+NUM_LAYERS=10
+WIDTH=48
+MAX_MODE=64
+SPECTRAL=1
+SPATIAL=0
+SUSTAIN_MIN_DURATION_S=120
+SUSTAIN_MIN_CYCLES=1
+VIRSO_ALLOCATOR_AUDIT=1
+Tue Aug  4 06:16:35 CST 2026
+Linux yahboom 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux

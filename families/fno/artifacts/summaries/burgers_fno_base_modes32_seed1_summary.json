@@ -1,0 +1,29 @@
+{
+  "config_path": "configs/ablations/burgers/burgers_fno_base_modes32.yaml",
+  "experiment_name": "burgers_fno_base_modes32",
+  "seed": 1,
+  "deterministic": false,
+  "device": "cuda",
+  "dataset": "burgers",
+  "spatial_dim": 1,
+  "input_shape": [
+    2048,
+    2
+  ],
+  "output_shape": [
+    2048,
+    1
+  ],
+  "parameter_count": 309265,
+  "n_train": 1638,
+  "n_val": 205,
+  "n_test": 205,
+  "best_epoch": 236,
+  "best_val_rel_l2": 0.0008634489495307207,
+  "test_rel_l2_mean": 0.0008240262395702302,
+  "test_rel_l2_std": 0.0005220576422289014,
+  "test_rel_l2_median": 0.0006885220645926893,
+  "test_mse": 3.675789912449545e-07,
+  "test_mae": 0.0002778076159302145,
+  "test_n": 205
+}

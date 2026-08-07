@@ -1,0 +1,22 @@
+# Exact environment that produced these results (Python 3.10, CUDA 11.8).
+# Install order matters — see README.md "Reproducing / extending".
+#
+# torch from the cu118 index:
+#   pip install torch==2.1.0 --index-url https://download.pytorch.org/whl/cu118
+# compiled PyG ops from the matching wheel index:
+#   pip install torch_scatter torch_sparse torch_cluster -f https://data.pyg.org/whl/torch-2.1.0+cu118.html
+# the rest from PyPI (below).
+
+torch==2.1.0+cu118
+torch-geometric==2.6.1        # pin: 2.7+/2.8 require pyg-lib>=0.6.0 (no wheel for torch 2.1)
+torch-scatter==2.1.2+pt21cu118
+torch-sparse==0.6.18+pt21cu118
+torch-cluster==1.6.3+pt21cu118
+numpy==1.26.4                 # must stay <2 for torch 2.1.x
+scipy==1.15.3
+h5py==3.16.0
+matplotlib==3.10.9
+PyWavelets==1.8.0
+ptwt==0.1.9
+pytorch-wavelets==1.3.0
+# setuptools<81               # only if pytorch_wavelets errors on pkg_resources

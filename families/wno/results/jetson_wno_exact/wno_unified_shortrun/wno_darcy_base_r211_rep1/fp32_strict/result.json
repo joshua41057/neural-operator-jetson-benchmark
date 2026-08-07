@@ -1,0 +1,65 @@
+{
+  "status": "success",
+  "case_id": "wno_darcy_base_r211_rep1",
+  "dataset": "darcy",
+  "checkpoint": "checkpoints/wno_darcy_base_r211.pth",
+  "bank": "/home/jetson/data/wno_inference_banks_exact/darcy_r211_bank.pt",
+  "precision_mode": "fp32_strict",
+  "sample_index": 0,
+  "batch_size": 1,
+  "eval_batch_size": 10,
+  "device": "cuda",
+  "run_tag": "wno_unified_shortrun",
+  "runtime_path": "original_wno_eager_no_dtype_patch",
+  "protocol": "unified_prestaged",
+  "timing_boundary": "preloaded_batch_size_one_request_tensor_plus_output_decode",
+  "config": {
+    "variant": "base",
+    "res": 211,
+    "width": 8,
+    "layers": 4,
+    "level": 6
+  },
+  "checkpoint_epoch": 124,
+  "parameter_count": 202305,
+  "input_shape": [
+    1,
+    211,
+    211,
+    1
+  ],
+  "input_dtype": "torch.float32",
+  "bank_x_shape": [
+    200,
+    211,
+    211,
+    1
+  ],
+  "bank_y_shape": [
+    200,
+    211,
+    211
+  ],
+  "precision_info": {
+    "precision_mode": "fp32_strict",
+    "model_cast": "fp32",
+    "input_cast": "fp32",
+    "autocast_enabled": false,
+    "autocast_dtype": null,
+    "allow_tf32_matmul": false,
+    "allow_tf32_cudnn": false,
+    "float32_matmul_precision": "highest"
+  },
+  "tegrastats_log": "results/jetson_wno_exact/wno_unified_shortrun/wno_darcy_base_r211_rep1/fp32_strict/tegrastats.log",
+  "timing_class": "short_run",
+  "num_warmup": 30,
+  "num_iters": 100,
+  "mean_latency_ms": 83.44233445357531,
+  "p50_latency_ms": 83.0751049797982,
+  "p95_latency_ms": 84.6582415746525,
+  "p99_latency_ms": 87.41835084278136,
+  "min_latency_ms": 82.46139995753765,
+  "max_latency_ms": 87.7682059071958,
+  "cuda_peak_allocated_mb": 55.1220703125,
+  "cuda_peak_reserved_mb": 72.0
+}

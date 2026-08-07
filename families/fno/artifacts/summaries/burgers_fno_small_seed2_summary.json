@@ -1,0 +1,29 @@
+{
+  "config_path": "configs/burgers_fno_small.yaml",
+  "experiment_name": "burgers_fno_small",
+  "seed": 2,
+  "deterministic": false,
+  "device": "cuda",
+  "dataset": "burgers",
+  "spatial_dim": 1,
+  "input_shape": [
+    2048,
+    2
+  ],
+  "output_shape": [
+    2048,
+    1
+  ],
+  "parameter_count": 72033,
+  "n_train": 1638,
+  "n_val": 205,
+  "n_test": 205,
+  "best_epoch": 219,
+  "best_val_rel_l2": 0.0014193101087585092,
+  "test_rel_l2_mean": 0.0013578113866969943,
+  "test_rel_l2_std": 0.0006055487901903689,
+  "test_rel_l2_median": 0.0011955680092796683,
+  "test_mse": 5.398197231443191e-07,
+  "test_mae": 0.0004146987048443407,
+  "test_n": 205
+}

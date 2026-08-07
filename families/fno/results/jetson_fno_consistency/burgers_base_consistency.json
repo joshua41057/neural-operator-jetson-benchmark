@@ -1,0 +1,10 @@
+{
+  "name": "burgers_base_consistency",
+  "checkpoint": "artifacts/checkpoints/burgers_fno_base_seed3_best.pt",
+  "torchscript": "artifacts/torchscript/burgers_fno_base_seed3.ts",
+  "input_bank": "artifacts/benchmark_inputs/burgers_r2048_bank.pt",
+  "num_samples": 8,
+  "mean_abs_diff": 0.0,
+  "max_abs_diff": 0.0,
+  "relative_l2_diff": 0.0
+}

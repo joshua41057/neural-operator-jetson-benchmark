@@ -1,0 +1,94 @@
+{
+  "family": "Sp2GNO",
+  "case": "sp2gno_burgers_r2048",
+  "input_shape": [
+    1,
+    2048,
+    2
+  ],
+  "warmup": 5,
+  "reps": 20,
+  "note": "Paper (Appendix D/E) states TorchScript is not defined for this runtime path. torch.jit.script does fail for both families, but torch.jit.trace was verified here for real (see 'torchscript_trace') rather than assumed to fail.",
+  "backends": {
+    "eager": {
+      "median_ms": 12.675293954089284,
+      "p95_ms": 14.49548196978867,
+      "mean_ms": 13.017046533059329,
+      "min_ms": 12.482615886256099,
+      "max_ms": 14.50930698774755,
+      "n": 20,
+      "warmup": 5,
+      "all_ms": [
+        12.917702086269855,
+        12.65532593242824,
+        12.522906064987183,
+        12.575867120176554,
+        12.822659919038415,
+        13.683455064892769,
+        14.49548196978867,
+        14.491674024611712,
+        14.50930698774755,
+        13.574299868196249,
+        12.747360859066248,
+        12.627484975382686,
+        12.641245033591986,
+        12.538490816950798,
+        12.553978012874722,
+        12.678367085754871,
+        12.597020016983151,
+        12.482615886256099,
+        12.550394982099533,
+        12.675293954089284
+      ],
+      "backend": "eager",
+      "status": "success"
+    },
+    "torchscript_trace": {
+      "median_ms": 6.395568838343024,
+      "p95_ms": 7.8136001247912645,
+      "mean_ms": 6.5562641131691635,
+      "min_ms": 5.919520976021886,
+      "max_ms": 8.635259000584483,
+      "n": 20,
+      "warmup": 5,
+      "all_ms": [
+        6.979716941714287,
+        6.964548025280237,
+        7.0323580875992775,
+        6.7410210613161325,
+        6.842080038040876,
+        6.76415697671473,
+        6.728156004101038,
+        6.395568838343024,
+        6.035492988303304,
+        6.062150001525879,
+        6.0589499771595,
+        6.0916871298104525,
+        6.09834399074316,
+        5.958691006526351,
+        6.074631121009588,
+        5.919520976021886,
+        5.981730995699763,
+        5.947618978098035,
+        7.8136001247912645,
+        8.635259000584483
+      ],
+      "backend": "torchscript_trace",
+      "status": "success"
+    },
+    "torch.compile": {
+      "backend": "torch.compile",
+      "status": "fail",
+      "error_type": "BackendCompilerFailed",
+      "error": "backend='inductor' raised:\nImportError: cannot import name 'triton_key' from 'triton.compiler.compiler' (/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/triton/compiler/compiler.py)\n\nSet TORCH_LOGS=\"+dynamo\" and TORCHDYNAMO_VERBOSE=1 for more information\n\n\nYou can suppress this exception and fall back to eager by setting:\n    import torch._dynamo\n    torch._dynamo.config.suppress_errors = True\n",
+      "traceback_tail": "Set TORCH_LOGS=\"+dynamo\" and TORCHDYNAMO_VERBOSE=1 for more informationYou can suppress this exception and fall back to eager by setting:    import torch._dynamo    torch._dynamo.config.suppress_errors = True"
+    },
+    "tensorrt": {
+      "backend": "tensorrt",
+      "status": "fail",
+      "error_type": "RuntimeError",
+      "error": "trtexec engine build failed:\n [I] Sleep time: 0ms\n[07/21/2026-13:01:38] [I] Idle time: 0ms\n[07/21/2026-13:01:38] [I] Inference Streams: 1\n[07/21/2026-13:01:38] [I] ExposeDMA: Disabled\n[07/21/2026-13:01:38] [I] Data transfers: Enabled\n[07/21/2026-13:01:38] [I] Spin-wait: Disabled\n[07/21/2026-13:01:38] [I] Multithreading: Disabled\n[07/21/2026-13:01:38] [I] CUDA Graph: Disabled\n[07/21/2026-13:01:38] [I] Separate profiling: Disabled\n[07/21/2026-13:01:38] [I] Time Deserialize: Disabled\n[07/21/2026-13:01:38] [I] Time Refit: Disabled\n[07/21/2026-13:01:38] [I] NVTX verbosity: 0\n[07/21/2026-13:01:38] [I] Persistent Cache Ratio: 0\n[07/21/2026-13:01:38] [I] Optimization Profile Index: 0\n[07/21/2026-13:01:38] [I] Weight Streaming Budget: 100.000000%\n[07/21/2026-13:01:38] [I] Inputs:\n[07/21/2026-13:01:38] [I] Debug Tensor Save Destinations:\n[07/21/2026-13:01:38] [I] === Reporting Options ===\n[07/21/2026-13:01:38] [I] Verbose: Disabled\n[07/21/2026-13:01:38] [I] Averages: 10 inferences\n[07/21/2026-13:01:38] [I] Percentiles: 90,95,99\n[07/21/2026-13:01:38] [I] Dump refittable layers:Disabled\n[07/21/2026-13:01:38] [I] Dump output: Disabled\n[07/21/2026-13:01:38] [I] Profile: Disabled\n[07/21/2026-13:01:38] [I] Export timing to JSON file: \n[07/21/2026-13:01:38] [I] Export output to JSON file: \n[07/21/2026-13:01:38] [I] Export profile to JSON file: \n[07/21/2026-13:01:38] [I] \n[07/21/2026-13:01:38] [I] === Device Information ===\n[07/21/2026-13:01:38] [I] Available Devices: \n[07/21/2026-13:01:38] [I]   Device 0: \"Orin\" UUID: GPU-e58d91ef-197f-594f-a323-053d1bab949b\n[07/21/2026-13:01:38] [I] Selected Device: Orin\n[07/21/2026-13:01:38] [I] Selected Device ID: 0\n[07/21/2026-13:01:38] [I] Selected Device UUID: GPU-e58d91ef-197f-594f-a323-053d1bab949b\n[07/21/2026-13:01:38] [I] Compute Capability: 8.7\n[07/21/2026-13:01:38] [I] SMs: 8\n[07/21/2026-13:01:38] [I] Device Global Memory: 7619 MiB\n[07/21/2026-13:01:38] [I] Shared Memory per SM: 164 KiB\n[07/21/2026-13:01:38] [I] Memory Bus Width: 128 bit",
+      "traceback_tail": "Internal Error: MyelinCheckException: tensorbase.cpp:426: CHECK(has_zero_extent || strides[idx] >= s) failed. If dims does not contain a 0, then strides should be monotonically increasing wrt to stride order.[07/21/2026-13:01:42] [E] Error[9]: Error Code: 9: Skipping tactic 0x0000000000000000 due to exception [myelin_graph.h:attachExceptionMsgToGraph:840] MyelinCheckException: tensorbase.cpp:426: CHECK(has_zero_extent || strides[idx] >= s) failed. If dims does not contain a 0, then strides should be monotonically increasing wrt to stride order.[07/21/2026-13:01:42] [E] Error[10]: IBuilder::buildSerializedNetwork: Error Code 10: Internal Error (Could not find any implementation for node {ForeignNode[model.spatial_convs.1.lin_ew.weight.../model/spatial_convs.1/Mul]}.)[07/21/2026-13:01:42] [E] Engine could not be created from network[07/21/2026-13:01:42] [E] Building engine failed[07/21/2026-13:01:42] [E] Failed to create engine from model or file.[07/21/2026-13:01:42] [E] Engine set up failed"
+    }
+  }
+}

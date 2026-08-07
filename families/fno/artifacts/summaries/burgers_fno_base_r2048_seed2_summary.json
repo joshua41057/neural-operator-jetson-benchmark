@@ -1,0 +1,29 @@
+{
+  "config_path": "configs/resolution/burgers_fno_base_r2048.yaml",
+  "experiment_name": "burgers_fno_base_r2048",
+  "seed": 2,
+  "deterministic": false,
+  "device": "cuda",
+  "dataset": "burgers",
+  "spatial_dim": 1,
+  "input_shape": [
+    2048,
+    2
+  ],
+  "output_shape": [
+    2048,
+    1
+  ],
+  "parameter_count": 235537,
+  "n_train": 1638,
+  "n_val": 205,
+  "n_test": 205,
+  "best_epoch": 239,
+  "best_val_rel_l2": 0.0009085088386200368,
+  "test_rel_l2_mean": 0.0008471769979223609,
+  "test_rel_l2_std": 0.0005024113925173879,
+  "test_rel_l2_median": 0.0007187661831267178,
+  "test_mse": 3.388172729046346e-07,
+  "test_mae": 0.0002861580578610301,
+  "test_n": 205
+}

@@ -1,0 +1,3410 @@
+{
+  "full_fp32": [
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.6782,
+      "sm": 70.7,
+      "mem": 69.1,
+      "occ": 31.3
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2941,
+      "sm": 66.5,
+      "mem": 81.9,
+      "occ": 61.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0356,
+      "sm": 16.0,
+      "mem": 34.1,
+      "occ": 68.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.083,
+      "sm": 38.5,
+      "mem": 43.9,
+      "occ": 30.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1205,
+      "sm": 52.4,
+      "mem": 51.1,
+      "occ": 28.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1736,
+      "sm": 60.1,
+      "mem": 56.1,
+      "occ": 31.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1358,
+      "sm": 54.9,
+      "mem": 49.4,
+      "occ": 28.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1216,
+      "sm": 52.0,
+      "mem": 50.8,
+      "occ": 28.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6787,
+      "sm": 55.8,
+      "mem": 33.0,
+      "occ": 72.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1206,
+      "sm": 52.5,
+      "mem": 51.2,
+      "occ": 28.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.75,
+      "sm": 56.2,
+      "mem": 10.6,
+      "occ": 67.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.6,
+      "mem": 88.5,
+      "occ": 94.4
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.74,
+      "sm": 76.5,
+      "mem": 83.4,
+      "occ": 65.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.98,
+      "sm": 57.1,
+      "mem": 46.2,
+      "occ": 93.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0936,
+      "sm": 33.8,
+      "mem": 68.0,
+      "occ": 89.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1871,
+      "sm": 58.8,
+      "mem": 58.6,
+      "occ": 28.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1753,
+      "sm": 59.5,
+      "mem": 55.5,
+      "occ": 32.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1369,
+      "sm": 54.9,
+      "mem": 49.3,
+      "occ": 28.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1226,
+      "sm": 51.5,
+      "mem": 50.3,
+      "occ": 29.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6812,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1223,
+      "sm": 50.9,
+      "mem": 49.6,
+      "occ": 28.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.73,
+      "sm": 55.9,
+      "mem": 10.7,
+      "occ": 66.5
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.6,
+      "mem": 88.6,
+      "occ": 94.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.74,
+      "sm": 76.4,
+      "mem": 83.4,
+      "occ": 65.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.99,
+      "sm": 57.0,
+      "mem": 45.9,
+      "occ": 92.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0914,
+      "sm": 32.9,
+      "mem": 69.4,
+      "occ": 87.3
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1885,
+      "sm": 58.6,
+      "mem": 58.5,
+      "occ": 28.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1748,
+      "sm": 59.9,
+      "mem": 55.8,
+      "occ": 32.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1378,
+      "sm": 54.8,
+      "mem": 49.3,
+      "occ": 28.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1205,
+      "sm": 52.5,
+      "mem": 51.2,
+      "occ": 28.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6791,
+      "sm": 55.8,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1202,
+      "sm": 52.2,
+      "mem": 51.0,
+      "occ": 28.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.73,
+      "sm": 56.3,
+      "mem": 10.7,
+      "occ": 66.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.5,
+      "mem": 88.6,
+      "occ": 94.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.75,
+      "sm": 76.5,
+      "mem": 83.4,
+      "occ": 65.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.99,
+      "sm": 57.0,
+      "mem": 46.0,
+      "occ": 92.5
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0493,
+      "sm": 32.5,
+      "mem": 43.3,
+      "occ": 161.5
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1875,
+      "sm": 59.2,
+      "mem": 59.1,
+      "occ": 28.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1741,
+      "sm": 59.6,
+      "mem": 55.6,
+      "occ": 31.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1371,
+      "sm": 54.4,
+      "mem": 48.9,
+      "occ": 28.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1218,
+      "sm": 51.4,
+      "mem": 50.2,
+      "occ": 28.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6804,
+      "sm": 55.5,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1207,
+      "sm": 51.5,
+      "mem": 50.4,
+      "occ": 28.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.72,
+      "sm": 56.2,
+      "mem": 10.7,
+      "occ": 66.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.39,
+      "sm": 19.5,
+      "mem": 89.3,
+      "occ": 94.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.75,
+      "sm": 76.4,
+      "mem": 83.3,
+      "occ": 65.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.99,
+      "sm": 57.1,
+      "mem": 46.0,
+      "occ": 92.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0957,
+      "sm": 32.8,
+      "mem": 65.3,
+      "occ": 86.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1885,
+      "sm": 50.6,
+      "mem": 50.5,
+      "occ": 28.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1753,
+      "sm": 59.8,
+      "mem": 55.8,
+      "occ": 32.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1363,
+      "sm": 55.2,
+      "mem": 49.6,
+      "occ": 28.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1208,
+      "sm": 51.6,
+      "mem": 50.4,
+      "occ": 29.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6791,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1217,
+      "sm": 51.9,
+      "mem": 50.0,
+      "occ": 28.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.74,
+      "sm": 56.3,
+      "mem": 10.7,
+      "occ": 66.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.39,
+      "sm": 19.6,
+      "mem": 89.0,
+      "occ": 93.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.74,
+      "sm": 76.5,
+      "mem": 83.5,
+      "occ": 65.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.99,
+      "sm": 57.0,
+      "mem": 46.0,
+      "occ": 92.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0891,
+      "sm": 34.9,
+      "mem": 71.8,
+      "occ": 84.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1889,
+      "sm": 58.7,
+      "mem": 58.5,
+      "occ": 28.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1736,
+      "sm": 59.8,
+      "mem": 55.8,
+      "occ": 31.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1368,
+      "sm": 54.8,
+      "mem": 49.2,
+      "occ": 28.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1213,
+      "sm": 51.8,
+      "mem": 50.6,
+      "occ": 28.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.679,
+      "sm": 55.7,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1217,
+      "sm": 51.6,
+      "mem": 50.4,
+      "occ": 28.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.74,
+      "sm": 56.5,
+      "mem": 10.7,
+      "occ": 66.5
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.5,
+      "mem": 88.8,
+      "occ": 93.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.75,
+      "sm": 76.5,
+      "mem": 83.4,
+      "occ": 65.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.99,
+      "sm": 57.0,
+      "mem": 46.0,
+      "occ": 92.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0921,
+      "sm": 21.4,
+      "mem": 65.6,
+      "occ": 86.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1878,
+      "sm": 58.7,
+      "mem": 58.4,
+      "occ": 27.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1742,
+      "sm": 60.0,
+      "mem": 55.9,
+      "occ": 31.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1374,
+      "sm": 55.1,
+      "mem": 49.5,
+      "occ": 28.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1207,
+      "sm": 52.0,
+      "mem": 50.7,
+      "occ": 28.4
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6792,
+      "sm": 55.9,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1207,
+      "sm": 51.8,
+      "mem": 50.6,
+      "occ": 28.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.75,
+      "sm": 56.4,
+      "mem": 10.6,
+      "occ": 66.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.39,
+      "sm": 19.6,
+      "mem": 89.1,
+      "occ": 94.3
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.74,
+      "sm": 76.5,
+      "mem": 83.4,
+      "occ": 65.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.99,
+      "sm": 57.0,
+      "mem": 46.0,
+      "occ": 92.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0959,
+      "sm": 32.3,
+      "mem": 65.5,
+      "occ": 86.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1888,
+      "sm": 58.7,
+      "mem": 58.5,
+      "occ": 28.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1741,
+      "sm": 59.8,
+      "mem": 55.8,
+      "occ": 31.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1366,
+      "sm": 54.5,
+      "mem": 49.0,
+      "occ": 28.3
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1215,
+      "sm": 51.3,
+      "mem": 50.1,
+      "occ": 28.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6798,
+      "sm": 55.6,
+      "mem": 32.8,
+      "occ": 72.5
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.122,
+      "sm": 51.3,
+      "mem": 50.2,
+      "occ": 28.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.74,
+      "sm": 56.4,
+      "mem": 10.7,
+      "occ": 66.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.5,
+      "mem": 88.7,
+      "occ": 94.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.75,
+      "sm": 76.4,
+      "mem": 83.3,
+      "occ": 65.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.99,
+      "sm": 56.9,
+      "mem": 46.0,
+      "occ": 92.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0939,
+      "sm": 32.7,
+      "mem": 66.6,
+      "occ": 86.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1877,
+      "sm": 58.8,
+      "mem": 58.6,
+      "occ": 28.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1749,
+      "sm": 59.8,
+      "mem": 55.8,
+      "occ": 31.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1375,
+      "sm": 54.5,
+      "mem": 49.0,
+      "occ": 28.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1209,
+      "sm": 52.3,
+      "mem": 51.1,
+      "occ": 29.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6789,
+      "sm": 55.7,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1208,
+      "sm": 52.3,
+      "mem": 51.0,
+      "occ": 28.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.75,
+      "sm": 56.6,
+      "mem": 10.6,
+      "occ": 66.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.6,
+      "mem": 89.0,
+      "occ": 94.4
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.75,
+      "sm": 76.5,
+      "mem": 83.5,
+      "occ": 65.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.99,
+      "sm": 57.0,
+      "mem": 46.1,
+      "occ": 92.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0945,
+      "sm": 31.9,
+      "mem": 68.2,
+      "occ": 84.3
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1888,
+      "sm": 58.7,
+      "mem": 58.5,
+      "occ": 28.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1743,
+      "sm": 59.6,
+      "mem": 55.6,
+      "occ": 32.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1368,
+      "sm": 55.1,
+      "mem": 49.4,
+      "occ": 28.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1214,
+      "sm": 51.4,
+      "mem": 50.2,
+      "occ": 28.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6794,
+      "sm": 55.8,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.121,
+      "sm": 51.1,
+      "mem": 50.0,
+      "occ": 28.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.74,
+      "sm": 56.2,
+      "mem": 10.7,
+      "occ": 66.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.6,
+      "mem": 88.7,
+      "occ": 93.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.75,
+      "sm": 76.5,
+      "mem": 83.4,
+      "occ": 65.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.99,
+      "sm": 57.0,
+      "mem": 46.0,
+      "occ": 92.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0979,
+      "sm": 33.9,
+      "mem": 65.5,
+      "occ": 85.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1876,
+      "sm": 58.8,
+      "mem": 58.6,
+      "occ": 27.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2029,
+      "sm": 61.4,
+      "mem": 62.2,
+      "occ": 30.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1455,
+      "sm": 59.7,
+      "mem": 71.2,
+      "occ": 52.3
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.6794,
+      "sm": 70.6,
+      "mem": 69.1,
+      "occ": 30.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2942,
+      "sm": 66.6,
+      "mem": 82.1,
+      "occ": 60.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0367,
+      "sm": 15.4,
+      "mem": 34.1,
+      "occ": 72.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.0835,
+      "sm": 38.4,
+      "mem": 43.8,
+      "occ": 29.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1208,
+      "sm": 51.9,
+      "mem": 50.6,
+      "occ": 28.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1743,
+      "sm": 59.6,
+      "mem": 55.6,
+      "occ": 31.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1363,
+      "sm": 54.5,
+      "mem": 48.9,
+      "occ": 28.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1219,
+      "sm": 51.9,
+      "mem": 50.7,
+      "occ": 28.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6813,
+      "sm": 55.6,
+      "mem": 32.9,
+      "occ": 72.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1212,
+      "sm": 51.9,
+      "mem": 50.8,
+      "occ": 28.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.72,
+      "sm": 56.4,
+      "mem": 10.7,
+      "occ": 66.5
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.7,
+      "mem": 89.0,
+      "occ": 93.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.75,
+      "sm": 76.7,
+      "mem": 83.7,
+      "occ": 65.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.98,
+      "sm": 57.2,
+      "mem": 46.1,
+      "occ": 92.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0948,
+      "sm": 33.9,
+      "mem": 65.3,
+      "occ": 84.7
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1882,
+      "sm": 58.8,
+      "mem": 58.6,
+      "occ": 28.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1752,
+      "sm": 59.5,
+      "mem": 55.5,
+      "occ": 32.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1358,
+      "sm": 54.6,
+      "mem": 49.0,
+      "occ": 28.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1206,
+      "sm": 51.7,
+      "mem": 50.5,
+      "occ": 28.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6809,
+      "sm": 55.6,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1203,
+      "sm": 52.2,
+      "mem": 51.0,
+      "occ": 28.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.74,
+      "sm": 56.3,
+      "mem": 10.7,
+      "occ": 66.5
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.6,
+      "mem": 88.7,
+      "occ": 94.2
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.74,
+      "sm": 76.4,
+      "mem": 83.4,
+      "occ": 59.8
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.99,
+      "sm": 57.2,
+      "mem": 46.0,
+      "occ": 93.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0968,
+      "sm": 31.1,
+      "mem": 65.4,
+      "occ": 83.0
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1885,
+      "sm": 58.8,
+      "mem": 58.6,
+      "occ": 27.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1739,
+      "sm": 59.9,
+      "mem": 55.8,
+      "occ": 31.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1375,
+      "sm": 54.4,
+      "mem": 48.9,
+      "occ": 28.1
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1219,
+      "sm": 52.4,
+      "mem": 51.2,
+      "occ": 28.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6807,
+      "sm": 55.5,
+      "mem": 32.8,
+      "occ": 72.6
+    },
+    {
+      "case": "full_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.121,
+      "sm": 52.4,
+      "mem": 51.2,
+      "occ": 28.9
+    },
+    {
+      "case": "full_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.73,
+      "sm": 56.5,
+      "mem": 10.7,
+      "occ": 66.8
+    }
+  ],
+  "spectral_fp32": [
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.6779,
+      "sm": 70.5,
+      "mem": 69.0,
+      "occ": 31.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2944,
+      "sm": 66.9,
+      "mem": 82.4,
+      "occ": 60.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0367,
+      "sm": 15.8,
+      "mem": 35.2,
+      "occ": 68.5
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.0835,
+      "sm": 38.9,
+      "mem": 44.2,
+      "occ": 30.2
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1205,
+      "sm": 52.5,
+      "mem": 51.1,
+      "occ": 28.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1724,
+      "sm": 59.8,
+      "mem": 55.7,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1356,
+      "sm": 54.6,
+      "mem": 49.1,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1202,
+      "sm": 51.8,
+      "mem": 50.6,
+      "occ": 28.5
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6794,
+      "sm": 55.6,
+      "mem": 32.9,
+      "occ": 72.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1746,
+      "sm": 60.1,
+      "mem": 56.0,
+      "occ": 31.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1367,
+      "sm": 54.9,
+      "mem": 49.3,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1203,
+      "sm": 52.1,
+      "mem": 50.9,
+      "occ": 28.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.678,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1744,
+      "sm": 59.6,
+      "mem": 55.6,
+      "occ": 32.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1357,
+      "sm": 54.9,
+      "mem": 49.3,
+      "occ": 28.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1212,
+      "sm": 51.8,
+      "mem": 50.5,
+      "occ": 28.5
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6774,
+      "sm": 55.9,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1736,
+      "sm": 60.1,
+      "mem": 56.0,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1362,
+      "sm": 55.0,
+      "mem": 49.5,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1203,
+      "sm": 52.3,
+      "mem": 51.2,
+      "occ": 28.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6798,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 66.3
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1738,
+      "sm": 59.8,
+      "mem": 55.8,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.136,
+      "sm": 55.0,
+      "mem": 49.4,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1214,
+      "sm": 51.5,
+      "mem": 50.3,
+      "occ": 28.5
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6787,
+      "sm": 55.7,
+      "mem": 33.0,
+      "occ": 72.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1748,
+      "sm": 59.7,
+      "mem": 55.7,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1364,
+      "sm": 54.9,
+      "mem": 49.3,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1215,
+      "sm": 52.0,
+      "mem": 50.8,
+      "occ": 28.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.677,
+      "sm": 55.7,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1735,
+      "sm": 60.0,
+      "mem": 56.0,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1362,
+      "sm": 55.0,
+      "mem": 49.5,
+      "occ": 28.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1205,
+      "sm": 52.4,
+      "mem": 51.1,
+      "occ": 28.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6804,
+      "sm": 55.8,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1728,
+      "sm": 60.0,
+      "mem": 56.0,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1356,
+      "sm": 55.1,
+      "mem": 49.5,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1205,
+      "sm": 51.7,
+      "mem": 50.5,
+      "occ": 28.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6789,
+      "sm": 55.6,
+      "mem": 32.9,
+      "occ": 72.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1746,
+      "sm": 59.6,
+      "mem": 55.6,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1353,
+      "sm": 55.0,
+      "mem": 49.5,
+      "occ": 28.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1219,
+      "sm": 51.4,
+      "mem": 50.2,
+      "occ": 28.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6787,
+      "sm": 55.8,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1738,
+      "sm": 60.2,
+      "mem": 56.1,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1358,
+      "sm": 54.9,
+      "mem": 49.3,
+      "occ": 28.2
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1206,
+      "sm": 52.1,
+      "mem": 50.9,
+      "occ": 28.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6788,
+      "sm": 55.8,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.203,
+      "sm": 61.5,
+      "mem": 62.0,
+      "occ": 29.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1454,
+      "sm": 60.4,
+      "mem": 71.9,
+      "occ": 51.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.6788,
+      "sm": 70.6,
+      "mem": 69.0,
+      "occ": 31.4
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2945,
+      "sm": 66.5,
+      "mem": 81.9,
+      "occ": 60.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0363,
+      "sm": 14.8,
+      "mem": 34.4,
+      "occ": 68.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.083,
+      "sm": 38.8,
+      "mem": 44.2,
+      "occ": 29.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1203,
+      "sm": 52.0,
+      "mem": 50.8,
+      "occ": 28.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.174,
+      "sm": 59.9,
+      "mem": 55.8,
+      "occ": 32.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1364,
+      "sm": 55.1,
+      "mem": 49.5,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1202,
+      "sm": 52.5,
+      "mem": 51.3,
+      "occ": 28.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.68,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1736,
+      "sm": 59.7,
+      "mem": 55.6,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1349,
+      "sm": 54.7,
+      "mem": 49.1,
+      "occ": 28.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1203,
+      "sm": 52.1,
+      "mem": 50.9,
+      "occ": 28.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6797,
+      "sm": 55.8,
+      "mem": 33.0,
+      "occ": 72.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1734,
+      "sm": 59.8,
+      "mem": 55.7,
+      "occ": 31.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1363,
+      "sm": 54.9,
+      "mem": 49.3,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1206,
+      "sm": 52.2,
+      "mem": 50.9,
+      "occ": 28.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6796,
+      "sm": 55.7,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1731,
+      "sm": 59.7,
+      "mem": 55.7,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1355,
+      "sm": 55.1,
+      "mem": 49.5,
+      "occ": 27.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1203,
+      "sm": 51.8,
+      "mem": 50.6,
+      "occ": 28.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6791,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.5
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1735,
+      "sm": 60.2,
+      "mem": 56.2,
+      "occ": 31.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.136,
+      "sm": 54.7,
+      "mem": 49.2,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1207,
+      "sm": 52.1,
+      "mem": 50.8,
+      "occ": 28.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.68,
+      "sm": 55.8,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1745,
+      "sm": 59.7,
+      "mem": 55.6,
+      "occ": 32.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1362,
+      "sm": 55.1,
+      "mem": 49.5,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1207,
+      "sm": 51.8,
+      "mem": 50.5,
+      "occ": 29.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6806,
+      "sm": 55.8,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1732,
+      "sm": 60.0,
+      "mem": 56.0,
+      "occ": 31.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1361,
+      "sm": 55.3,
+      "mem": 49.7,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1207,
+      "sm": 52.3,
+      "mem": 51.0,
+      "occ": 28.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6774,
+      "sm": 55.8,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1733,
+      "sm": 60.3,
+      "mem": 56.2,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1352,
+      "sm": 54.9,
+      "mem": 49.4,
+      "occ": 28.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1213,
+      "sm": 52.0,
+      "mem": 50.9,
+      "occ": 28.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6793,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1741,
+      "sm": 60.0,
+      "mem": 55.9,
+      "occ": 32.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1358,
+      "sm": 55.0,
+      "mem": 49.4,
+      "occ": 28.2
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1212,
+      "sm": 52.0,
+      "mem": 50.8,
+      "occ": 28.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6792,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1732,
+      "sm": 60.2,
+      "mem": 56.2,
+      "occ": 32.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1353,
+      "sm": 55.0,
+      "mem": 49.4,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.119,
+      "sm": 51.7,
+      "mem": 50.5,
+      "occ": 28.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6794,
+      "sm": 55.7,
+      "mem": 33.0,
+      "occ": 66.2
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2014,
+      "sm": 61.4,
+      "mem": 62.2,
+      "occ": 30.2
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1438,
+      "sm": 59.4,
+      "mem": 70.8,
+      "occ": 52.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.6775,
+      "sm": 70.7,
+      "mem": 69.2,
+      "occ": 31.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2948,
+      "sm": 66.7,
+      "mem": 82.2,
+      "occ": 60.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0381,
+      "sm": 15.0,
+      "mem": 33.7,
+      "occ": 72.3
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.0825,
+      "sm": 38.6,
+      "mem": 44.0,
+      "occ": 30.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1213,
+      "sm": 52.1,
+      "mem": 50.8,
+      "occ": 28.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1739,
+      "sm": 60.2,
+      "mem": 56.1,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1371,
+      "sm": 55.2,
+      "mem": 49.5,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1202,
+      "sm": 51.9,
+      "mem": 50.8,
+      "occ": 28.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6799,
+      "sm": 50.7,
+      "mem": 30.0,
+      "occ": 72.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1733,
+      "sm": 59.9,
+      "mem": 55.9,
+      "occ": 31.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1364,
+      "sm": 54.8,
+      "mem": 49.3,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1204,
+      "sm": 51.9,
+      "mem": 50.7,
+      "occ": 28.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6802,
+      "sm": 55.8,
+      "mem": 32.9,
+      "occ": 72.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.0685,
+      "sm": 59.9,
+      "mem": 55.9,
+      "occ": 42.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1359,
+      "sm": 54.9,
+      "mem": 49.3,
+      "occ": 28.2
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1213,
+      "sm": 52.1,
+      "mem": 50.8,
+      "occ": 28.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6796,
+      "sm": 55.8,
+      "mem": 33.0,
+      "occ": 72.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1726,
+      "sm": 60.1,
+      "mem": 56.1,
+      "occ": 32.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.136,
+      "sm": 55.0,
+      "mem": 49.4,
+      "occ": 28.2
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1208,
+      "sm": 52.0,
+      "mem": 50.8,
+      "occ": 28.5
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6796,
+      "sm": 55.6,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1732,
+      "sm": 59.8,
+      "mem": 55.8,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1369,
+      "sm": 54.8,
+      "mem": 49.3,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1197,
+      "sm": 52.1,
+      "mem": 50.8,
+      "occ": 28.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6786,
+      "sm": 55.8,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1734,
+      "sm": 59.9,
+      "mem": 55.8,
+      "occ": 31.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1369,
+      "sm": 54.8,
+      "mem": 49.3,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1203,
+      "sm": 52.1,
+      "mem": 50.8,
+      "occ": 28.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6792,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.0681,
+      "sm": 60.0,
+      "mem": 55.9,
+      "occ": 41.8
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1361,
+      "sm": 54.8,
+      "mem": 49.3,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1204,
+      "sm": 52.2,
+      "mem": 51.0,
+      "occ": 28.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6793,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1732,
+      "sm": 60.2,
+      "mem": 56.2,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1372,
+      "sm": 55.1,
+      "mem": 49.6,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1203,
+      "sm": 52.0,
+      "mem": 50.9,
+      "occ": 28.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6794,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1728,
+      "sm": 60.0,
+      "mem": 55.9,
+      "occ": 31.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1358,
+      "sm": 55.1,
+      "mem": 49.5,
+      "occ": 28.1
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1215,
+      "sm": 52.0,
+      "mem": 50.8,
+      "occ": 28.7
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6804,
+      "sm": 55.7,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1734,
+      "sm": 59.8,
+      "mem": 55.8,
+      "occ": 32.0
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1357,
+      "sm": 55.0,
+      "mem": 49.5,
+      "occ": 28.2
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.0442,
+      "sm": 52.1,
+      "mem": 50.8,
+      "occ": 34.9
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.68,
+      "sm": 55.8,
+      "mem": 32.9,
+      "occ": 72.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.203,
+      "sm": 61.8,
+      "mem": 62.5,
+      "occ": 29.6
+    },
+    {
+      "case": "spectral_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.0509,
+      "sm": 60.2,
+      "mem": 71.8,
+      "occ": 63.7
+    }
+  ],
+  "layer2_fp32": [
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.6791,
+      "sm": 70.6,
+      "mem": 69.1,
+      "occ": 31.1
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.293,
+      "sm": 66.3,
+      "mem": 81.7,
+      "occ": 60.6
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0352,
+      "sm": 16.8,
+      "mem": 34.5,
+      "occ": 70.0
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.0835,
+      "sm": 38.9,
+      "mem": 44.3,
+      "occ": 30.2
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1207,
+      "sm": 51.7,
+      "mem": 50.4,
+      "occ": 28.6
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1788,
+      "sm": 62.6,
+      "mem": 62.8,
+      "occ": 37.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1029,
+      "sm": 50.3,
+      "mem": 48.3,
+      "occ": 28.5
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1204,
+      "sm": 51.8,
+      "mem": 50.6,
+      "occ": 28.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6789,
+      "sm": 55.8,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1198,
+      "sm": 52.4,
+      "mem": 51.2,
+      "occ": 28.7
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.75,
+      "sm": 56.1,
+      "mem": 10.6,
+      "occ": 66.8
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.5,
+      "mem": 88.9,
+      "occ": 94.3
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.74,
+      "sm": 76.5,
+      "mem": 83.5,
+      "occ": 65.2
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.98,
+      "sm": 57.3,
+      "mem": 46.2,
+      "occ": 93.2
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0943,
+      "sm": 32.8,
+      "mem": 67.6,
+      "occ": 86.7
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1883,
+      "sm": 58.9,
+      "mem": 58.6,
+      "occ": 28.0
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1849,
+      "sm": 61.9,
+      "mem": 62.1,
+      "occ": 38.0
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1035,
+      "sm": 49.2,
+      "mem": 47.3,
+      "occ": 28.6
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1208,
+      "sm": 52.1,
+      "mem": 50.8,
+      "occ": 28.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6791,
+      "sm": 55.8,
+      "mem": 33.0,
+      "occ": 72.6
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1213,
+      "sm": 52.1,
+      "mem": 50.9,
+      "occ": 28.7
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.73,
+      "sm": 56.3,
+      "mem": 10.7,
+      "occ": 66.7
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.6,
+      "mem": 89.0,
+      "occ": 94.3
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.75,
+      "sm": 76.4,
+      "mem": 83.3,
+      "occ": 65.2
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.99,
+      "sm": 57.1,
+      "mem": 45.8,
+      "occ": 92.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0932,
+      "sm": 33.5,
+      "mem": 68.7,
+      "occ": 88.1
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1883,
+      "sm": 58.7,
+      "mem": 58.6,
+      "occ": 27.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2044,
+      "sm": 61.5,
+      "mem": 62.2,
+      "occ": 29.8
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1448,
+      "sm": 59.9,
+      "mem": 71.3,
+      "occ": 52.0
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.6805,
+      "sm": 70.4,
+      "mem": 68.9,
+      "occ": 31.1
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2929,
+      "sm": 66.7,
+      "mem": 82.2,
+      "occ": 60.7
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0387,
+      "sm": 15.0,
+      "mem": 32.1,
+      "occ": 70.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.0842,
+      "sm": 38.2,
+      "mem": 43.5,
+      "occ": 29.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1212,
+      "sm": 52.0,
+      "mem": 50.8,
+      "occ": 28.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1794,
+      "sm": 62.5,
+      "mem": 62.7,
+      "occ": 37.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1025,
+      "sm": 49.2,
+      "mem": 47.3,
+      "occ": 28.8
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1203,
+      "sm": 52.1,
+      "mem": 50.9,
+      "occ": 28.8
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6818,
+      "sm": 55.6,
+      "mem": 32.9,
+      "occ": 72.5
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1206,
+      "sm": 52.1,
+      "mem": 50.9,
+      "occ": 28.8
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.73,
+      "sm": 56.3,
+      "mem": 10.7,
+      "occ": 66.5
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.39,
+      "sm": 19.7,
+      "mem": 89.0,
+      "occ": 93.5
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.75,
+      "sm": 76.5,
+      "mem": 83.5,
+      "occ": 65.2
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.99,
+      "sm": 57.2,
+      "mem": 46.1,
+      "occ": 93.1
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0952,
+      "sm": 33.3,
+      "mem": 68.2,
+      "occ": 89.4
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1887,
+      "sm": 58.8,
+      "mem": 58.6,
+      "occ": 28.1
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1842,
+      "sm": 62.1,
+      "mem": 62.3,
+      "occ": 37.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1037,
+      "sm": 48.7,
+      "mem": 46.8,
+      "occ": 28.6
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1205,
+      "sm": 52.0,
+      "mem": 50.9,
+      "occ": 28.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6816,
+      "sm": 55.5,
+      "mem": 32.9,
+      "occ": 72.4
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1222,
+      "sm": 51.7,
+      "mem": 50.6,
+      "occ": 28.8
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.74,
+      "sm": 56.0,
+      "mem": 10.7,
+      "occ": 66.5
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.5,
+      "mem": 88.9,
+      "occ": 94.3
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.75,
+      "sm": 76.5,
+      "mem": 83.5,
+      "occ": 65.2
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.98,
+      "sm": 57.1,
+      "mem": 46.2,
+      "occ": 93.2
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.094,
+      "sm": 31.8,
+      "mem": 66.5,
+      "occ": 84.2
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1877,
+      "sm": 58.8,
+      "mem": 58.6,
+      "occ": 27.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2025,
+      "sm": 61.5,
+      "mem": 62.1,
+      "occ": 29.8
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.145,
+      "sm": 59.6,
+      "mem": 71.0,
+      "occ": 52.2
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.6775,
+      "sm": 70.5,
+      "mem": 68.9,
+      "occ": 31.3
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2938,
+      "sm": 66.5,
+      "mem": 81.9,
+      "occ": 60.7
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0389,
+      "sm": 15.1,
+      "mem": 32.7,
+      "occ": 71.0
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.084,
+      "sm": 38.4,
+      "mem": 43.8,
+      "occ": 29.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1208,
+      "sm": 51.8,
+      "mem": 50.6,
+      "occ": 28.6
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1799,
+      "sm": 62.1,
+      "mem": 62.3,
+      "occ": 38.0
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1035,
+      "sm": 49.1,
+      "mem": 47.2,
+      "occ": 28.8
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1208,
+      "sm": 51.5,
+      "mem": 50.3,
+      "occ": 28.7
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6806,
+      "sm": 55.6,
+      "mem": 32.9,
+      "occ": 72.5
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1208,
+      "sm": 52.0,
+      "mem": 50.9,
+      "occ": 28.6
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.74,
+      "sm": 56.2,
+      "mem": 10.7,
+      "occ": 66.5
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.4,
+      "sm": 19.7,
+      "mem": 88.5,
+      "occ": 93.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.74,
+      "sm": 76.6,
+      "mem": 83.5,
+      "occ": 65.3
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.98,
+      "sm": 57.1,
+      "mem": 46.1,
+      "occ": 93.0
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0436,
+      "sm": 32.1,
+      "mem": 45.8,
+      "occ": 141.2
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.189,
+      "sm": 58.9,
+      "mem": 58.7,
+      "occ": 28.0
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x32_sliced1x4_nt",
+      "class": "Dense/GEMM",
+      "ms": 0.1799,
+      "sm": 62.1,
+      "mem": 62.3,
+      "occ": 37.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_nn",
+      "class": "Dense/GEMM",
+      "ms": 0.1034,
+      "sm": 49.5,
+      "mem": 47.6,
+      "occ": 28.9
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1205,
+      "sm": 51.7,
+      "mem": 50.5,
+      "occ": 28.7
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+      "class": "Reduction/Norm",
+      "ms": 0.6809,
+      "sm": 55.5,
+      "mem": 32.8,
+      "occ": 72.6
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1206,
+      "sm": 52.1,
+      "mem": 50.9,
+      "occ": 28.8
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::indexSelectLargeIndex<float, long, unsigned int, 2, 2, (int)-2, 1>(cuda::TensorInfo<T1, T3>, cuda::TensorInfo<const T1, T3>, cuda::TensorInfo<const T2, T3>, int, int, T3, T3, long)",
+      "class": "Movement/Materialization",
+      "ms": 3.74,
+      "sm": 56.4,
+      "mem": 10.7,
+      "occ": 66.5
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 2.39,
+      "sm": 19.6,
+      "mem": 89.0,
+      "occ": 94.3
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 1.75,
+      "sm": 76.5,
+      "mem": 83.4,
+      "occ": 65.3
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::_scatter_gather_elementwise_kernel<128, 4, void at::_cuda_scatter_gather_internal_kernel<1, float>::operator ()<at::ReduceAdd>(at::TensorIterator &, long, long, long, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+      "class": "Activation/Elementwise",
+      "ms": 1.98,
+      "sm": 57.3,
+      "mem": 46.2,
+      "occ": 92.8
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "void at::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::<unnamed>::OpaqueType<4>, unsigned int, 2, 128, 1>(T1 *, at::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::<unnamed>::TensorSizeStride<T2, 4>, int, T2)",
+      "class": "Movement/Materialization",
+      "ms": 0.0975,
+      "sm": 32.2,
+      "mem": 66.9,
+      "occ": 95.2
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.1873,
+      "sm": 58.9,
+      "mem": 58.7,
+      "occ": 28.0
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_64x64_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.2026,
+      "sm": 61.7,
+      "mem": 62.4,
+      "occ": 30.1
+    },
+    {
+      "case": "layer2_fp32",
+      "name": "ampere_sgemm_32x128_tn",
+      "class": "Dense/GEMM",
+      "ms": 0.144,
+      "sm": 59.5,
+      "mem": 70.9,
+      "occ": 52.0
+    }
+  ]
+}

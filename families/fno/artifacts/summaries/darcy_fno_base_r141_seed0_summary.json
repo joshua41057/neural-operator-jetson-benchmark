@@ -1,0 +1,31 @@
+{
+  "config_path": "configs/resolution/darcy_fno_base_r141.yaml",
+  "experiment_name": "darcy_fno_base_r141",
+  "seed": 0,
+  "deterministic": false,
+  "device": "cuda",
+  "dataset": "darcy",
+  "spatial_dim": 2,
+  "input_shape": [
+    141,
+    141,
+    3
+  ],
+  "output_shape": [
+    141,
+    141,
+    1
+  ],
+  "parameter_count": 3287553,
+  "n_train": 922,
+  "n_val": 102,
+  "n_test": 1024,
+  "best_epoch": 226,
+  "best_val_rel_l2": 0.015215150080621243,
+  "test_rel_l2_mean": 0.015022320672869682,
+  "test_rel_l2_std": 0.007207095623016357,
+  "test_rel_l2_median": 0.013388236053287983,
+  "test_mse": 1.3485816907632397e-08,
+  "test_mae": 7.763099711155519e-05,
+  "test_n": 1024
+}

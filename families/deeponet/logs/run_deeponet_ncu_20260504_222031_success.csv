@@ -1,0 +1,2 @@
+profile_id,status,ncu_rep,csv,json,scope
+burgers_base_r2048_ts_fp32,success,results/profiles/deeponet_ncu/burgers_base_r2048_ts_fp32.ncu-rep,results/profiles/deeponet_ncu/burgers_base_r2048_ts_fp32.csv,results/profiles/deeponet_ncu/burgers_base_r2048_ts_fp32_forward.json,main

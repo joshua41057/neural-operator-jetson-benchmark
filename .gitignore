@@ -1,0 +1,37 @@
+# ---- Large binaries: archived on Zenodo, not in git ----
+*.ncu-rep
+*.nsys-rep
+*.sqlite
+*.pt
+*.pth
+*.ts
+*.onnx
+*.engine
+*.npy
+*.mat
+*.h5
+
+# ---- Raw datasets: public releases / companion study ----
+data/
+# Jetson_data/ : split 정의 파일이라 포함함
+cache/
+
+# ---- Superseded campaigns (see docs/PROVENANCE.md) ----
+_archive_unused/
+_archive_old_runs/
+_archive_old_scripts/
+archive_noncanonical/
+
+# ---- Raw stdout logs (parsed CSVs are committed instead) ----
+*.log
+!docs/samples/SAMPLE_*.log
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+_old_bad_*/
+_old*/
+*_deprecated/
+*.BROKEN.*
+*do_not_use*

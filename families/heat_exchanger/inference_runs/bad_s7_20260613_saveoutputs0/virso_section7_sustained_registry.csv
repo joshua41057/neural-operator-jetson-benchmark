@@ -1,0 +1,13 @@
+run_ts,case,model_path,amp_mode,tf32_mode,num_layers,width,max_mode,spectral,spatial,exit_status
+s7_full_fp32_r1,full_fp32,/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth,off,strict,10,48,64,1,1,0
+s7_full_fp32_r2,full_fp32,/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth,off,strict,10,48,64,1,1,0
+s7_full_fp32_r3,full_fp32,/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth,off,strict,10,48,64,1,1,0
+s7_full_ampfp16_r1,full_ampfp16,/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth,fp16,strict,10,48,64,1,1,0
+s7_full_ampfp16_r2,full_ampfp16,/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth,fp16,strict,10,48,64,1,1,0
+s7_full_ampfp16_r3,full_ampfp16,/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_final.pth,fp16,strict,10,48,64,1,1,0
+s7_spectral_fp32_r1,spectral_fp32,/home/jetson/VirSO/best_model_spectral.pth,off,strict,10,48,64,1,0,0
+s7_spectral_fp32_r2,spectral_fp32,/home/jetson/VirSO/best_model_spectral.pth,off,strict,10,48,64,1,0,0
+s7_spectral_fp32_r3,spectral_fp32,/home/jetson/VirSO/best_model_spectral.pth,off,strict,10,48,64,1,0,0
+s7_layer2_fp32_r1,layer2_fp32,/home/jetson/VirSO/best_model_2_layer.pth,off,strict,2,48,40,1,1,0
+s7_layer2_fp32_r2,layer2_fp32,/home/jetson/VirSO/best_model_2_layer.pth,off,strict,2,48,40,1,1,0
+s7_layer2_fp32_r3,layer2_fp32,/home/jetson/VirSO/best_model_2_layer.pth,off,strict,2,48,40,1,1,0

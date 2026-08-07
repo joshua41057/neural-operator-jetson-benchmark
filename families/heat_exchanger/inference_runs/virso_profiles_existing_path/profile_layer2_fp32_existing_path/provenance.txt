@@ -1,0 +1,23 @@
+RUN_TS=profile_layer2_fp32_existing_path
+CASE=layer2_fp32
+ROOT=/home/jetson/VirSO/For_Jetson/For_Jetson
+MODEL_PATH=/home/jetson/VirSO/best_model_2_layer.pth
+AMP_MODE=off
+NUM_LAYERS=2
+WIDTH=48
+MAX_MODE=40
+K_NEIGHBORS=30
+EMBED=1
+SPECTRAL=1
+SPATIAL=1
+COLLAB_SKIP=1
+SPECTRAL_SKIP=1
+MONITOR_CMD=none
+PROFILE_FLOPS=1
+PROFILE_WARMUP=2
+PROFILE_ITERS=1
+Wed May 27 01:10:53 AM CST 2026
+Linux yahboom 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux
+torch: 2.5.0a0+872d972e41.nv24.08
+cuda_available: True
+device: Orin

@@ -1,0 +1,142 @@
+{
+  "family": "DeepONet",
+  "case": "darcy_base_r141",
+  "checkpoint": "artifacts/checkpoints/darcy_deeponet_base_seed2_best.pt",
+  "input_shape": [
+    1,
+    141,
+    141
+  ],
+  "warmup": 5,
+  "reps": 20,
+  "backends": {
+    "eager": {
+      "median_ms": 20.64917190000415,
+      "p95_ms": 24.264808045700192,
+      "mean_ms": 18.82090287981555,
+      "min_ms": 12.824313947930932,
+      "max_ms": 24.49384005740285,
+      "n": 20,
+      "warmup": 5,
+      "all_ms": [
+        12.824313947930932,
+        14.003871940076351,
+        13.652821071445942,
+        24.264808045700192,
+        24.49384005740285,
+        20.277416799217463,
+        14.472879003733397,
+        14.607507968321443,
+        15.002847881987691,
+        14.96143895201385,
+        20.78101714141667,
+        20.548786036670208,
+        20.656692096963525,
+        20.77804086729884,
+        20.524465013295412,
+        21.23927092179656,
+        20.64917190000415,
+        20.98630298860371,
+        20.65563597716391,
+        21.036928985267878
+      ],
+      "backend": "eager",
+      "status": "success"
+    },
+    "torchscript": {
+      "median_ms": 13.134948210790753,
+      "p95_ms": 23.27274507842958,
+      "mean_ms": 15.405737643595785,
+      "min_ms": 11.419981019571424,
+      "max_ms": 23.654612945392728,
+      "n": 20,
+      "warmup": 5,
+      "all_ms": [
+        13.134948210790753,
+        12.540593044832349,
+        11.875643860548735,
+        11.842299019917846,
+        23.27274507842958,
+        23.654612945392728,
+        20.53646487183869,
+        12.845339020714164,
+        12.652917066588998,
+        12.630100129172206,
+        12.55556894466281,
+        13.729526894167066,
+        18.2435919996351,
+        18.194341799244285,
+        18.37565889582038,
+        18.1983420625329,
+        18.319531111046672,
+        11.419981019571424,
+        12.099971994757652,
+        11.992574902251363
+      ],
+      "backend": "torchscript",
+      "status": "success"
+    },
+    "torch.compile": {
+      "backend": "torch.compile",
+      "status": "fail",
+      "error_type": "BackendCompilerFailed",
+      "error": "backend='inductor' raised:\nImportError: cannot import name 'triton_key' from 'triton.compiler.compiler' (/home/jetson/miniforge3/envs/extra_bench/lib/python3.10/site-packages/triton/compiler/compiler.py)\n\nSet TORCH_LOGS=\"+dynamo\" and TORCHDYNAMO_VERBOSE=1 for more information\n\n\nYou can suppress this exception and fall back to eager by setting:\n    import torch._dynamo\n    torch._dynamo.config.suppress_errors = True\n",
+      "traceback_tail": "Set TORCH_LOGS=\"+dynamo\" and TORCHDYNAMO_VERBOSE=1 for more informationYou can suppress this exception and fall back to eager by setting:    import torch._dynamo    torch._dynamo.config.suppress_errors = True"
+    },
+    "tensorrt": {
+      "status": "success",
+      "median_ms": 5.379851907491684,
+      "p95_ms": 5.684918025508523,
+      "mean_ms": 5.281615222338587,
+      "min_ms": 4.952638177201152,
+      "max_ms": 5.936221918091178,
+      "n": 20,
+      "warmup": 5,
+      "all_ms": [
+        5.936221918091178,
+        5.684918025508523,
+        5.34893898293376,
+        5.44599792920053,
+        5.483150947839022,
+        5.395820131525397,
+        5.381835857406259,
+        5.408013006672263,
+        5.409452831372619,
+        5.398381035774946,
+        5.379851907491684,
+        5.304296966642141,
+        4.952638177201152,
+        4.972318885847926,
+        4.9973109271377325,
+        4.9872319214046,
+        4.965183092281222,
+        5.048993043601513,
+        5.1579889841377735,
+        4.9737598747015
+      ],
+      "io_tensors": {
+        "x": {
+          "shape": [
+            1,
+            141,
+            141
+          ],
+          "dtype": "DataType.FLOAT"
+        },
+        "y": {
+          "shape": [
+            1,
+            141,
+            141
+          ],
+          "dtype": "DataType.FLOAT"
+        }
+      },
+      "engine_precision": "FP32 (default trtexec build, no --fp16/--int8/--best)",
+      "a_pred_finite": true,
+      "rel_l2_vs_fp32_eager": 0.00011999925482086837,
+      "admitted": true,
+      "backend": "tensorrt"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+keep_families:
+  - regular_bluestein_fft
+  - preprocess_kernel
+  - postprocess_kernel
+  - packR2C_kernel
+  - unpackC2R_kernel
+  - ampere_sgemm_128x64_nn
+  - ampere_sgemm_32x128_tn
+  - gemv2N_kernel
+  - direct_copy_kernel_cuda
+  - fused_add_gelu
+  - vectorized_elementwise_kernel

@@ -1,0 +1,26 @@
+{
+  "mode": "torchscript",
+  "checkpoint": "artifacts/checkpoints/darcy_deeponet_base_r421_seed2_best.pt",
+  "torchscript": "artifacts/torchscript/darcy_deeponet_base_r421_seed2.ts",
+  "input_bank": "artifacts/benchmark_inputs/darcy_r421_bank.pt",
+  "input_bank_shape": [
+    8,
+    421,
+    421
+  ],
+  "precision": "fp32_strict",
+  "device": "cuda",
+  "batch_size": 1,
+  "warmup": 10,
+  "profile_iters": 1,
+  "output_shape": [
+    1,
+    421,
+    421
+  ],
+  "mean_ms_under_profiler": 100999.90689498372,
+  "min_ms_under_profiler": 100999.90689498372,
+  "max_ms_under_profiler": 100999.90689498372,
+  "peak_cuda_allocated_mb": 0.0,
+  "note": "Latency under NCU is profiler-perturbed; use only as profiling sanity, not primary latency."
+}

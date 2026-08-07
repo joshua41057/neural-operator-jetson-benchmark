@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "mode": "eager",
+  "checkpoint": "artifacts/checkpoints/burgers_fno_base_seed3_best.pt",
+  "torchscript": null,
+  "input_bank": "artifacts/benchmark_inputs/burgers_r2048_bank.pt",
+  "sample_index": 0,
+  "batch_size": 1,
+  "precision_mode": "fp32_strict",
+  "device": "cuda",
+  "error_type": "RuntimeError",
+  "error_message": "CUDA error: CUBLAS_STATUS_ALLOC_FAILED when calling `cublasCreate(handle)`",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/jetson/jjyoo3/EDCNO/src/eval/benchmark_precision_inference.py\", line 321, in main\n    timed = run_timed_repeats(\n  File \"/home/jetson/jjyoo3/EDCNO/src/eval/benchmark_precision_inference.py\", line 192, in run_timed_repeats\n    _ = model(x)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1714, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1725, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/jetson/jjyoo3/EDCNO/src/eval/common.py\", line 52, in forward\n    y = self.model(x)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1714, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1725, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/jetson/jjyoo3/EDCNO/src/models/fno.py\", line 59, in forward\n    x = self.lift(x)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1714, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py\", line 1725, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/linear.py\", line 125, in forward\n    return F.linear(input, self.weight, self.bias)\nRuntimeError: CUDA error: CUBLAS_STATUS_ALLOC_FAILED when calling `cublasCreate(handle)`\n"
+}

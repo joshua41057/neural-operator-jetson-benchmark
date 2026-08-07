@@ -1,0 +1,26 @@
+{
+  "label": "darcy",
+  "final_test_rel_l2": 0.008447055704891682,
+  "best_val_rel_l2": 0.007844304665923119,
+  "epochs": 1000,
+  "s": 85,
+  "N": 7225,
+  "args": {
+    "data_dir": "Jetson_data",
+    "r": 5,
+    "ntrain": 900,
+    "nval": 100,
+    "ntest": 200,
+    "epochs": 1000,
+    "batch_size": 10,
+    "width": 48,
+    "n_layers": 6,
+    "num_freq": 64,
+    "k": 20,
+    "lr": 0.001,
+    "seed": 0,
+    "resume": false,
+    "out_dir": "runs/darcy",
+    "device": "cuda"
+  }
+}

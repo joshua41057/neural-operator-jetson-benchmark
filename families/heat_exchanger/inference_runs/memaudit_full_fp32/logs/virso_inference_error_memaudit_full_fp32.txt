@@ -1,0 +1,25 @@
+Fatal error during VirSO inference run
+Exception: RuntimeError('NVML_SUCCESS == r INTERNAL ASSERT FAILED at "/opt/pytorch/pytorch/c10/cuda/CUDACachingAllocator.cpp":838, please report a bug to PyTorch. ')
+
+Traceback (most recent call last):
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/run_virso_inference_jetson.py", line 936, in <module>
+    main()
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/run_virso_inference_jetson.py", line 722, in main
+    out = model(x, U, edge_index, edge_weight, grid, lip, 1)
+  File "/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1714, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1725, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_model.py", line 315, in forward
+    x_spatial = self.spatial_convs[i](x, edge_index, edge_weight, lip_embed)
+  File "/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1714, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1725, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_model.py", line 216, in forward
+    out = this.propagate(edge_index, x=x, edge_weight=edge_weight, lipschitz_embeddings=lipschitz_embeddings) # Propagation of message
+  File "/home/jetson/miniforge3/envs/vs_wno/lib/python3.10/site-packages/torch_geometric/nn/conv/message_passing.py", line 463, in propagate
+    out = self.message(**msg_kwargs)
+  File "/home/jetson/VirSO/For_Jetson/For_Jetson/sp2gno_model.py", line 225, in message
+    gating_input = torch.cat((edge_weight_j, lipschitz_embeddings[edge_index_i],
+RuntimeError: NVML_SUCCESS == r INTERNAL ASSERT FAILED at "/opt/pytorch/pytorch/c10/cuda/CUDACachingAllocator.cpp":838, please report a bug to PyTorch. 

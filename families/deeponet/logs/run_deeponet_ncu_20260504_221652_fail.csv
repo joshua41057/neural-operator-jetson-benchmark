@@ -1,0 +1,2 @@
+profile_id,status,error
+burgers_base_r2048_ts_fp32,fail,missing_ncu_rep

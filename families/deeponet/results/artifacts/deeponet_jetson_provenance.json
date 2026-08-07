@@ -1,0 +1,20 @@
+{
+  "checkpoint_count": "14",
+  "cuda_available": true,
+  "cuda_device_count": 1,
+  "cuda_device_name": "Orin",
+  "cwd": "/home/jetson/jjyoo3/EDCNO_DeepONet",
+  "git_head": "ERROR: Command '['git', 'rev-parse', 'HEAD']' returned non-zero exit status 128.",
+  "git_status_short": "ERROR: Command '['git', 'status', '--short']' returned non-zero exit status 128.",
+  "hostname": "yahboom",
+  "input_banks": "artifacts/benchmark_inputs/burgers_r1024_bank.pt\nartifacts/benchmark_inputs/burgers_r2048_bank.pt\nartifacts/benchmark_inputs/burgers_r4096_bank.pt\nartifacts/benchmark_inputs/burgers_r512_bank.pt\nartifacts/benchmark_inputs/burgers_r8192_bank.pt\nartifacts/benchmark_inputs/darcy_r141_bank.pt\nartifacts/benchmark_inputs/darcy_r211_bank.pt\nartifacts/benchmark_inputs/darcy_r281_bank.pt\nartifacts/benchmark_inputs/darcy_r421_bank.pt\nartifacts/benchmark_inputs/darcy_r85_bank.pt\nartifacts/benchmark_inputs/frontier_synth/darcy_r561_bank.pt\nartifacts/benchmark_inputs/frontier_synth/darcy_r701_bank.pt\nartifacts/benchmark_inputs/frontier_synth/darcy_r841_bank.pt\nartifacts/benchmark_inputs/frontier_synth/darcy_r981_bank.pt",
+  "manifest_sha256": "d8a3b3118f4fc95cdad2b854359fe40dcc96dbfdd02a28e0a08720b5c2964af3  manifests/deeponet_jetson_manifest.csv",
+  "nvidia_smi": "Tue Apr 28 03:52:44 2026       \n+---------------------------------------------------------------------------------------+\n| NVIDIA-SMI 540.4.0                Driver Version: 540.4.0      CUDA Version: 12.6     |\n|-----------------------------------------+----------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |\n|                                         |                      |               MIG M. |\n|=========================================+======================+======================|\n|   0  Orin (nvgpu)                  N/A  | N/A              N/A |                  N/A |\n| N/A   N/A  N/A               N/A /  N/A | Not Supported        |     N/A          N/A |\n|                                         |                      |                  N/A |\n+-----------------------------------------+----------------------+----------------------+\n                                                                                         \n+---------------------------------------------------------------------------------------+\n| Processes:                                                                            |\n|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |\n|        ID   ID                                                             Usage      |\n|=======================================================================================|\n|  No running processes found                                                           |\n+---------------------------------------------------------------------------------------+",
+  "platform": "Linux-5.15.148-tegra-aarch64-with-glibc2.35",
+  "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:56) [GCC 14.3.0]",
+  "pythonpath": "/home/jetson/jjyoo3/EDCNO_DeepONet",
+  "summary_count": "14",
+  "tegrastats_path": "/usr/bin/tegrastats",
+  "torch_version": "2.5.0a0+872d972e41.nv24.08",
+  "torchscript_count": "14"
+}

@@ -1,0 +1,48 @@
+experiment:
+  name: darcy_deeponet_base
+  seed: 0
+  deterministic: true
+  output_dir: checkpoints
+
+data:
+  dataset: darcy
+  train_path: data/raw/piececonst_r421_N1024_smooth1.mat
+  test_path: data/raw/piececonst_r421_N1024_smooth2.mat
+  split_path: splits/darcy_smooth1_split.json
+  input_key: Kcoeff
+  output_key: sol
+  resolution: [141, 141]
+  add_coords: true
+  batch_size: 8
+  eval_batch_size: 8
+  num_workers: 4
+  pin_memory: true
+
+model:
+  family: deeponet
+  spatial_dim: 2
+  sensor_resolution: 35
+  basis_dim: 128
+  branch_hidden_dim: 512
+  branch_layers: 4
+  trunk_hidden_dim: 256
+  trunk_layers: 4
+  activation: gelu
+  dropout: 0.0
+  use_coord_features: true
+  chunk_size: 32768
+
+train:
+  batch_size: 4
+  epochs: 700
+  optimizer: adamw
+  lr: 7.5e-4
+  min_lr: 1.0e-6
+  weight_decay: 1.0e-5
+  scheduler: cosine
+  step_size: 100
+  gamma: 0.5
+  amp: false
+  grad_clip: 1.0
+  early_stopping_patience: 100
+

@@ -1,0 +1,29 @@
+{
+  "config_path": "configs/ablations/burgers/burgers_fno_base_nocoords.yaml",
+  "experiment_name": "burgers_fno_base_nocoords",
+  "seed": 0,
+  "deterministic": false,
+  "device": "cuda",
+  "dataset": "burgers",
+  "spatial_dim": 1,
+  "input_shape": [
+    2048,
+    1
+  ],
+  "output_shape": [
+    2048,
+    1
+  ],
+  "parameter_count": 235489,
+  "n_train": 1638,
+  "n_val": 205,
+  "n_test": 205,
+  "best_epoch": 240,
+  "best_val_rel_l2": 0.00105862261261791,
+  "test_rel_l2_mean": 0.0009435601532459259,
+  "test_rel_l2_std": 0.0005438013467937708,
+  "test_rel_l2_median": 0.0007835403666831553,
+  "test_mse": 4.1170278564095497e-07,
+  "test_mae": 0.0003132833226118237,
+  "test_n": 205
+}

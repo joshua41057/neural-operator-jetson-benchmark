@@ -1,0 +1,35 @@
+{
+  "mean_ms": 33.56146829901263,
+  "median_ms": 33.501926343888044,
+  "p95_ms": 33.82323309779167,
+  "p99_ms": 33.82323309779167,
+  "min_ms": 33.28299196437001,
+  "max_ms": 33.90016267076135,
+  "cuda_peak_allocated_mb": 98.81982421875,
+  "num_warmup": 3,
+  "num_iters": 8,
+  "dataset": "darcy",
+  "resolution": [
+    281,
+    281
+  ],
+  "batch_size": 1,
+  "device": "cuda",
+  "mode": "torchscript",
+  "precision": "fp32",
+  "input_bank": "artifacts/benchmark_inputs/darcy_r281_bank.pt",
+  "sample_index": 0,
+  "source": "artifacts/torchscript/darcy_fno_base_r281_seed1.ts",
+  "bank_meta": {
+    "dataset": "darcy",
+    "resolution": [
+      281,
+      281
+    ],
+    "input_key": "Kcoeff",
+    "source_path": "/home/jetson/data/piececonst_r421_N1024_smooth2.mat",
+    "num_samples": 8
+  },
+  "notes": "nsys representative profile reduced-overhead",
+  "extra_metadata": {}
+}

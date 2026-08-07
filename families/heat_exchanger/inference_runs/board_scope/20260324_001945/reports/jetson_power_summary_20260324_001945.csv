@@ -1,0 +1,17 @@
+field,value
+sample_count,174
+elapsed_s,36.75699996948242
+mean_dt_s,0.21246820791608337
+power_source,VDD_IN/POM_5V_IN preferred; fallback sum/common rails
+avg_power_w,7.062798850574713
+median_power_w,7.43
+peak_power_w,9.547
+energy_j_total,259.7649397509098
+avg_gpu_util_pct,17.649425287356323
+peak_gpu_util_pct,67.0
+avg_gpu_freq_mhz,
+avg_cpu_util_pct,24.788314176245212
+avg_ram_used_mb,4663.482758620689
+peak_ram_used_mb,5137.0
+ram_total_mb,7620.0
+max_temp_c,44.562

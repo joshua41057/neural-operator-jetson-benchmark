@@ -1,0 +1,3022 @@
+.
+├── audit_virso_tf32_bf16_sustained
+│   ├── audit_snapshot.txt
+│   └── run_completion_evidence.txt
+├── data
+│   ├── branch.npz
+│   ├── graph_cache_knn_k30_m64_lip16.pt
+│   ├── preprocessing_solution.ipynb
+│   ├── share
+│   │   └── trunk.npz
+│   ├── skipped_files.txt
+│   └── target.npy
+├── data.py
+├── energy_info.csv
+├── inference_analysis.py
+├── inference_runs
+│   ├── 20260611_074121
+│   │   ├── logs
+│   │   │   ├── virso_inference_20260611_074121.log
+│   │   │   └── virso_inference_error_20260611_074121.txt
+│   │   ├── outputs
+│   │   └── reports
+│   ├── 20260611_074226
+│   │   ├── logs
+│   │   │   └── virso_inference_20260611_074226.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260611_074226.csv
+│   ├── 20260613_083442
+│   │   ├── logs
+│   │   │   └── virso_inference_20260613_083442.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260613_083442.csv
+│   ├── 20260613_083718
+│   │   ├── logs
+│   │   │   └── virso_inference_20260613_083718.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260613_083718.csv
+│   ├── 20260613_083946
+│   │   ├── logs
+│   │   │   └── virso_inference_20260613_083946.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260613_083946.csv
+│   ├── 20260613_084253
+│   │   ├── logs
+│   │   │   └── virso_inference_20260613_084253.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260613_084253.csv
+│   ├── 20260613_084647
+│   │   ├── logs
+│   │   │   └── virso_inference_20260613_084647.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260613_084647.csv
+│   ├── 20260613_085041
+│   │   ├── logs
+│   │   │   └── virso_inference_20260613_085041.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260613_085041.csv
+│   ├── 20260613_085437
+│   │   ├── logs
+│   │   │   └── virso_inference_20260613_085437.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260613_085437.csv
+│   ├── 20260613_085835
+│   │   ├── logs
+│   │   │   └── virso_inference_20260613_085835.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260613_085835.csv
+│   ├── 20260613_090232
+│   │   ├── logs
+│   │   │   └── virso_inference_20260613_090232.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260613_090232.csv
+│   ├── 20260613_090632
+│   │   ├── logs
+│   │   │   └── virso_inference_20260613_090632.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260613_090632.csv
+│   ├── 20260613_091036
+│   │   ├── logs
+│   │   │   └── virso_inference_20260613_091036.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260613_091036.csv
+│   ├── 20260613_091437
+│   │   ├── logs
+│   │   │   └── virso_inference_20260613_091437.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_20260613_091437.csv
+│   ├── allocaudit_full_ampfp16_one
+│   │   ├── logs
+│   │   │   └── virso_inference_allocaudit_full_ampfp16_one.log
+│   │   ├── outputs
+│   │   └── reports
+│   │       └── virso_edge_summary_allocaudit_full_ampfp16_one.csv
+│   ├── allocaudit_full_fp32_one
+│   │   ├── logs
+│   │   │   ├── virso_inference_allocaudit_full_fp32_one.log
+│   │   │   └── virso_inference_error_allocaudit_full_fp32_one.txt
+│   │   ├── outputs
+│   │   └── reports
+│   │       └── virso_edge_summary_allocaudit_full_fp32_one_FAILED.csv
+│   ├── allocaudit_full_fp32_one_v2
+│   │   ├── logs
+│   │   │   ├── virso_inference_allocaudit_full_fp32_one_v2.log
+│   │   │   └── virso_inference_error_allocaudit_full_fp32_one_v2.txt
+│   │   ├── outputs
+│   │   └── reports
+│   │       └── virso_edge_summary_allocaudit_full_fp32_one_v2_FAILED.csv
+│   ├── allocaudit_full_fp32_one_v3
+│   │   ├── logs
+│   │   │   └── virso_inference_allocaudit_full_fp32_one_v3.log
+│   │   ├── outputs
+│   │   └── reports
+│   │       └── virso_edge_summary_allocaudit_full_fp32_one_v3.csv
+│   ├── allocaudit_layer2_fp32_one
+│   │   ├── logs
+│   │   │   └── virso_inference_allocaudit_layer2_fp32_one.log
+│   │   ├── outputs
+│   │   └── reports
+│   │       └── virso_edge_summary_allocaudit_layer2_fp32_one.csv
+│   ├── allocaudit_spectral_fp32_one
+│   │   ├── logs
+│   │   │   └── virso_inference_allocaudit_spectral_fp32_one.log
+│   │   ├── outputs
+│   │   └── reports
+│   │       └── virso_edge_summary_allocaudit_spectral_fp32_one.csv
+│   ├── bad_s7_20260613_env_not_passed
+│   │   ├── s7_full_ampfp16_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_full_ampfp16_r1.txt
+│   │   │   │   ├── stderr_s7_full_ampfp16_r1.log
+│   │   │   │   └── stdout_s7_full_ampfp16_r1.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   ├── s7_full_ampfp16_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_full_ampfp16_r2.txt
+│   │   │   │   ├── stderr_s7_full_ampfp16_r2.log
+│   │   │   │   └── stdout_s7_full_ampfp16_r2.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   ├── s7_full_ampfp16_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_full_ampfp16_r3.txt
+│   │   │   │   ├── stderr_s7_full_ampfp16_r3.log
+│   │   │   │   └── stdout_s7_full_ampfp16_r3.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   ├── s7_full_fp32_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_full_fp32_r1.txt
+│   │   │   │   ├── stderr_s7_full_fp32_r1.log
+│   │   │   │   └── stdout_s7_full_fp32_r1.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   ├── s7_full_fp32_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_full_fp32_r2.txt
+│   │   │   │   ├── stderr_s7_full_fp32_r2.log
+│   │   │   │   └── stdout_s7_full_fp32_r2.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   ├── s7_full_fp32_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_full_fp32_r3.txt
+│   │   │   │   ├── stderr_s7_full_fp32_r3.log
+│   │   │   │   └── stdout_s7_full_fp32_r3.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   ├── s7_layer2_fp32_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_layer2_fp32_r1.txt
+│   │   │   │   ├── stderr_s7_layer2_fp32_r1.log
+│   │   │   │   └── stdout_s7_layer2_fp32_r1.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   ├── s7_layer2_fp32_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_layer2_fp32_r2.txt
+│   │   │   │   ├── stderr_s7_layer2_fp32_r2.log
+│   │   │   │   └── stdout_s7_layer2_fp32_r2.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   ├── s7_layer2_fp32_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_layer2_fp32_r3.txt
+│   │   │   │   ├── stderr_s7_layer2_fp32_r3.log
+│   │   │   │   └── stdout_s7_layer2_fp32_r3.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   ├── s7_spectral_fp32_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_spectral_fp32_r1.txt
+│   │   │   │   ├── stderr_s7_spectral_fp32_r1.log
+│   │   │   │   └── stdout_s7_spectral_fp32_r1.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   ├── s7_spectral_fp32_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_spectral_fp32_r2.txt
+│   │   │   │   ├── stderr_s7_spectral_fp32_r2.log
+│   │   │   │   └── stdout_s7_spectral_fp32_r2.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   ├── s7_spectral_fp32_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_spectral_fp32_r3.txt
+│   │   │   │   ├── stderr_s7_spectral_fp32_r3.log
+│   │   │   │   └── stdout_s7_spectral_fp32_r3.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   └── virso_section7_sustained_registry.csv
+│   ├── bad_s7_20260613_saveoutputs0
+│   │   ├── s7_full_ampfp16_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_full_ampfp16_r1.txt
+│   │   │   │   ├── stderr_s7_full_ampfp16_r1.log
+│   │   │   │   ├── stdout_s7_full_ampfp16_r1.log
+│   │   │   │   ├── tegrastats_s7_full_ampfp16_r1.log
+│   │   │   │   └── virso_inference_s7_full_ampfp16_r1.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_s7_full_ampfp16_r1.csv
+│   │   │       ├── jetson_reviewer_report_s7_full_ampfp16_r1.csv
+│   │   │       └── virso_edge_summary_s7_full_ampfp16_r1.csv
+│   │   ├── s7_full_ampfp16_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_full_ampfp16_r2.txt
+│   │   │   │   ├── stderr_s7_full_ampfp16_r2.log
+│   │   │   │   ├── stdout_s7_full_ampfp16_r2.log
+│   │   │   │   ├── tegrastats_s7_full_ampfp16_r2.log
+│   │   │   │   └── virso_inference_s7_full_ampfp16_r2.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_s7_full_ampfp16_r2.csv
+│   │   │       ├── jetson_reviewer_report_s7_full_ampfp16_r2.csv
+│   │   │       └── virso_edge_summary_s7_full_ampfp16_r2.csv
+│   │   ├── s7_full_ampfp16_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_full_ampfp16_r3.txt
+│   │   │   │   ├── stderr_s7_full_ampfp16_r3.log
+│   │   │   │   ├── stdout_s7_full_ampfp16_r3.log
+│   │   │   │   ├── tegrastats_s7_full_ampfp16_r3.log
+│   │   │   │   └── virso_inference_s7_full_ampfp16_r3.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_s7_full_ampfp16_r3.csv
+│   │   │       ├── jetson_reviewer_report_s7_full_ampfp16_r3.csv
+│   │   │       └── virso_edge_summary_s7_full_ampfp16_r3.csv
+│   │   ├── s7_full_fp32_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_full_fp32_r1.txt
+│   │   │   │   ├── stderr_s7_full_fp32_r1.log
+│   │   │   │   ├── stdout_s7_full_fp32_r1.log
+│   │   │   │   ├── tegrastats_s7_full_fp32_r1.log
+│   │   │   │   └── virso_inference_s7_full_fp32_r1.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_s7_full_fp32_r1.csv
+│   │   │       ├── jetson_reviewer_report_s7_full_fp32_r1.csv
+│   │   │       └── virso_edge_summary_s7_full_fp32_r1.csv
+│   │   ├── s7_full_fp32_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_full_fp32_r2.txt
+│   │   │   │   ├── stderr_s7_full_fp32_r2.log
+│   │   │   │   ├── stdout_s7_full_fp32_r2.log
+│   │   │   │   ├── tegrastats_s7_full_fp32_r2.log
+│   │   │   │   └── virso_inference_s7_full_fp32_r2.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_s7_full_fp32_r2.csv
+│   │   │       ├── jetson_reviewer_report_s7_full_fp32_r2.csv
+│   │   │       └── virso_edge_summary_s7_full_fp32_r2.csv
+│   │   ├── s7_full_fp32_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_full_fp32_r3.txt
+│   │   │   │   ├── stderr_s7_full_fp32_r3.log
+│   │   │   │   ├── stdout_s7_full_fp32_r3.log
+│   │   │   │   ├── tegrastats_s7_full_fp32_r3.log
+│   │   │   │   └── virso_inference_s7_full_fp32_r3.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_s7_full_fp32_r3.csv
+│   │   │       ├── jetson_reviewer_report_s7_full_fp32_r3.csv
+│   │   │       └── virso_edge_summary_s7_full_fp32_r3.csv
+│   │   ├── s7_layer2_fp32_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_layer2_fp32_r1.txt
+│   │   │   │   ├── stderr_s7_layer2_fp32_r1.log
+│   │   │   │   ├── stdout_s7_layer2_fp32_r1.log
+│   │   │   │   ├── tegrastats_s7_layer2_fp32_r1.log
+│   │   │   │   └── virso_inference_s7_layer2_fp32_r1.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_s7_layer2_fp32_r1.csv
+│   │   │       ├── jetson_reviewer_report_s7_layer2_fp32_r1.csv
+│   │   │       └── virso_edge_summary_s7_layer2_fp32_r1.csv
+│   │   ├── s7_layer2_fp32_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_layer2_fp32_r2.txt
+│   │   │   │   ├── stderr_s7_layer2_fp32_r2.log
+│   │   │   │   ├── stdout_s7_layer2_fp32_r2.log
+│   │   │   │   ├── tegrastats_s7_layer2_fp32_r2.log
+│   │   │   │   └── virso_inference_s7_layer2_fp32_r2.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_s7_layer2_fp32_r2.csv
+│   │   │       ├── jetson_reviewer_report_s7_layer2_fp32_r2.csv
+│   │   │       └── virso_edge_summary_s7_layer2_fp32_r2.csv
+│   │   ├── s7_layer2_fp32_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_layer2_fp32_r3.txt
+│   │   │   │   ├── stderr_s7_layer2_fp32_r3.log
+│   │   │   │   ├── stdout_s7_layer2_fp32_r3.log
+│   │   │   │   ├── tegrastats_s7_layer2_fp32_r3.log
+│   │   │   │   └── virso_inference_s7_layer2_fp32_r3.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_s7_layer2_fp32_r3.csv
+│   │   │       ├── jetson_reviewer_report_s7_layer2_fp32_r3.csv
+│   │   │       └── virso_edge_summary_s7_layer2_fp32_r3.csv
+│   │   ├── s7_spectral_fp32_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_spectral_fp32_r1.txt
+│   │   │   │   ├── stderr_s7_spectral_fp32_r1.log
+│   │   │   │   ├── stdout_s7_spectral_fp32_r1.log
+│   │   │   │   ├── tegrastats_s7_spectral_fp32_r1.log
+│   │   │   │   └── virso_inference_s7_spectral_fp32_r1.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_s7_spectral_fp32_r1.csv
+│   │   │       ├── jetson_reviewer_report_s7_spectral_fp32_r1.csv
+│   │   │       └── virso_edge_summary_s7_spectral_fp32_r1.csv
+│   │   ├── s7_spectral_fp32_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_spectral_fp32_r2.txt
+│   │   │   │   ├── stderr_s7_spectral_fp32_r2.log
+│   │   │   │   ├── stdout_s7_spectral_fp32_r2.log
+│   │   │   │   ├── tegrastats_s7_spectral_fp32_r2.log
+│   │   │   │   └── virso_inference_s7_spectral_fp32_r2.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_s7_spectral_fp32_r2.csv
+│   │   │       ├── jetson_reviewer_report_s7_spectral_fp32_r2.csv
+│   │   │       └── virso_edge_summary_s7_spectral_fp32_r2.csv
+│   │   ├── s7_spectral_fp32_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_s7_spectral_fp32_r3.txt
+│   │   │   │   ├── stderr_s7_spectral_fp32_r3.log
+│   │   │   │   ├── stdout_s7_spectral_fp32_r3.log
+│   │   │   │   ├── tegrastats_s7_spectral_fp32_r3.log
+│   │   │   │   └── virso_inference_s7_spectral_fp32_r3.log
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_s7_spectral_fp32_r3.csv
+│   │   │       ├── jetson_reviewer_report_s7_spectral_fp32_r3.csv
+│   │   │       └── virso_edge_summary_s7_spectral_fp32_r3.csv
+│   │   └── virso_section7_sustained_registry.csv
+│   ├── bench2_full_ampfp16_r1
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_full_ampfp16_r1.txt
+│   │   │   ├── stderr_bench2_full_ampfp16_r1.log
+│   │   │   ├── stdout_bench2_full_ampfp16_r1.log
+│   │   │   ├── tegrastats_bench2_full_ampfp16_r1.log
+│   │   │   └── virso_inference_bench2_full_ampfp16_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_full_ampfp16_r1.csv
+│   │       ├── jetson_reviewer_report_bench2_full_ampfp16_r1.csv
+│   │       └── virso_edge_summary_bench2_full_ampfp16_r1.csv
+│   ├── bench2_full_ampfp16_r2
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_full_ampfp16_r2.txt
+│   │   │   ├── stderr_bench2_full_ampfp16_r2.log
+│   │   │   ├── stdout_bench2_full_ampfp16_r2.log
+│   │   │   ├── tegrastats_bench2_full_ampfp16_r2.log
+│   │   │   └── virso_inference_bench2_full_ampfp16_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_full_ampfp16_r2.csv
+│   │       ├── jetson_reviewer_report_bench2_full_ampfp16_r2.csv
+│   │       └── virso_edge_summary_bench2_full_ampfp16_r2.csv
+│   ├── bench2_full_ampfp16_r3
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_full_ampfp16_r3.txt
+│   │   │   ├── stderr_bench2_full_ampfp16_r3.log
+│   │   │   ├── stdout_bench2_full_ampfp16_r3.log
+│   │   │   ├── tegrastats_bench2_full_ampfp16_r3.log
+│   │   │   └── virso_inference_bench2_full_ampfp16_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_full_ampfp16_r3.csv
+│   │       ├── jetson_reviewer_report_bench2_full_ampfp16_r3.csv
+│   │       └── virso_edge_summary_bench2_full_ampfp16_r3.csv
+│   ├── bench2_full_ampfp16_r4
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_full_ampfp16_r4.txt
+│   │   │   ├── stderr_bench2_full_ampfp16_r4.log
+│   │   │   ├── stdout_bench2_full_ampfp16_r4.log
+│   │   │   ├── tegrastats_bench2_full_ampfp16_r4.log
+│   │   │   └── virso_inference_bench2_full_ampfp16_r4.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_full_ampfp16_r4.csv
+│   │       ├── jetson_reviewer_report_bench2_full_ampfp16_r4.csv
+│   │       └── virso_edge_summary_bench2_full_ampfp16_r4.csv
+│   ├── bench2_full_ampfp16_r5
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_full_ampfp16_r5.txt
+│   │   │   ├── stderr_bench2_full_ampfp16_r5.log
+│   │   │   ├── stdout_bench2_full_ampfp16_r5.log
+│   │   │   ├── tegrastats_bench2_full_ampfp16_r5.log
+│   │   │   └── virso_inference_bench2_full_ampfp16_r5.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_full_ampfp16_r5.csv
+│   │       ├── jetson_reviewer_report_bench2_full_ampfp16_r5.csv
+│   │       └── virso_edge_summary_bench2_full_ampfp16_r5.csv
+│   ├── bench2_full_fp32_feas_r1
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_full_fp32_feas_r1.txt
+│   │   │   ├── stderr_bench2_full_fp32_feas_r1.log
+│   │   │   ├── stdout_bench2_full_fp32_feas_r1.log
+│   │   │   ├── tegrastats_bench2_full_fp32_feas_r1.log
+│   │   │   └── virso_inference_bench2_full_fp32_feas_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_full_fp32_feas_r1.csv
+│   │       ├── jetson_reviewer_report_bench2_full_fp32_feas_r1.csv
+│   │       └── virso_edge_summary_bench2_full_fp32_feas_r1.csv
+│   ├── bench2_full_fp32_r2
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_full_fp32_r2.txt
+│   │   │   ├── stderr_bench2_full_fp32_r2.log
+│   │   │   ├── stdout_bench2_full_fp32_r2.log
+│   │   │   ├── tegrastats_bench2_full_fp32_r2.log
+│   │   │   └── virso_inference_bench2_full_fp32_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_full_fp32_r2.csv
+│   │       ├── jetson_reviewer_report_bench2_full_fp32_r2.csv
+│   │       └── virso_edge_summary_bench2_full_fp32_r2.csv
+│   ├── bench2_full_fp32_r3
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_full_fp32_r3.txt
+│   │   │   ├── stderr_bench2_full_fp32_r3.log
+│   │   │   ├── stdout_bench2_full_fp32_r3.log
+│   │   │   ├── tegrastats_bench2_full_fp32_r3.log
+│   │   │   └── virso_inference_bench2_full_fp32_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_full_fp32_r3.csv
+│   │       ├── jetson_reviewer_report_bench2_full_fp32_r3.csv
+│   │       └── virso_edge_summary_bench2_full_fp32_r3.csv
+│   ├── bench2_full_fp32_r4
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_full_fp32_r4.txt
+│   │   │   ├── stderr_bench2_full_fp32_r4.log
+│   │   │   ├── stdout_bench2_full_fp32_r4.log
+│   │   │   ├── tegrastats_bench2_full_fp32_r4.log
+│   │   │   └── virso_inference_bench2_full_fp32_r4.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_full_fp32_r4.csv
+│   │       ├── jetson_reviewer_report_bench2_full_fp32_r4.csv
+│   │       └── virso_edge_summary_bench2_full_fp32_r4.csv
+│   ├── bench2_full_fp32_r5
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_full_fp32_r5.txt
+│   │   │   ├── stderr_bench2_full_fp32_r5.log
+│   │   │   ├── stdout_bench2_full_fp32_r5.log
+│   │   │   ├── tegrastats_bench2_full_fp32_r5.log
+│   │   │   └── virso_inference_bench2_full_fp32_r5.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_full_fp32_r5.csv
+│   │       ├── jetson_reviewer_report_bench2_full_fp32_r5.csv
+│   │       └── virso_edge_summary_bench2_full_fp32_r5.csv
+│   ├── bench2_full_fp32_r6
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_full_fp32_r6.txt
+│   │   │   ├── stderr_bench2_full_fp32_r6.log
+│   │   │   ├── stdout_bench2_full_fp32_r6.log
+│   │   │   ├── tegrastats_bench2_full_fp32_r6.log
+│   │   │   └── virso_inference_bench2_full_fp32_r6.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_full_fp32_r6.csv
+│   │       ├── jetson_reviewer_report_bench2_full_fp32_r6.csv
+│   │       └── virso_edge_summary_bench2_full_fp32_r6.csv
+│   ├── bench2_layer2_ampfp16_r1
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_layer2_ampfp16_r1.txt
+│   │   │   ├── stderr_bench2_layer2_ampfp16_r1.log
+│   │   │   ├── stdout_bench2_layer2_ampfp16_r1.log
+│   │   │   ├── tegrastats_bench2_layer2_ampfp16_r1.log
+│   │   │   └── virso_inference_bench2_layer2_ampfp16_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_layer2_ampfp16_r1.csv
+│   │       ├── jetson_reviewer_report_bench2_layer2_ampfp16_r1.csv
+│   │       └── virso_edge_summary_bench2_layer2_ampfp16_r1.csv
+│   ├── bench2_layer2_ampfp16_r2
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_layer2_ampfp16_r2.txt
+│   │   │   ├── stderr_bench2_layer2_ampfp16_r2.log
+│   │   │   ├── stdout_bench2_layer2_ampfp16_r2.log
+│   │   │   ├── tegrastats_bench2_layer2_ampfp16_r2.log
+│   │   │   └── virso_inference_bench2_layer2_ampfp16_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_layer2_ampfp16_r2.csv
+│   │       ├── jetson_reviewer_report_bench2_layer2_ampfp16_r2.csv
+│   │       └── virso_edge_summary_bench2_layer2_ampfp16_r2.csv
+│   ├── bench2_layer2_ampfp16_r3
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_layer2_ampfp16_r3.txt
+│   │   │   ├── stderr_bench2_layer2_ampfp16_r3.log
+│   │   │   ├── stdout_bench2_layer2_ampfp16_r3.log
+│   │   │   ├── tegrastats_bench2_layer2_ampfp16_r3.log
+│   │   │   └── virso_inference_bench2_layer2_ampfp16_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_layer2_ampfp16_r3.csv
+│   │       ├── jetson_reviewer_report_bench2_layer2_ampfp16_r3.csv
+│   │       └── virso_edge_summary_bench2_layer2_ampfp16_r3.csv
+│   ├── bench2_layer2_fp32_r1
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_layer2_fp32_r1.txt
+│   │   │   ├── stderr_bench2_layer2_fp32_r1.log
+│   │   │   ├── stdout_bench2_layer2_fp32_r1.log
+│   │   │   ├── tegrastats_bench2_layer2_fp32_r1.log
+│   │   │   └── virso_inference_bench2_layer2_fp32_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_layer2_fp32_r1.csv
+│   │       ├── jetson_reviewer_report_bench2_layer2_fp32_r1.csv
+│   │       └── virso_edge_summary_bench2_layer2_fp32_r1.csv
+│   ├── bench2_layer2_fp32_r2
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_layer2_fp32_r2.txt
+│   │   │   ├── stderr_bench2_layer2_fp32_r2.log
+│   │   │   ├── stdout_bench2_layer2_fp32_r2.log
+│   │   │   ├── tegrastats_bench2_layer2_fp32_r2.log
+│   │   │   └── virso_inference_bench2_layer2_fp32_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_layer2_fp32_r2.csv
+│   │       ├── jetson_reviewer_report_bench2_layer2_fp32_r2.csv
+│   │       └── virso_edge_summary_bench2_layer2_fp32_r2.csv
+│   ├── bench2_layer2_fp32_r3
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_layer2_fp32_r3.txt
+│   │   │   ├── stderr_bench2_layer2_fp32_r3.log
+│   │   │   ├── stdout_bench2_layer2_fp32_r3.log
+│   │   │   ├── tegrastats_bench2_layer2_fp32_r3.log
+│   │   │   └── virso_inference_bench2_layer2_fp32_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_layer2_fp32_r3.csv
+│   │       ├── jetson_reviewer_report_bench2_layer2_fp32_r3.csv
+│   │       └── virso_edge_summary_bench2_layer2_fp32_r3.csv
+│   ├── bench2_spectral_ampfp16_r1
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_spectral_ampfp16_r1.txt
+│   │   │   ├── stderr_bench2_spectral_ampfp16_r1.log
+│   │   │   ├── stdout_bench2_spectral_ampfp16_r1.log
+│   │   │   ├── tegrastats_bench2_spectral_ampfp16_r1.log
+│   │   │   └── virso_inference_bench2_spectral_ampfp16_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_spectral_ampfp16_r1.csv
+│   │       ├── jetson_reviewer_report_bench2_spectral_ampfp16_r1.csv
+│   │       └── virso_edge_summary_bench2_spectral_ampfp16_r1.csv
+│   ├── bench2_spectral_ampfp16_r2
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_spectral_ampfp16_r2.txt
+│   │   │   ├── stderr_bench2_spectral_ampfp16_r2.log
+│   │   │   ├── stdout_bench2_spectral_ampfp16_r2.log
+│   │   │   ├── tegrastats_bench2_spectral_ampfp16_r2.log
+│   │   │   └── virso_inference_bench2_spectral_ampfp16_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_spectral_ampfp16_r2.csv
+│   │       ├── jetson_reviewer_report_bench2_spectral_ampfp16_r2.csv
+│   │       └── virso_edge_summary_bench2_spectral_ampfp16_r2.csv
+│   ├── bench2_spectral_ampfp16_r3
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_spectral_ampfp16_r3.txt
+│   │   │   ├── stderr_bench2_spectral_ampfp16_r3.log
+│   │   │   ├── stdout_bench2_spectral_ampfp16_r3.log
+│   │   │   ├── tegrastats_bench2_spectral_ampfp16_r3.log
+│   │   │   └── virso_inference_bench2_spectral_ampfp16_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_spectral_ampfp16_r3.csv
+│   │       ├── jetson_reviewer_report_bench2_spectral_ampfp16_r3.csv
+│   │       └── virso_edge_summary_bench2_spectral_ampfp16_r3.csv
+│   ├── bench2_spectral_fp32_r1
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_spectral_fp32_r1.txt
+│   │   │   ├── stderr_bench2_spectral_fp32_r1.log
+│   │   │   ├── stdout_bench2_spectral_fp32_r1.log
+│   │   │   ├── tegrastats_bench2_spectral_fp32_r1.log
+│   │   │   └── virso_inference_bench2_spectral_fp32_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_spectral_fp32_r1.csv
+│   │       ├── jetson_reviewer_report_bench2_spectral_fp32_r1.csv
+│   │       └── virso_edge_summary_bench2_spectral_fp32_r1.csv
+│   ├── bench2_spectral_fp32_r2
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_spectral_fp32_r2.txt
+│   │   │   ├── stderr_bench2_spectral_fp32_r2.log
+│   │   │   ├── stdout_bench2_spectral_fp32_r2.log
+│   │   │   ├── tegrastats_bench2_spectral_fp32_r2.log
+│   │   │   └── virso_inference_bench2_spectral_fp32_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_spectral_fp32_r2.csv
+│   │       ├── jetson_reviewer_report_bench2_spectral_fp32_r2.csv
+│   │       └── virso_edge_summary_bench2_spectral_fp32_r2.csv
+│   ├── bench2_spectral_fp32_r3
+│   │   ├── logs
+│   │   │   ├── run_status_bench2_spectral_fp32_r3.txt
+│   │   │   ├── stderr_bench2_spectral_fp32_r3.log
+│   │   │   ├── stdout_bench2_spectral_fp32_r3.log
+│   │   │   ├── tegrastats_bench2_spectral_fp32_r3.log
+│   │   │   └── virso_inference_bench2_spectral_fp32_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench2_spectral_fp32_r3.csv
+│   │       ├── jetson_reviewer_report_bench2_spectral_fp32_r3.csv
+│   │       └── virso_edge_summary_bench2_spectral_fp32_r3.csv
+│   ├── bench_virso_full_fp32_test
+│   │   ├── logs
+│   │   │   ├── run_status_bench_virso_full_fp32_test.txt
+│   │   │   ├── tegrastats_bench_virso_full_fp32_test.log
+│   │   │   ├── virso_inference_bench_virso_full_fp32_test.log
+│   │   │   └── virso_inference_error_bench_virso_full_fp32_test.txt
+│   │   ├── outputs
+│   │   └── reports
+│   │       ├── jetson_power_summary_bench_virso_full_fp32_test.csv
+│   │       └── jetson_reviewer_report_bench_virso_full_fp32_test.csv
+│   ├── board_scope
+│   │   ├── 20260322_050934
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_20260322_050934.txt
+│   │   │   │   ├── tegrastats_20260322_050934.log
+│   │   │   │   └── virso_inference_20260322_050934.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_20260322_050934.csv
+│   │   │       ├── jetson_reviewer_report_20260322_050934.csv
+│   │   │       └── virso_edge_summary_20260322_050934.csv
+│   │   ├── 20260324_001253
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_20260324_001253.txt
+│   │   │   │   ├── tegrastats_20260324_001253.log
+│   │   │   │   └── virso_inference_20260324_001253.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_20260324_001253.csv
+│   │   │       ├── jetson_reviewer_report_20260324_001253.csv
+│   │   │       └── virso_edge_summary_20260324_001253.csv
+│   │   └── 20260324_001945
+│   │       ├── logs
+│   │       │   ├── run_status_20260324_001945.txt
+│   │       │   ├── tegrastats_20260324_001945.log
+│   │       │   └── virso_inference_20260324_001945.log
+│   │       ├── outputs
+│   │       │   ├── virso_predictions.npy
+│   │       │   ├── virso_single_gold.npy
+│   │       │   ├── virso_single_pred.npy
+│   │       │   └── virso_targets.npy
+│   │       └── reports
+│   │           ├── jetson_power_summary_20260324_001945.csv
+│   │           ├── jetson_reviewer_report_20260324_001945.csv
+│   │           └── virso_edge_summary_20260324_001945.csv
+│   ├── completion_full_bf16_r1
+│   │   ├── logs
+│   │   │   ├── run_status_completion_full_bf16_r1.txt
+│   │   │   ├── stderr_completion_full_bf16_r1.log
+│   │   │   ├── stdout_completion_full_bf16_r1.log
+│   │   │   ├── tegrastats_completion_full_bf16_r1.log
+│   │   │   └── virso_inference_completion_full_bf16_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_full_bf16_r1.csv
+│   │       ├── jetson_reviewer_report_completion_full_bf16_r1.csv
+│   │       └── virso_edge_summary_completion_full_bf16_r1.csv
+│   ├── completion_full_bf16_r2
+│   │   ├── logs
+│   │   │   ├── run_status_completion_full_bf16_r2.txt
+│   │   │   ├── stderr_completion_full_bf16_r2.log
+│   │   │   ├── stdout_completion_full_bf16_r2.log
+│   │   │   ├── tegrastats_completion_full_bf16_r2.log
+│   │   │   └── virso_inference_completion_full_bf16_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_full_bf16_r2.csv
+│   │       ├── jetson_reviewer_report_completion_full_bf16_r2.csv
+│   │       └── virso_edge_summary_completion_full_bf16_r2.csv
+│   ├── completion_full_bf16_r3
+│   │   ├── logs
+│   │   │   ├── run_status_completion_full_bf16_r3.txt
+│   │   │   ├── stderr_completion_full_bf16_r3.log
+│   │   │   ├── stdout_completion_full_bf16_r3.log
+│   │   │   ├── tegrastats_completion_full_bf16_r3.log
+│   │   │   └── virso_inference_completion_full_bf16_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_full_bf16_r3.csv
+│   │       ├── jetson_reviewer_report_completion_full_bf16_r3.csv
+│   │       └── virso_edge_summary_completion_full_bf16_r3.csv
+│   ├── completion_full_bf16_r4
+│   │   ├── logs
+│   │   │   ├── run_status_completion_full_bf16_r4.txt
+│   │   │   ├── stderr_completion_full_bf16_r4.log
+│   │   │   ├── stdout_completion_full_bf16_r4.log
+│   │   │   ├── tegrastats_completion_full_bf16_r4.log
+│   │   │   └── virso_inference_completion_full_bf16_r4.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_full_bf16_r4.csv
+│   │       ├── jetson_reviewer_report_completion_full_bf16_r4.csv
+│   │       └── virso_edge_summary_completion_full_bf16_r4.csv
+│   ├── completion_full_bf16_r5
+│   │   ├── logs
+│   │   │   ├── run_status_completion_full_bf16_r5.txt
+│   │   │   ├── stderr_completion_full_bf16_r5.log
+│   │   │   ├── stdout_completion_full_bf16_r5.log
+│   │   │   ├── tegrastats_completion_full_bf16_r5.log
+│   │   │   └── virso_inference_completion_full_bf16_r5.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_full_bf16_r5.csv
+│   │       ├── jetson_reviewer_report_completion_full_bf16_r5.csv
+│   │       └── virso_edge_summary_completion_full_bf16_r5.csv
+│   ├── completion_full_tf32_r1
+│   │   ├── logs
+│   │   │   ├── run_status_completion_full_tf32_r1.txt
+│   │   │   ├── stderr_completion_full_tf32_r1.log
+│   │   │   ├── stdout_completion_full_tf32_r1.log
+│   │   │   ├── tegrastats_completion_full_tf32_r1.log
+│   │   │   └── virso_inference_completion_full_tf32_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_full_tf32_r1.csv
+│   │       ├── jetson_reviewer_report_completion_full_tf32_r1.csv
+│   │       └── virso_edge_summary_completion_full_tf32_r1.csv
+│   ├── completion_full_tf32_r2
+│   │   ├── logs
+│   │   │   ├── run_status_completion_full_tf32_r2.txt
+│   │   │   ├── stderr_completion_full_tf32_r2.log
+│   │   │   ├── stdout_completion_full_tf32_r2.log
+│   │   │   ├── tegrastats_completion_full_tf32_r2.log
+│   │   │   └── virso_inference_completion_full_tf32_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_full_tf32_r2.csv
+│   │       ├── jetson_reviewer_report_completion_full_tf32_r2.csv
+│   │       └── virso_edge_summary_completion_full_tf32_r2.csv
+│   ├── completion_full_tf32_r3
+│   │   ├── logs
+│   │   │   ├── run_status_completion_full_tf32_r3.txt
+│   │   │   ├── stderr_completion_full_tf32_r3.log
+│   │   │   ├── stdout_completion_full_tf32_r3.log
+│   │   │   ├── tegrastats_completion_full_tf32_r3.log
+│   │   │   └── virso_inference_completion_full_tf32_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_full_tf32_r3.csv
+│   │       ├── jetson_reviewer_report_completion_full_tf32_r3.csv
+│   │       └── virso_edge_summary_completion_full_tf32_r3.csv
+│   ├── completion_full_tf32_r4
+│   │   ├── logs
+│   │   │   ├── run_status_completion_full_tf32_r4.txt
+│   │   │   ├── stderr_completion_full_tf32_r4.log
+│   │   │   ├── stdout_completion_full_tf32_r4.log
+│   │   │   ├── tegrastats_completion_full_tf32_r4.log
+│   │   │   └── virso_inference_completion_full_tf32_r4.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_full_tf32_r4.csv
+│   │       ├── jetson_reviewer_report_completion_full_tf32_r4.csv
+│   │       └── virso_edge_summary_completion_full_tf32_r4.csv
+│   ├── completion_full_tf32_r5
+│   │   ├── logs
+│   │   │   ├── run_status_completion_full_tf32_r5.txt
+│   │   │   ├── stderr_completion_full_tf32_r5.log
+│   │   │   ├── stdout_completion_full_tf32_r5.log
+│   │   │   ├── tegrastats_completion_full_tf32_r5.log
+│   │   │   └── virso_inference_completion_full_tf32_r5.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_full_tf32_r5.csv
+│   │       ├── jetson_reviewer_report_completion_full_tf32_r5.csv
+│   │       └── virso_edge_summary_completion_full_tf32_r5.csv
+│   ├── completion_layer2_bf16_r1
+│   │   ├── logs
+│   │   │   ├── run_status_completion_layer2_bf16_r1.txt
+│   │   │   ├── stderr_completion_layer2_bf16_r1.log
+│   │   │   ├── stdout_completion_layer2_bf16_r1.log
+│   │   │   ├── tegrastats_completion_layer2_bf16_r1.log
+│   │   │   └── virso_inference_completion_layer2_bf16_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_layer2_bf16_r1.csv
+│   │       ├── jetson_reviewer_report_completion_layer2_bf16_r1.csv
+│   │       └── virso_edge_summary_completion_layer2_bf16_r1.csv
+│   ├── completion_layer2_bf16_r2
+│   │   ├── logs
+│   │   │   ├── run_status_completion_layer2_bf16_r2.txt
+│   │   │   ├── stderr_completion_layer2_bf16_r2.log
+│   │   │   ├── stdout_completion_layer2_bf16_r2.log
+│   │   │   ├── tegrastats_completion_layer2_bf16_r2.log
+│   │   │   └── virso_inference_completion_layer2_bf16_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_layer2_bf16_r2.csv
+│   │       ├── jetson_reviewer_report_completion_layer2_bf16_r2.csv
+│   │       └── virso_edge_summary_completion_layer2_bf16_r2.csv
+│   ├── completion_layer2_bf16_r3
+│   │   ├── logs
+│   │   │   ├── run_status_completion_layer2_bf16_r3.txt
+│   │   │   ├── stderr_completion_layer2_bf16_r3.log
+│   │   │   ├── stdout_completion_layer2_bf16_r3.log
+│   │   │   ├── tegrastats_completion_layer2_bf16_r3.log
+│   │   │   └── virso_inference_completion_layer2_bf16_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_layer2_bf16_r3.csv
+│   │       ├── jetson_reviewer_report_completion_layer2_bf16_r3.csv
+│   │       └── virso_edge_summary_completion_layer2_bf16_r3.csv
+│   ├── completion_layer2_tf32_r1
+│   │   ├── logs
+│   │   │   ├── run_status_completion_layer2_tf32_r1.txt
+│   │   │   ├── stderr_completion_layer2_tf32_r1.log
+│   │   │   ├── stdout_completion_layer2_tf32_r1.log
+│   │   │   ├── tegrastats_completion_layer2_tf32_r1.log
+│   │   │   └── virso_inference_completion_layer2_tf32_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_layer2_tf32_r1.csv
+│   │       ├── jetson_reviewer_report_completion_layer2_tf32_r1.csv
+│   │       └── virso_edge_summary_completion_layer2_tf32_r1.csv
+│   ├── completion_layer2_tf32_r2
+│   │   ├── logs
+│   │   │   ├── run_status_completion_layer2_tf32_r2.txt
+│   │   │   ├── stderr_completion_layer2_tf32_r2.log
+│   │   │   ├── stdout_completion_layer2_tf32_r2.log
+│   │   │   ├── tegrastats_completion_layer2_tf32_r2.log
+│   │   │   └── virso_inference_completion_layer2_tf32_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_layer2_tf32_r2.csv
+│   │       ├── jetson_reviewer_report_completion_layer2_tf32_r2.csv
+│   │       └── virso_edge_summary_completion_layer2_tf32_r2.csv
+│   ├── completion_layer2_tf32_r3
+│   │   ├── logs
+│   │   │   ├── run_status_completion_layer2_tf32_r3.txt
+│   │   │   ├── stderr_completion_layer2_tf32_r3.log
+│   │   │   ├── stdout_completion_layer2_tf32_r3.log
+│   │   │   ├── tegrastats_completion_layer2_tf32_r3.log
+│   │   │   └── virso_inference_completion_layer2_tf32_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_layer2_tf32_r3.csv
+│   │       ├── jetson_reviewer_report_completion_layer2_tf32_r3.csv
+│   │       └── virso_edge_summary_completion_layer2_tf32_r3.csv
+│   ├── completion_spectral_bf16_r1
+│   │   ├── logs
+│   │   │   ├── run_status_completion_spectral_bf16_r1.txt
+│   │   │   ├── stderr_completion_spectral_bf16_r1.log
+│   │   │   ├── stdout_completion_spectral_bf16_r1.log
+│   │   │   ├── tegrastats_completion_spectral_bf16_r1.log
+│   │   │   └── virso_inference_completion_spectral_bf16_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_spectral_bf16_r1.csv
+│   │       ├── jetson_reviewer_report_completion_spectral_bf16_r1.csv
+│   │       └── virso_edge_summary_completion_spectral_bf16_r1.csv
+│   ├── completion_spectral_bf16_r2
+│   │   ├── logs
+│   │   │   ├── run_status_completion_spectral_bf16_r2.txt
+│   │   │   ├── stderr_completion_spectral_bf16_r2.log
+│   │   │   ├── stdout_completion_spectral_bf16_r2.log
+│   │   │   ├── tegrastats_completion_spectral_bf16_r2.log
+│   │   │   └── virso_inference_completion_spectral_bf16_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_spectral_bf16_r2.csv
+│   │       ├── jetson_reviewer_report_completion_spectral_bf16_r2.csv
+│   │       └── virso_edge_summary_completion_spectral_bf16_r2.csv
+│   ├── completion_spectral_bf16_r3
+│   │   ├── logs
+│   │   │   ├── run_status_completion_spectral_bf16_r3.txt
+│   │   │   ├── stderr_completion_spectral_bf16_r3.log
+│   │   │   ├── stdout_completion_spectral_bf16_r3.log
+│   │   │   ├── tegrastats_completion_spectral_bf16_r3.log
+│   │   │   └── virso_inference_completion_spectral_bf16_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_spectral_bf16_r3.csv
+│   │       ├── jetson_reviewer_report_completion_spectral_bf16_r3.csv
+│   │       └── virso_edge_summary_completion_spectral_bf16_r3.csv
+│   ├── completion_spectral_tf32_r1
+│   │   ├── logs
+│   │   │   ├── run_status_completion_spectral_tf32_r1.txt
+│   │   │   ├── stderr_completion_spectral_tf32_r1.log
+│   │   │   ├── stdout_completion_spectral_tf32_r1.log
+│   │   │   ├── tegrastats_completion_spectral_tf32_r1.log
+│   │   │   └── virso_inference_completion_spectral_tf32_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_spectral_tf32_r1.csv
+│   │       ├── jetson_reviewer_report_completion_spectral_tf32_r1.csv
+│   │       └── virso_edge_summary_completion_spectral_tf32_r1.csv
+│   ├── completion_spectral_tf32_r2
+│   │   ├── logs
+│   │   │   ├── run_status_completion_spectral_tf32_r2.txt
+│   │   │   ├── stderr_completion_spectral_tf32_r2.log
+│   │   │   ├── stdout_completion_spectral_tf32_r2.log
+│   │   │   ├── tegrastats_completion_spectral_tf32_r2.log
+│   │   │   └── virso_inference_completion_spectral_tf32_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_spectral_tf32_r2.csv
+│   │       ├── jetson_reviewer_report_completion_spectral_tf32_r2.csv
+│   │       └── virso_edge_summary_completion_spectral_tf32_r2.csv
+│   ├── completion_spectral_tf32_r3
+│   │   ├── logs
+│   │   │   ├── run_status_completion_spectral_tf32_r3.txt
+│   │   │   ├── stderr_completion_spectral_tf32_r3.log
+│   │   │   ├── stdout_completion_spectral_tf32_r3.log
+│   │   │   ├── tegrastats_completion_spectral_tf32_r3.log
+│   │   │   └── virso_inference_completion_spectral_tf32_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_completion_spectral_tf32_r3.csv
+│   │       ├── jetson_reviewer_report_completion_spectral_tf32_r3.csv
+│   │       └── virso_edge_summary_completion_spectral_tf32_r3.csv
+│   ├── debug_cache_off_full_fp32
+│   │   ├── logs
+│   │   │   └── virso_inference_debug_cache_off_full_fp32.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_debug_cache_off_full_fp32.csv
+│   ├── debug_cache_on_full_fp32
+│   │   ├── logs
+│   │   │   └── virso_inference_debug_cache_on_full_fp32.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_debug_cache_on_full_fp32.csv
+│   ├── inference_scope
+│   │   ├── 20260330_082105
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_20260330_082105.txt
+│   │   │   │   ├── tegrastats_20260330_082105.log
+│   │   │   │   └── virso_inference_20260330_082105.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_20260330_082105.csv
+│   │   │       ├── jetson_reviewer_report_20260330_082105.csv
+│   │   │       └── virso_edge_summary_20260330_082105.csv
+│   │   ├── 20260330_082308
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_20260330_082308.txt
+│   │   │   │   ├── tegrastats_20260330_082308.log
+│   │   │   │   └── virso_inference_20260330_082308.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_20260330_082308.csv
+│   │   │       ├── jetson_reviewer_report_20260330_082308.csv
+│   │   │       └── virso_edge_summary_20260330_082308.csv
+│   │   └── 20260330_082358
+│   │       ├── logs
+│   │       │   ├── run_status_20260330_082358.txt
+│   │       │   ├── tegrastats_20260330_082358.log
+│   │       │   └── virso_inference_20260330_082358.log
+│   │       ├── outputs
+│   │       │   ├── virso_predictions.npy
+│   │       │   ├── virso_single_gold.npy
+│   │       │   ├── virso_single_pred.npy
+│   │       │   └── virso_targets.npy
+│   │       └── reports
+│   │           ├── jetson_power_summary_20260330_082358.csv
+│   │           ├── jetson_reviewer_report_20260330_082358.csv
+│   │           └── virso_edge_summary_20260330_082358.csv
+│   ├── jetson_run_registry.csv
+│   ├── memaudit_full_ampfp16_one
+│   │   ├── logs
+│   │   │   └── virso_inference_memaudit_full_ampfp16_one.log
+│   │   ├── outputs
+│   │   └── reports
+│   │       └── virso_edge_summary_memaudit_full_ampfp16_one.csv
+│   ├── memaudit_full_fp32
+│   │   ├── logs
+│   │   │   ├── virso_inference_error_memaudit_full_fp32.txt
+│   │   │   └── virso_inference_memaudit_full_fp32.log
+│   │   ├── outputs
+│   │   └── reports
+│   ├── memaudit_full_fp32_one
+│   │   ├── logs
+│   │   │   └── virso_inference_memaudit_full_fp32_one.log
+│   │   ├── outputs
+│   │   └── reports
+│   │       └── virso_edge_summary_memaudit_full_fp32_one.csv
+│   ├── memaudit_full_fp32_v2
+│   │   ├── logs
+│   │   │   ├── virso_inference_error_memaudit_full_fp32_v2.txt
+│   │   │   └── virso_inference_memaudit_full_fp32_v2.log
+│   │   ├── outputs
+│   │   └── reports
+│   ├── memaudit_layer2_fp32_one
+│   │   ├── logs
+│   │   │   └── virso_inference_memaudit_layer2_fp32_one.log
+│   │   ├── outputs
+│   │   └── reports
+│   │       └── virso_edge_summary_memaudit_layer2_fp32_one.csv
+│   ├── memaudit_spectral_fp32_one
+│   │   ├── logs
+│   │   │   └── virso_inference_memaudit_spectral_fp32_one.log
+│   │   ├── outputs
+│   │   └── reports
+│   │       └── virso_edge_summary_memaudit_spectral_fp32_one.csv
+│   ├── official_virso_cache_enabled_20260613_144007
+│   │   ├── official_full_bf16_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_full_bf16_r1.txt
+│   │   │   │   ├── stderr_official_full_bf16_r1.log
+│   │   │   │   ├── stdout_official_full_bf16_r1.log
+│   │   │   │   ├── tegrastats_official_full_bf16_r1.log
+│   │   │   │   └── virso_inference_official_full_bf16_r1.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_full_bf16_r1.csv
+│   │   │       ├── jetson_reviewer_report_official_full_bf16_r1.csv
+│   │   │       └── virso_edge_summary_official_full_bf16_r1.csv
+│   │   ├── official_full_bf16_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_full_bf16_r2.txt
+│   │   │   │   ├── stderr_official_full_bf16_r2.log
+│   │   │   │   ├── stdout_official_full_bf16_r2.log
+│   │   │   │   ├── tegrastats_official_full_bf16_r2.log
+│   │   │   │   └── virso_inference_official_full_bf16_r2.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_full_bf16_r2.csv
+│   │   │       ├── jetson_reviewer_report_official_full_bf16_r2.csv
+│   │   │       └── virso_edge_summary_official_full_bf16_r2.csv
+│   │   ├── official_full_bf16_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_full_bf16_r3.txt
+│   │   │   │   ├── stderr_official_full_bf16_r3.log
+│   │   │   │   ├── stdout_official_full_bf16_r3.log
+│   │   │   │   ├── tegrastats_official_full_bf16_r3.log
+│   │   │   │   └── virso_inference_official_full_bf16_r3.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_full_bf16_r3.csv
+│   │   │       ├── jetson_reviewer_report_official_full_bf16_r3.csv
+│   │   │       └── virso_edge_summary_official_full_bf16_r3.csv
+│   │   ├── official_full_fp16_autocast_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_full_fp16_autocast_r1.txt
+│   │   │   │   ├── stderr_official_full_fp16_autocast_r1.log
+│   │   │   │   ├── stdout_official_full_fp16_autocast_r1.log
+│   │   │   │   ├── tegrastats_official_full_fp16_autocast_r1.log
+│   │   │   │   └── virso_inference_official_full_fp16_autocast_r1.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_full_fp16_autocast_r1.csv
+│   │   │       ├── jetson_reviewer_report_official_full_fp16_autocast_r1.csv
+│   │   │       └── virso_edge_summary_official_full_fp16_autocast_r1.csv
+│   │   ├── official_full_fp16_autocast_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_full_fp16_autocast_r2.txt
+│   │   │   │   ├── stderr_official_full_fp16_autocast_r2.log
+│   │   │   │   ├── stdout_official_full_fp16_autocast_r2.log
+│   │   │   │   ├── tegrastats_official_full_fp16_autocast_r2.log
+│   │   │   │   └── virso_inference_official_full_fp16_autocast_r2.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_full_fp16_autocast_r2.csv
+│   │   │       ├── jetson_reviewer_report_official_full_fp16_autocast_r2.csv
+│   │   │       └── virso_edge_summary_official_full_fp16_autocast_r2.csv
+│   │   ├── official_full_fp16_autocast_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_full_fp16_autocast_r3.txt
+│   │   │   │   ├── stderr_official_full_fp16_autocast_r3.log
+│   │   │   │   ├── stdout_official_full_fp16_autocast_r3.log
+│   │   │   │   ├── tegrastats_official_full_fp16_autocast_r3.log
+│   │   │   │   └── virso_inference_official_full_fp16_autocast_r3.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_full_fp16_autocast_r3.csv
+│   │   │       ├── jetson_reviewer_report_official_full_fp16_autocast_r3.csv
+│   │   │       └── virso_edge_summary_official_full_fp16_autocast_r3.csv
+│   │   ├── official_full_fp32_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_full_fp32_r1.txt
+│   │   │   │   ├── stderr_official_full_fp32_r1.log
+│   │   │   │   ├── stdout_official_full_fp32_r1.log
+│   │   │   │   ├── tegrastats_official_full_fp32_r1.log
+│   │   │   │   └── virso_inference_official_full_fp32_r1.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_full_fp32_r1.csv
+│   │   │       ├── jetson_reviewer_report_official_full_fp32_r1.csv
+│   │   │       └── virso_edge_summary_official_full_fp32_r1.csv
+│   │   ├── official_full_fp32_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_full_fp32_r2.txt
+│   │   │   │   ├── stderr_official_full_fp32_r2.log
+│   │   │   │   ├── stdout_official_full_fp32_r2.log
+│   │   │   │   ├── tegrastats_official_full_fp32_r2.log
+│   │   │   │   └── virso_inference_official_full_fp32_r2.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_full_fp32_r2.csv
+│   │   │       ├── jetson_reviewer_report_official_full_fp32_r2.csv
+│   │   │       └── virso_edge_summary_official_full_fp32_r2.csv
+│   │   ├── official_full_fp32_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_full_fp32_r3.txt
+│   │   │   │   ├── stderr_official_full_fp32_r3.log
+│   │   │   │   ├── stdout_official_full_fp32_r3.log
+│   │   │   │   ├── tegrastats_official_full_fp32_r3.log
+│   │   │   │   └── virso_inference_official_full_fp32_r3.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_full_fp32_r3.csv
+│   │   │       ├── jetson_reviewer_report_official_full_fp32_r3.csv
+│   │   │       └── virso_edge_summary_official_full_fp32_r3.csv
+│   │   ├── official_full_tf32_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_full_tf32_r1.txt
+│   │   │   │   ├── stderr_official_full_tf32_r1.log
+│   │   │   │   ├── stdout_official_full_tf32_r1.log
+│   │   │   │   ├── tegrastats_official_full_tf32_r1.log
+│   │   │   │   └── virso_inference_official_full_tf32_r1.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_full_tf32_r1.csv
+│   │   │       ├── jetson_reviewer_report_official_full_tf32_r1.csv
+│   │   │       └── virso_edge_summary_official_full_tf32_r1.csv
+│   │   ├── official_full_tf32_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_full_tf32_r2.txt
+│   │   │   │   ├── stderr_official_full_tf32_r2.log
+│   │   │   │   ├── stdout_official_full_tf32_r2.log
+│   │   │   │   ├── tegrastats_official_full_tf32_r2.log
+│   │   │   │   └── virso_inference_official_full_tf32_r2.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_full_tf32_r2.csv
+│   │   │       ├── jetson_reviewer_report_official_full_tf32_r2.csv
+│   │   │       └── virso_edge_summary_official_full_tf32_r2.csv
+│   │   ├── official_full_tf32_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_full_tf32_r3.txt
+│   │   │   │   ├── stderr_official_full_tf32_r3.log
+│   │   │   │   ├── stdout_official_full_tf32_r3.log
+│   │   │   │   ├── tegrastats_official_full_tf32_r3.log
+│   │   │   │   └── virso_inference_official_full_tf32_r3.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_full_tf32_r3.csv
+│   │   │       ├── jetson_reviewer_report_official_full_tf32_r3.csv
+│   │   │       └── virso_edge_summary_official_full_tf32_r3.csv
+│   │   ├── official_layer2_bf16_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_layer2_bf16_r1.txt
+│   │   │   │   ├── stderr_official_layer2_bf16_r1.log
+│   │   │   │   ├── stdout_official_layer2_bf16_r1.log
+│   │   │   │   ├── tegrastats_official_layer2_bf16_r1.log
+│   │   │   │   └── virso_inference_official_layer2_bf16_r1.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_layer2_bf16_r1.csv
+│   │   │       ├── jetson_reviewer_report_official_layer2_bf16_r1.csv
+│   │   │       └── virso_edge_summary_official_layer2_bf16_r1.csv
+│   │   ├── official_layer2_bf16_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_layer2_bf16_r2.txt
+│   │   │   │   ├── stderr_official_layer2_bf16_r2.log
+│   │   │   │   ├── stdout_official_layer2_bf16_r2.log
+│   │   │   │   ├── tegrastats_official_layer2_bf16_r2.log
+│   │   │   │   └── virso_inference_official_layer2_bf16_r2.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_layer2_bf16_r2.csv
+│   │   │       ├── jetson_reviewer_report_official_layer2_bf16_r2.csv
+│   │   │       └── virso_edge_summary_official_layer2_bf16_r2.csv
+│   │   ├── official_layer2_bf16_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_layer2_bf16_r3.txt
+│   │   │   │   ├── stderr_official_layer2_bf16_r3.log
+│   │   │   │   ├── stdout_official_layer2_bf16_r3.log
+│   │   │   │   ├── tegrastats_official_layer2_bf16_r3.log
+│   │   │   │   └── virso_inference_official_layer2_bf16_r3.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_layer2_bf16_r3.csv
+│   │   │       ├── jetson_reviewer_report_official_layer2_bf16_r3.csv
+│   │   │       └── virso_edge_summary_official_layer2_bf16_r3.csv
+│   │   ├── official_layer2_fp16_autocast_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_layer2_fp16_autocast_r1.txt
+│   │   │   │   ├── stderr_official_layer2_fp16_autocast_r1.log
+│   │   │   │   ├── stdout_official_layer2_fp16_autocast_r1.log
+│   │   │   │   ├── tegrastats_official_layer2_fp16_autocast_r1.log
+│   │   │   │   └── virso_inference_official_layer2_fp16_autocast_r1.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_layer2_fp16_autocast_r1.csv
+│   │   │       ├── jetson_reviewer_report_official_layer2_fp16_autocast_r1.csv
+│   │   │       └── virso_edge_summary_official_layer2_fp16_autocast_r1.csv
+│   │   ├── official_layer2_fp16_autocast_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_layer2_fp16_autocast_r2.txt
+│   │   │   │   ├── stderr_official_layer2_fp16_autocast_r2.log
+│   │   │   │   ├── stdout_official_layer2_fp16_autocast_r2.log
+│   │   │   │   ├── tegrastats_official_layer2_fp16_autocast_r2.log
+│   │   │   │   └── virso_inference_official_layer2_fp16_autocast_r2.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_layer2_fp16_autocast_r2.csv
+│   │   │       ├── jetson_reviewer_report_official_layer2_fp16_autocast_r2.csv
+│   │   │       └── virso_edge_summary_official_layer2_fp16_autocast_r2.csv
+│   │   ├── official_layer2_fp16_autocast_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_layer2_fp16_autocast_r3.txt
+│   │   │   │   ├── stderr_official_layer2_fp16_autocast_r3.log
+│   │   │   │   ├── stdout_official_layer2_fp16_autocast_r3.log
+│   │   │   │   ├── tegrastats_official_layer2_fp16_autocast_r3.log
+│   │   │   │   └── virso_inference_official_layer2_fp16_autocast_r3.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_layer2_fp16_autocast_r3.csv
+│   │   │       ├── jetson_reviewer_report_official_layer2_fp16_autocast_r3.csv
+│   │   │       └── virso_edge_summary_official_layer2_fp16_autocast_r3.csv
+│   │   ├── official_layer2_fp32_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_layer2_fp32_r1.txt
+│   │   │   │   ├── stderr_official_layer2_fp32_r1.log
+│   │   │   │   ├── stdout_official_layer2_fp32_r1.log
+│   │   │   │   ├── tegrastats_official_layer2_fp32_r1.log
+│   │   │   │   └── virso_inference_official_layer2_fp32_r1.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_layer2_fp32_r1.csv
+│   │   │       ├── jetson_reviewer_report_official_layer2_fp32_r1.csv
+│   │   │       └── virso_edge_summary_official_layer2_fp32_r1.csv
+│   │   ├── official_layer2_fp32_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_layer2_fp32_r2.txt
+│   │   │   │   ├── stderr_official_layer2_fp32_r2.log
+│   │   │   │   ├── stdout_official_layer2_fp32_r2.log
+│   │   │   │   ├── tegrastats_official_layer2_fp32_r2.log
+│   │   │   │   └── virso_inference_official_layer2_fp32_r2.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_layer2_fp32_r2.csv
+│   │   │       ├── jetson_reviewer_report_official_layer2_fp32_r2.csv
+│   │   │       └── virso_edge_summary_official_layer2_fp32_r2.csv
+│   │   ├── official_layer2_fp32_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_layer2_fp32_r3.txt
+│   │   │   │   ├── stderr_official_layer2_fp32_r3.log
+│   │   │   │   ├── stdout_official_layer2_fp32_r3.log
+│   │   │   │   ├── tegrastats_official_layer2_fp32_r3.log
+│   │   │   │   └── virso_inference_official_layer2_fp32_r3.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_layer2_fp32_r3.csv
+│   │   │       ├── jetson_reviewer_report_official_layer2_fp32_r3.csv
+│   │   │       └── virso_edge_summary_official_layer2_fp32_r3.csv
+│   │   ├── official_layer2_tf32_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_layer2_tf32_r1.txt
+│   │   │   │   ├── stderr_official_layer2_tf32_r1.log
+│   │   │   │   ├── stdout_official_layer2_tf32_r1.log
+│   │   │   │   ├── tegrastats_official_layer2_tf32_r1.log
+│   │   │   │   └── virso_inference_official_layer2_tf32_r1.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_layer2_tf32_r1.csv
+│   │   │       ├── jetson_reviewer_report_official_layer2_tf32_r1.csv
+│   │   │       └── virso_edge_summary_official_layer2_tf32_r1.csv
+│   │   ├── official_layer2_tf32_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_layer2_tf32_r2.txt
+│   │   │   │   ├── stderr_official_layer2_tf32_r2.log
+│   │   │   │   ├── stdout_official_layer2_tf32_r2.log
+│   │   │   │   ├── tegrastats_official_layer2_tf32_r2.log
+│   │   │   │   └── virso_inference_official_layer2_tf32_r2.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_layer2_tf32_r2.csv
+│   │   │       ├── jetson_reviewer_report_official_layer2_tf32_r2.csv
+│   │   │       └── virso_edge_summary_official_layer2_tf32_r2.csv
+│   │   ├── official_layer2_tf32_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_layer2_tf32_r3.txt
+│   │   │   │   ├── stderr_official_layer2_tf32_r3.log
+│   │   │   │   ├── stdout_official_layer2_tf32_r3.log
+│   │   │   │   ├── tegrastats_official_layer2_tf32_r3.log
+│   │   │   │   └── virso_inference_official_layer2_tf32_r3.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_layer2_tf32_r3.csv
+│   │   │       ├── jetson_reviewer_report_official_layer2_tf32_r3.csv
+│   │   │       └── virso_edge_summary_official_layer2_tf32_r3.csv
+│   │   ├── official_spectral_bf16_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_spectral_bf16_r1.txt
+│   │   │   │   ├── stderr_official_spectral_bf16_r1.log
+│   │   │   │   ├── stdout_official_spectral_bf16_r1.log
+│   │   │   │   ├── tegrastats_official_spectral_bf16_r1.log
+│   │   │   │   └── virso_inference_official_spectral_bf16_r1.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_spectral_bf16_r1.csv
+│   │   │       ├── jetson_reviewer_report_official_spectral_bf16_r1.csv
+│   │   │       └── virso_edge_summary_official_spectral_bf16_r1.csv
+│   │   ├── official_spectral_bf16_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_spectral_bf16_r2.txt
+│   │   │   │   ├── stderr_official_spectral_bf16_r2.log
+│   │   │   │   ├── stdout_official_spectral_bf16_r2.log
+│   │   │   │   ├── tegrastats_official_spectral_bf16_r2.log
+│   │   │   │   └── virso_inference_official_spectral_bf16_r2.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_spectral_bf16_r2.csv
+│   │   │       ├── jetson_reviewer_report_official_spectral_bf16_r2.csv
+│   │   │       └── virso_edge_summary_official_spectral_bf16_r2.csv
+│   │   ├── official_spectral_bf16_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_spectral_bf16_r3.txt
+│   │   │   │   ├── stderr_official_spectral_bf16_r3.log
+│   │   │   │   ├── stdout_official_spectral_bf16_r3.log
+│   │   │   │   ├── tegrastats_official_spectral_bf16_r3.log
+│   │   │   │   └── virso_inference_official_spectral_bf16_r3.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_spectral_bf16_r3.csv
+│   │   │       ├── jetson_reviewer_report_official_spectral_bf16_r3.csv
+│   │   │       └── virso_edge_summary_official_spectral_bf16_r3.csv
+│   │   ├── official_spectral_fp16_autocast_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_spectral_fp16_autocast_r1.txt
+│   │   │   │   ├── stderr_official_spectral_fp16_autocast_r1.log
+│   │   │   │   ├── stdout_official_spectral_fp16_autocast_r1.log
+│   │   │   │   ├── tegrastats_official_spectral_fp16_autocast_r1.log
+│   │   │   │   └── virso_inference_official_spectral_fp16_autocast_r1.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_spectral_fp16_autocast_r1.csv
+│   │   │       ├── jetson_reviewer_report_official_spectral_fp16_autocast_r1.csv
+│   │   │       └── virso_edge_summary_official_spectral_fp16_autocast_r1.csv
+│   │   ├── official_spectral_fp16_autocast_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_spectral_fp16_autocast_r2.txt
+│   │   │   │   ├── stderr_official_spectral_fp16_autocast_r2.log
+│   │   │   │   ├── stdout_official_spectral_fp16_autocast_r2.log
+│   │   │   │   ├── tegrastats_official_spectral_fp16_autocast_r2.log
+│   │   │   │   └── virso_inference_official_spectral_fp16_autocast_r2.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_spectral_fp16_autocast_r2.csv
+│   │   │       ├── jetson_reviewer_report_official_spectral_fp16_autocast_r2.csv
+│   │   │       └── virso_edge_summary_official_spectral_fp16_autocast_r2.csv
+│   │   ├── official_spectral_fp16_autocast_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_spectral_fp16_autocast_r3.txt
+│   │   │   │   ├── stderr_official_spectral_fp16_autocast_r3.log
+│   │   │   │   ├── stdout_official_spectral_fp16_autocast_r3.log
+│   │   │   │   ├── tegrastats_official_spectral_fp16_autocast_r3.log
+│   │   │   │   └── virso_inference_official_spectral_fp16_autocast_r3.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_spectral_fp16_autocast_r3.csv
+│   │   │       ├── jetson_reviewer_report_official_spectral_fp16_autocast_r3.csv
+│   │   │       └── virso_edge_summary_official_spectral_fp16_autocast_r3.csv
+│   │   ├── official_spectral_fp32_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_spectral_fp32_r1.txt
+│   │   │   │   ├── stderr_official_spectral_fp32_r1.log
+│   │   │   │   ├── stdout_official_spectral_fp32_r1.log
+│   │   │   │   ├── tegrastats_official_spectral_fp32_r1.log
+│   │   │   │   └── virso_inference_official_spectral_fp32_r1.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_spectral_fp32_r1.csv
+│   │   │       ├── jetson_reviewer_report_official_spectral_fp32_r1.csv
+│   │   │       └── virso_edge_summary_official_spectral_fp32_r1.csv
+│   │   ├── official_spectral_fp32_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_spectral_fp32_r2.txt
+│   │   │   │   ├── stderr_official_spectral_fp32_r2.log
+│   │   │   │   ├── stdout_official_spectral_fp32_r2.log
+│   │   │   │   ├── tegrastats_official_spectral_fp32_r2.log
+│   │   │   │   └── virso_inference_official_spectral_fp32_r2.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_spectral_fp32_r2.csv
+│   │   │       ├── jetson_reviewer_report_official_spectral_fp32_r2.csv
+│   │   │       └── virso_edge_summary_official_spectral_fp32_r2.csv
+│   │   ├── official_spectral_fp32_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_spectral_fp32_r3.txt
+│   │   │   │   ├── stderr_official_spectral_fp32_r3.log
+│   │   │   │   ├── stdout_official_spectral_fp32_r3.log
+│   │   │   │   ├── tegrastats_official_spectral_fp32_r3.log
+│   │   │   │   └── virso_inference_official_spectral_fp32_r3.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_spectral_fp32_r3.csv
+│   │   │       ├── jetson_reviewer_report_official_spectral_fp32_r3.csv
+│   │   │       └── virso_edge_summary_official_spectral_fp32_r3.csv
+│   │   ├── official_spectral_tf32_r1
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_spectral_tf32_r1.txt
+│   │   │   │   ├── stderr_official_spectral_tf32_r1.log
+│   │   │   │   ├── stdout_official_spectral_tf32_r1.log
+│   │   │   │   ├── tegrastats_official_spectral_tf32_r1.log
+│   │   │   │   └── virso_inference_official_spectral_tf32_r1.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_spectral_tf32_r1.csv
+│   │   │       ├── jetson_reviewer_report_official_spectral_tf32_r1.csv
+│   │   │       └── virso_edge_summary_official_spectral_tf32_r1.csv
+│   │   ├── official_spectral_tf32_r2
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_spectral_tf32_r2.txt
+│   │   │   │   ├── stderr_official_spectral_tf32_r2.log
+│   │   │   │   ├── stdout_official_spectral_tf32_r2.log
+│   │   │   │   ├── tegrastats_official_spectral_tf32_r2.log
+│   │   │   │   └── virso_inference_official_spectral_tf32_r2.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_spectral_tf32_r2.csv
+│   │   │       ├── jetson_reviewer_report_official_spectral_tf32_r2.csv
+│   │   │       └── virso_edge_summary_official_spectral_tf32_r2.csv
+│   │   ├── official_spectral_tf32_r3
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_official_spectral_tf32_r3.txt
+│   │   │   │   ├── stderr_official_spectral_tf32_r3.log
+│   │   │   │   ├── stdout_official_spectral_tf32_r3.log
+│   │   │   │   ├── tegrastats_official_spectral_tf32_r3.log
+│   │   │   │   └── virso_inference_official_spectral_tf32_r3.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       ├── jetson_power_summary_official_spectral_tf32_r3.csv
+│   │   │       ├── jetson_reviewer_report_official_spectral_tf32_r3.csv
+│   │   │       └── virso_edge_summary_official_spectral_tf32_r3.csv
+│   │   └── official_virso_registry.csv
+│   ├── prec_full_bf16_autocast
+│   │   ├── logs
+│   │   │   └── virso_inference_prec_full_bf16_autocast.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_prec_full_bf16_autocast.csv
+│   ├── prec_full_fp16_autocast
+│   │   ├── logs
+│   │   │   └── virso_inference_prec_full_fp16_autocast.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_prec_full_fp16_autocast.csv
+│   ├── prec_full_fp32_strict
+│   │   ├── logs
+│   │   │   └── virso_inference_prec_full_fp32_strict.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_prec_full_fp32_strict.csv
+│   ├── prec_full_tf32
+│   │   ├── logs
+│   │   │   └── virso_inference_prec_full_tf32.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_prec_full_tf32.csv
+│   ├── prec_layer2_bf16_autocast
+│   │   ├── logs
+│   │   │   └── virso_inference_prec_layer2_bf16_autocast.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_prec_layer2_bf16_autocast.csv
+│   ├── prec_layer2_fp16_autocast
+│   │   ├── logs
+│   │   │   └── virso_inference_prec_layer2_fp16_autocast.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_prec_layer2_fp16_autocast.csv
+│   ├── prec_layer2_fp32_strict
+│   │   ├── logs
+│   │   │   └── virso_inference_prec_layer2_fp32_strict.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_prec_layer2_fp32_strict.csv
+│   ├── prec_layer2_tf32
+│   │   ├── logs
+│   │   │   └── virso_inference_prec_layer2_tf32.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_prec_layer2_tf32.csv
+│   ├── prec_spectral_bf16_autocast
+│   │   ├── logs
+│   │   │   └── virso_inference_prec_spectral_bf16_autocast.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_prec_spectral_bf16_autocast.csv
+│   ├── prec_spectral_fp16_autocast
+│   │   ├── logs
+│   │   │   └── virso_inference_prec_spectral_fp16_autocast.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_prec_spectral_fp16_autocast.csv
+│   ├── prec_spectral_fp32_strict
+│   │   ├── logs
+│   │   │   └── virso_inference_prec_spectral_fp32_strict.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_prec_spectral_fp32_strict.csv
+│   ├── prec_spectral_tf32
+│   │   ├── logs
+│   │   │   └── virso_inference_prec_spectral_tf32.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   └── reports
+│   │       └── virso_edge_summary_prec_spectral_tf32.csv
+│   ├── s7_full_ampfp16_r1
+│   │   ├── logs
+│   │   │   ├── run_status_s7_full_ampfp16_r1.txt
+│   │   │   ├── stderr_s7_full_ampfp16_r1.log
+│   │   │   ├── stdout_s7_full_ampfp16_r1.log
+│   │   │   ├── tegrastats_s7_full_ampfp16_r1.log
+│   │   │   └── virso_inference_s7_full_ampfp16_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_s7_full_ampfp16_r1.csv
+│   │       ├── jetson_reviewer_report_s7_full_ampfp16_r1.csv
+│   │       └── virso_edge_summary_s7_full_ampfp16_r1.csv
+│   ├── s7_full_ampfp16_r2
+│   │   ├── logs
+│   │   │   ├── run_status_s7_full_ampfp16_r2.txt
+│   │   │   ├── stderr_s7_full_ampfp16_r2.log
+│   │   │   ├── stdout_s7_full_ampfp16_r2.log
+│   │   │   ├── tegrastats_s7_full_ampfp16_r2.log
+│   │   │   └── virso_inference_s7_full_ampfp16_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_s7_full_ampfp16_r2.csv
+│   │       ├── jetson_reviewer_report_s7_full_ampfp16_r2.csv
+│   │       └── virso_edge_summary_s7_full_ampfp16_r2.csv
+│   ├── s7_full_ampfp16_r3
+│   │   ├── logs
+│   │   │   ├── run_status_s7_full_ampfp16_r3.txt
+│   │   │   ├── stderr_s7_full_ampfp16_r3.log
+│   │   │   ├── stdout_s7_full_ampfp16_r3.log
+│   │   │   ├── tegrastats_s7_full_ampfp16_r3.log
+│   │   │   └── virso_inference_s7_full_ampfp16_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_s7_full_ampfp16_r3.csv
+│   │       ├── jetson_reviewer_report_s7_full_ampfp16_r3.csv
+│   │       └── virso_edge_summary_s7_full_ampfp16_r3.csv
+│   ├── s7_full_fp32_r1
+│   │   ├── logs
+│   │   │   ├── run_status_s7_full_fp32_r1.txt
+│   │   │   ├── stderr_s7_full_fp32_r1.log
+│   │   │   ├── stdout_s7_full_fp32_r1.log
+│   │   │   ├── tegrastats_s7_full_fp32_r1.log
+│   │   │   └── virso_inference_s7_full_fp32_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_s7_full_fp32_r1.csv
+│   │       ├── jetson_reviewer_report_s7_full_fp32_r1.csv
+│   │       └── virso_edge_summary_s7_full_fp32_r1.csv
+│   ├── s7_full_fp32_r2
+│   │   ├── logs
+│   │   │   ├── run_status_s7_full_fp32_r2.txt
+│   │   │   ├── stderr_s7_full_fp32_r2.log
+│   │   │   ├── stdout_s7_full_fp32_r2.log
+│   │   │   ├── tegrastats_s7_full_fp32_r2.log
+│   │   │   └── virso_inference_s7_full_fp32_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_s7_full_fp32_r2.csv
+│   │       ├── jetson_reviewer_report_s7_full_fp32_r2.csv
+│   │       └── virso_edge_summary_s7_full_fp32_r2.csv
+│   ├── s7_full_fp32_r3
+│   │   ├── logs
+│   │   │   ├── run_status_s7_full_fp32_r3.txt
+│   │   │   ├── stderr_s7_full_fp32_r3.log
+│   │   │   ├── stdout_s7_full_fp32_r3.log
+│   │   │   ├── tegrastats_s7_full_fp32_r3.log
+│   │   │   └── virso_inference_s7_full_fp32_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_s7_full_fp32_r3.csv
+│   │       ├── jetson_reviewer_report_s7_full_fp32_r3.csv
+│   │       └── virso_edge_summary_s7_full_fp32_r3.csv
+│   ├── s7_layer2_fp32_r1
+│   │   ├── logs
+│   │   │   ├── run_status_s7_layer2_fp32_r1.txt
+│   │   │   ├── stderr_s7_layer2_fp32_r1.log
+│   │   │   ├── stdout_s7_layer2_fp32_r1.log
+│   │   │   ├── tegrastats_s7_layer2_fp32_r1.log
+│   │   │   └── virso_inference_s7_layer2_fp32_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_s7_layer2_fp32_r1.csv
+│   │       ├── jetson_reviewer_report_s7_layer2_fp32_r1.csv
+│   │       └── virso_edge_summary_s7_layer2_fp32_r1.csv
+│   ├── s7_layer2_fp32_r2
+│   │   ├── logs
+│   │   │   ├── run_status_s7_layer2_fp32_r2.txt
+│   │   │   ├── stderr_s7_layer2_fp32_r2.log
+│   │   │   ├── stdout_s7_layer2_fp32_r2.log
+│   │   │   ├── tegrastats_s7_layer2_fp32_r2.log
+│   │   │   └── virso_inference_s7_layer2_fp32_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_s7_layer2_fp32_r2.csv
+│   │       ├── jetson_reviewer_report_s7_layer2_fp32_r2.csv
+│   │       └── virso_edge_summary_s7_layer2_fp32_r2.csv
+│   ├── s7_layer2_fp32_r3
+│   │   ├── logs
+│   │   │   ├── run_status_s7_layer2_fp32_r3.txt
+│   │   │   ├── stderr_s7_layer2_fp32_r3.log
+│   │   │   ├── stdout_s7_layer2_fp32_r3.log
+│   │   │   ├── tegrastats_s7_layer2_fp32_r3.log
+│   │   │   └── virso_inference_s7_layer2_fp32_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_s7_layer2_fp32_r3.csv
+│   │       ├── jetson_reviewer_report_s7_layer2_fp32_r3.csv
+│   │       └── virso_edge_summary_s7_layer2_fp32_r3.csv
+│   ├── s7_spectral_fp32_r1
+│   │   ├── logs
+│   │   │   ├── run_status_s7_spectral_fp32_r1.txt
+│   │   │   ├── stderr_s7_spectral_fp32_r1.log
+│   │   │   ├── stdout_s7_spectral_fp32_r1.log
+│   │   │   ├── tegrastats_s7_spectral_fp32_r1.log
+│   │   │   └── virso_inference_s7_spectral_fp32_r1.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_s7_spectral_fp32_r1.csv
+│   │       ├── jetson_reviewer_report_s7_spectral_fp32_r1.csv
+│   │       └── virso_edge_summary_s7_spectral_fp32_r1.csv
+│   ├── s7_spectral_fp32_r2
+│   │   ├── logs
+│   │   │   ├── run_status_s7_spectral_fp32_r2.txt
+│   │   │   ├── stderr_s7_spectral_fp32_r2.log
+│   │   │   ├── stdout_s7_spectral_fp32_r2.log
+│   │   │   ├── tegrastats_s7_spectral_fp32_r2.log
+│   │   │   └── virso_inference_s7_spectral_fp32_r2.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_s7_spectral_fp32_r2.csv
+│   │       ├── jetson_reviewer_report_s7_spectral_fp32_r2.csv
+│   │       └── virso_edge_summary_s7_spectral_fp32_r2.csv
+│   ├── s7_spectral_fp32_r3
+│   │   ├── logs
+│   │   │   ├── run_status_s7_spectral_fp32_r3.txt
+│   │   │   ├── stderr_s7_spectral_fp32_r3.log
+│   │   │   ├── stdout_s7_spectral_fp32_r3.log
+│   │   │   ├── tegrastats_s7_spectral_fp32_r3.log
+│   │   │   └── virso_inference_s7_spectral_fp32_r3.log
+│   │   ├── outputs
+│   │   │   ├── virso_predictions.npy
+│   │   │   ├── virso_single_gold.npy
+│   │   │   ├── virso_single_pred.npy
+│   │   │   └── virso_targets.npy
+│   │   ├── provenance.txt
+│   │   └── reports
+│   │       ├── jetson_power_summary_s7_spectral_fp32_r3.csv
+│   │       ├── jetson_reviewer_report_s7_spectral_fp32_r3.csv
+│   │       └── virso_edge_summary_s7_spectral_fp32_r3.csv
+│   ├── virso_bench2_joined_raw.csv
+│   ├── virso_bench2_paper_summary.csv
+│   ├── virso_direct_benchmark_registry.csv
+│   ├── virso_missing_tf32_native_20260611_134627
+│   │   ├── virso_full_fp16_native_20260611_135142
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_virso_full_fp16_native_20260611_135142.txt
+│   │   │   │   ├── stderr_virso_full_fp16_native_20260611_135142.log
+│   │   │   │   ├── stdout_virso_full_fp16_native_20260611_135142.log
+│   │   │   │   ├── virso_inference_error_virso_full_fp16_native_20260611_135142.txt
+│   │   │   │   └── virso_inference_virso_full_fp16_native_20260611_135142.log
+│   │   │   ├── outputs
+│   │   │   └── reports
+│   │   ├── virso_full_tf32_20260611_134627
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_virso_full_tf32_20260611_134627.txt
+│   │   │   │   ├── stderr_virso_full_tf32_20260611_134627.log
+│   │   │   │   ├── stdout_virso_full_tf32_20260611_134627.log
+│   │   │   │   └── virso_inference_virso_full_tf32_20260611_134627.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_virso_full_tf32_20260611_134627.csv
+│   │   ├── virso_layer2_fp16_native_20260611_135233
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_virso_layer2_fp16_native_20260611_135233.txt
+│   │   │   │   ├── stderr_virso_layer2_fp16_native_20260611_135233.log
+│   │   │   │   ├── stdout_virso_layer2_fp16_native_20260611_135233.log
+│   │   │   │   ├── virso_inference_error_virso_layer2_fp16_native_20260611_135233.txt
+│   │   │   │   └── virso_inference_virso_layer2_fp16_native_20260611_135233.log
+│   │   │   ├── outputs
+│   │   │   └── reports
+│   │   ├── virso_layer2_tf32_20260611_135035
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_virso_layer2_tf32_20260611_135035.txt
+│   │   │   │   ├── stderr_virso_layer2_tf32_20260611_135035.log
+│   │   │   │   ├── stdout_virso_layer2_tf32_20260611_135035.log
+│   │   │   │   └── virso_inference_virso_layer2_tf32_20260611_135035.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_virso_layer2_tf32_20260611_135035.csv
+│   │   ├── virso_missing_tf32_native_registry.csv
+│   │   ├── virso_spectral_fp16_native_20260611_135208
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_virso_spectral_fp16_native_20260611_135208.txt
+│   │   │   │   ├── stderr_virso_spectral_fp16_native_20260611_135208.log
+│   │   │   │   ├── stdout_virso_spectral_fp16_native_20260611_135208.log
+│   │   │   │   ├── virso_inference_error_virso_spectral_fp16_native_20260611_135208.txt
+│   │   │   │   └── virso_inference_virso_spectral_fp16_native_20260611_135208.log
+│   │   │   ├── outputs
+│   │   │   └── reports
+│   │   └── virso_spectral_tf32_20260611_134949
+│   │       ├── logs
+│   │       │   ├── run_status_virso_spectral_tf32_20260611_134949.txt
+│   │       │   ├── stderr_virso_spectral_tf32_20260611_134949.log
+│   │       │   ├── stdout_virso_spectral_tf32_20260611_134949.log
+│   │       │   └── virso_inference_virso_spectral_tf32_20260611_134949.log
+│   │       ├── outputs
+│   │       │   ├── virso_predictions.npy
+│   │       │   ├── virso_single_gold.npy
+│   │       │   ├── virso_single_pred.npy
+│   │       │   └── virso_targets.npy
+│   │       └── reports
+│   │           └── virso_edge_summary_virso_spectral_tf32_20260611_134949.csv
+│   ├── virso_precision_smoke_20260611_074502
+│   │   ├── precision_full_bf16_20260611_074502
+│   │   │   ├── logs
+│   │   │   │   ├── stderr_precision_full_bf16_20260611_074502.log
+│   │   │   │   ├── stdout_precision_full_bf16_20260611_074502.log
+│   │   │   │   └── virso_inference_precision_full_bf16_20260611_074502.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   └── virso_single_pred.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   └── virso_precision_smoke_registry.csv
+│   ├── virso_precision_smoke_20260611_074628
+│   │   ├── precision_full_bf16_20260611_074628
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_precision_full_bf16_20260611_074628.txt
+│   │   │   │   ├── stderr_precision_full_bf16_20260611_074628.log
+│   │   │   │   ├── stdout_precision_full_bf16_20260611_074628.log
+│   │   │   │   └── virso_inference_precision_full_bf16_20260611_074628.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_precision_full_bf16_20260611_074628.csv
+│   │   ├── precision_layer2_bf16_20260611_075134
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_precision_layer2_bf16_20260611_075134.txt
+│   │   │   │   ├── stderr_precision_layer2_bf16_20260611_075134.log
+│   │   │   │   ├── stdout_precision_layer2_bf16_20260611_075134.log
+│   │   │   │   └── virso_inference_precision_layer2_bf16_20260611_075134.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_precision_layer2_bf16_20260611_075134.csv
+│   │   ├── precision_layer2_fp16_20260611_075039
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_precision_layer2_fp16_20260611_075039.txt
+│   │   │   │   ├── stderr_precision_layer2_fp16_20260611_075039.log
+│   │   │   │   ├── stdout_precision_layer2_fp16_20260611_075039.log
+│   │   │   │   └── virso_inference_precision_layer2_fp16_20260611_075039.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_precision_layer2_fp16_20260611_075039.csv
+│   │   ├── precision_spectral_bf16_20260611_074958
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_precision_spectral_bf16_20260611_074958.txt
+│   │   │   │   ├── stderr_precision_spectral_bf16_20260611_074958.log
+│   │   │   │   ├── stdout_precision_spectral_bf16_20260611_074958.log
+│   │   │   │   └── virso_inference_precision_spectral_bf16_20260611_074958.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_precision_spectral_bf16_20260611_074958.csv
+│   │   ├── precision_spectral_fp16_20260611_074909
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_precision_spectral_fp16_20260611_074909.txt
+│   │   │   │   ├── stderr_precision_spectral_fp16_20260611_074909.log
+│   │   │   │   ├── stdout_precision_spectral_fp16_20260611_074909.log
+│   │   │   │   └── virso_inference_precision_spectral_fp16_20260611_074909.log
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_precision_spectral_fp16_20260611_074909.csv
+│   │   └── virso_precision_smoke_registry.csv
+│   ├── virso_precision_sustained_raw.csv
+│   ├── virso_precision_sustained_registry.csv
+│   ├── virso_precision_sustained_summary.csv
+│   ├── virso_precision_sustained_table.tex
+│   ├── virso_profiles
+│   │   ├── virso_profile_full_fp32
+│   │   └── virso_profile_full_fp32_torch_profile_stdout.log
+│   ├── virso_profiles_existing_path
+│   │   ├── profile_full_ampfp16_existing_path_optional
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_profile_full_ampfp16_existing_path_optional.txt
+│   │   │   │   ├── stderr_profile_full_ampfp16_existing_path_optional.log
+│   │   │   │   ├── stdout_profile_full_ampfp16_existing_path_optional.log
+│   │   │   │   └── virso_inference_profile_full_ampfp16_existing_path_optional.log
+│   │   │   ├── nsys_profile_full_ampfp16_existing_path_optional.nsys-rep
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_profile_full_ampfp16_existing_path_optional.csv
+│   │   ├── profile_full_fp32_existing_path
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_profile_full_fp32_existing_path.txt
+│   │   │   │   ├── stderr_profile_full_fp32_existing_path.log
+│   │   │   │   ├── stdout_profile_full_fp32_existing_path.log
+│   │   │   │   └── virso_inference_profile_full_fp32_existing_path.log
+│   │   │   ├── nsys_profile_full_fp32_existing_path.nsys-rep
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_profile_full_fp32_existing_path.csv
+│   │   ├── profile_layer2_fp32_existing_path
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_profile_layer2_fp32_existing_path.txt
+│   │   │   │   ├── stderr_profile_layer2_fp32_existing_path.log
+│   │   │   │   ├── stdout_profile_layer2_fp32_existing_path.log
+│   │   │   │   └── virso_inference_profile_layer2_fp32_existing_path.log
+│   │   │   ├── nsys_profile_layer2_fp32_existing_path.nsys-rep
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_profile_layer2_fp32_existing_path.csv
+│   │   ├── profile_spectral_fp32_existing_path
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_profile_spectral_fp32_existing_path.txt
+│   │   │   │   ├── stderr_profile_spectral_fp32_existing_path.log
+│   │   │   │   ├── stdout_profile_spectral_fp32_existing_path.log
+│   │   │   │   └── virso_inference_profile_spectral_fp32_existing_path.log
+│   │   │   ├── nsys_profile_spectral_fp32_existing_path.nsys-rep
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_profile_spectral_fp32_existing_path.csv
+│   │   └── virso_profile_registry.csv
+│   ├── virso_profiles_nsys_clean
+│   │   ├── profile_full_fp32_existing_path
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_profile_full_fp32_existing_path.txt
+│   │   │   │   ├── stderr_profile_full_fp32_existing_path.log
+│   │   │   │   ├── stdout_profile_full_fp32_existing_path.log
+│   │   │   │   ├── virso_inference_error_profile_full_fp32_existing_path.txt
+│   │   │   │   └── virso_inference_profile_full_fp32_existing_path.log
+│   │   │   ├── nsys_profile_full_fp32_existing_path_cuda_api_sum.txt
+│   │   │   ├── nsys_profile_full_fp32_existing_path_cuda_gpu_kern_sum.txt
+│   │   │   ├── nsys_profile_full_fp32_existing_path.nsys-rep
+│   │   │   ├── nsys_profile_full_fp32_existing_path_osrt_sum.txt
+│   │   │   ├── nsys_profile_full_fp32_existing_path.sqlite
+│   │   │   ├── outputs
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   ├── profile_layer2_fp32_existing_path
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_profile_layer2_fp32_existing_path.txt
+│   │   │   │   ├── stderr_profile_layer2_fp32_existing_path.log
+│   │   │   │   ├── stdout_profile_layer2_fp32_existing_path.log
+│   │   │   │   └── virso_inference_profile_layer2_fp32_existing_path.log
+│   │   │   ├── nsys_profile_layer2_fp32_existing_path_cuda_api_sum.txt
+│   │   │   ├── nsys_profile_layer2_fp32_existing_path_cuda_gpu_kern_sum.txt
+│   │   │   ├── nsys_profile_layer2_fp32_existing_path.nsys-rep
+│   │   │   ├── nsys_profile_layer2_fp32_existing_path_osrt_sum.txt
+│   │   │   ├── nsys_profile_layer2_fp32_existing_path.sqlite
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_profile_layer2_fp32_existing_path.csv
+│   │   ├── profile_spectral_fp32_existing_path
+│   │   │   ├── logs
+│   │   │   │   ├── run_status_profile_spectral_fp32_existing_path.txt
+│   │   │   │   ├── stderr_profile_spectral_fp32_existing_path.log
+│   │   │   │   ├── stdout_profile_spectral_fp32_existing_path.log
+│   │   │   │   └── virso_inference_profile_spectral_fp32_existing_path.log
+│   │   │   ├── nsys_profile_spectral_fp32_existing_path_cuda_api_sum.txt
+│   │   │   ├── nsys_profile_spectral_fp32_existing_path_cuda_gpu_kern_sum.txt
+│   │   │   ├── nsys_profile_spectral_fp32_existing_path.nsys-rep
+│   │   │   ├── nsys_profile_spectral_fp32_existing_path_osrt_sum.txt
+│   │   │   ├── nsys_profile_spectral_fp32_existing_path.sqlite
+│   │   │   ├── outputs
+│   │   │   │   ├── virso_predictions.npy
+│   │   │   │   ├── virso_single_gold.npy
+│   │   │   │   ├── virso_single_pred.npy
+│   │   │   │   └── virso_targets.npy
+│   │   │   ├── provenance.txt
+│   │   │   └── reports
+│   │   │       └── virso_edge_summary_profile_spectral_fp32_existing_path.csv
+│   │   └── virso_profile_registry.csv
+│   ├── virso_section7_sustained_registry.csv
+│   ├── virso_tf32_bf16_sustained_completion_raw.csv
+│   ├── virso_tf32_bf16_sustained_completion_registry.csv
+│   ├── virso_tf32_bf16_sustained_completion_summary_fixed.csv
+│   └── virso_tf32_bf16_sustained_completion_wide_raw.csv
+├── lipschitz.py
+├── media
+│   ├── figure6.pdf
+│   ├── figure6.png
+│   ├── sp2gno_2layer_summary.png
+│   ├── sp2gno_full_summary.png
+│   ├── sp2gno_jetson_comparison_table_clean.png
+│   ├── sp2gno_lab_meeting_summary.png
+│   ├── sp2gno_spectral_fp32_vs_fp16_table.png
+│   └── sp2gno_spectral_only_summary.png
+├── profile_virso_single_sample.BROKEN.do_not_use.py
+├── __pycache__
+│   ├── data.cpython-310.pyc
+│   ├── data.cpython-38.pyc
+│   ├── lipschitz.cpython-310.pyc
+│   ├── lipschitz.cpython-38.pyc
+│   ├── sp2gno_model.cpython-310.pyc
+│   ├── sp2gno_model.cpython-38.pyc
+│   ├── utilities.cpython-310.pyc
+│   └── utilities.cpython-38.pyc
+├── results
+│   ├── delete_training_log_2026-03-18_21-45-18
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-18_21-46-52
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-21_10-42-49
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-22_04-25-32
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-22_04-44-02
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-22_05-06-03
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-22_05-09-43
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-23_02-36-13
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-24_00-10-20
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-24_00-13-02
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-24_00-14-10
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-24_00-19-54
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-28_03-50-48
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-28_03-52-18
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-28_03-56-09
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-28_03-58-24
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-30_07-46-44
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-30_07-52-01
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-30_07-52-44
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-30_08-03-23
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-30_08-09-16
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-30_08-21-12
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-30_08-23-15
+│   │   └── log.txt
+│   ├── delete_training_log_2026-03-30_08-24-05
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-08-44
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-15-37
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-18-35
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-22-05
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-25-52
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-29-44
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-30-44
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-31-45
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-32-45
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-34-06
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-35-27
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-53-04
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_05-57-01
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_14-56-17
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_15-00-10
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_15-04-09
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-25_15-08-01
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-27_01-05-39
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-27_01-09-44
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-27_01-11-05
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-27_01-12-46
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-28_02-13-15
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-28_02-14-06
+│   │   └── log.txt
+│   ├── delete_training_log_2026-05-28_02-15-41
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_07-41-23
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_07-42-26
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_07-45-12
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_07-46-36
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_07-49-22
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_07-50-06
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_07-50-47
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_07-51-41
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-26-00
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-29-22
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-30-17
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-31-13
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-32-08
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-33-19
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-34-30
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-46-35
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-49-57
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-50-43
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-51-50
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-52-15
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_13-52-41
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_14-42-12
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_14-45-38
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_14-49-09
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_14-52-40
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_14-56-12
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_14-59-45
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-03-42
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-07-37
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-11-28
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-15-24
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-19-20
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-20-15
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-21-10
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-22-05
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-22-56
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-23-47
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-24-39
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-25-53
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-27-09
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-28-24
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-29-42
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-11_15-31-00
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_03-20-41
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_03-22-59
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_03-27-56
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_03-29-26
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_03-29-44
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_03-30-09
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_03-34-46
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_03-38-23
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_03-39-44
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_03-40-02
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_03-40-20
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_06-24-10
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_06-25-04
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_06-25-48
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_06-26-34
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_07-36-48
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_07-37-12
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_07-37-36
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_07-38-01
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_07-38-27
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_07-38-54
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_07-39-20
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_07-39-48
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_08-34-42
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_08-37-18
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_08-40-01
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_08-42-53
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_08-46-48
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_08-50-42
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_08-54-37
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_08-58-35
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_09-02-33
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_09-06-32
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_09-10-37
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_09-14-38
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_13-50-14
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_13-51-18
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_13-52-22
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_13-53-25
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_13-54-28
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_13-55-32
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_13-56-35
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_13-57-18
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_13-58-00
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_13-58-43
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_13-59-27
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-00-12
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-15-38
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-16-41
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-17-44
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-18-47
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-19-51
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-20-55
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-21-59
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-22-42
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-23-24
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-24-07
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-24-52
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-25-36
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-31-57
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-32-43
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-40-15
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-41-18
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-42-22
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-43-26
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-44-29
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-45-32
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-46-36
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-47-46
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-48-55
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-50-06
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-51-09
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-52-13
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-53-16
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-53-59
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-54-41
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-55-24
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-56-07
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-56-50
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-57-32
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-58-16
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-59-00
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_14-59-43
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-00-27
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-01-11
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-01-55
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-02-40
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-03-24
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-04-09
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-04-54
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-05-39
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-06-24
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-07-12
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-07-58
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-08-46
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-09-31
+│   │   └── log.txt
+│   ├── delete_training_log_2026-06-13_15-10-18
+│   │   └── log.txt
+│   ├── profile_training_log_virso_profile_full_fp32
+│   │   └── log.txt
+│   └── smoke_training_log_jetson_smoke
+│       └── log.txt
+├── run_virso_benchmark_direct.sh
+├── run_virso_full_extra_for_paper.sh
+├── run_virso_full_fp32_extra.sh
+├── run_virso_inference_jetson.py
+├── run_virso_inference_jetson.py.bak_cuda_mem
+├── run_virso_inference_jetson_tf32_native_only.py
+├── run_virso_missing_tf32_native_only.sh
+├── run_virso_official_cache_enabled_20260613_144007.log
+├── run_virso_official_cache_enabled_for_paper.sh
+├── run_virso_precision_smoke_missing.sh
+├── run_virso_precision_sustained_for_paper.sh
+├── run_virso_profiles_existing_path.sh
+├── run_virso_profiles_for_paper.BROKEN.do_not_use.sh
+├── run_virso_profiles_nsys_clean.sh
+├── run_virso_s7_fixed_20260613_135006.log
+├── run_virso_s7_saveoutputs1_20260613_141530.log
+├── run_virso_tf32_bf16_sustained_completion.sh
+├── scripts
+│   ├── append_registry.py
+│   ├── make_jetson_figure6.py
+│   ├── make_latency_figure.py
+│   ├── make_result_figure.py
+│   ├── make_spect_comp.py
+│   ├── merge_reports.py
+│   └── parse_tegrastats.py
+├── sp2gno_final.pth
+├── sp2gno_model.py
+├── summarize_virso_bench2_for_paper.py
+├── summarize_virso_bench2_robust.py
+├── summarize_virso_precision_sustained_for_paper.py
+├── summarize_virso_tf32_bf16_completion_fixed.py
+├── utilities.py
+└── virso.txt
+
+942 directories, 2077 files
