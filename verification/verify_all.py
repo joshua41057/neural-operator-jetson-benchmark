@@ -180,6 +180,15 @@ for r, (op, med) in zip(rows, T5):
     if r[4] != f"{med:.1f}":
         bad(f"Table 5 [{op}] median: tex={r[4]} 집계={med:.1f}")
 
+# Table 5 오차 열: Darcy 는 공통 200샘플 재평가값 (darcy_common200_gate.json)
+T5E = ["8.5", "1.9", "2.2", "5.3", "1.6", "7.1", "5.2", "9.7"]
+for r, want in zip(rows, T5E):
+    checks += 1
+    g = re.search(r"([0-9.]+)\\times", r[3])
+    if not g or g.group(1) != want:
+        bad(f"Table 5 오차: tex={r[3]} 기대 계수={want}")
+
+
 t11 = body("sections/07_telemetry.tex", "tab:deployment_frontiers")
 LAD = {"FNO": ("FNO", [f"darcy_fno_base_r{r}_seed{s}_torchscript_fp32"
                        for r, s in (("85", 2), ("421", 1))]),

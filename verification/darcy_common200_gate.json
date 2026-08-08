@@ -1,0 +1,14 @@
+{
+  "note": "Darcy 141x141 held-out rel-L2 on the common first-200 partition of smooth2",
+  "protocol": "checkpoint-stored train normalizers; reproduction check on full 1024 matched recorded values exactly",
+  "fno": {
+    "n1024": 0.015022320672869682,
+    "n200": 0.01607316
+  },
+  "deeponet": {
+    "n1024": 0.07332683354616165,
+    "n200": 0.07092872
+  },
+  "wno_n200": 0.052206,
+  "sp2gno_n200": 0.009682
+}
