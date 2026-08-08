@@ -80,3 +80,8 @@ cd verification && python verify_all.py     # re-checks tabulated values against
 ## Citation
 
 See `CITATION.cff`.
+
+## Funding
+
+This research is supported by the National Science Foundation (NSF) under Award
+No. ECCS-2543177.

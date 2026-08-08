@@ -28,3 +28,9 @@ preferred-citation:
     - given-names: Syed Bahauddin
       family-names: Alam
   year: 2026
+
+references:
+  - type: grant
+    title: "NSF Award No. ECCS-2543177"
+    institution:
+      name: National Science Foundation
