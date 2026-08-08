@@ -35,3 +35,6 @@ _old*/
 *_deprecated/
 *.BROKEN.*
 *do_not_use*
+
+# GH200 NVML telemetry traces are primary evidence (not stdout) — keep them
+!gh200_placeholder/**/*.log

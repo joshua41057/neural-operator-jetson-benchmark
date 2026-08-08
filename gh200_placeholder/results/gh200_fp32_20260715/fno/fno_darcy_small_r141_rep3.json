@@ -1,0 +1,70 @@
+{
+  "status": "success",
+  "mode": "eager",
+  "checkpoint": "artifacts/checkpoints/darcy_fno_small_seed4_best.pt",
+  "input_bank": "artifacts/benchmark_inputs/darcy_r141_bank.pt",
+  "sample_index": 0,
+  "batch_size": 1,
+  "precision_mode": "fp32_strict",
+  "device": "cuda",
+  "warmup_seconds": 20.0,
+  "measure_seconds_requested": 120.0,
+  "measure_seconds_actual": 120.00063262903132,
+  "warmup_iters": 6237,
+  "measure_iters": 38100,
+  "throughput_inf_s": 317.49832617784557,
+  "mean_ms": 3.1474981978083436,
+  "median_ms": 3.121222951449454,
+  "p95_ms": 3.2153960783034563,
+  "p99_ms": 4.658267134800553,
+  "min_ms": 2.738929819315672,
+  "max_ms": 5.862201098352671,
+  "avg_power_w": 153.8735049833887,
+  "energy_per_inference_j": 0.4846435155604474,
+  "nvsmi_samples": 602,
+  "gpu_power_mean_w": 153.8735049833887,
+  "gpu_power_median_w": 154.02,
+  "gpu_power_min_w": 145.36,
+  "gpu_power_max_w": 155.81,
+  "gpu_power_p95_w": 154.7,
+  "gpu_mem_used_mean_mb": 812.9335548172758,
+  "gpu_mem_used_peak_mb": 813.0,
+  "gpu_temp_peak_c": 26.0,
+  "gpu_util_mean_pct": 16.511627906976745,
+  "gpu_util_peak_pct": 18.0,
+  "dataset": "darcy",
+  "resolution": [
+    141,
+    141
+  ],
+  "parameter_count": 667713,
+  "bank_meta": {
+    "dataset": "darcy",
+    "resolution": [
+      141,
+      141
+    ],
+    "input_key": "Kcoeff",
+    "source_path": "<JETSON_HOME>/data/piececonst_r421_N1024_smooth2.mat",
+    "num_samples": 8
+  },
+  "precision_info": {
+    "precision_mode": "fp32_strict",
+    "model_cast": "fp32",
+    "input_cast": "fp32",
+    "autocast_enabled": false,
+    "autocast_dtype": null,
+    "allow_tf32_matmul": false,
+    "allow_tf32_cudnn": false,
+    "float32_matmul_precision": "highest"
+  },
+  "input_shape": [
+    1,
+    141,
+    141
+  ],
+  "input_dtype": "torch.float32",
+  "peak_cuda_alloc_mb": 52.74853515625,
+  "peak_cuda_allocated_mb": 52.74853515625,
+  "peak_cuda_reserved_mb": 68.0
+}

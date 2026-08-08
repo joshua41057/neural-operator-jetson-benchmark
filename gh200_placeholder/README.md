@@ -1,8 +1,52 @@
 # GH200 server-reference records
 
-The GH200 measurements of Section 8.2 and Table 9 were produced on the Delta AI
-platform, not on the Jetson host this repository was assembled from. The records
-themselves are not yet included here.
+Sustained FP32 telemetry from the NCSA Delta AI GH200 node, backing the
+server-reference results in Section 8.2 / Table 9. These sweeps were run on a
+Slurm-managed node and were not present on the Jetson host from which the rest
+of this repository was assembled. The records are now deposited here.
+
+Run tag: `gh200_fp32_20260715`.
+
+## Layout
+
+```
+harness/
+  gpu_power.py            NVML sampler + parser (nvidia-smi, 200 ms)
+  aggregate_gh200.py      per-rep records -> summary/raw CSV
+  audit_gh200.py          re-derive every value from the raw NVML logs
+  slurm/                  batch scripts (bench, matrix, submit_all, smoke)
+environment/
+  environment.txt         GPU, driver, CUDA, torch, protocol
+results/gh200_fp32_20260715/
+  gh200_fp32_summary.csv  per-case mean/std over reps (reproduces Table 9)
+  gh200_fp32_raw.csv      every rep
+  {fno,deeponet,wno,sp2gno,hx}/
+                          per-rep records + 200 ms NVML logs
+```
+
+## Metrics
+
+| Column     | Definition                                                        |
+|------------|-------------------------------------------------------------------|
+| Med. (ms)  | mean over 3 reps of each rep's per-inference median latency        |
+| Avg. (W)   | mean GPU power (NVML `power.draw`, 200 ms sampling)                |
+| J/inf      | `avg_power / sustained_throughput` over the same window           |
+| CUDA (MB)  | `torch.cuda.max_memory_allocated` (shares the Jetson definition)  |
+
+Protocol: batch size 1, fp32_strict (TF32 disabled), 20 s warmup, 120 s
+sustained window, 3 repetitions. See `environment/environment.txt`.
+
+## Reproduce
+
+```
+python harness/aggregate_gh200.py --results-root results --run-tag gh200_fp32_20260715
+python harness/audit_gh200.py     --results-root results --run-tag gh200_fp32_20260715
+```
+
+`aggregate` regenerates the two CSVs from the per-rep records. `audit`
+independently re-parses the 200 ms NVML logs and checks every link in the chain
+(below); both are included so `Avg. (W)` can be re-derived without trusting the
+stored summaries.
 
 ## Audit status
 
@@ -26,7 +70,7 @@ Each log carries 600–616 samples, consistent with a 120 s window at 200 ms.
 
 **No value error was found.** Table 9 is traceable to raw NVML logs at every step.
 
-## What the audit did change
+## What the audit changed in the paper
 
 The audit corrected the environment strings of Table 13, which had been recorded
 from a different job than the one that produced the measurements:
@@ -40,30 +84,17 @@ from a different job than the one that produced the measurements:
 Addressable GPU memory (97,871 MiB) was confirmed correct. Section 8.2's
 platform-difference sentence was corrected in the same pass.
 
-## Known cosmetic issue in the raw records
+## Notes
 
-In `gh200_fp32_raw.csv` the nine heat exchanger rows are all labelled `rep=1`,
-because the driver did not encode the repetition index in the output filename and
-the aggregation step defaulted it. The three repetitions are genuinely distinct
-measurements:
-
-| Case | rep medians (ms) |
-|---|---|
-| `hx_full` | 10.430 / 10.663 / 11.208 |
-| `hx_spectral` | 5.650 / 5.734 / 5.739 |
-| `hx_layer2` | 2.975 / 3.138 / 3.194 |
-
-`n_reps=3` was used for the mean, so the Table 9 values are unaffected. The labels
-should be corrected to `rep=1,2,3` before the raw records are published here.
-
-## What to deposit here
-
-- per-configuration, per-repetition median latency (3 repetitions)
-- NVML power series or its per-repetition summary
-- `torch.cuda.max_memory_allocated` per configuration
-- the job scripts and Slurm batch files
-- an environment capture (`nvidia-smi`, module list or `pip freeze`)
-- the audit script
-
-Checkpoints and datasets are not needed: they are attached to the release of this
-repository. Binary profiler traces are not needed either.
+- **Heat Exchanger rep labels.** The aggregation step originally defaulted the
+  nine heat exchanger rows to `rep=1` (the driver did not encode the repetition
+  index in the output filename). This is corrected here: the records carry
+  `rep=1,2,3`, one per distinct run (`full_rep{1,2,3}`, etc.). `n_reps=3` was
+  always used for the mean, so Table 9 was never affected.
+- **Path normalization.** Machine-specific prefixes in the records were replaced
+  with placeholders (`<REPO>`, `<WORK>`, `<HOME>`, `<CONDA>`, `<JETSON_HPC>`,
+  `<JETSON_HOME>`) and the Slurm account/partition with `<ACCOUNT>`/`<PARTITION>`.
+  Only path strings were changed; no measured value was altered.
+- **Excluded** (not needed to reproduce the telemetry): prediction/target `.npy`
+  outputs, checkpoints and datasets (released with the Jetson artifacts), verbose
+  per-inference runtime logs, and Slurm stdout.

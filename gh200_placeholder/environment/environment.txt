@@ -1,0 +1,27 @@
+GH200 server-reference environment (run tag: gh200_fp32_20260715)
+Captured from the measured Slurm jobs (nvidia-smi job header + per-run result records).
+
+Hardware / driver
+  Node            : NVIDIA GH200 120GB (NCSA Delta AI), aarch64 + Hopper sm_90
+  GPU memory      : 97,871 MiB addressable (nvidia-smi, measured jobs)
+  Driver          : 595.71.05
+
+Software
+  CUDA runtime    : 12.8
+  PyTorch         : 2.11.0+cu128
+  torch-geometric : 2.6.1
+  Python env      : conda env, numpy<2, scipy, h5py, PyWavelets/ptwt/pytorch_wavelets (WNO),
+                    scikit-learn (Heat Exchanger). No torch-scatter/sparse/cluster on aarch64:
+                    knn_graph uses a scipy cKDTree replacement; FrigateConv.propagate uses a
+                    manual scatter_add for the PyG 2.6 API (Heat Exchanger only).
+
+Measurement protocol (identical across families)
+  Precision       : fp32_strict (TF32 matmul/cuDNN disabled, float32_matmul_precision=highest)
+  Batch size      : 1 (device-resident deterministic request bank)
+  Warmup          : 20 s
+  Measure window  : 120 s sustained
+  Repetitions     : 3
+  Power sampling  : GPU-level NVML via nvidia-smi at 200 ms
+
+Job model
+  Slurm batch job, 1 allocated GPU, 1 Python process.
