@@ -189,6 +189,37 @@ for r, want in zip(rows, T5E):
         bad(f"Table 5 오차: tex={r[3]} 기대 계수={want}")
 
 
+
+# ---------------------------------------------------------------- Table 9 (GH200)
+# gh200/results/.../gh200_fp32_summary.csv 로 44셀 대조
+import csv as _csv
+_g = {r["case"]: r for r in _csv.DictReader(
+    open(REPO / "gh200" / "results" / "gh200_fp32_20260715"
+         / "gh200_fp32_summary.csv"))}
+GH = [("fno_burgers_base_r2048",), ("fno_darcy_base_r141",),
+      ("deeponet_burgers_base_r2048",), ("deeponet_darcy_base_r141",),
+      ("wno_burgers_base_r2048",), ("wno_darcy_base_r141",),
+      ("sp2gno_burgers_base_r2048",), ("sp2gno_darcy_base_r141",),
+      ("hx_full",), ("hx_spectral",), ("hx_layer2",)]
+_rows = [r for r in cells(body("sections/07_telemetry.tex", "tab:gh200_telemetry"))
+         if len(r) == 6]
+if len(_rows) != 11:
+    bad(f"Table 9: 행 수 {len(_rows)} != 11")
+for r, (case,) in zip(_rows, GH):
+    src = _g.get(case)
+    if src is None:
+        bad(f"Table 9: summary.csv 에 {case} 없음"); continue
+    for col, key, dec in ((2, "med_ms_mean", 3), (3, "avg_w_mean", 1),
+                          (4, "j_per_inf_mean", 4), (5, "gpu_mb_torch_mean", 2)):
+        checks += 1
+        want = f"{float(src[key]):.{dec}f}"
+        got = r[col].replace("$", "").strip()
+        if got != want:
+            bad(f"Table 9 [{case}/{key}]: tex={got} 기록={want}")
+    checks += 1
+    if int(src["n_reps"]) != 3:
+        bad(f"Table 9 [{case}]: n_reps={src['n_reps']} != 3")
+
 t11 = body("sections/07_telemetry.tex", "tab:deployment_frontiers")
 LAD = {"FNO": ("FNO", [f"darcy_fno_base_r{r}_seed{s}_torchscript_fp32"
                        for r, s in (("85", 2), ("421", 1))]),

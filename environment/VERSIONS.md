@@ -27,4 +27,4 @@ and maximum frequencies on both CPU and GPU.
 | PyTorch | 2.11.0+cu130 |
 | Telemetry | `nvidia-smi` / NVML, 200 ms sampling |
 
-Records to be added; see `gh200_placeholder/`.
+Recorded in `gh200/environment/environment.txt`: driver 595.71.05, CUDA 12.8, PyTorch 2.11.0+cu128, torch-geometric 2.6.1.
