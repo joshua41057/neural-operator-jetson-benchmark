@@ -1,0 +1,17 @@
+{
+  "summary_json": "results/jetson_fno_precision/darcy_fno_base_r281_seed1_torchscript_fp32_strict.json",
+  "torchscript": "/home/jetson/jjyoo3/First_Jetson_Benchmark/EDCNO/artifacts/torchscript/darcy_fno_base_r281_seed1.ts",
+  "input_bank": "/home/jetson/jjyoo3/First_Jetson_Benchmark/EDCNO/artifacts/benchmark_inputs/darcy_r281_bank.pt",
+  "input_shape": [
+    8,
+    281,
+    281
+  ],
+  "output_shape": [
+    8,
+    281,
+    281
+  ],
+  "tf32_vs_fp32_relative_l2": 5.480448406793119e-05,
+  "tf32_vs_fp32_max_abs": 2.678483724594116e-06
+}
