@@ -26,6 +26,9 @@ archive_noncanonical/
 *.log
 !docs/samples/SAMPLE_*.log
 
+# Jetson tegrastats telemetry is primary evidence, same as the GH200 NVML traces
+!families/**/*tegrastats*.log
+
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
