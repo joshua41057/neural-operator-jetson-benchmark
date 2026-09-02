@@ -1,7 +1,10 @@
 cff-version: 1.2.0
-title: Neural-Operator Jetson Benchmark
-message: If you use this software or its measured records, please cite the paper below.
+title: "Neural-Operator Jetson Benchmark"
+message: "If you use this software or its measured records, please cite the paper below."
 type: software
+version: 1.0.1
+date-released: "2026-09-02"
+
 authors:
   - given-names: Jason
     family-names: Yoo
@@ -17,8 +20,10 @@ authors:
     family-names: Chakraborty
   - given-names: Syed Bahauddin
     family-names: Alam
-repository-code: https://github.com/joshua41057/neural-operator-jetson-benchmark
+
+repository-code: "https://github.com/joshua41057/neural-operator-jetson-benchmark"
 license: MIT
+
 preferred-citation:
   type: article
   title: "Deploying PDE Neural Operators as Trained: Mechanism-Governed Cost and Backend Reachability on the NVIDIA Jetson Orin Nano"
@@ -33,4 +38,4 @@ references:
   - type: grant
     title: "NSF Award No. ECCS-2543177"
     institution:
-      name: National Science Foundation
+      name: "National Science Foundation"
