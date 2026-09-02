@@ -2,8 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22248947.svg)](https://doi.org/10.5281/zenodo.22248947)
 
-Benchmark harness and measured results for **"Deploying PDE Neural Operators as Trained:
-Mechanism-Governed Cost and Backend Reachability on the NVIDIA Jetson Orin Nano."**
+Benchmark harness and measured results for **"Low-power edge deployment of PDE neural operators is limited by the software stack, not by the model."**
 
 The paper evaluates a deployed model not as a trained checkpoint but as an *executed runtime
 path* `R = (G_θ, p, b, s, h)` — checkpoint, precision mode, backend, software stack, hardware

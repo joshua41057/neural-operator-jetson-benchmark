@@ -27,7 +27,7 @@ license: MIT
 
 preferred-citation:
   type: article
-  title: "Deploying PDE Neural Operators as Trained: Mechanism-Governed Cost and Backend Reachability on the NVIDIA Jetson Orin Nano"
+  title: "Low-power edge deployment of PDE neural operators is limited by the software stack, not by the model"
   authors:
     - given-names: Jason
       family-names: Yoo
