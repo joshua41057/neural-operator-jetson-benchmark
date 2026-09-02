@@ -148,6 +148,23 @@ def main():
           "(diagnosis of the omitted variable, not a replacement relation)")
     print("\nacceptance criterion R2 >= 0.6 and held-out within 2x: NOT MET")
 
+    import json
+    out = {
+        "n": len(F), "alpha": a, "beta": b, "beta_ci95_percentile": [float(lo), float(hi)],
+        "bootstrap_resamples": 10000, "bootstrap_method": "percentile", "r2": r2,
+        "subgroup_r2": {"darcy_only": fit([p for p in F if 'Darcy' in p['label']])[2],
+                         "burgers_only": fit([p for p in F if 'Burgers' in p['label']])[2]},
+        "r2_with_log_latency": 1 - ((y - X@c)**2).sum()/((y - y.mean())**2).sum(),
+        "acceptance": {"r2_min": 0.6, "holdout_max_factor": 2.0, "met": False},
+        "held_out": [{"label": p['label'], "phi": p['phi'], "s_measured": p['s'],
+                       "s_predicted": math.exp(a + b*p['phi'])} for p in H],
+        "points": [{"label": p['label'], "phi": p['phi'], "jetson_ms": p['jet'],
+                     "gh200_ms": p['gh'], "s": p['s']} for p in F],
+    }
+    dest = os.path.join(ROOT, 'verification', 'kernel_class_fit.json')
+    json.dump(out, open(dest, 'w'), indent=2)
+    print(f'wrote {dest}')
+
 
 if __name__ == '__main__':
     main()
