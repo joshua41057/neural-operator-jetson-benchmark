@@ -4,6 +4,7 @@ message: "If you use this software or its measured records, please cite the pape
 type: software
 version: 1.0.1
 date-released: "2026-09-02"
+doi: "10.5281/zenodo.22248947"
 
 authors:
   - given-names: Jason
