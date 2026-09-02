@@ -1,5 +1,6 @@
 # ---- Large binaries: archived on Zenodo, not in git ----
 *.ncu-rep
+# CSV exports of the above are committed under families/**/…_exports/
 *.nsys-rep
 *.sqlite
 *.pt
