@@ -53,5 +53,15 @@
   ],
   "input_dtype": "torch.float32",
   "peak_cuda_alloc_mb": 99.12109375,
-  "peak_cuda_reserved_mb": 180.0
+  "peak_cuda_reserved_mb": 180.0,
+  "tegrastats_log": "darcy_base_r281_rep3_tegrastats.log",
+  "tegrastats_samples": 1144,
+  "telemetry_window_s": 120,
+  "vdd_in_mean_w": 21.976341783216782,
+  "vdd_in_min_w": 11.741,
+  "vdd_in_max_w": 22.115,
+  "board_ram_mean_mb": 3854.551573426573,
+  "board_ram_peak_mb": 3866,
+  "peak_temp_c": 74.531,
+  "energy_j_per_inference": 0.7390245298855608
 }
