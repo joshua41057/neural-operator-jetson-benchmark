@@ -1,5 +1,7 @@
 # Neural-Operator Jetson Benchmark
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22248947.svg)](https://doi.org/10.5281/zenodo.22248947)
+
 Benchmark harness and measured results for **"Deploying PDE Neural Operators as Trained:
 Mechanism-Governed Cost and Backend Reachability on the NVIDIA Jetson Orin Nano."**
 
@@ -79,7 +81,16 @@ cd verification && python verify_all.py     # re-checks tabulated values against
 
 ## Citation
 
-See `CITATION.cff`.
+If you use this software or its measured records, please cite the associated paper
+described in [`CITATION.cff`](CITATION.cff).
+
+The archived software release is available on Zenodo:
+
+**Yoo, J., Howes, W., Sarkar, S., Kobayashi, K., Garg, S., Chakraborty, S., & Alam, S. B. (2026).  
+Neural-Operator Jetson Benchmark (v1.0.1). Zenodo.  
+https://doi.org/10.5281/zenodo.22248947**
+
+DOI: [`10.5281/zenodo.22248947`](https://doi.org/10.5281/zenodo.22248947)
 
 ## Funding
 
